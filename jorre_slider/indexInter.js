@@ -11,13 +11,22 @@ window.onload = function () {
       flytt += 5;
       ting.style.left = "-" + flytt + "px";
 
-      if (flytt == 1600) {
+      if (flytt == 1605) {
+          sov(500);
           flytt = 0;
       }
 
-      if (flytt == 400) {
+      else if (flytt == 405) {
           sov(500);
       }
-  }, 16);
 
+      else if (flytt == 805) {
+          sov(500);
+      }
+
+      else if (flytt == 1205) {
+          sov(500);
+      }
+
+  }, 16);
  }
