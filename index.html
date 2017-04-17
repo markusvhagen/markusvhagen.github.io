@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Markus</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>Markus - developer</title>
+        <link href="style/main.css" type="text/css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="javascript/main.js"></script>
+    </head>
+    <body>
 
-    <h1>Hello World!</h1>
-    <p>This is a test if github pages actually work :D</p>
+        <div id="nav" class="hidden">
+            <ul>
+                <li onclick="scrollTo('#about')">ABOUT ME</li>
+                <li onclick="scrollTo('#portfolio')">PROJECTS</li>
+                <li onclick="scrollTo('#skills')">SKILLS</li>
+                <li onclick="scrollTo('#resume')">RESUMÉ</li>
+            </ul>
+        </div>
 
-  </body>
+        <div id="header">
+            <h1>m a r k u s</h1>
+            <ul>
+                <li onclick="scrollTo('#about')">about me</li>
+                <li>~</li>
+                <li onclick="scrollTo('#portfolio')">projects</li>
+                <li>~</li>
+                <li onclick="scrollTo('#skills')">skills</li>
+                <li>~</li>
+                <li onclick="scrollTo('#resume')">resumé</li>
+            </ul>
+        </div>
+
+        <div id="about">
+            <div id="about_container">
+                <img src="images/markus.png"></img>
+                    <div id="about_container_text">
+                        <h2 id="greeting">Hallo.</h2>
+                        <p>My name is <span class="markus">Markus Valås Hagen</span>.<br>
+                           I am a web developer based in Trondheim, Norway.<br><br>
+                           I do web development with <span class="php">PHP</span> and <span class="javascript">Javascript</span>
+                           , and scripting with <span class="python">Python</span>.
+                           I also do some web design, and have some experience with <span class="photoshop">Adobe Photoshop</span>. <br><br>
+                           I am in constant self development and always trying to keep up to date with programming
+                           trends and new technology. For the moment, I am trying to get into software and app development,
+                           and therefore learning C# and Xamarin API.<br><br>
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            s
+        </div>
+
+        <div id="skills">
+            s
+        </div>
+
+        <div id="resume">
+            s
+        </div>
+
+    </body>
 </html>

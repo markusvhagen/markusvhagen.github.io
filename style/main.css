@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* STYLE */
+h1, h2, h3, h4, h5, h6{
+  line-height: 1vh;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    position: fixed;
+    background-color: #DDDDDD;
+    border: 2px solid #AAAAAA;
+    border-top: none;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 0;
+    width: auto;
+    z-index: 1000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    border-right: 1px solid black;
+}
+
+#nav li:last-child {
+    border-right: none;
+}
+
+#nav li:hover {
+    background-color: #bdc3c7;
+    cursor: pointer;
+}
+
+#header {
+    height: 100vh;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Lato", sans-serif;
+}
+
+#header h1 {
+    color: #3498db;
+    padding-top: 7vh;
+    font-size: 8vw;
+    padding-left: 10vw;
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 10vw;
+}
+
+
+#header li {
+    float: left;
+    font-size: 2vw;
+    color: #3498db;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#header li:nth-child(odd) {
+    cursor: pointer;
+}
+
+#about {
+    height: 100vh;
+    background-color: rgba(63, 127, 191, 0.61);
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about_container {
+    padding-top: 20vh;
+}
+
+#about_container img {
+    height: 60vh;
+    padding-left: 10vw;
+    float: left;
+}
+
+#about_container_text {
+    float: left;
+    margin-left: 2vw;
+    width: 35vw;
+}
+
+#about h2 {
+    font-size: 3.6vw;
+}
+
+#about p {
+    font-size: 1.2vw;
+}
+
+#portfolio {
+    height: 100vh;
+    background-color: rgb(237, 100, 92);
+}
+
+#skills {
+    height: 100vh;
+    background-color: orange;
+}
+
+#resume {
+    height: 100vh;
+    background-color: green;
+}
+
+
+/* CLASSES */
+.hidden {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 1s both;
+}
+
+.markus {
+    color: #2980b9;
+    font-weight: bolder;
+}
+
+.python {
+    color: #F012BE;
+    font-weight: bolder;
+}
+
+.php {
+    color: #001f3f;
+    font-weight: bolder;
+}
+
+.javascript {
+    color: #85144b;
+    font-weight: bolder;
+}
+
+.photoshop {
+    color: #B10DC9;
+    font-weight: bolder;
+}
