@@ -4,36 +4,27 @@
         <meta charset="utf-8">
         <title>Markus - developer</title>
         <link href="style/main.css" type="text/css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="javascript/main.js"></script>
     </head>
     <body>
 
-<<<<<<< HEAD
         <div id="nav" class="hidden">
             <ul>
-                <li onclick="scrollTo('#about')">ABOUT ME</li>
-                <li onclick="scrollTo('#portfolio')">PROJECTS</li>
-                <li onclick="scrollTo('#skills')">SKILLS</li>
-                <li onclick="scrollTo('#resume')">RESUMÉ</li>
+                <li id="about_link" onclick="scrollTo('#about')">ABOUT ME</li>
+                <li id="portfolio_link" onclick="scrollTo('#portfolio')">PORTFOLIO</li>
+                <li id="code_blog_link" onclick="scrollTo('#code_blog')">CODE BLOG</li>
             </ul>
         </div>
-=======
-    <h1>Hello World!</h1>
-    <p>Something will probably appear here ... soon!</p>
->>>>>>> origin/master
 
         <div id="header">
             <h1>m a r k u s</h1>
             <ul>
                 <li onclick="scrollTo('#about')">about me</li>
                 <li>~</li>
-                <li onclick="scrollTo('#portfolio')">projects</li>
+                <li onclick="scrollTo('#portfolio')">portfolio</li>
                 <li>~</li>
-                <li onclick="scrollTo('#skills')">skills</li>
-                <li>~</li>
-                <li onclick="scrollTo('#resume')">resumé</li>
+                <li onclick="scrollTo('#code_blog')">code blog</li>
             </ul>
         </div>
 
@@ -56,15 +47,44 @@
         </div>
 
         <div id="portfolio">
-            s
+            <div id="portfolio_container">
+                <h2>p o r t f o l i o</h2>
+                <div id="portfolio1">
+                    <div class="portfolio_left">
+                        <h3>Authentication system</h3>
+                        <div class="languages"><span class="php">PHP</span> / <span class="javascript">JAVASCRIPT</span></div>
+                        <p class="introduction">Simple system with login and registration. Details are stored in database, passwords are hashed with bcrypt.
+                           When logging in you can see if username is available or not, and a algorithm will decide the strength
+                           of your desired password. When logged in you may change your profile picture, and post a post that everyone could see.
+                        </p>
+                           <div class="links">
+                               <p><a target="_blank" href="#">Live demo</a> &nbsp;</p>
+                               <p> / / </p>
+                               <p>&nbsp; <a target="_blank" href="https://github.com/markusvhagen/auth-system">Github</a></p>
+                           </div>
+
+                    </div>
+                    <div class="portfolio_right">
+                        <h3>Prefix</h3>
+                        <div class="languages"><span class="python">PYTHON</span></div>
+                        <p class="introduction">
+                            A lightweight python library that provides an easy way to use prefixes in calculations.
+                        </p>
+                        <div class="links">
+                            <p><a download target="_blank" href="https://raw.githubusercontent.com/markusvhagen/prefix/master/prefix.py">Download</a> &nbsp;</p>
+                            <p> / / </p>
+                            <p>&nbsp; <a target="_blank" href="https://github.com/markusvhagen/auth-system">Github</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="skills">
-            s
+        <div id="code_blog">
         </div>
 
-        <div id="resume">
-            s
+        <div id="toTop">
+            <img onclick="scrollTo('#header')" src="http://klasserom.net/185/elev18507/sitater/pil.png"></img>
         </div>
 
     </body>

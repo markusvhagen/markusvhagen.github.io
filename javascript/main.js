@@ -1,33 +1,63 @@
-// jQuery
-
 function scrollTo(element) {
     $('html, body').animate({ scrollTop: $(element).offset().top }, 'slow');
       return false;
   }
 
 window.onscroll = function () {
-    var mydivpos = document.getElementById("about").offsetTop;
+    var aboutpos = document.getElementById("about").offsetTop;
+    var portfoliopos = document.getElementById("portfolio").offsetTop;
+    var codeblogpos = document.getElementById("code_blog").offsetTop;
     var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
 
-    if(scrollPos >= mydivpos) {
-        $("#nav").fadeIn("slow", function() {});
+    if(scrollPos >= aboutpos) {
+        $("#nav").fadeIn("slow");
+        $("#toTop").fadeIn("slow")
     }
     else {
-        $("#nav").fadeOut("fast", function() {});
+        $("#nav").fadeOut("fast");
+        $("#toTop").fadeOut("fast");
+    }
+
+    if (scrollPos > aboutpos && scrollPos < portfoliopos) {
+        document.getElementById("about_link").className = "active_nav_about";
+    }
+
+    else {
+        document.getElementById("about_link").className = "";
+    }
+
+    if (scrollPos > portfoliopos && scrollPos < codeblogpos) {
+        document.getElementById("portfolio_link").className = "active_nav_portfolio";
+    }
+
+    else {
+        document.getElementById("portfolio_link").className = "";
+    }
+
+    if (scrollPos >= codeblogpos) {
+        document.getElementById("code_blog_link").className = "active_nav_code_blog";
+    }
+
+    else {
+        document.getElementById("code_blog_link").className = "";
     }
   };
-
-// Native
 
 window.onload = function greeting() {
     var greetings = ["Salut.", "Ciao.", "Hi.", "Ahoj.", "Hej.", "Hola.", "Hei.", "Czesc.", "Kon`nichiwa.","Hallo."];
     var output = document.getElementById("greeting");
     let i = 0;
+
     setInterval(function() {
-        output.innerHTML = greetings[i]
-        i++;
-        if (i == (greetings.length - 1)) {
-            i = 0;
-        }
-    }, 5000);
-}
+      $("#greeting").fadeOut(1000, function() {
+          output.innerHTML = greetings[i]
+          i++;
+          if (i == (greetings.length - 1)) {
+              i = 0;
+          }
+      });
+
+      $("#greeting").fadeIn(1000);
+      $("#greeting").delay(6000);
+      }, 8000);
+  }

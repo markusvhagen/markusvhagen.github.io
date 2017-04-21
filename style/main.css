@@ -16,6 +16,31 @@ html, body {
     padding: 0;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#toTop {
+    display: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 3vw;
+    padding-bottom: 3vw;
+}
+
+#toTop img {
+    width: 4vw;
+    filter: grayscale(100%);
+    transition: ease-out .5s;
+}
+
+#toTop img:hover {
+    filter:grayscale(0%);
+    transition: ease-in .5s;
+}
+
 #nav {
     position: fixed;
     background-color: #DDDDDD;
@@ -136,20 +161,49 @@ html, body {
 #portfolio {
     height: 100vh;
     background-color: rgb(237, 100, 92);
+    font-family: "Open Sans", sans-serif;
 }
 
-#skills {
-    height: 100vh;
-    background-color: orange;
+#portfolio_container {
+    padding-top: 8vh;
 }
 
-#resume {
+#portfolio h2 {
+    text-align: center;
+    font-size: 4vw;
+    padding-bottom: 5vh;
+}
+
+#portfolio h3 {
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+#portfolio1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#code_blog {
     height: 100vh;
-    background-color: green;
+    background-color: rgba(98, 218, 126, 0.83);
 }
 
 
 /* CLASSES */
+.active_nav_about {
+    background-color: rgba(63, 127, 191, 0.61);
+}
+
+.active_nav_code_blog {
+    background-color: rgba(98, 218, 126, 0.83);
+}
+
+.active_nav_portfolio {
+    background-color: rgb(237, 100, 92);
+}
+
 .hidden {
     display: none;
     opacity: 0;
@@ -179,4 +233,32 @@ html, body {
 .photoshop {
     color: #B10DC9;
     font-weight: bolder;
+}
+
+.portfolio_left {
+    float: left;
+    width: 30vw;
+}
+
+.portfolio_right {
+    float: left;
+    width: 30vw;
+    padding-left: 5vw;
+}
+
+.introduction {
+    text-align: justify;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages {
+    font-size: 0.9vw;
+    text-align: center;
 }
