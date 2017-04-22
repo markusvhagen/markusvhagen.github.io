@@ -19,6 +19,7 @@ html, body {
 a {
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
 
 #toTop {
@@ -123,6 +124,10 @@ a {
     display: block;
 }
 
+#header li a {
+    color: #3498db;
+}
+
 #header li:nth-child(odd) {
     cursor: pointer;
 }
@@ -183,11 +188,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#code_blog {
-    height: 100vh;
-    background-color: rgba(98, 218, 126, 0.83);
 }
 
 
@@ -256,9 +256,45 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: #c0392b;
 }
 
 .languages {
     font-size: 0.9vw;
     text-align: center;
+}
+
+/*
+ *  SLIDING UNDERLINE *
+ *  TAKEN FROM: http://bradsknutson.com/blog/css-sliding-underline/ *
+*/
+
+.sliding-u-r-l-menu,
+.sliding-u-r-l-portfolio {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.sliding-u-r-l-menu:after,
+.sliding-u-r-l-portfolio:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-u-r-l-menu:hover:after {
+    width: 100%;
+    background: #3498db;
+}
+
+.sliding-u-r-l-portfolio:hover:after {
+    width: 100%;
+    background: #c0392b;
 }

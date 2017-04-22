@@ -6,7 +6,6 @@ function scrollTo(element) {
 window.onscroll = function () {
     var aboutpos = document.getElementById("about").offsetTop;
     var portfoliopos = document.getElementById("portfolio").offsetTop;
-    var codeblogpos = document.getElementById("code_blog").offsetTop;
     var scrollPos = document.getElementsByTagName("body")[0].scrollTop;
 
     if(scrollPos >= aboutpos) {
@@ -26,20 +25,12 @@ window.onscroll = function () {
         document.getElementById("about_link").className = "";
     }
 
-    if (scrollPos > portfoliopos && scrollPos < codeblogpos) {
+    if (scrollPos >= portfoliopos) {
         document.getElementById("portfolio_link").className = "active_nav_portfolio";
     }
 
     else {
         document.getElementById("portfolio_link").className = "";
-    }
-
-    if (scrollPos >= codeblogpos) {
-        document.getElementById("code_blog_link").className = "active_nav_code_blog";
-    }
-
-    else {
-        document.getElementById("code_blog_link").className = "";
     }
   };
 
