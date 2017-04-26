@@ -52,6 +52,7 @@ a {
     top: 0;
     width: auto;
     z-index: 1000;
+    box-shadow: 0 0 10px;
     font-family: 'Open Sans', sans-serif;
 }
 
