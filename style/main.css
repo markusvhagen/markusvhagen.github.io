@@ -236,6 +236,11 @@ a {
     font-weight: bolder;
 }
 
+.illustrator {
+    color: #C96B23;
+    font-weight: bolder;
+}
+
 .portfolio_left {
     float: left;
     width: 30vw;
