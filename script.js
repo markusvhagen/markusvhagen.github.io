@@ -86,6 +86,20 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
     });
 
     map.on('load', () => {
+
+        // This section highlights all the parks
+        const layers = map.getStyle().layers;
+        layers.forEach(function(layer) {
+            if (layer['source-layer'] === 'landuse') {
+                // Check if this layer filters parks
+                if (layer.filter && layer.filter.some(f => f.includes('park'))) {
+                    // Set park color to green
+                    map.setPaintProperty(layer.id, 'fill-color', '#6BCB77');
+                }
+            }
+        });
+
+
         // This function draws each "etappe"
         function createEtappe(number, coordinates, routeColor, startDotColor) {
           map.addSource('etappe' + number, {
@@ -508,7 +522,6 @@ const chartData = {
           displayColors: false,
           callbacks: {
             title: (tooltipItem) => {
-              console.log(tooltipItem)
               return tooltipItem[0].raw + 'hm'
             },
             label: (tooltipItem) => {
