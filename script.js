@@ -569,14 +569,14 @@ const chartData = {
             label: (tooltipItem) => {
               var dataIndex = tooltipItem.dataIndex;
               // These two parameters decide the average we take (which is here over 20 points)
-              var nudge = 10;
+              var nudge = 3;
               var leftNudge = -nudge;
               var rightNudge = nudge;
               // Have to run something else if we are very close to one of the edges of the graph
               if (dataIndex < nudge) {
                 leftNudge = 0;
               }
-              if (dataIndex>dataIndex[-1]-9) {
+              if (dataIndex>dataIndex[-1]-(nudge-1)) {
                 rightNudge = 0;
               }
               var incline  = getIncline(total_coordinate_array[dataIndex+leftNudge],total_coordinate_array[dataIndex+rightNudge],total_elevation_array[dataIndex+leftNudge],total_elevation_array[dataIndex+rightNudge]);
