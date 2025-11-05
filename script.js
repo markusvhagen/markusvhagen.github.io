@@ -214,13 +214,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
       createEtappe(10, etappe_10_coordinates, "#2e6f40", "#06402b");
 
       // Finish icon
-      map.loadImage(
-        'https://thumbs.dreamstime.com/b/black-white-checkered-background-chess-pattern-vector-illustration-black-white-checkered-background-107348676.jpg',
-        (error, image) => {
-            if (error) throw error;
-            map.addImage('finish-icon', image);
-        }
-      );
+      //map.loadImage(
+      //  'https://thumbs.dreamstime.com/b/black-white-checkered-background-chess-pattern-vector-illustration-black-white-checkered-background-107348676.jpg',
+      //  (error, image) => {
+      //      if (error) throw error;
+      //      map.addImage('finish-icon', image);
+      //  }
+      // );
 
       map.addSource('finish-point', {
         type: 'geojson',
@@ -243,9 +243,14 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
         type: 'symbol',
         source: 'finish-point',
         layout: {
-            'icon-image': 'finish-icon',
-            'icon-allow-overlap': true,
-            'icon-size': 0.02
+            'text-field': "Mål",
+            'text-size': 20,
+            'text-allow-overlap': true, // Allow text to overlap other symbols if necessary
+        },
+        paint: {
+          "text-color": "white",
+          "text-halo-color": "black",
+          "text-halo-width": 1
         }
       });
 
@@ -355,7 +360,7 @@ const chartData = {
                               position: 'start',
                               xAdjust: 4,
                               yAdjust: -4,
-                              backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                              backgroundColor: 'rgba(8,144,0,0.7)',
                               font: {
                                   size: 12
                               }
@@ -376,7 +381,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -397,7 +402,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -418,7 +423,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -440,7 +445,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -462,7 +467,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -479,12 +484,12 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '2500m',
+                                content: '2800m',
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -501,12 +506,12 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '3500m',
+                                content: '3550m',
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -528,7 +533,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -550,7 +555,7 @@ const chartData = {
                                 position: 'start',
                                 xAdjust: 34,
                                 yAdjust: -4,
-                                backgroundColor: 'rgba(107, 203, 119, 0.8)',
+                                backgroundColor: 'rgba(8,144,0,0.7)',
                                 font: {
                                     size: 12
                                 }
@@ -627,32 +632,32 @@ map.on("mousemove", (e) => {
   else if (index <= etappe_4_last_index) {
     document.getElementById("etappe").innerHTML = "4 Rosenborg";
     document.getElementById("etappeFraTil").innerHTML = "Dronning Mauds Minne Høgskole – Festningsparken";
-    document.getElementById("etappeInfo").innerHTML = "2430m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Lett kupert med slake stigninger";
+    document.getElementById("etappeInfo").innerHTML = "2820m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Lett kupert med slake stigninger";
   }
   else if (index <= etappe_5_last_index) {
     document.getElementById("etappe").innerHTML = "5 Kristiansten";
     document.getElementById("etappeFraTil").innerHTML = "Festningsparken - Høgskoleparken";
-    document.getElementById("etappeInfo").innerHTML = "1500m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Variert og lett kupert etappe";
+    document.getElementById("etappeInfo").innerHTML = "1750m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Variert og lett kupert etappe";
   }
   else if (index <= etappe_6_last_index) {
     document.getElementById("etappe").innerHTML = "6 Gløshaugen";
     document.getElementById("etappeFraTil").innerHTML = "Høgskoleparken – Regnbueparken";
-    document.getElementById("etappeInfo").innerHTML = "2200m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Slak nedover, flat første og siste del";
+    document.getElementById("etappeInfo").innerHTML = "1609m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Flat";
   }
   else if (index <= etappe_7_last_index) {
     document.getElementById("etappe").innerHTML = "7 Byåsen";
     document.getElementById("etappeFraTil").innerHTML = "Regnbueparken – Sverresborg Museum";
-    document.getElementById("etappeInfo").innerHTML = "2500m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Krevende motbakker";
+    document.getElementById("etappeInfo").innerHTML = "2800m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Krevende motbakker";
   }
   else if (index <= etappe_8_last_index) {
     document.getElementById("etappe").innerHTML = "8 Sverresborg";
     document.getElementById("etappeFraTil").innerHTML = "Sverresborg Museum – Museumsparken";
-    document.getElementById("etappeInfo").innerHTML = "3500m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Nedover, flat på slutten";
+    document.getElementById("etappeInfo").innerHTML = "3550m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Nedover, flat på slutten";
   }
   else if (index <= etappe_9_last_index) {
     document.getElementById("etappe").innerHTML = "9 Kalvskinnet";
     document.getElementById("etappeFraTil").innerHTML = "Museumsparken – Marinen";
-    document.getElementById("etappeInfo").innerHTML = "3500m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat med bratt nedoverbakke";
+    document.getElementById("etappeInfo").innerHTML = "800m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat med bratt nedoverbakke";
   }
   else {
     document.getElementById("etappe").innerHTML = "10 Nidaros";
