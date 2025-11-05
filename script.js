@@ -95,6 +95,13 @@ function distBetweenCoords(coord1, coord2) {
   return earthRadius * c;
 }
 
+// Haversine is only really needed to compute gradient, in most cases we can do a much chearper computation.
+function cheaperDistBetweenCoords(coord1, coord2) {
+  var xDiff = Math.abs(coord1[0]-coord2[0]);
+  var yDiff = Math.abs(coord1[1]-coord2[1]);
+  return xDiff + yDiff;
+}
+
 // Computing the incline as an average over twenty points
 function getIncline(startCoord, endCoord, startElev, endElev) {
   var rise = endElev - startElev;
@@ -102,6 +109,61 @@ function getIncline(startCoord, endCoord, startElev, endElev) {
   var inclinePercent = rise/run * 100;
   return Math.round(inclinePercent);
 }
+
+
+function aktivEtappePrint(index) {
+  if (index <= etappe_1_last_index) {
+    document.getElementById("etappe").innerHTML = "1 Promenaden";
+    document.getElementById("etappeFraTil").innerHTML = "Skansenparken – Rockheim Park";
+    document.getElementById("etappeInfo").innerHTML = "1609m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat";
+  }
+  else if (index <= etappe_2_last_index) {
+    document.getElementById("etappe").innerHTML = "2 Rockheim";
+    document.getElementById("etappeFraTil").innerHTML = "Rockheim Park - Dakotaparken";
+    document.getElementById("etappeInfo").innerHTML = "2590m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat med slak stigning til veksling";
+  }
+  else if (index <= etappe_3_last_index) {
+    document.getElementById("etappe").innerHTML = "3 Lade";
+    document.getElementById("etappeFraTil").innerHTML = "Dakotaparken – Dronning Mauds Minne Høgskole";
+    document.getElementById("etappeInfo").innerHTML = "1000m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Flat med små høydeforskjeller";
+  }
+  else if (index <= etappe_4_last_index) {
+    document.getElementById("etappe").innerHTML = "4 Rosenborg";
+    document.getElementById("etappeFraTil").innerHTML = "Dronning Mauds Minne Høgskole – Festningsparken";
+    document.getElementById("etappeInfo").innerHTML = "2820m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Lett kupert med slake stigninger";
+  }
+  else if (index <= etappe_5_last_index) {
+    document.getElementById("etappe").innerHTML = "5 Kristiansten";
+    document.getElementById("etappeFraTil").innerHTML = "Festningsparken - Høgskoleparken";
+    document.getElementById("etappeInfo").innerHTML = "1750m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Variert og lett kupert etappe";
+  }
+  else if (index <= etappe_6_last_index) {
+    document.getElementById("etappe").innerHTML = "6 Gløshaugen";
+    document.getElementById("etappeFraTil").innerHTML = "Høgskoleparken – Regnbueparken";
+    document.getElementById("etappeInfo").innerHTML = "1609m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Flat";
+  }
+  else if (index <= etappe_7_last_index) {
+    document.getElementById("etappe").innerHTML = "7 Byåsen";
+    document.getElementById("etappeFraTil").innerHTML = "Regnbueparken – Sverresborg Museum";
+    document.getElementById("etappeInfo").innerHTML = "2800m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Krevende motbakker";
+  }
+  else if (index <= etappe_8_last_index) {
+    document.getElementById("etappe").innerHTML = "8 Sverresborg";
+    document.getElementById("etappeFraTil").innerHTML = "Sverresborg Museum – Museumsparken";
+    document.getElementById("etappeInfo").innerHTML = "3550m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Nedover, flat på slutten";
+  }
+  else if (index <= etappe_9_last_index) {
+    document.getElementById("etappe").innerHTML = "9 Kalvskinnet";
+    document.getElementById("etappeFraTil").innerHTML = "Museumsparken – Marinen";
+    document.getElementById("etappeInfo").innerHTML = "800m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat med bratt nedoverbakke";
+  }
+  else {
+    document.getElementById("etappe").innerHTML = "10 Nidaros";
+    document.getElementById("etappeFraTil").innerHTML = "Marinen – Trondheim Stadion";
+    document.getElementById("etappeInfo").innerHTML = "2580m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat";
+  }
+}
+
 
 
 
@@ -112,8 +174,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v9',
-        center: [10.379895, 63.432254],
-        zoom: 12
+        center: total_coordinate_array[etappe_8_last_index],
+        zoom: 11.8
     });
 
     map.on('load', () => {
@@ -280,7 +342,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
         layout: {
             'icon-image': 'stafettpinne',
             'icon-allow-overlap': true,
-            'icon-size': 0.05
+            'icon-size': 1
         }
         });
       });
@@ -332,6 +394,9 @@ const chartData = {
                 },
                 properties: {}
             });
+
+          // Also do the correct print for aktiv etappe
+          aktivEtappePrint(index);
         }
       },
       animation: false,
@@ -573,7 +638,7 @@ const chartData = {
             },
             label: (tooltipItem) => {
               var dataIndex = tooltipItem.dataIndex;
-              // These two parameters decide the average we take (which is here over 20 points)
+              // These two parameters decide the average we take (which is here over 6 points)
               var nudge = 3;
               var leftNudge = -nudge;
               var rightNudge = nudge;
@@ -607,63 +672,14 @@ map.on("mousemove", (e) => {
   var closestCoord = [0,0]
   var index = 0;
   for (var i = 0; i < total_coordinate_array.length; i++) {
-    if (distBetweenCoords(closestCoord, activeCoord) > distBetweenCoords(activeCoord,total_coordinate_array[i])) {
+    if (cheaperDistBetweenCoords(closestCoord, activeCoord) > cheaperDistBetweenCoords(activeCoord,total_coordinate_array[i])) {
       closestCoord = total_coordinate_array[i]
       index = i;
     }
   }
 
   // Decide what etappe is active
-  if (index <= etappe_1_last_index) {
-    document.getElementById("etappe").innerHTML = "1 Promenaden";
-    document.getElementById("etappeFraTil").innerHTML = "Skansenparken – Rockheim Park";
-    document.getElementById("etappeInfo").innerHTML = "1609m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat";
-  }
-  else if (index <= etappe_2_last_index) {
-    document.getElementById("etappe").innerHTML = "2 Rockheim";
-    document.getElementById("etappeFraTil").innerHTML = "Rockheim Park - Dakotaparken";
-    document.getElementById("etappeInfo").innerHTML = "2590m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat med slak stigning til veksling";
-  }
-  else if (index <= etappe_3_last_index) {
-    document.getElementById("etappe").innerHTML = "3 Lade";
-    document.getElementById("etappeFraTil").innerHTML = "Dakotaparken – Dronning Mauds Minne Høgskole";
-    document.getElementById("etappeInfo").innerHTML = "1000m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Flat med små høydeforskjeller";
-  }
-  else if (index <= etappe_4_last_index) {
-    document.getElementById("etappe").innerHTML = "4 Rosenborg";
-    document.getElementById("etappeFraTil").innerHTML = "Dronning Mauds Minne Høgskole – Festningsparken";
-    document.getElementById("etappeInfo").innerHTML = "2820m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Lett kupert med slake stigninger";
-  }
-  else if (index <= etappe_5_last_index) {
-    document.getElementById("etappe").innerHTML = "5 Kristiansten";
-    document.getElementById("etappeFraTil").innerHTML = "Festningsparken - Høgskoleparken";
-    document.getElementById("etappeInfo").innerHTML = "1750m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Variert og lett kupert etappe";
-  }
-  else if (index <= etappe_6_last_index) {
-    document.getElementById("etappe").innerHTML = "6 Gløshaugen";
-    document.getElementById("etappeFraTil").innerHTML = "Høgskoleparken – Regnbueparken";
-    document.getElementById("etappeInfo").innerHTML = "1609m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Flat";
-  }
-  else if (index <= etappe_7_last_index) {
-    document.getElementById("etappe").innerHTML = "7 Byåsen";
-    document.getElementById("etappeFraTil").innerHTML = "Regnbueparken – Sverresborg Museum";
-    document.getElementById("etappeInfo").innerHTML = "2800m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Krevende motbakker";
-  }
-  else if (index <= etappe_8_last_index) {
-    document.getElementById("etappe").innerHTML = "8 Sverresborg";
-    document.getElementById("etappeFraTil").innerHTML = "Sverresborg Museum – Museumsparken";
-    document.getElementById("etappeInfo").innerHTML = "3550m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Nedover, flat på slutten";
-  }
-  else if (index <= etappe_9_last_index) {
-    document.getElementById("etappe").innerHTML = "9 Kalvskinnet";
-    document.getElementById("etappeFraTil").innerHTML = "Museumsparken – Marinen";
-    document.getElementById("etappeInfo").innerHTML = "800m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat med bratt nedoverbakke";
-  }
-  else {
-    document.getElementById("etappe").innerHTML = "10 Nidaros";
-    document.getElementById("etappeFraTil").innerHTML = "Marinen – Trondheim Stadion";
-    document.getElementById("etappeInfo").innerHTML = "2580m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Flat";
-  }
+  aktivEtappePrint(index);
 
   // Let us move the red point on the map accordingly to where the cursor is
   map.getSource('circle-center').setData({
@@ -687,5 +703,5 @@ map.on("mousemove", (e) => {
       { x: point.x, y: point.y }
     );
     chart.update();
-  } catch(error) {}
+  } catch(error) {console.log(error)}
 });
