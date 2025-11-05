@@ -250,7 +250,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
       });
 
       // Moving circle
-      map.loadImage('http://markusvhagen.github.io/stafettpinne.png', (error, image) => {
+      map.loadImage('https://markusvhagen.github.io/stafettpinne.png', (error, image) => {
         if (error) throw error;
         map.addImage('stafettpinne', image);
       });
