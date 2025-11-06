@@ -75,6 +75,17 @@ for (var j=0; j<all_distance_arrays.length; j++) {
 }
 
 
+// ******************** //
+// IF DEVICE IS MOBILE  //
+// ******************** //
+// Detect size of screen. If it looks like mobile we turn off some functionalities.
+var isMobile = window.innerWidth < 768 || screen.width < 768;
+var mapZoom = (!isMobile) ? 11.9 : 11.1;
+if (isMobile) {
+  document.getElementById("title").style.display = "none";
+}
+
+
 // ********** //
 // FUNCTIONS //
 // ********* //
@@ -174,8 +185,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v9',
-        center: total_coordinate_array[etappe_8_last_index],
-        zoom: 11.8
+        center: (!isMobile) ? total_coordinate_array[etappe_8_last_index] : total_coordinate_array[etappe_1_last_index],
+        zoom: mapZoom
     });
 
     map.on('load', () => {
@@ -275,14 +286,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
       createEtappe(9, etappe_9_coordinates, "#2e6f40", "#06402b");
       createEtappe(10, etappe_10_coordinates, "#2e6f40", "#06402b");
 
-      // Finish icon
-      //map.loadImage(
-      //  'https://thumbs.dreamstime.com/b/black-white-checkered-background-chess-pattern-vector-illustration-black-white-checkered-background-107348676.jpg',
-      //  (error, image) => {
-      //      if (error) throw error;
-      //      map.addImage('finish-icon', image);
-      //  }
-      // );
 
       map.addSource('finish-point', {
         type: 'geojson',
@@ -317,40 +320,55 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
       });
 
       // Moving circle
-      map.loadImage('https://markusvhagen.github.io/stafettpinne.png', (error, image) => {
-        if (error) throw error;
-        map.addImage('stafettpinne', image);
-      });
+      // We only add it if we are not on mobile device
+      if (!isMobile) {
+          map.loadImage('https://markusvhagen.github.io/stafettpinne.png', (error, image) => {
+            if (error) throw error;
+            map.addImage('stafettpinne', image);
+          });
 
 
-      map.addSource('circle-center', {
-          type: 'geojson',
-          data: {
-              type: 'Feature',
-              geometry: {
-                  type: 'Point',
-                  coordinates: total_coordinate_array[0]
-              },
-              properties: {}
-          }
-      });
+          map.addSource('circle-center', {
+              type: 'geojson',
+              data: {
+                  type: 'Feature',
+                  geometry: {
+                      type: 'Point',
+                      coordinates: total_coordinate_array[0]
+                  },
+                  properties: {}
+              }
+          });
 
-      map.addLayer({
-        id: 'my-circle',
-        type: 'symbol',
-        source: 'circle-center',
-        layout: {
-            'icon-image': 'stafettpinne',
-            'icon-allow-overlap': true,
-            'icon-size': 1
+          map.addLayer({
+            id: 'my-circle',
+            type: 'symbol',
+            source: 'circle-center',
+            layout: {
+                'icon-image': 'stafettpinne',
+                'icon-allow-overlap': true,
+                'icon-size': 1
+            }
+            });
         }
-        });
       });
 
 
 // ********* //
 // HØYDEKART //
 // ********* //
+
+// What to print in elevation map depending on if we are on mobile device or not.
+var etappe1ElevMapPrint = (!isMobile) ? "1609m" : "";
+var etappe2ElevMapPrint = (!isMobile) ? "2590m" : "";
+var etappe3ElevMapPrint = (!isMobile) ? "1000m" : "";
+var etappe4ElevMapPrint = (!isMobile) ? "2820m" : "";
+var etappe5ElevMapPrint = (!isMobile) ? "1750m" : "";
+var etappe6ElevMapPrint = (!isMobile) ? "1609m" : "";
+var etappe7ElevMapPrint = (!isMobile) ? "2800m" : "";
+var etappe8ElevMapPrint = (!isMobile) ? "3550m" : "";
+var etappe9ElevMapPrint = (!isMobile) ? "800m" : "";
+var etappe10ElevMapPrint = (!isMobile) ? "2580m" : "";
 
 Chart.register( Chart.LineElement, Chart.LineController, Chart.Legend, Chart.Tooltip, Chart.LinearScale, Chart.PointElement, Chart.Filler, Chart.Title);
 
@@ -383,20 +401,23 @@ const chartData = {
     options: {
       onHover: (event, chartElements) => {
         // Capture index of current point being hovered
-        if (chartElements.length) {
-          const { datasetIndex, index } = chartElements[0];
-          // Draw circle
-          map.getSource('circle-center').setData({
-                type: 'Feature',
-                geometry: {
-                    type: 'Point',
-                    coordinates: total_coordinate_array[index] // New coordinates
-                },
-                properties: {}
-            });
+        // Only do this if we are not on mobile device
+        if (!isMobile) {
+          if (chartElements.length) {
+            const { datasetIndex, index } = chartElements[0];
+            // Draw circle
+            map.getSource('circle-center').setData({
+                  type: 'Feature',
+                  geometry: {
+                      type: 'Point',
+                      coordinates: total_coordinate_array[index] // New coordinates
+                  },
+                  properties: {}
+              });
 
-          // Also do the correct print for aktiv etappe
-          aktivEtappePrint(index);
+            // Also do the correct print for aktiv etappe
+            aktivEtappePrint(index);
+          }
         }
       },
       animation: false,
@@ -420,7 +441,7 @@ const chartData = {
                           borderWidth: 6,
                           label: {
                               display: true,
-                              content: '1609m',
+                              content: etappe1ElevMapPrint,
                               enabled: true,
                               position: 'start',
                               xAdjust: 4,
@@ -441,7 +462,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '2590m',
+                                content: etappe2ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -462,7 +483,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '1000m',
+                                content: etappe3ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -483,7 +504,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '2820m',
+                                content: etappe4ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -505,7 +526,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '1750m',
+                                content: etappe5ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -527,7 +548,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '1609m',
+                                content: etappe6ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -549,7 +570,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '2800m',
+                                content: etappe7ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -571,7 +592,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '3550m',
+                                content: etappe8ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -593,7 +614,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '800m',
+                                content: etappe9ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -615,7 +636,7 @@ const chartData = {
                             borderWidth: 3,
                             label: {
                                 display: true,
-                                content: '2580m',
+                                content: etappe10ElevMapPrint,
                                 enabled: true,
                                 position: 'start',
                                 xAdjust: 34,
@@ -665,43 +686,47 @@ const chart = new Chart(ctx, config);
 // *************** //
 // EVENT-LISTENERS //
 // *************** //
-map.on("mousemove", (e) => {
-  var activeCoord = [parseFloat(JSON.stringify(e.lngLat.lng)), parseFloat(JSON.stringify(e.lngLat.lat))];
 
-  // Now we find closest coordinate in total_coordinate_array. We also store its index in the array for later.
-  var closestCoord = [0,0]
-  var index = 0;
-  for (var i = 0; i < total_coordinate_array.length; i++) {
-    if (cheaperDistBetweenCoords(closestCoord, activeCoord) > cheaperDistBetweenCoords(activeCoord,total_coordinate_array[i])) {
-      closestCoord = total_coordinate_array[i]
-      index = i;
+// Only do this if device is not mobile.
+if (!isMobile) {
+  map.on("mousemove", (e) => {
+    var activeCoord = [parseFloat(JSON.stringify(e.lngLat.lng)), parseFloat(JSON.stringify(e.lngLat.lat))];
+
+    // Now we find closest coordinate in total_coordinate_array. We also store its index in the array for later.
+    var closestCoord = [0,0]
+    var index = 0;
+    for (var i = 0; i < total_coordinate_array.length; i++) {
+      if (cheaperDistBetweenCoords(closestCoord, activeCoord) > cheaperDistBetweenCoords(activeCoord,total_coordinate_array[i])) {
+        closestCoord = total_coordinate_array[i]
+        index = i;
+      }
     }
-  }
 
-  // Decide what etappe is active
-  aktivEtappePrint(index);
+    // Decide what etappe is active
+    aktivEtappePrint(index);
 
-  // Let us move the red point on the map accordingly to where the cursor is
-  map.getSource('circle-center').setData({
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            coordinates: total_coordinate_array[index] // New coordinates
-        },
-        properties: {}
-    });
+    // Let us move the red point on the map accordingly to where the cursor is
+    map.getSource('circle-center').setData({
+          type: 'Feature',
+          geometry: {
+              type: 'Point',
+              coordinates: total_coordinate_array[index] // New coordinates
+          },
+          properties: {}
+      });
 
-  // Now we pass this information to the altitude map
-  const pointIndex = index;
-  const datasetIndex = 0;
-  const meta = chart.getDatasetMeta(datasetIndex);
-  const point = meta.data[pointIndex];
+    // Now we pass this information to the altitude map
+    const pointIndex = index;
+    const datasetIndex = 0;
+    const meta = chart.getDatasetMeta(datasetIndex);
+    const point = meta.data[pointIndex];
 
-  try {
-    chart.tooltip.setActiveElements(
-      [{ datasetIndex, index: pointIndex }],
-      { x: point.x, y: point.y }
-    );
-    chart.update();
-  } catch(error) {console.log(error)}
-});
+    try {
+      chart.tooltip.setActiveElements(
+        [{ datasetIndex, index: pointIndex }],
+        { x: point.x, y: point.y }
+      );
+      chart.update();
+    } catch(error) {console.log(error)}
+  });
+}

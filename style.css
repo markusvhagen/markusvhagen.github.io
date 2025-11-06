@@ -37,3 +37,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+#etappe {
+  color: rgba(8,144,0,0.7);
+  font-size: 1em;
+}
