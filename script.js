@@ -79,7 +79,7 @@ for (var j=0; j<all_distance_arrays.length; j++) {
 // IF DEVICE IS MOBILE  //
 // ******************** //
 // Detect size of screen. If it looks like mobile we turn off some functionalities.
-var isMobile = window.innerWidth < 768 || screen.width < 768;
+var isMobile = window.innerWidth < 600 || screen.width < 600;
 var mapZoom = (!isMobile) ? 11.9 : 11.1;
 if (isMobile) {
   document.getElementById("title").style.display = "none";
