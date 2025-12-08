@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  z-index: 2;
+  box-shadow:
+      0 12px 24px rgba(0,0,0,0.2),   /* close, sharp shadow */
+      0 20px 30px rgba(0,0,0,0.25); /* distant, soft shadow */
+   border-bottom: 1px solid black;
+}
+
+.elevation-profile-container {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #e5e5e5;
+}
+
+#etappeinfo {
+  flex: 1 1 auto;
+  height: 100%;
+  padding-left: 10vw;
+  padding-top: 4vh;
+  width: 50vw;
+}
+
+#etappeinfo img {
+  width: 20vw;
+  padding: 0;
+}
+
+#etappeinfo h2, h3 {
+  font-family: "Orbitron", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#etappeinfo h2 {
+  font-size: 35px;
+}
+
+#etappetekst {
+  width: 50vw;
+  font-family: "Orbitron", sans-serif;
+  padding-top: 3vh;
+  padding-right: 5vw;
+}
+
+#route-elevation-chart {
+  background-color: #e5e5e5;
+}
+
+#legend {
+  right: 3vw;
+  bottom: 3vh;
+  position: absolute;
+  width: 15vw;
+  height: 15vh;
+  border: 2px solid black;
+  background-color: rgba(229, 229, 229, 0.8);
+  z-index: 99;
+  box-shadow:
+      0 12px 24px rgba(0,0,0,0.2),   /* close, sharp shadow */
+      0 20px 30px rgba(0,0,0,0.25); /* distant, soft shadow */
+  font-family: "Orbitron", sans-serif;
+}
+
+#legend li {
+  font-size: 30px;
+  padding: 4px;
+}
+
+#legend li span {
+  color: black;
+  font-size: 16px;
+}
+
+.popup {
+    font-family: 'Arial', sans-serif;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0.7;
+}
+
+
+/* CSS for phones */
+@media (max-width: 700px) {
+  html {
+    font-size: 11px;
+  }
+  #map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+    box-shadow:
+        0 12px 24px rgba(0,0,0,0.2),   /* close, sharp shadow */
+        0 20px 30px rgba(0,0,0,0.25); /* distant, soft shadow */
+     border-bottom: 1px solid black;
+  }
+
+  #etappeinfo {
+    flex: 1 1 auto;
+    height: 100%;
+    padding-left: 10vw;
+    padding-top: 4vh;
+    width: 100vw;
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  #etappetekst {
+    width: 80vw;
+    font-family: "Orbitron", sans-serif;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 0;
+  }
+
+  .elevation-profile-container {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5e5;
+  }
+
+  #legend {
+    right: 3vw;
+    top: 3vh;
+    position: absolute;
+    width: 40vw;
+    height: 17vh;
+    border: 2px solid black;
+    background-color: rgba(229, 229, 229, 0.8);
+    z-index: 99;
+    box-shadow:
+        0 12px 24px rgba(0,0,0,0.2),   /* close, sharp shadow */
+        0 20px 30px rgba(0,0,0,0.25); /* distant, soft shadow */
+    font-family: "Orbitron", sans-serif;
+  }
+
+  #legend li {
+    font-size: 20px;
+    padding: 4px;
+  }
+
+  #legend li span {
+    color: black;
+    font-size: 16px;
+  }
+}
