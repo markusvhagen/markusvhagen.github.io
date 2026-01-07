@@ -38,7 +38,7 @@ body {
 }
 
 #etappeinfo img {
-  width: 20vw;
+  width: 15vw;
   padding: 0;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 #etappeinfo h2 {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 #etappetekst {
@@ -122,6 +122,15 @@ body {
     width: 100vw;
     position: relative;
     padding-bottom: 0;
+  }
+
+  #etappeinfo h2 {
+    font-size: 40px;
+  }
+
+  #etappeinfo img {
+    width: 40vw;
+    padding: 0;
   }
 
   #etappetekst {

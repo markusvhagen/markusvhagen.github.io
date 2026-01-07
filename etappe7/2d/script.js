@@ -52,6 +52,42 @@ function getIncline(startCoord, endCoord, startElev, endElev) {
   return Math.round(inclinePercent);
 }
 
+// Function to add text, i.e. for parks.
+function addTextOnMap(id, coordinate, text, textSize, rotation=0) {
+  map.addSource('text-point' + id.toString(), {
+    type: 'geojson',
+    data: {
+        type: 'FeatureCollection',
+        features: [
+            {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: coordinate
+                }
+            }
+        ]
+    }
+  });
+
+  map.addLayer({
+    id: 'text-layer' + id.toString(),
+    type: 'symbol',
+    source: 'text-point' + id.toString(),
+    layout: {
+        'text-field': text,
+        'text-size': textSize,
+        'text-rotate': rotation,
+        'text-allow-overlap': true, // Allow text to overlap other symbols if necessary
+    },
+    paint: {
+      "text-color": "white",
+      "text-halo-color": "black",
+      "text-halo-width": 2
+    }
+  });
+}
+
 // Function to add waypoint in map
 function addMarker(id, coordinate, iconUrl, scaling) {
   map.loadImage(
@@ -118,7 +154,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/satellite-v9',
-        center: (!isMobile) ? [10.377805, 63.415728] : [10.373805, 63.415728],
+        center: (!isMobile) ? [10.370805, 63.415728] : [10.370805, 63.415728],
         zoom: mapZoom
     });
 
@@ -272,6 +308,10 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
       }
 
       createEtappe(7, etappe_coordinates, "#DC0000", "#C60000");
+      addTextOnMap(1, [10.388127959823663, 63.410957457207786], "Regnbueparken", 17);
+      addTextOnMap(2, [10.35207921325494, 63.41924995646226], "Sverresborg Folkemuseum", 17);
+      addTextOnMap(3, [10.363467072730773, 63.41514765433271], "Breidablikveien", 17, 25);
+
       //createEtappeWithIntensityColors(etappe_coordinates, [20,185], ["#628141", "#CF0F0F", "#F79A19"]);
 
 
@@ -297,7 +337,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
         source: 'finish-point',
         layout: {
             'text-field': "Veksling",
-            'text-size': 25,
+            'text-size': 20,
             'text-allow-overlap': true, // Allow text to overlap other symbols if necessary
         },
         paint: {
