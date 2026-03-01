@@ -14,7 +14,7 @@ function isMobile() {
   return regex.test(navigator.userAgent);
 }
 var isMobile = isMobile();
-var mapZoom = (!isMobile) ? 13.8 : 12.7;
+var mapZoom = (!isMobile) ? 14 : 12;
 
 
 // ********** //
@@ -53,7 +53,7 @@ function getIncline(startCoord, endCoord, startElev, endElev) {
 }
 
 // Function to add text, i.e. for parks.
-function addTextOnMap(id, coordinate, text, textSize, rotation=0) {
+function addTextOnMap(id, coordinate, text, textSize) {
   map.addSource('text-point' + id.toString(), {
     type: 'geojson',
     data: {
@@ -77,7 +77,6 @@ function addTextOnMap(id, coordinate, text, textSize, rotation=0) {
     layout: {
         'text-field': text,
         'text-size': textSize,
-        'text-rotate': rotation,
         'text-allow-overlap': true, // Allow text to overlap other symbols if necessary
     },
     paint: {
@@ -154,7 +153,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/satellite-v9',
-        center: (!isMobile) ? [10.392797, 63.436074] : [10.386797, 63.436074],
+        center: (!isMobile) ? [10.387867, 63.434497] : [10.387867, 63.434497],
         zoom: mapZoom
     });
 
@@ -164,8 +163,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
       //addMarker(2, [10.392797, 63.436874], "https://cdn-icons-png.flaticon.com/512/2956/2956744.png", 0.1)
       //addMarker(3, [10.387912, 63.433513], "https://cdn-icons-png.flaticon.com/512/431/431248.png", 0.1)
 
-      //let popup1 = addPopup(1, [10.378365, 63.431695],"<h1>Svingbrua</h1> Visste du at Svingbrua er den eneste brua i Norge som bruker horisontal rotasjon for åpne seg?");
-      //popup1.addTo(map);
+      // Here we add the historical facts
+      let popup1 = addPopup(1, [10.378365, 63.431695],"<h1>Svingbrua</h1> Visste du at Svingbrua er den eneste brua i Norge som bruker horisontal rotasjon for åpne seg?");
+      popup1.addTo(map);
+      let popup2 = addPopup(2, [10.397706, 63.437712], "<h1>Rockheim</h1> Visste du at bygget Rockheim ligger i nå før var en kornsilo?");
+      popup2.addTo(map);
 
 
         // This function draws each "etappe"
@@ -178,7 +180,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
                   'geometry': {
                       'type': 'LineString',
                       'coordinates': coordinates
-                  },
+                  }
               }
           });
 
@@ -239,80 +241,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
           });
       }
 
-      // This function creates etappe but with color on geojson line to indicate intensity.
-      function createEtappeWithIntensityColors(allCoordinates, changeColorAtIndexArray, colorArray) {
-          var idArray = [];
-          var indicesForChangingColors = [];
-          for (var j=0; j<colorArray.length; j++) {
-            idArray.push(j+1);
-          }
-
-          var slicedArrayAtIndex = 0;
-          for (var i=0; i<idArray.length; i++) {
-            var id = i+1;
-            if (changeColorAtIndexArray.length == i) {
-              map.addSource('etappeInt' + id, {
-                  'type': 'geojson',
-                  'data': {
-                      'type': 'Feature',
-                      'properties': {},
-                      'geometry': {
-                          'type': 'LineString',
-                          'coordinates': allCoordinates.slice(changeColorAtIndexArray[i-1]-1)
-                      },
-                  }
-              });
-              map.addLayer({
-                  'id': 'etappeInt' + id,
-                  'type': 'line',
-                  'source': 'etappeInt' + id,
-                  'layout': {
-                      'line-join': 'round',
-                      'line-cap': 'round'
-                  },
-                  'paint': {
-                      'line-color': colorArray[i],
-                      'line-width': 7
-                  }
-              });
-            }
-
-            else {
-              map.addSource('etappeInt' + id, {
-                  'type': 'geojson',
-                  'data': {
-                      'type': 'Feature',
-                      'properties': {},
-                      'geometry': {
-                          'type': 'LineString',
-                          'coordinates': allCoordinates.slice(slicedArrayAtIndex, changeColorAtIndexArray[i])
-                      },
-                  }
-              });
-              map.addLayer({
-                  'id': 'etappeInt' + id,
-                  'type': 'line',
-                  'source': 'etappeInt' + id,
-                  'layout': {
-                      'line-join': 'round',
-                      'line-cap': 'round'
-                  },
-                  'paint': {
-                      'line-color': colorArray[i],
-                      'line-width': 7
-                  }
-              });
-              slicedArrayAtIndex = changeColorAtIndexArray[i]-1;
-            }
-          }
-      }
-
-      createEtappe(1, etappe_coordinates, "#DC0000", "#C60000");
-      addTextOnMap(1, [10.374573, 63.432212], "Skanseparken", 17)
-      addTextOnMap(2, [10.387912, 63.434913], "Promenaden", 17, -35)
-
-      //createEtappeWithIntensityColors(etappe_coordinates, [20,185], ["#628141", "#CF0F0F", "#F79A19"]);
-
+      createEtappe(1, etappe_coordinates, "#90D5FF", "#57B9FF");
 
       map.addSource('finish-point', {
         type: 'geojson',
@@ -336,7 +265,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
         source: 'finish-point',
         layout: {
             'text-field': "Veksling",
-            'text-size': 20,
+            'text-size': 25,
             'text-allow-overlap': true, // Allow text to overlap other symbols if necessary
         },
         paint: {
@@ -345,47 +274,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
           "text-halo-width": 2
         }
       });
-
-      // Moving circle
-      // We only add it if we are not on mobile device
-      if (!isMobile) {
-          map.loadImage('https://markusvhagen.github.io/etappe1/2d/polestar_car.png', (error, image) => {
-            if (error) throw error;
-            map.addImage('stafettpinne', image);
-          });
-
-
-          map.addSource('circle-center', {
-              type: 'geojson',
-              data: {
-                  type: 'Feature',
-                  geometry: {
-                      type: 'Point',
-                      coordinates: etappe_coordinates[20]
-                  },
-                  properties: {}
-              }
-          });
-
-          map.addLayer({
-            id: 'my-circle',
-            type: 'symbol',
-            source: 'circle-center',
-            layout: {
-                'icon-image': 'stafettpinne',
-                'icon-allow-overlap': true,
-                'icon-size': 1,
-                'text-field': etappe_distance_array[20].toString() + "m",
-                'text-size': 25,
-                'text-allow-overlap': true, // Allow text to overlap other symbols if necessary
-            },
-            paint: {
-              "text-color": "white",
-              "text-halo-color": "black",
-              "text-halo-width": 2
-            }
-            });
-        }
       });
 
 
@@ -393,46 +281,3 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
 // *************** //
 // EVENT-LISTENERS //
 // *************** //
-
-// Only do this if device is not mobile.
-if (!isMobile) {
-  map.on("mousemove", (e) => {
-    var activeCoord = [parseFloat(JSON.stringify(e.lngLat.lng)), parseFloat(JSON.stringify(e.lngLat.lat))];
-
-    // Now we find closest coordinate in etappe_coordinates. We also store its index in the array for later.
-    var closestCoord = [0,0]
-    var index = 0;
-    for (var i = 0; i < etappe_coordinates.length; i++) {
-      if (cheaperDistBetweenCoords(closestCoord, activeCoord) > cheaperDistBetweenCoords(activeCoord,etappe_coordinates[i])) {
-        closestCoord = etappe_coordinates[i]
-        index = i;
-      }
-    }
-
-    // Let us move the red point on the map accordingly to where the cursor is.
-    map.getSource('circle-center').setData({
-          type: 'Feature',
-          geometry: {
-              type: 'Point',
-              coordinates: etappe_coordinates[index] // New coordinates
-          },
-          properties: {}
-      });
-    // Let us also change the current distance, elevation and incline.
-    // These two parameters decide the average we take (which is here over 6 points)
-    var dataIndex = index;
-    var nudge = 3;
-    var leftNudge = -nudge;
-    var rightNudge = nudge;
-    // Have to run something else if we are very close to one of the edges of the graph
-    if (dataIndex < nudge) {
-      leftNudge = 0;
-    }
-    if (dataIndex>dataIndex[-1]-(nudge-1)) {
-      rightNudge = 0;
-    }
-    // Text that was in last argument before: etappe_distance_array[index] + "m, " + etappe_altitude_array[index] + "hm, inc:" + getIncline(etappe_coordinates[dataIndex+leftNudge],etappe_coordinates[dataIndex+rightNudge],etappe_altitude_array[dataIndex+leftNudge],etappe_altitude_array[dataIndex+rightNudge]) + "%"
-    map.setLayoutProperty("my-circle", "text-field", "")
-
-  });
-}

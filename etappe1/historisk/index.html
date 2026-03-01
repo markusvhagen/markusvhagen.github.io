@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trondheimstafetten</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="map">
+      </div>
+      <div class="elevation-profile-container">
+        <div id="etappeinfo">
+            <h2><b>E1</b> : Promenaden - Rockheim</h2>
+            <p>Ved Nidareid, det smaleste området mellom Nidelva og Trondheimsfjorden, lå viktige deler av Trondheims befestninger, en skanse. Helt siden middelalderen var dette området en del av byens forsvar. Fortsatt er det rester av murer her, og kanonene på vollen minner oss om befestningene.
+              Fra 1955 til 1980 var Skansen anløpssted for ferjene mellom Trondheim og Vanvikan. </p>
+        </div>
+        <div id="etappetekst">
+          <h2>Visste du at..?</h2>
+          <p>
+            <b>1 - </b>På det meste gikk det seks ferjer over fjorden. Etter at det ble slutt på ferjetrafikken, gikk hurtigbåten til Vanvikan i mange år herfra.
+            <br><b>2 - </b>Skansen stasjon er en holdeplass for jernbanen. Det er imidlertid ingen adkomst fra sjøsiden. Stasjonsbygningen har i de siste årene vært brukt som kafé.
+            <br><b>3 - </b>Lille Skansen er navnet på restauranten som ligger i huset som tidligere var kiosk og ventelokale for de som skulle reise med ferja.+
+          </p>
+        </div>
+        <!--<canvas id="route-elevation-chart"></canvas> -->
+      </div>
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
