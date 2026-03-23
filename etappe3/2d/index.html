@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trondheimstafetten</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="map">
+        <!-- <div id="legend">
+          <ul>
+            <li style="color:#628141"> <span>Lettløpt</span> </li>
+            <li style="color:#F79A19"> <span>Moderat</span> </li>
+            <li style="color: #CF0F0F"> <span>Hardt</span> </li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="elevation-profile-container">
+        <div id="etappeinfo">
+            <h2><b>E3</b> : Lade</h2>
+            <h3><b>Distanse:</b> <span style="color:#DC0000;">1000m</span></h3>
+            <h3><b>Løypeprofil:</b> <span style="color:#DC0000;">Flat med små høydeforskjeller</span></h3>
+            <h3><b>Underlag:</b> <span style="color:#DC0000;">Asfalt, noe grus</span></h3>
+        </div>
+        <div id="etappetekst">
+          <p>
+            Etappen starter i den idylliske, nye Dakotaparken venter en tøff stigning mot City Lade, før du setter fart forbi City Lade og videre over Dalen brua der man krysser jernbanen.
+            Her gjelder et teknisk krevende parti hvor man kan løpe smart og det å holde rytmen gjennom en skarp 360-graders sving før spurten inn mot hovedbygget Dronning Mauds Minne Høgskole og vider gjennom parken til veksling.
+          </p>
+          <p>
+            <b>Høydeforskjell:</b> 17m (gj. stigning: 1.6%) <br>
+            <b>47%</b> oppover - <b>48%</b> flatt - <b>5%</b> nedover
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

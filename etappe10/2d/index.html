@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trondheimstafetten</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="map">
+        <!-- <div id="legend">
+          <ul>
+            <li style="color:#628141"> <span>Lettløpt</span> </li>
+            <li style="color:#F79A19"> <span>Moderat</span> </li>
+            <li style="color: #CF0F0F"> <span>Hardt</span> </li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="elevation-profile-container">
+        <div id="etappeinfo">
+            <h2><b>E10</b> : Nidaros</h2>
+            <h3><b>Distanse:</b> <span style="color:#DC0000;">2400m</span></h3>
+            <h3><b>Løypeprofil:</b> <span style="color:#DC0000;">Flat</span></h3>
+            <h3><b>Underlag:</b> <span style="color:#DC0000;">Grus, sti og asfalt</span></h3>
+        </div>
+        <div id="etappetekst">
+          <p>
+            Nå gjelder det! Etappens siste etappe starter i Marinen og følger erverdige Nidelva til Lykkens portal - Gamle bybro.
+            Deretter følger vi Nidelva helt til Øya stadion hvor alt blir avgjort i sluttspurten ved Trondheim Stadion.
+          </p>
+          <p>
+            <b>Høydeforskjell:</b> 0m (gj. stigning: 0.0%) <br>
+            <b>20%</b> oppover - <b>80%</b> flatt - <b>0%</b> nedover
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@latest/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
