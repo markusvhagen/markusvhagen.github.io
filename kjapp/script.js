@@ -208,6 +208,15 @@ function formatTime(seconds) {
   return h + ":" + m + ":" + s;
 }
 
+function timeToPace(seconds, distance) {
+  let km = distance/1000;
+  let min = seconds/60;
+  let pace = min/km;
+  let paceMin = Math.floor(pace)
+  let paceSeconds = (Math.floor((pace - paceMin)*60) < 10) ? ("0" + Math.floor((pace - paceMin)*60)) : Math.floor((pace - paceMin)*60);
+  return paceMin + ":" + paceSeconds + " min/km"
+}
+
 let form = document.getElementById("form");
 form.addEventListener("change", function() {
   let gender = document.querySelector('input[name="gender"]:checked')?.value;
@@ -241,7 +250,43 @@ form.addEventListener("change", function() {
         break;
     }
     if (ageGrading != 0 && totalTimeInSeconds != 0) {
-      document.getElementById("output").innerHTML = "<b>Ekvivalente tider:</b> <br> <b>5K: </b>" + formatTime(ageStandards[0]/ageGrading) + "<br> <b>10K: </b>" + formatTime(ageStandards[1]/ageGrading) + "<br> <b>HM: </b>" + formatTime(ageStandards[2]/ageGrading) + "<br> <b>M: </b>" + formatTime(ageStandards[3]/ageGrading);
+        // Lag HTML med fancy kort for hver distanse
+        const labels = ["5K", "10K", "Halvmaraton", "Maraton"];
+        const times = [
+            formatTime(ageStandards[0]/ageGrading),
+            formatTime(ageStandards[1]/ageGrading),
+            formatTime(ageStandards[2]/ageGrading),
+            formatTime(ageStandards[3]/ageGrading)
+        ];
+        const paces = [
+            timeToPace(ageStandards[0]/ageGrading, 5000),
+            timeToPace(ageStandards[1]/ageGrading, 10000),
+            timeToPace(ageStandards[2]/ageGrading, 21097.5),
+            timeToPace(ageStandards[3]/ageGrading, 42195)
+        ];
+        const colors = ["#4facfe", "#43e97b", "#fbc02d", "#f44336"]; // blå, grønn, gul, rød
+
+        let html = "<div class='output-cards'>";
+        for (let i = 0; i < 4; i++) {
+            html += `
+                <div class="card" style="border-left: 6px solid ${colors[i]}; opacity:0;">
+                    <h3>${labels[i]}</h3>
+                    <p class="time">${times[i]}</p>
+                    <span>${paces[i]}</span>
+                </div>
+            `;
+        }
+        html += "</div>";
+
+        document.getElementById("output").innerHTML = html;
+
+        // Legg på enkel fade-in animasjon
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card, idx) => {
+            setTimeout(() => {
+                card.style.opacity = 1;
+            }, idx * 150);
+        });
     }
   }
 });
