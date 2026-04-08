@@ -309,7 +309,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFya3VzdmhhZ2VuIiwiYSI6ImNtZ2NlNjNrbjE0bzkyb
           }
       }
 
-      createEtappe(9, etappe_coordinates, "#DC0000", "#C60000");
+      createEtappe(10, etappe_coordinates, "#DC0000", "#C60000");
 
       //createEtappeWithIntensityColors(etappe_coordinates, [20,185], ["#628141", "#CF0F0F", "#F79A19"]);
 
