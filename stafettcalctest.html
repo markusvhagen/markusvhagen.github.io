@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stafett Tidsplanlegger</title>
+  <title>Tidsplanlegger</title>
 
   <style>
     * {
@@ -18,6 +18,79 @@
       min-height: 100vh;
       padding: 32px 16px;
       color: #1f2937;
+    }
+
+    .accordion {
+      margin-bottom: 24px;
+    }
+
+    .accordion-toggle {
+      width: 100%;
+      border: none;
+      background: #f3f4f6;
+      border-radius: 18px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1f2937;
+      transition: 0.2s;
+    }
+
+    .accordion-toggle:hover {
+      background: #e5e7eb;
+    }
+
+    .accordion-icon {
+      transition: transform 0.25s ease;
+      font-size: 1.2rem;
+    }
+
+    .accordion.open .accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .accordion.open .accordion-content {
+      max-height: 600px;
+      margin-top: 14px;
+    }
+
+    .start-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .start-table th {
+      background: #f9fafb;
+      text-align: left;
+      padding: 14px;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    .start-table td {
+      padding: 14px;
+      border-top: 1px solid #f3f4f6;
+      font-weight: 500;
+    }
+
+    .accordion-note {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #6b7280;
     }
 
     .app {
@@ -257,22 +330,85 @@
   <div class="app">
 
     <section class="hero">
-      <h1>🏃‍♂️ Stafett Tidsplanlegger</h1>
+      <h1>🏃‍♂️ Trondheim-stafetten tidsplanlegger</h1>
       <p>
         Legg inn starttid og ønsket totaltid. Appen fordeler tiden automatisk
         basert på distanse og høydeprofil.
       </p>
 
+      <div class="accordion">
+        <button class="accordion-toggle" id="accordionToggle">
+          <span>📍 Tenative starttider</span>
+          <span class="accordion-icon">⌄</span>
+        </button>
+
+        <div class="accordion-content" id="accordionContent">
+
+          <table class="start-table">
+            <thead>
+              <tr>
+                <th>Pulje</th>
+                <th>Tid</th>
+                <th>Klasse</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>14:00</td>
+                <td>KLUBBLAG (alle klubbklasser)</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>14:15</td>
+                <td>BEST I LAG pulje 1 (best i lag alle klasser, studentlag)</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>14:18</td>
+                <td>BEST I LAG pulje 2</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>14:30</td>
+                <td>BEDRIFTSLAG pulje 1</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>14:33</td>
+                <td>BEDRIFTSLAG pulje 2</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td>14:36</td>
+                <td>BEDRIFTSLAG pulje 3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="accordion-note">
+            Det vil forekomme endringer.
+          </p>
+
+        </div>
+      </div>
+
       <div class="controls">
 
         <div class="input-group">
           <label for="startTime">Starttid</label>
-          <input type="time" id="startTime" value="18:00" />
+          <input type="time" id="startTime" value="14:00" />
         </div>
 
         <div class="input-group">
           <label for="totalTime">Ønsket totaltid</label>
-          <input type="text" id="totalTime" value="1:45:00" placeholder="t:mm:ss" />
+          <input type="text" id="totalTime" value="1:23:00" placeholder="t:mm:ss" />
         </div>
 
         <button id="calculateBtn">Fordel tider</button>
@@ -309,16 +445,16 @@
 
   <script>
     const stages = [
-      { name: 'Etappe 1', distance: 1609, elevation: 1 },
-      { name: 'Etappe 2', distance: 2590, elevation: 7 },
-      { name: 'Etappe 3', distance: 1000, elevation: 10 },
-      { name: 'Etappe 4', distance: 2900, elevation: 24 },
-      { name: 'Etappe 5', distance: 1750, elevation: -21 },
-      { name: 'Etappe 6', distance: 1609, elevation: -8 },
-      { name: 'Etappe 7', distance: 2720, elevation: 106 },
-      { name: 'Etappe 8', distance: 3150, elevation: -136 },
-      { name: 'Etappe 9', distance: 800, elevation: -9 },
-      { name: 'Etappe 10', distance: 2580, elevation: 0 }
+      { name: '1 - Promenaden Road Mile', distance: 1609, elevation: 1 },
+      { name: '2 - Rockheim', distance: 2590, elevation: 7 },
+      { name: '3 - Lade', distance: 1000, elevation: 10 },
+      { name: '4 - Rosenborg', distance: 2900, elevation: 24 },
+      { name: '5 - Kristiansten', distance: 1750, elevation: -21 },
+      { name: '6 - Gløs Studentmila', distance: 1609, elevation: -8 },
+      { name: '7 - Byåsen', distance: 2720, elevation: 106 },
+      { name: '8 - Sverresborg', distance: 3150, elevation: -136 },
+      { name: '9 - Kalvskinnet', distance: 800, elevation: -9 },
+      { name: '10 - Nidaros', distance: 2580, elevation: 0 }
     ];
 
     const stagesContainer = document.getElementById('stages');
@@ -357,8 +493,8 @@
     function calculateWeights() {
       return stages.map(stage => {
         const elevationFactor = stage.elevation > 0
-          ? stage.elevation * 12
-          : stage.elevation * 4;
+          ? stage.elevation * 5
+          : stage.elevation * 2;
 
         return stage.distance + elevationFactor;
       });
@@ -381,6 +517,9 @@
 
       stages.forEach((stage, index) => {
         stage.allocatedMinutes = (weights[index] / totalWeight) * totalMinutes;
+
+        stage.pace = stage.allocatedMinutes / (stage.distance / 1000);
+
         stage.start = currentTime;
         stage.end = currentTime + stage.allocatedMinutes;
 
@@ -415,6 +554,10 @@
       const secs = Math.round((pace - mins) * 60);
 
       return `${mins}:${String(secs).padStart(2, '0')} /km`;
+    }
+
+    function paceToMinutes(mins, secs) {
+      return mins + (secs / 60);
     }
 
     function renderProgressBar() {
@@ -476,17 +619,17 @@
 
             <div class="meta">
               <div class="meta-item">
-                ${(stage.distance / 1000).toFixed(2)} km
+                Distanse: ${(stage.distance)}m
               </div>
 
               <div class="meta-item ${elevationClass}">
-                ${stage.elevation >= 0 ? '+' : ''}${stage.elevation} m
+                Høydeforskjell: ${stage.elevation >= 0 ? '+' : ''}${stage.elevation} m
               </div>
             </div>
 
             <div class="timeline">
               <div class="time-box">
-                <span>Møt opp</span>
+                <span>Vær klar</span>
                 <strong>${minutesToTime(stage.start - 10)}</strong>
               </div>
 
@@ -510,17 +653,18 @@
           </div>
 
           <div class="editor">
-            <label>Juster etappetid</label>
+
+            <label>Ønsket pace (min/km)</label>
 
             <div style="display:flex; gap:10px; align-items:center;">
               <input
                 type="number"
-                min="0"
-                max="59"
-                value="${Math.floor(stage.allocatedMinutes)}"
+                min="2"
+                max="15"
+                value="${Math.floor(stage.pace || 5)}"
                 data-index="${index}"
-                data-type="minutes"
-                class="time-editor"
+                data-type="pace-minutes"
+                class="pace-editor"
               />
 
               <span style="font-weight:800; font-size:1.2rem;">:</span>
@@ -529,56 +673,74 @@
                 type="number"
                 min="0"
                 max="59"
-                value="${Math.round((stage.allocatedMinutes - Math.floor(stage.allocatedMinutes)) * 60)}"
+                value="${Math.round(((stage.pace || 5) - Math.floor(stage.pace || 5)) * 60)}"
                 data-index="${index}"
-                data-type="seconds"
-                class="time-editor"
+                data-type="pace-seconds"
+                class="pace-editor"
               />
             </div>
 
             <div style="background:#f3f4f6; border-radius:16px; padding:14px;">
               <div style="font-size:0.8rem; color:#6b7280; margin-bottom:4px;">
-                Pace
+                Beregnet etappetid
               </div>
 
               <div style="font-size:1.1rem; font-weight:800;">
-                ${calculatePace(stage.distance, stage.allocatedMinutes)}
+                ${formatStageDuration(stage.allocatedMinutes)}
               </div>
             </div>
 
             <small>
-              Når du endrer tiden oppdateres alle starttidene automatisk.
+              Når du endrer pace oppdateres alle tider automatisk.
             </small>
+
           </div>
         `;
 
         stagesContainer.appendChild(card);
       });
 
-      document.querySelectorAll('.time-editor').forEach(input => {
-        input.addEventListener('input', handleManualEdit);
+      document.querySelectorAll('.pace-editor').forEach(input => {
+        input.addEventListener('change', handleManualEdit);
       });
     }
 
     function handleManualEdit() {
-      const startMinutes = timeToMinutes(document.getElementById('startTime').value);
+      const startMinutes = timeToMinutes(
+        document.getElementById('startTime').value
+      );
 
       let currentTime = startMinutes;
 
       stages.forEach((stage, index) => {
-        const minuteInput = document.querySelector(`[data-index="${index}"][data-type="minutes"]`);
-        const secondInput = document.querySelector(`[data-index="${index}"][data-type="seconds"]`);
+
+        const minuteInput = document.querySelector(
+          `[data-index="${index}"][data-type="pace-minutes"]`
+        );
+
+        const secondInput = document.querySelector(
+          `[data-index="${index}"][data-type="pace-seconds"]`
+        );
 
         const mins = Number(minuteInput.value || 0);
         const secs = Number(secondInput.value || 0);
 
-        const value = mins + (secs / 60);
+        const pace = paceToMinutes(mins, secs);
 
-        stages[index].allocatedMinutes = value;
-        stages[index].start = currentTime;
-        stages[index].end = currentTime + value;
+        stage.pace = pace;
 
-        currentTime += value;
+        const distanceKm = stage.distance / 1000;
+
+        const stageMinutes = distanceKm * pace;
+
+        stage.allocatedMinutes = stageMinutes;
+
+        stage.pace = stage.allocatedMinutes / (stage.distance / 1000);
+
+        stage.start = currentTime;
+        stage.end = currentTime + stageMinutes;
+
+        currentTime += stageMinutes;
       });
 
       renderStages();
@@ -589,6 +751,13 @@
     document.getElementById('calculateBtn').addEventListener('click', calculateSchedule);
 
     calculateSchedule();
+
+    const accordion = document.querySelector('.accordion');
+    const accordionToggle = document.getElementById('accordionToggle');
+
+    accordionToggle.addEventListener('click', () => {
+      accordion.classList.toggle('open');
+    });
   </script>
 
 </body>
