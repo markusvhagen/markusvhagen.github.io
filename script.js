@@ -366,12 +366,12 @@ var etappe1ElevMapPrint = (!isMobile) ? "1609m" : "";
 var etappe2ElevMapPrint = (!isMobile) ? "2590m" : "";
 var etappe3ElevMapPrint = (!isMobile) ? "1000m" : "";
 var etappe4ElevMapPrint = (!isMobile) ? "2900m" : "";
-var etappe5ElevMapPrint = (!isMobile) ? "1609m" : "";
+var etappe5ElevMapPrint = (!isMobile) ? "1750m" : "";
 var etappe6ElevMapPrint = (!isMobile) ? "1609m" : "";
-var etappe7ElevMapPrint = (!isMobile) ? "2800m" : "";
-var etappe8ElevMapPrint = (!isMobile) ? "3200m" : "";
+var etappe7ElevMapPrint = (!isMobile) ? "2720m" : "";
+var etappe8ElevMapPrint = (!isMobile) ? "3150m" : "";
 var etappe9ElevMapPrint = (!isMobile) ? "800m" : "";
-var etappe10ElevMapPrint = (!isMobile) ? "2400m" : "";
+var etappe10ElevMapPrint = (!isMobile) ? "2580m" : "";
 
 Chart.register( Chart.LineElement, Chart.LineController, Chart.Legend, Chart.Tooltip, Chart.LinearScale, Chart.PointElement, Chart.Filler, Chart.Title);
 
