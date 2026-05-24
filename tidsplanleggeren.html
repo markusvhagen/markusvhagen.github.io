@@ -495,8 +495,21 @@
         const elevationFactor = stage.elevation > 0
           ? stage.elevation * 5
           : stage.elevation * 2;
+        let distanceFactor = 0;
+        if (stage.distance < 1000) {
+          distanceFactor = 0.95;
+        }
+        else if (stage.distance == 1000) {
+          distanceFactor = 1;
+        }
+        else if ((stage.distance >= 1000) && (stage.distance <= 2000)) {
+          distanceFactor = 1.05;
+        }
+        else if (stage.distance > 2000) {
+          distanceFactor = 1.1;
+        }
 
-        return stage.distance + elevationFactor;
+        return (stage.distance + elevationFactor)*distanceFactor;
       });
     }
 
