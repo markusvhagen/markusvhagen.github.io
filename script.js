@@ -149,7 +149,7 @@ function aktivEtappePrint(index) {
   else if (index <= etappe_5_last_index) {
     document.getElementById("etappe").innerHTML = "5 Kristiansten";
     document.getElementById("etappeFraTil").innerHTML = "Festningsparken - Høgskoleparken";
-    document.getElementById("etappeInfo").innerHTML = "1609m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Variert og lett kupert etappe";
+    document.getElementById("etappeInfo").innerHTML = "1750m &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Variert og lett kupert etappe";
   }
   else if (index <= etappe_6_last_index) {
     document.getElementById("etappe").innerHTML = "6 Gløshaugen";
