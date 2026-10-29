@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bratsberg Friidrett · Resultatbørsen</title>
+  <meta name="description" content="Følg Bratsberg Friidretts siste løp, personlige rekorder og kommende starter.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="athlete-cards.css"><link rel="stylesheet" href="widget.css">
+  <script type="module" src="app.js"></script>
+<link rel="stylesheet" href="calendar.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  
+  <main id="main" class="page-shell widget-showcase">
+    <section id="result-widget" class="bf-widget" aria-label="Resultatbørs – de ti siste løpene"><p class="loading">Henter de siste løpene …</p></section>
+    <div class="widget-caption"><span><span class="badge pb" title="Forbedring mot tidligere løp og manuelt registrerte perser. Eldre resultater kan mangle.">PB</span> Bedre enn tidligere kjent tid <span class="badge cr"><span class="award-icon" aria-hidden="true">★</span> Klubbrekord</span></span><span>Pallplass innen kjønn</span></div>
+    <section class="home-bottom">
+      <div class="upcoming-home">
+        <div class="section-heading"><div><h2>Neste løp</h2></div><a class="text-link" href="resultater.html#terminliste">Se terminlisten <span aria-hidden="true">↗</span></a></div>
+        <div id="home-upcoming" class="mini-events"><p class="loading">Henter kommende løp …</p></div>
+      </div>
+      <a class="record-feature" id="record-feature" href="resultater.html#klubbrekorder" aria-label="Se klubbrekorder">
+        <div class="record-art" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="record-feature-top"><span class="eyebrow">REKORDOVERSIKT</span><span class="circle-arrow">↗</span></div>
+        <h2>Klubbrekorder</h2>
+        <p>Bane · Gate · Stafetter</p>
+        <span class="feature-link">Se klubbrekordene <span aria-hidden="true">→</span></span>
+      </a>
+    </section>
+  </main>
+  
+</body></html>

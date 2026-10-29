@@ -1,0 +1,111 @@
+{
+  "id": "berlin-halvmaraton-2026",
+  "name": "Berlin halvmaraton",
+  "date": "2026-03-29",
+  "location": "Berlin",
+  "type": "road",
+  "distances": [
+    "Halvmaraton"
+  ],
+  "demo": false,
+  "sourceUrl": "https://berlinerhm.r.mikatiming.net/2026/?lang=EN_CAP",
+  "source": {
+    "type": "screenshot",
+    "provider": "Mika Timing",
+    "fileName": "image(9).png",
+    "timeBasis": "net",
+    "scope": "Klubbresultater fra innsendt resultatkilde",
+    "dateVerified": true,
+    "referenceUrls": [
+      "https://berlinerhm.r.mikatiming.net/2026/?lang=EN_CAP",
+      "https://www.generali-berliner-halbmarathon.de/fileadmin/media/events/halbmarathon/Fotos/Event_Info/HM26_Race_Briefing_EN.pdf",
+      "https://www.kondis.no/resultater/resultater-berlin-halvmaraton-2026/1557648"
+    ],
+    "notes": [
+      "Dato 29.03.2026 er bekreftet i arrangørens offisielle Race Briefing 2026.",
+      "Offisiell Race Briefing side 19 sier at de første 50 kvinnene og mennene rangeres etter bruttotid, og fra plass 51 etter nettotid. Alle disse tre løperne er utenfor topp 50.",
+      "FINISH i skjermbildet er lagret som time/netTime; Time Total (Brutto) som gunTime.",
+      "Skjermbildets ferske plasseringer 876, 1510 og 226 beholdes. Den publiserte Kondis-tabellen fra 29./31. mars har 874, 1506 og 224 med identiske tider og viser uttrykkelig Norske menn.",
+      "Nettotidene er ikke automatisk kvalifisert for klubbrekordkontroll."
+    ]
+  },
+  "results": [
+    {
+      "name": "Markus Valås Hagen",
+      "sourceName": "Hagen, Markus Valas",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "MH",
+      "time": "1:21:03",
+      "status": "finished",
+      "position": 876,
+      "positionScope": "gender",
+      "positionGender": 876,
+      "positionGenderVerified": true,
+      "club": "Bratsberg IL",
+      "sourceBib": "20985",
+      "timeBasis": "net",
+      "clubRecord": false,
+      "recordEligible": false,
+      "netTime": "1:21:03",
+      "gunTime": "1:21:39",
+      "positionCategory": 224,
+      "sourceFile": "image(9).png",
+      "positionGenderVerificationNote": "Plassering fra brukerens nyere skjermbilde. Kjønnsomfanget er kontrollert mot den separate herrelisten hos Kondis; den eldre publiserte listen har litt andre plasseringer.",
+      "athleteId": "markus-valas-hagen"
+    },
+    {
+      "name": "Kristoffer Krogh",
+      "sourceName": "Krogh, Kristoffer",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M35",
+      "time": "1:24:52",
+      "status": "finished",
+      "position": 1510,
+      "positionScope": "gender",
+      "positionGender": 1510,
+      "positionGenderVerified": true,
+      "club": "Bratsberg IL Friidrett",
+      "sourceBib": "24629",
+      "timeBasis": "net",
+      "clubRecord": false,
+      "recordEligible": false,
+      "netTime": "1:24:52",
+      "gunTime": "1:27:19",
+      "positionCategory": 318,
+      "sourceFile": "image(9).png",
+      "positionGenderVerificationNote": "Plassering fra brukerens nyere skjermbilde. Kjønnsomfanget er kontrollert mot den separate herrelisten hos Kondis; den eldre publiserte listen har litt andre plasseringer.",
+      "athleteId": "kristoffer-krogh"
+    },
+    {
+      "name": "Jonas Onshuus",
+      "sourceName": "Onshuus, Jonas",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "MH",
+      "time": "1:13:10",
+      "status": "finished",
+      "position": 226,
+      "positionScope": "gender",
+      "positionGender": 226,
+      "positionGenderVerified": true,
+      "club": "Bratsberg IL",
+      "sourceBib": "28538",
+      "timeBasis": "net",
+      "clubRecord": false,
+      "recordEligible": false,
+      "netTime": "1:13:10",
+      "gunTime": "1:13:14",
+      "positionCategory": 87,
+      "sourceFile": "image(9).png",
+      "positionGenderVerificationNote": "Plassering fra brukerens nyere skjermbilde. Kjønnsomfanget er kontrollert mot den separate herrelisten hos Kondis; den eldre publiserte listen har litt andre plasseringer.",
+      "athleteId": "jonas-onshuus"
+    }
+  ],
+  "featuredAthleteIds": [
+    "jonas-onshuus",
+    "markus-valas-hagen",
+    "kristoffer-krogh"
+  ]
+}

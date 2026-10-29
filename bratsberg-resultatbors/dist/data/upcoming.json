@@ -1,0 +1,95 @@
+[
+  {
+    "id": "jessheim-vintermaraton-2026",
+    "name": "Jessheim Vintermaraton",
+    "date": "2026-11-08",
+    "location": "Jessheim",
+    "distances": [
+      "10 km",
+      "Halvmaraton",
+      "Maraton"
+    ],
+    "participants": [
+      {
+        "athleteId": "oivind-estensen",
+        "name": "Øivind Estensen",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "markus-valas-hagen",
+        "name": "Markus Valås Hagen",
+        "distance": "Halvmaraton"
+      },
+      {
+        "athleteId": "oystein-haugen",
+        "name": "Øystein Haugen",
+        "distance": "Halvmaraton"
+      }
+    ],
+    "sourceUrl": "https://www.vintermaraton.no/event-details/jessheim-vintermaraton-2026",
+    "demo": false
+  },
+  {
+    "id": "valencia-maraton-2026",
+    "name": "Valencia Maraton",
+    "date": "2026-12-06",
+    "location": "Valencia, Spania",
+    "distances": [
+      "Maraton"
+    ],
+    "participants": [
+      {
+        "athleteId": "anette-leistad",
+        "name": "Anette Leistad",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "espen-roistad",
+        "name": "Espen Røistad",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "ola-rossvoll",
+        "name": "Ola Rossvoll",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "knut-odegaard",
+        "name": "Knut Ødegaard",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "rolf-solheimsdal-johansen",
+        "name": "Rolf Solheimsdal Johansen",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "nikolai-aarre-maehlum",
+        "name": "Nikolai Aarre Mæhlum",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "henrik-nordahl",
+        "name": "Henrik Nordahl",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "tor-magne-volden",
+        "name": "Tor Magne Volden",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "ane-gangas-bromset",
+        "name": "Ane Gangås Bromset",
+        "distance": "Maraton"
+      },
+      {
+        "athleteId": "julie-selboe",
+        "name": "Julie Selboe",
+        "distance": "Maraton"
+      }
+    ],
+    "sourceUrl": "https://www.valenciaciudaddelrunning.com/en/marathon/regulations-valencia-marathon/",
+    "demo": false
+  }
+]

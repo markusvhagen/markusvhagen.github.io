@@ -1,0 +1,563 @@
+[
+  {
+    "id": "trondheim-stafetten",
+    "name": "Trondheim-stafetten",
+    "legCount": 10,
+    "records": [
+      {
+        "gender": "K",
+        "year": 2026,
+        "time": "1:11:05",
+        "position": 1,
+        "positionScope": "kjønn totalt",
+        "category": "Kvinner elite",
+        "team": "Bratsberg IL",
+        "clubRecord": true,
+        "source": "Klubbens vedlagte resultatbilde og arrangørens resultatoversikt",
+        "sourceAttachment": "image(4).png",
+        "sourceUrl": "https://www.trondheimstafetten.no/resultater/klassevinnere-etappevinnere-og-etapperekorder/",
+        "legDistanceSource": "https://www.trondheimstafetten.no/etappene/",
+        "legRecordSource": "https://www.trondheimstafetten.no/resultater/etapperekorder/",
+        "note": "Siste etappe inkluderer forvarsel–mål. Etappetiden følger arrangørens rekordliste.",
+        "legs": [
+          {
+            "number": 1,
+            "name": "Hedda Leirvik",
+            "athleteId": "hedda-leirvik",
+            "time": "5:14",
+            "pace": "3:15",
+            "section": "Promenaden",
+            "distanceMeters": 1609
+          },
+          {
+            "number": 2,
+            "name": "Camilla-Marie Flaaten",
+            "athleteId": "camilla-marie-flaaten",
+            "time": "8:50",
+            "pace": "3:24",
+            "section": "Rockheim",
+            "distanceMeters": 2590
+          },
+          {
+            "number": 3,
+            "name": "Grete Helgesen",
+            "athleteId": "grete-helgesen",
+            "time": "3:40",
+            "pace": "3:40",
+            "section": "Lade",
+            "distanceMeters": 1000
+          },
+          {
+            "number": 4,
+            "name": "Sofie Karoline Haugen",
+            "athleteId": "sofie-karoline-haugen",
+            "time": "9:33",
+            "pace": "3:17",
+            "section": "Rosenborg",
+            "distanceMeters": 2900
+          },
+          {
+            "number": 5,
+            "name": "Kristin Waaktaar Opland",
+            "athleteId": "kristin-waaktaar-opland",
+            "time": "6:02",
+            "pace": "3:27",
+            "section": "Kristiansten",
+            "distanceMeters": 1750,
+            "sourceName": "Kristin Waatkaar Opland"
+          },
+          {
+            "number": 6,
+            "name": "Ingrid Lunde Steen",
+            "athleteId": "ingrid-lunde-steen",
+            "time": "5:12",
+            "pace": "3:13",
+            "section": "Gløshaugen",
+            "distanceMeters": 1609
+          },
+          {
+            "number": 7,
+            "name": "Vibeke Jensen",
+            "athleteId": "vibeke-jensen",
+            "time": "11:28",
+            "pace": "4:13",
+            "section": "Byåsen",
+            "distanceMeters": 2720
+          },
+          {
+            "number": 8,
+            "name": "Mari Steinkjer Øyen",
+            "athleteId": "mari-steinkjer-oyen",
+            "time": "10:12",
+            "pace": "3:14",
+            "section": "Sverresborg",
+            "distanceMeters": 3150
+          },
+          {
+            "number": 9,
+            "name": "Oda Randli Elden",
+            "athleteId": "oda-randli-elden",
+            "time": "2:44",
+            "pace": "3:25",
+            "section": "Kalvskinnet",
+            "distanceMeters": 800
+          },
+          {
+            "number": 10,
+            "name": "Eira Rapp",
+            "athleteId": "eira-rapp",
+            "time": "8:09",
+            "pace": "3:10",
+            "section": "Nidaros",
+            "distanceMeters": 2580,
+            "sourceSplits": {
+              "toPrewarning": "7:47",
+              "prewarningToFinish": "0:22"
+            },
+            "paceSource": "Beregnet fra etappetid og arrangørens etappelengde, 2580 m.",
+            "timeSource": "Arrangørens etapperekordliste, 2026."
+          }
+        ]
+      },
+      {
+        "gender": "M",
+        "year": 2026,
+        "time": "1:01:22",
+        "position": 1,
+        "positionScope": "kjønn totalt",
+        "category": "Menn elite",
+        "team": "Bratsberg IL",
+        "clubRecord": true,
+        "source": "Klubbens vedlagte resultatbilde og arrangørens resultatoversikt",
+        "sourceAttachment": "image(3).png",
+        "sourceUrl": "https://www.trondheimstafetten.no/resultater/klassevinnere-etappevinnere-og-etapperekorder/",
+        "legDistanceSource": "https://www.trondheimstafetten.no/etappene/",
+        "legRecordSource": "https://www.trondheimstafetten.no/resultater/etapperekorder/",
+        "note": "Siste etappe inkluderer forvarsel–mål. Etappetiden følger arrangørens rekordliste. Bildets to delstrekker summerer til 7:08; arrangøren oppgir 7:09.",
+        "legs": [
+          {
+            "number": 1,
+            "name": "Ulrik Hovig",
+            "athleteId": "ulrik-hovig",
+            "time": "4:26",
+            "pace": "2:45",
+            "section": "Promenaden",
+            "distanceMeters": 1609
+          },
+          {
+            "number": 2,
+            "name": "Henning Offigstad",
+            "athleteId": "henning-offigstad",
+            "time": "7:42",
+            "pace": "2:58",
+            "section": "Rockheim",
+            "distanceMeters": 2590
+          },
+          {
+            "number": 3,
+            "name": "Ola Rossvoll",
+            "athleteId": "ola-rossvoll",
+            "time": "3:21",
+            "pace": "3:21",
+            "section": "Lade",
+            "distanceMeters": 1000
+          },
+          {
+            "number": 4,
+            "name": "Tommy Bangjord Hove",
+            "athleteId": "tommy-bangjord-hove",
+            "time": "8:21",
+            "pace": "2:52",
+            "section": "Rosenborg",
+            "distanceMeters": 2900
+          },
+          {
+            "number": 5,
+            "name": "Henrik Kristensen",
+            "athleteId": "henrik-kristensen",
+            "time": "4:52",
+            "pace": "2:46",
+            "section": "Kristiansten",
+            "distanceMeters": 1750
+          },
+          {
+            "number": 6,
+            "name": "Espen Tveit",
+            "athleteId": "espen-tveit",
+            "time": "4:19",
+            "pace": "2:40",
+            "section": "Gløshaugen",
+            "distanceMeters": 1609
+          },
+          {
+            "number": 7,
+            "name": "Jonas Udjus Frorud",
+            "athleteId": "jonas-udjus-frorud",
+            "time": "10:10",
+            "pace": "3:44",
+            "section": "Byåsen",
+            "distanceMeters": 2720
+          },
+          {
+            "number": 8,
+            "name": "Sebastian Reinertsen",
+            "athleteId": "sebastian-reinertsen",
+            "time": "8:43",
+            "pace": "2:46",
+            "section": "Sverresborg",
+            "distanceMeters": 3150
+          },
+          {
+            "number": 9,
+            "name": "Jørgen Skevik",
+            "athleteId": "jorgen-skevik",
+            "time": "2:19",
+            "pace": "2:54",
+            "section": "Kalvskinnet",
+            "distanceMeters": 800
+          },
+          {
+            "number": 10,
+            "name": "Petter Vea Monseth",
+            "athleteId": "petter-vea-monseth",
+            "time": "7:09",
+            "pace": "2:46",
+            "section": "Nidaros",
+            "distanceMeters": 2580,
+            "sourceSplits": {
+              "toPrewarning": "6:50",
+              "prewarningToFinish": "0:18"
+            },
+            "paceSource": "Beregnet fra etappetid og arrangørens etappelengde, 2580 m.",
+            "timeSource": "Arrangørens etapperekordliste, 2026.",
+            "screenshotCombinedTime": "7:08",
+            "sourceName": "Petter Monseth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "holmenkollstafetten",
+    "name": "Holmenkollstafetten",
+    "legCount": 15,
+    "records": [
+      {
+        "gender": "K",
+        "year": 2026,
+        "time": "1:00:31",
+        "netTime": "1:00:30",
+        "position": 6,
+        "positionScope": "klasse",
+        "category": "Kvinner elite",
+        "team": "Bratsberg IL 3",
+        "clubRecord": true,
+        "source": "Klubbens vedlagte resultatbilde",
+        "sourceAttachment": "image(5).png",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/holmenkollstafetten-2026/",
+        "note": "Rekorden bruker offisiell sluttid. Etappetidene vises som i resultatlisten; avrunding gjør at summen kan avvike fra sluttiden.",
+        "legs": [
+          {
+            "number": 1,
+            "name": "Hedda Leirvik",
+            "athleteId": "hedda-leirvik",
+            "time": "3:43",
+            "pace": "3:10",
+            "section": "Bislett stadion",
+            "distanceMeters": null
+          },
+          {
+            "number": 2,
+            "name": "Mari Steinkjer Øyen",
+            "athleteId": "mari-steinkjer-oyen",
+            "time": "3:54",
+            "pace": "3:27",
+            "section": "Norabakken",
+            "distanceMeters": null
+          },
+          {
+            "number": 3,
+            "name": "Oda Randli Elden",
+            "athleteId": "oda-randli-elden",
+            "time": "1:51",
+            "pace": "3:06",
+            "section": "Blåsen",
+            "distanceMeters": null
+          },
+          {
+            "number": 4,
+            "name": "Eira Rapp",
+            "athleteId": "eira-rapp",
+            "time": "6:16",
+            "pace": "3:16",
+            "section": "Berg og dal",
+            "distanceMeters": null
+          },
+          {
+            "number": 5,
+            "name": "Kristin Waaktaar Opland",
+            "athleteId": "kristin-waaktaar-opland",
+            "time": "4:07",
+            "pace": "3:24",
+            "section": "Forskningsparken",
+            "distanceMeters": null
+          },
+          {
+            "number": 6,
+            "name": "Ida Waldal",
+            "athleteId": "ida-waldal",
+            "time": "4:58",
+            "pace": "3:59",
+            "section": "Lille Besserud",
+            "distanceMeters": null
+          },
+          {
+            "number": 7,
+            "name": "Eva Ingebrigtsen",
+            "athleteId": "eva-ingebrigtsen",
+            "time": "7:08",
+            "pace": "4:02",
+            "section": "Besserud",
+            "distanceMeters": null
+          },
+          {
+            "number": 8,
+            "name": "Johanne Lovise Wiig",
+            "athleteId": "johanne-lovise-wiig",
+            "time": "5:01",
+            "pace": "2:49",
+            "section": "Utforetappen",
+            "distanceMeters": null
+          },
+          {
+            "number": 9,
+            "name": "Ingrid Lunde Steen",
+            "athleteId": "ingrid-lunde-steen",
+            "time": "1:50",
+            "pace": "2:55",
+            "section": "Gressbanen",
+            "distanceMeters": null
+          },
+          {
+            "number": 10,
+            "name": "Sofie Karoline Haugen",
+            "athleteId": "sofie-karoline-haugen",
+            "time": "8:27",
+            "pace": "2:58",
+            "section": "Den lange",
+            "distanceMeters": null
+          },
+          {
+            "number": 11,
+            "name": "Camilla-Marie Flaaten",
+            "athleteId": "camilla-marie-flaaten",
+            "time": "4:56",
+            "pace": "3:15",
+            "section": "Frognerparken",
+            "distanceMeters": null
+          },
+          {
+            "number": 12,
+            "name": "Ingvild Saksvik Lehouillier",
+            "athleteId": "ingvild-saksvik-lehouillier",
+            "time": "1:03",
+            "pace": "3:00",
+            "section": "Dumpa",
+            "distanceMeters": null
+          },
+          {
+            "number": 13,
+            "name": "Signe By Eide",
+            "athleteId": "signe-by-eide",
+            "time": "3:25",
+            "pace": "3:10",
+            "section": "Trappa",
+            "distanceMeters": null
+          },
+          {
+            "number": 14,
+            "name": "Nora Waldal",
+            "athleteId": "nora-waldal",
+            "time": "2:23",
+            "pace": "3:21",
+            "section": "Sjarmøren",
+            "distanceMeters": null
+          },
+          {
+            "number": 15,
+            "name": "Kjersti Solli",
+            "athleteId": "kjersti-solli",
+            "time": "1:36",
+            "pace": "2:59",
+            "section": "Bislett stadion",
+            "distanceMeters": null
+          }
+        ]
+      },
+      {
+        "gender": "M",
+        "year": 2026,
+        "time": "53:01",
+        "netTime": "53:00",
+        "position": 4,
+        "positionScope": "klasse",
+        "category": "Menn senior",
+        "team": "Bratsberg IL 1",
+        "clubRecord": true,
+        "source": "Klubbens vedlagte resultatbilde",
+        "sourceAttachment": "image(6).png",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/holmenkollstafetten-2026/",
+        "note": "Rekorden bruker offisiell sluttid. Etappetidene vises som i resultatlisten; avrunding gjør at summen kan avvike fra sluttiden.",
+        "legs": [
+          {
+            "number": 1,
+            "name": "Espen Tveit",
+            "athleteId": "espen-tveit",
+            "time": "3:08",
+            "pace": "2:41",
+            "section": "Bislett stadion",
+            "distanceMeters": null
+          },
+          {
+            "number": 2,
+            "name": "Anders Aamodt Resell",
+            "athleteId": "anders-aamodt-resell",
+            "time": "3:36",
+            "pace": "3:11",
+            "section": "Norabakken",
+            "distanceMeters": null
+          },
+          {
+            "number": 3,
+            "name": "Trond Sliper",
+            "athleteId": "trond-sliper",
+            "time": "1:41",
+            "pace": "2:49",
+            "section": "Blåsen",
+            "distanceMeters": null
+          },
+          {
+            "number": 4,
+            "name": "Tommy Bangjord Hove",
+            "athleteId": "tommy-bangjord-hove",
+            "time": "5:37",
+            "pace": "2:56",
+            "section": "Berg og dal",
+            "distanceMeters": null
+          },
+          {
+            "number": 5,
+            "name": "Sturla Granheim",
+            "athleteId": "sturla-granheim",
+            "time": "3:31",
+            "pace": "2:54",
+            "section": "Forskningsparken",
+            "distanceMeters": null
+          },
+          {
+            "number": 6,
+            "name": "Henrik Kristensen",
+            "athleteId": "henrik-kristensen",
+            "time": "4:09",
+            "pace": "3:19",
+            "section": "Lille Besserud",
+            "distanceMeters": null
+          },
+          {
+            "number": 7,
+            "name": "Petter Vea Monseth",
+            "athleteId": "petter-vea-monseth",
+            "time": "5:54",
+            "pace": "3:20",
+            "section": "Besserud",
+            "distanceMeters": null
+          },
+          {
+            "number": 8,
+            "name": "Espen Røistad",
+            "athleteId": "espen-roistad",
+            "time": "4:22",
+            "pace": "2:27",
+            "section": "Utforetappen",
+            "distanceMeters": null
+          },
+          {
+            "number": 9,
+            "name": "Trym Holten",
+            "athleteId": "trym-holten",
+            "time": "1:40",
+            "pace": "2:40",
+            "section": "Gressbanen",
+            "distanceMeters": null
+          },
+          {
+            "number": 10,
+            "name": "Sebastian Reinertsen",
+            "athleteId": "sebastian-reinertsen",
+            "time": "7:43",
+            "pace": "2:42",
+            "section": "Den lange",
+            "distanceMeters": null
+          },
+          {
+            "number": 11,
+            "name": "Ulrik Hovig",
+            "athleteId": "ulrik-hovig",
+            "time": "4:20",
+            "pace": "2:51",
+            "section": "Frognerparken",
+            "distanceMeters": null
+          },
+          {
+            "number": 12,
+            "name": "Julian Grøtte",
+            "athleteId": "julian-grotte",
+            "time": "0:57",
+            "pace": "2:42",
+            "section": "Dumpa",
+            "distanceMeters": null
+          },
+          {
+            "number": 13,
+            "name": "Jonas Onshuus",
+            "athleteId": "jonas-onshuus",
+            "time": "3:08",
+            "pace": "2:54",
+            "section": "Trappa",
+            "distanceMeters": null
+          },
+          {
+            "number": 14,
+            "name": "Mats Flaaten",
+            "athleteId": "mats-flaaten",
+            "time": "1:57",
+            "pace": "2:45",
+            "section": "Sjarmøren",
+            "distanceMeters": null
+          },
+          {
+            "number": 15,
+            "name": "Markus Valås Hagen",
+            "athleteId": "markus-valas-hagen",
+            "time": "1:26",
+            "pace": "2:40",
+            "section": "Bislett stadion",
+            "distanceMeters": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "olavstafetten",
+    "name": "Olavstafetten",
+    "legCount": null,
+    "records": []
+  },
+  {
+    "id": "st-olavsloppet",
+    "name": "St. Olavsloppet",
+    "legCount": null,
+    "records": []
+  }
+]
