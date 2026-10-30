@@ -1,5 +1,6 @@
 import {resultStatus} from './athlete-cards.js';
 import {sortResultsByTime} from './result-order.js';
+import {compareAgeGradeResults} from './age-grade-ui.js';
 
 /** Filter the entire archive before choosing a page; never discard older races. */
 export function selectArchivePage(races,filters={},requestedPage=1,{focusRaceId=null,pageSize=10}={}){
@@ -15,6 +16,7 @@ export function selectArchivePage(races,filters={},requestedPage=1,{focusRaceId=
       (!filters.status||resultStatus(result)===filters.status)&&
       (!filters.onlyRecords||result.performanceHistory?.isPersonalBest||result.clubRecord)&&
       (!query||raceMatch||(result.name+' '+(result.sourceName||'')).toLocaleLowerCase('nb-NO').includes(query))));
+    if(filters.sort==='age-grade')matching.sort(compareAgeGradeResults);
     return {race,matching};
   }).filter(({race,matching})=>(!filters.year||race.date.startsWith(filters.year))&&matching.length);
   const total=matches.length,pageCount=Math.max(1,Math.ceil(total/size));

@@ -168,3 +168,90 @@ test('the public data pipeline applies manual PBs after profile matching and sti
   assert.equal(history(data.races[0]).previousBest,'40:00');
   assert.equal(JSON.stringify(input),snapshot);
 });
+
+test('an explicitly linked dated PB confirms its first race without inventing a previous time or improvement',()=>{
+  const athletes=registry([pb('36:56','2026-05-23',{raceId:'nidaros',source:'Confirmed by athlete'})]);
+  const input=[race('nidaros','2026-05-23','36:56.0')];
+  const before=JSON.stringify({athletes,input});
+  const out=derivePerformanceHistory(input,athletes),h=history(out[0]);
+  assert.equal(h.isPersonalBest,true);
+  assert.equal(h.isManualPersonalBest,true);
+  assert.equal(h.reason,'manual-confirmed-personal-best');
+  assert.equal(h.previousBest,null);
+  assert.equal(h.previousBestSeconds,null);
+  assert.equal(h.improvementSeconds,null);
+  assert.equal(h.hasManualBaseline,false);
+  assert.deepEqual(h.previousRaceIds,[]);
+  assert.deepEqual(h.previousPersonalBests,[]);
+  assert.equal(h.confirmedPersonalBests.length,1);
+  assert.equal(h.confirmedPersonalBests[0].raceId,'nidaros');
+  assert.equal(h.confirmedPersonalBests[0].time,'36:56');
+  h.confirmedPersonalBests[0].time='changed copy';
+  assert.equal(JSON.stringify({athletes,input}),before);
+});
+
+test('manual confirmation requires exact race, achievement date, numeric time and comparison key',()=>{
+  const target=race('nidaros','2026-05-23','36:56.0');
+  const candidates=[
+    pb('36:56','2026-05-23'),
+    pb('36:56','2026-05-23',{raceId:'another-race'}),
+    pb('36:56',null,{asOf:'2026-05-23',raceId:'nidaros'}),
+    pb('36:56','2026-05-24',{raceId:'nidaros'}),
+    pb('36:56.1','2026-05-23',{raceId:'nidaros'}),
+    pb('36:56','2026-05-23',{raceId:'nidaros',distance:'5 km'}),
+    pb('36:56','2026-05-23',{raceId:'nidaros',type:'track',environment:'outdoor',distance:'10000 m'})
+  ];
+  for(const candidate of candidates){
+    const h=history(derivePerformanceHistory([target],registry([candidate]))[0]);
+    assert.equal(h.isManualPersonalBest,false,JSON.stringify(candidate));
+    assert.equal(h.isPersonalBest,false,JSON.stringify(candidate));
+    assert.deepEqual(h.confirmedPersonalBests,[]);
+  }
+  const anotherAthlete=registry([pb('36:56','2026-05-23',{raceId:'nidaros'})]);
+  anotherAthlete.athletes[0].id='different-runner';
+  assert.equal(history(derivePerformanceHistory([target],anotherAthlete)[0]).isManualPersonalBest,false);
+});
+
+test('confirmation stays on its linked race and cannot turn a later equal performance into a PB',()=>{
+  const athletes=registry([pb('36:56','2026-05-23',{raceId:'nidaros'})]);
+  const out=derivePerformanceHistory([
+    race('same-day-other','2026-05-23','36:56'),
+    race('nidaros','2026-05-23','36:56.0'),
+    race('later-tie','2026-06-01','36:56'),
+    race('later-improvement','2026-07-01','36:55')
+  ],athletes);
+  assert.deepEqual(out.map(event=>history(event).isManualPersonalBest),[false,true,false,false]);
+  assert.deepEqual(out.map(event=>history(event).isPersonalBest),[false,true,false,true]);
+  assert.equal(history(out[2]).reason,'equal-previous-best');
+  assert.equal(history(out[3]).improvementSeconds,1);
+  assert.equal(history(out[1]).isBestRecorded,false);
+});
+
+test('an earlier equal or faster result blocks contradictory manual confirmation, while improvements keep their delta',()=>{
+  const athletes=registry([pb('36:56','2026-05-23',{raceId:'confirmed'})]);
+  for(const earlierTime of ['36:56','36:55']){
+    const h=history(derivePerformanceHistory([
+      race('earlier','2026-04-01',earlierTime),race('confirmed','2026-05-23','36:56')
+    ],athletes)[1]);
+    assert.equal(h.isPersonalBest,false);
+    assert.equal(h.isManualPersonalBest,false);
+    assert.deepEqual(h.confirmedPersonalBests,[]);
+    assert.equal(h.reason,'manual-personal-best-conflict');
+    assert.equal(h.improvementSeconds,null);
+  }
+  const h=history(derivePerformanceHistory([
+    race('earlier','2026-04-01','37:00'),race('confirmed','2026-05-23','36:56')
+  ],athletes)[1]);
+  assert.equal(h.isPersonalBest,true);
+  assert.equal(h.isManualPersonalBest,true);
+  assert.equal(h.previousBest,'37:00');
+  assert.equal(h.improvementSeconds,4);
+});
+
+test('malformed explicit race identifiers are reported instead of establishing manual baselines',()=>{
+  for(const raceId of ['',null,42,{},'   ']){
+    const checked=collectManualPersonalBests(registry([pb('36:56','2026-05-23',{raceId})]));
+    assert.equal(checked.entries.length,0);
+    assert.equal(checked.issues[0].reason,'invalid-personal-best-race-id');
+  }
+});

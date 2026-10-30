@@ -1,0 +1,28 @@
+/* Names wrap within two compact winner cards; only one distance is visible. */
+.race-winners{display:flex;align-items:center;flex-wrap:wrap;flex:1 1 390px;gap:7px;min-width:0;max-width:100%;font-variant-numeric:tabular-nums}
+.race-winner-distance{font-size:9px;color:#77816f;white-space:nowrap;margin-right:1px}
+.race-winner-select{display:inline-flex;min-width:0;max-width:122px}
+.race-winner-select select{appearance:none;max-width:100%;min-height:28px;border:1px solid #d9dfd4;border-radius:4px;padding:4px 23px 4px 8px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 12 12'%3E%3Cpath d='m3 4 3 3 3-3' fill='none' stroke='%23697363'/%3E%3C/svg%3E") no-repeat right 7px center;color:#64705b;font:inherit;font-size:9px;cursor:pointer;white-space:nowrap}
+.race-winner-select select:focus-visible{outline:2px solid #d62f36;outline-offset:2px}
+.race-winner-select select:disabled{opacity:1;color:#64705b;cursor:default}
+.race-winner-panels{display:block;flex:1 1 240px;min-width:0;max-width:420px}
+.race-winner-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:6px;min-width:0}
+.race-winner-pair[hidden]{display:none!important}
+.race-winner-badge{display:flex;align-items:center;gap:7px;min-width:0;min-height:43px;padding:6px 8px;border:1px solid;border-radius:5px;line-height:1.3;box-shadow:0 1px 2px #2633430b,inset 0 1px 0 #ffffffa6}
+.race-winner-men{border-color:#8eb4db;background:#f0f6fd;color:#315f8a}
+.race-winner-women{border-color:#dda0bc;background:#fff2f7;color:#8e4262}
+.race-winner-gender{flex-shrink:0;font-size:9px;font-weight:750;opacity:.8}
+.race-winner-copy{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}
+.race-winner-name{font-size:10px;font-weight:600;white-space:normal;overflow-wrap:anywhere}
+.race-winner-badge strong{font-size:11px;font-weight:750;letter-spacing:.05px;white-space:nowrap}
+.race-winner-badge.is-unavailable{background:#fafbf8;border-style:dashed;box-shadow:none}
+.race-winner-badge.is-unavailable strong{font-weight:500;min-width:22px;text-align:center}
+.race-news{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
+.race-news-link{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:7px 11px;border:1px solid #d6a0a5;border-radius:5px;background:#fff0f2;color:#98343e;box-shadow:0 1px 3px #79303a0c;font-size:10px;font-weight:650;text-decoration:none;white-space:nowrap}
+.race-news-link svg{width:15px;height:15px;flex-shrink:0}
+.race-news-arrow{font-size:14px;line-height:1}
+.race-news-link:hover{background:#fbe0e4;border-color:#bf6570;color:#822b35}
+.race-news-link:focus-visible{outline:2px solid #d62f36;outline-offset:3px;border-radius:2px}
+.race-news.is-compact .race-news-link{font-size:9px;gap:5px;min-height:32px;padding:6px 9px}
+.race-news.is-compact .race-news-link svg{width:13px;height:13px}
+@media(max-width:390px){.race-winners{gap:6px}.race-winner-select{max-width:109px}.race-winner-badge{padding:6px;gap:5px}.race-winner-name{font-size:9px}.race-winner-badge strong{font-size:10px}.race-winner-select select{padding-left:6px;font-size:9px}.race-winner-distance{font-size:9px}}

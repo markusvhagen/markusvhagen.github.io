@@ -263,5 +263,34 @@
     "espen-roistad",
     "ola-rossvoll",
     "signe-by-eide"
+  ],
+  "winners": [
+    {
+      "distance": "Halvmaraton",
+      "men": {
+        "name": "Andreas Almgren",
+        "time": "58:06",
+        "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7952&mode=participantinfo&pid=341&language=us",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-10-30"
+      },
+      "women": {
+        "name": "Agnes Jebet Ngetich",
+        "time": "1:05:15",
+        "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7952&mode=participantinfo&pid=726&language=us",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-10-30"
+      },
+      "scope": "Samlet resultatliste, inkludert VM-eliten"
+    }
+  ],
+  "winnersNote": "Vinnertider gjelder den samlede UltimateLIVE-listen for WRRC Half Marathon (event 7952), inkludert VM-eliten, ikke bare mosjonsfeltet. Sofies offisielle deltakerkort har kjønnsplassering 23 i samme felt på 16 224 kvinnelige startere som Ngetich er nummer 1 i. Elitevinnernes netto- og bruttotider er identiske.",
+  "news": [
+    {
+      "title": "Klubbrekorder i Køben",
+      "url": "https://www.bratsbergfriidrett.no/2026/09/20/klubbrekorder-i-koben/"
+    }
   ]
 }

@@ -58,7 +58,20 @@
         "preferredSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBbrFONWY1cILLrz6KZylhihJ15HJQgBDmzk6rMZVitUpErfHgkHbfHUW&s=10",
         "illustrative": false
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1990,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Camilla-Marie FLAATEN",
+        "sourceBib": "143",
+        "sourcePage": 2,
+        "textLine": 48,
+        "evidence": "1.        Camilla-Marie FLAATEN[143]        1990     K     Bratsberg IL           --   17:13",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "eira-rapp",
@@ -163,7 +176,20 @@
         "preferredSource": "https://www-static.trondheimstafetten.no/wp-content/uploads/2026/06/Grete-Helgesen-scaled.jpg",
         "illustrative": false
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1990,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Grete HELGESEN",
+        "sourceBib": "217",
+        "sourcePage": 2,
+        "textLine": 49,
+        "evidence": "2.        Grete HELGESEN[217]               1990     K     Bratsberg IL         +28    17:41",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "hedda-leirvik",
@@ -186,7 +212,20 @@
         "framingReviewed": true,
         "identityEvidence": "Brukeren bekreftet startnummer 557 etter kontroll av bildet."
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2002,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Hedda LEIRVIK",
+        "sourceBib": "82",
+        "sourcePage": 2,
+        "textLine": 37,
+        "evidence": "3.        Hedda LEIRVIK[82]                 2002     K     Bratsberg           +1:28   17:35",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "henning-offigstad",
@@ -211,7 +250,20 @@
         "subjectBib": "93",
         "framingReviewed": true
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1985,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Henning OFFIGSTAD",
+        "sourceBib": "121",
+        "sourcePage": 7,
+        "textLine": 223,
+        "evidence": "1.       Henning OFFIGSTAD[121]        1985    M      Bratsberg IL                           --   15:26",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "henrik-kristensen",
@@ -295,7 +347,20 @@
         "illustrative": false,
         "checkedAt": "2026-10-29"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1982,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Ingvild SAKSVIK-LEHOUILLIER",
+        "sourceBib": "59",
+        "sourcePage": 2,
+        "textLine": 58,
+        "evidence": "2.        Ingvild SAKSVIK-LEHOUILLIER[59]   1982     K     Bratsberg IL        +1:15   20:21",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "johanne-lovise-wiig",
@@ -417,7 +482,20 @@
       "aliases": [],
       "kind": "member",
       "photo": null,
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2011,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Kristian Stokke SELNES",
+        "sourceBib": "200",
+        "sourcePage": 3,
+        "textLine": 85,
+        "evidence": "5.        Kristian Stokke SELNES[200]    2011    M      Bratsberg IL                 +1:08   16:00",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "kristin-waaktaar-opland",
@@ -464,7 +542,20 @@
         "subjectBib": "413",
         "framingReviewed": true
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1992,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Mari Steinkjer ØYEN",
+        "sourceBib": "102",
+        "sourcePage": 1,
+        "textLine": 31,
+        "evidence": "2.         Mari Steinkjer ØYEN[102]        1992     K     Bratsberg IL            +1:10   17:17",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "markus-valas-hagen",
@@ -514,7 +605,8 @@
           "date": "2026-05-23",
           "eventName": "Nidaros Løpefest",
           "source": "Pers bekreftet av utøveren 29.10.2026; tid og dato fra publisert resultatliste.",
-          "sourceUrl": "https://www.kondis.no/resultater/resultater-nidaros-lopefest-2026/1569053"
+          "sourceUrl": "https://www.kondis.no/resultater/resultater-nidaros-lopefest-2026/1569053",
+          "raceId": "nidaros-lopefest-2026"
         },
         {
           "type": "road",
@@ -522,7 +614,8 @@
           "time": "1:21:03",
           "date": "2026-03-29",
           "eventName": "Berlin halvmaraton",
-          "source": "Pers bekreftet av utøveren 29.10.2026; nettotid fra tidligere innsendt resultatliste."
+          "source": "Pers bekreftet av utøveren 29.10.2026; nettotid fra tidligere innsendt resultatliste.",
+          "raceId": "berlin-halvmaraton-2026"
         }
       ]
     },
@@ -545,7 +638,20 @@
         "illustrative": false,
         "checkedAt": "2026-10-29"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1990,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Mats FLAATEN",
+        "sourceBib": "144",
+        "sourcePage": 7,
+        "textLine": 204,
+        "evidence": "6.       Mats FLAATEN[144]             1990    M      Bratsberg IL                        +1:37   16:37",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "nora-waldal",
@@ -697,7 +803,20 @@
         "illustrative": false,
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Karoline-Haugen-360x640.jpg"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1995,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Sofie Karoline HAUGEN",
+        "sourceBib": "154",
+        "sourcePage": 1,
+        "textLine": 30,
+        "evidence": "1.         Sofie Karoline HAUGEN[154]      1995     K     Bratsberg IL               --   16:07",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "sturla-granheim",
@@ -739,7 +858,20 @@
         "illustrative": false,
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Tommy-Hove-360x640.jpg"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1992,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Tommy BANGJORD HOVE",
+        "sourceBib": "142",
+        "sourcePage": 5,
+        "textLine": 155,
+        "evidence": "1.        Tommy BANGJORD HOVE[142]             1992    M      Bratsberg IL                   --   14:22",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "trond-sliper",
@@ -760,7 +892,20 @@
         "illustrative": false,
         "checkedAt": "2026-10-29"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1984,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Trond SLIPER",
+        "sourceBib": "87",
+        "sourcePage": 7,
+        "textLine": 227,
+        "evidence": "5.       Trond SLIPER[87]              1984    M      Bratsberg IL                        +1:22   16:48",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "trym-holten",
@@ -806,7 +951,20 @@
         "subjectBib": "44",
         "framingReviewed": true
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1990,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Ulrik HOVIG",
+        "sourceBib": "44",
+        "sourcePage": 6,
+        "textLine": 193,
+        "evidence": "1.       Ulrik HOVIG[44]                     1990    M      Bratsberg IL                      --   15:00",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "vibeke-jensen",
@@ -870,7 +1028,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2010,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Eirik Mæhlum KRÜGER",
+        "sourceBib": "80",
+        "sourcePage": 3,
+        "textLine": 91,
+        "evidence": "11.       Eirik Mæhlum KRÜGER[80]        2010    M      Bratsberg                    +2:19   17:11",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "ronny-ingebrigtsen",
@@ -896,7 +1067,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Pål KLEVELAND",
+        "sourceBib": "156",
+        "sourcePage": 7,
+        "textLine": 211,
+        "evidence": "13.      Pål KLEVELAND[156]            1988    M      Bratsberg                           +3:20   18:20",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "sofie-soraunet-wangberg",
@@ -1043,7 +1227,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1985,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Nikolai MÆHLUM",
+        "sourceBib": "75",
+        "sourcePage": 7,
+        "textLine": 224,
+        "evidence": "2.       Nikolai MÆHLUM[75]            1985    M      Bratsberg                            +29    15:55",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "alf-bjornar-bertnum",
@@ -1056,7 +1253,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1989,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Alf Bjørnar BERTNUM",
+        "sourceBib": "167",
+        "sourcePage": 6,
+        "textLine": 195,
+        "evidence": "3.       Alf Bjørnar BERTNUM[167]            1989    M      Bratsberg IL                   +1:04   16:04",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "anders-resell",
@@ -1126,7 +1336,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1987,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Øivind ESTENSEN",
+        "sourceBib": "76",
+        "sourcePage": 7,
+        "textLine": 207,
+        "evidence": "9.       Øivind ESTENSEN[76]           1987    M      Bratsberg IL                        +2:01   17:01",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "stian-granheim-skaland",
@@ -1152,7 +1375,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1995,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Torje NES FURU",
+        "sourceBib": "122",
+        "sourcePage": 6,
+        "textLine": 172,
+        "evidence": "12.      Torje NES FURU[122]                 1995    M      Bratsberg IL                   +2:22   16:44",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "tor-magne-volden",
@@ -1217,7 +1453,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1997,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Aslak BRODERSTAD AHVENSALMI",
+        "sourceBib": "335",
+        "sourcePage": 11,
+        "textLine": 334,
+        "evidence": "2.       Aslak BRODERSTAD AHVENSALMI[335]   1997    M      Bratsberg IL                        +13    38:01",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "helge-johansen",
@@ -1308,7 +1557,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Kristian BERRUM",
+        "sourceBib": "203",
+        "sourcePage": 7,
+        "textLine": 212,
+        "evidence": "14.      Kristian BERRUM[203]          1988    M      Bratsberg IL                        +3:33   18:33",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "vegard-haugen",
@@ -1321,7 +1583,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Vegard HAUGEN",
+        "sourceBib": "115",
+        "sourcePage": 7,
+        "textLine": 215,
+        "evidence": "17.      Vegard HAUGEN[115]            1988    M      Bratsberg IL                        +4:03   19:03",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "johan-brende-kverndal",
@@ -1336,7 +1611,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2009,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Johan KVERNDAL",
+        "sourceBib": "48",
+        "sourcePage": 4,
+        "textLine": 108,
+        "evidence": "22.     Johan KVERNDAL[48]           2009    M      Bratsberg il              +3:34   18:26",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "rune-lysgard-fagerheim",
@@ -1349,7 +1637,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1998,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Rune Lysgård FAGERHEIM",
+        "sourceBib": "318",
+        "sourcePage": 11,
+        "textLine": 333,
+        "evidence": "1.       Rune Lysgård FAGERHEIM[318]        1998    M      Bratsberg IL                          --   37:48",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "iris-roe-kalafati",
@@ -1637,7 +1938,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2009,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Martin Randli ELDEN",
+        "sourceBib": "36",
+        "sourcePage": 3,
+        "textLine": 96,
+        "evidence": "16.       Martin Randli ELDEN[36]        2009    M      Bratsberg IL                 +2:38   17:30",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "hanna-eid",
@@ -1650,7 +1964,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1997,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Hanna EID",
+        "sourceBib": "141",
+        "sourcePage": 2,
+        "textLine": 43,
+        "evidence": "9.        Hanna EID[141]                    1997     K     Bratsberg           +5:10   21:17",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "ane-norberg-kristiansen",
@@ -1663,7 +1990,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2012,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Ane Norberg KRISTIANSEN",
+        "sourceBib": "65",
+        "sourcePage": 1,
+        "textLine": 11,
+        "evidence": "4.         Ane Norberg KRISTIANSEN[65]     2012     K     Bratsberg IL            +1:30   21:03",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "anna-neergaard-rathe",
@@ -1741,7 +2081,20 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1993,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Robert BARØ",
+        "sourceBib": "40",
+        "sourcePage": 6,
+        "textLine": 179,
+        "evidence": "19.      Robert BARØ[40]                     1993    M      Bratsberg IL                   +3:31   17:53",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "bendik-stoa-aanensen",
@@ -1801,7 +2154,20 @@
         "eventId": "tronderenergi-mila-2026",
         "url": "https://live.eqtiming.com/79516"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1987,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Henrik NORDAHL",
+        "sourceBib": "124",
+        "sourcePage": 6,
+        "textLine": 196,
+        "evidence": "4.       Henrik NORDAHL[124]                 1987    M      Bratsberg IL                   +1:08   16:08",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "kjell-marius-vollan",
@@ -1813,7 +2179,20 @@
         "eventId": "tronderenergi-mila-2026",
         "url": "https://live.eqtiming.com/79516"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Kjell Marius VOLLAN",
+        "sourceBib": "208",
+        "sourcePage": 7,
+        "textLine": 214,
+        "evidence": "16.      Kjell Marius VOLLAN[208]      1988    M      Bratsberg IL / Tylldal IL / EM1MN   +4:02   19:02",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "vegard-mahle-aas",
@@ -1923,7 +2302,20 @@
         "eventId": "trondheim-skogsmaraton-2026",
         "url": "https://live.eqtiming.com/79466"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1995,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Lise ØYEN",
+        "sourceBib": "206",
+        "sourcePage": 2,
+        "textLine": 42,
+        "evidence": "8.        Lise ØYEN[206]                    1995     K     Bratsberg IL        +4:34   20:41",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "julie-maao-selboe",
@@ -1947,7 +2339,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1987,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Klavdia STRØMHYLDEN",
+        "sourceBib": "182",
+        "sourcePage": 2,
+        "textLine": 51,
+        "evidence": "4.        Klavdia STRØMHYLDEN[182]          1987     K     Bratsberg IL        +5:08   22:21",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "kari-hanne-gjeilo",
@@ -1959,7 +2364,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1973,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Kari Hanne GJEILO",
+        "sourceBib": "89",
+        "sourcePage": 3,
+        "textLine": 77,
+        "evidence": "1.        Kari Hanne GJEILO[89]          1973     K     Bratsberg                       --   22:12",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "simen-haugland",
@@ -1971,7 +2389,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1997,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Simen HAUGLAND",
+        "sourceBib": "50",
+        "sourcePage": 6,
+        "textLine": 181,
+        "evidence": "21.      Simen HAUGLAND[50]                  1997    M      Bratsberg IL                   +4:07   18:29",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "arnt-kverndal",
@@ -1983,7 +2414,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1977,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Arnt KVERNDAL",
+        "sourceBib": "47",
+        "sourcePage": 8,
+        "textLine": 254,
+        "evidence": "6.       Arnt KVERNDAL[47]              1977    M      Bratsberg il                         +2:43   18:52",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "rolf-johansen",
@@ -1995,7 +2439,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1976,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Rolf JOHANSEN",
+        "sourceBib": "31",
+        "sourcePage": 9,
+        "textLine": 273,
+        "evidence": "3.       Rolf JOHANSEN[31]          1976    M      Bratsberg IL Friidrett    +1:16   17:55",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "bjarne-austad",
@@ -2007,7 +2464,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1974,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Bjarne AUSTAD",
+        "sourceBib": "61",
+        "sourcePage": 9,
+        "textLine": 274,
+        "evidence": "4.       Bjarne AUSTAD[61]          1974    M      Bratsberg IL              +1:49   18:28",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "vibeke-johansen",
@@ -2019,7 +2489,20 @@
         "eventId": "tronder-ostlopet-2026",
         "url": "https://my.raceresult.com/396951/results"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1976,
+      "birthYearSource": {
+        "fileName": "02ResultListsSluttresultater.pdf",
+        "eventId": "tronder-ostlopet-2026",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "sourceName": "Vibeke JOHANSEN",
+        "sourceBib": "301",
+        "sourcePage": 10,
+        "textLine": 313,
+        "evidence": "1.        Vibeke JOHANSEN[301]               1976     K     Bratsberg                     --    45:44",
+        "field": "Født",
+        "checkedAt": "2026-10-30"
+      }
     },
     {
       "id": "kristoffer-krogh",

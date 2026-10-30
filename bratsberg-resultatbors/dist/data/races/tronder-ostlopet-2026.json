@@ -1101,5 +1101,56 @@
     "tommy-bangjord-hove",
     "ulrik-hovig",
     "rune-lysgard-fagerheim"
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "5 km",
+      "men": {
+        "name": "Tommy Bangjord Hove",
+        "time": "14:22",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "sourceFile": "02ResultListsSluttresultater.pdf",
+        "corroboratingUrl": "https://www.kondis.no/idrett/sterke-vinnertider-i-tronder-ostlopet/1574711"
+      },
+      "women": {
+        "name": "Sofie Karoline Haugen",
+        "time": "16:07",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "sourceFile": "02ResultListsSluttresultater.pdf",
+        "corroboratingUrl": "https://www.kondis.no/idrett/sterke-vinnertider-i-tronder-ostlopet/1574711"
+      },
+      "scope": "Totalvinner innen kjønn og distanse, alle klubber"
+    },
+    {
+      "distance": "10 km",
+      "men": {
+        "name": "Magnus Stormo Isaksen",
+        "time": "34:26",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "sourceFile": "02ResultListsSluttresultater.pdf",
+        "corroboratingUrl": "https://www.kondis.no/idrett/sterke-vinnertider-i-tronder-ostlopet/1574711"
+      },
+      "women": {
+        "name": "Anna Nielsen",
+        "time": "38:50",
+        "sourceUrl": "https://my.raceresult.com/396951/results",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "sourceFile": "02ResultListsSluttresultater.pdf",
+        "corroboratingUrl": "https://www.kondis.no/idrett/sterke-vinnertider-i-tronder-ostlopet/1574711"
+      },
+      "scope": "Totalvinner innen kjønn og distanse, alle klubber"
+    }
+  ],
+  "winnersNote": "Vinnere er kontrollert mot hele den innsendte Race Result-PDF-en med 265 fullførte, innen kjønn og distanse, og bekreftet av Kondis. PDF-en skiller ikke netto- og bruttotid. Kondis sin tabell har feilformatert tid for 10 km; korrekte tider 34:26 og 38:50 er lest fra PDF-en og bekreftet i løpsomtalen."
 }

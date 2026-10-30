@@ -483,5 +483,56 @@
     "ane-korsvold",
     "oivind-estensen",
     "hanna-eid"
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "Halvmaraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Tobias Alstad",
+        "time": "1:13:32",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/trondheim-skogsmaraton-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-skogsmaraton-2026/1593783"
+      },
+      "women": {
+        "name": "Oda Scheele",
+        "time": "1:28:54",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/trondheim-skogsmaraton-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-skogsmaraton-2026/1593783"
+      }
+    },
+    {
+      "distance": "Kvartmaraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Mats Engan Heggelund",
+        "time": "37:43",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-skogsmaraton-2026/1593783",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://www.sportsidioten.no/resultater/trondheim-skogsmaraton-2026/"
+      },
+      "women": {
+        "name": "Sunniva Isabel Cook",
+        "time": "41:18",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-skogsmaraton-2026/1593783",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://www.sportsidioten.no/resultater/trondheim-skogsmaraton-2026/"
+      }
+    }
+  ],
+  "winnersNote": "Vinnere i hele startfeltet per distanse og kjønn, kontrollert mot publiserte resultatkopier 30.10.2026. EQ Timings dynamiske resultatliste er ikke kontrollert direkte. Kildene oppgir ikke entydig om tidene er netto- eller bruttotider. Kvartmaratontidene er hentet fra Kondis og totalvinnerne kontrollert mot Sportsidiotens kjønnslister; sistnevnte har en formateringsfeil med ekstra :00 på tider under én time."
 }

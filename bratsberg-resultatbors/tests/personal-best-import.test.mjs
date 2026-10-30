@@ -17,7 +17,7 @@ test('new-race CLI and public pipeline share athlete aliases, manual baselines a
     }
     const athlete={id:'test-runner',name:'Test Løper',aliases:['Testløper'],personalBests:[{type:'road',distance:'Halvmaraton',time:'1:25:00',date:'2025-09-14'}]};
     const athletes={athletes:[athlete]};
-    const race={id:'new-race',name:'Testløp',date:'2026-09-20',type:'road',timeBasis:'net',distances:['Halvmaraton'],results:[{name:'Testløper',distance:'Halvmaraton',gender:'K',time:'1:25:30',netTime:'1:24:30',status:'finished'}]};
+    const race={id:'new-race',name:'Testløp',date:'2026-09-20',type:'road',timeBasis:'net',distances:['Halvmaraton'],results:[{name:'Testløper',distance:'Halvmaraton',gender:'K',category:'K35-39',time:'1:25:30',netTime:'1:24:30',status:'finished'}]};
     const writeJSON=(path,value)=>writeFile(join(root,path),JSON.stringify(value));
     await writeJSON('dist/data/index.json',{races:[],athletes:'data/athletes.json'});
     await writeJSON('dist/data/athletes.json',athletes);
@@ -41,7 +41,8 @@ test('new-race CLI and public pipeline share athlete aliases, manual baselines a
     const card=renderAthleteCard(performance);
     assert.match(card,/badge pb/);
     assert.match(card,/manuelt registrerte perser/);
-    assert.match(card,/−30 s/);
+    assert.match(card,/>K35-39</);
+    assert.doesNotMatch(card,/athlete-card-improvement|−30 s/);
 
     athlete.personalBests[0].date='2025-02-30';
     await writeJSON('dist/data/athletes.json',athletes);

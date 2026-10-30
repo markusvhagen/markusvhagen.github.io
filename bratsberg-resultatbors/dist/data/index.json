@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "demo": false,
   "dataMode": "real",
-  "updatedAt": "2026-10-29",
+  "updatedAt": "2026-10-30",
   "races": [
     "data/races/hytteplanmila-2026.json",
     "data/races/trondheim-skogsmaraton-2026.json",

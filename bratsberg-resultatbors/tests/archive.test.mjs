@@ -49,3 +49,12 @@ test('non-finishers stay absent even when raw rows reach the archive; PB comes f
   assert.deepEqual(selectArchivePage(input,{onlyRecords:true}).items[0].matching.map(r=>r.name),['Improved']);
   assert.equal(selectArchivePage(input,{query:'Did not'}).total,0);
 });
+
+test('points sorting prioritizes scores inside each race and leaves ungraded results last',()=>{
+  const row=(name,time,score)=>({name,time,gender:'M',distance:'10 km',status:'finished',ageGrade:{eligible:score!==null,score}});
+  const input=[{...races[0],results:[row('Unknown','30:00',null),row('Faster','33:00',72),row('Older','35:00',85)]}];
+  const original=structuredClone(input);
+  assert.deepEqual(selectArchivePage(input).items[0].matching.map(result=>result.name),['Unknown','Faster','Older']);
+  assert.deepEqual(selectArchivePage(input,{sort:'age-grade'}).items[0].matching.map(result=>result.name),['Older','Faster','Unknown']);
+  assert.deepEqual(input,original);
+});

@@ -1,0 +1,37 @@
+/* Scores inherit the poster's foreground, including podium and record colors. */
+.age-grade-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 7px;width:100%;margin-top:9px;padding-top:7px;border-top:1px solid #ffffff29;color:inherit;font-size:9px;line-height:1.4;font-variant-numeric:tabular-nums}
+.age-grade-score{white-space:nowrap}
+.age-grade-score strong{font-size:13px;font-weight:750;letter-spacing:.1px}
+.age-grade-edit{display:inline-flex;align-items:center;min-height:26px;max-width:100%;border:1px solid #ffffff50;border-radius:4px;padding:3px 6px;background:transparent;color:inherit;font:inherit;font-size:9px;line-height:1.3;text-align:left;cursor:pointer}
+.age-grade-edit:hover{background:#ffffff17;border-color:currentColor}
+.age-grade-edit:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.age-grade-unavailable{font-size:9px;opacity:.8}
+.athlete-card:is(.podium-gold,.podium-silver,.podium-bronze):not(.is-record) .age-grade-row{border-top-color:#23312b26}
+.athlete-card:is(.podium-gold,.podium-silver,.podium-bronze):not(.is-record) .age-grade-edit{border-color:#23312b50}
+.athlete-card:is(.podium-gold,.podium-silver,.podium-bronze):not(.is-record) .age-grade-edit:hover{background:#ffffff35}
+.age-grade-guide{margin:0 0 22px;padding:16px 18px;border:1px solid #b7ccdf;border-left:3px solid #6489ad;border-radius:6px;background:#f1f6fa;color:#344e65}
+.age-grade-guide-heading{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+.age-grade-guide-heading h3{font-size:14px;line-height:1.4;font-weight:750;margin:0 0 4px}
+.age-grade-guide-heading p{font-size:12px;line-height:1.6;margin:0}
+.age-grade-formula{padding:9px 12px;border:1px solid #c9d9e5;border-radius:4px;background:#fff;color:#375c7c;font-variant-numeric:tabular-nums}
+.age-grade-formula strong{display:block;font-size:12px;line-height:1.5}
+.age-grade-formula span{display:block;font-size:10px;margin-top:3px;color:#60778c}
+.age-grade-help{margin:12px 0 0;color:#506a7d;font-size:12px;line-height:1.7;max-width:850px}
+.age-grade-help summary{display:list-item;width:fit-content;color:#345978;font-weight:650;cursor:pointer}
+.age-grade-help p{margin-top:7px}
+.age-grade-help a{text-decoration:underline;text-underline-offset:3px}
+.age-grade-help summary:focus-visible{outline:2px solid var(--red,#d62f36);outline-offset:3px}
+.age-grade-dialog{width:min(420px,calc(100% - 32px));max-height:calc(100dvh - 48px);margin:auto;padding:25px;border:1px solid #dce1d4;border-radius:10px;background:#fdfefb;color:#303934;box-shadow:0 18px 60px #14251c35;overflow:auto}
+.age-grade-dialog::backdrop{background:#17241bc0}
+.age-grade-dialog h2{font-family:var(--display,inherit);font-size:29px;font-weight:600;line-height:1.2;margin:0 0 9px}
+.age-grade-dialog p{font-size:12px;line-height:1.65;margin:9px 0;color:#6f7967}
+.age-grade-dialog label{display:block;margin-top:18px;font-size:12px;font-weight:650}
+.age-grade-dialog input[type=number]{display:block;width:100%;margin-top:7px;padding:11px 12px;border:1px solid #cbd4c2;border-radius:5px;background:white;color:inherit;font:inherit;font-size:16px;font-variant-numeric:tabular-nums}
+.age-grade-dialog input:focus-visible{outline:2px solid var(--red,#d62f36);outline-offset:2px}
+.age-grade-dialog-actions{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:8px;margin-top:22px}
+.age-grade-dialog-actions button{padding:10px 13px;border:1px solid #ccd4c3;border-radius:5px;background:white;color:inherit;font:inherit;font-size:11px;cursor:pointer}
+.age-grade-dialog-actions button[type=submit]{background:var(--red,#d62f36);color:#fff;border-color:var(--red,#d62f36);font-weight:650}
+.age-grade-dialog-actions button:focus-visible{outline:2px solid #943a3c;outline-offset:2px}
+.age-grade-dialog [role=alert]{color:#a02029;font-size:11px}
+.age-grade-dialog [hidden]{display:none!important}
+@media(max-width:760px){.age-grade-row{font-size:9px}.age-grade-edit{min-height:30px}.age-grade-dialog{padding:21px}.age-grade-guide{padding:14px}.age-grade-help{font-size:12px}}

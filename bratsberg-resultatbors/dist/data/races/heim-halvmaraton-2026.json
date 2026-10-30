@@ -223,5 +223,30 @@
     "stine-helena-bang-svendsen",
     "rikard-sunde",
     "aina-hafsmo"
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "Halvmaraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Jonas Frorud",
+        "time": "1:09:20",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/heim-halvmaraton-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false
+      },
+      "women": {
+        "name": "Guro Nordvik",
+        "time": "1:23:48",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/heim-halvmaraton-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false
+      }
+    }
+  ],
+  "winnersNote": "Vinnere i hele startfeltet per distanse og kjønn, kontrollert mot publiserte resultatkopier 30.10.2026. EQ Timings dynamiske resultatliste er ikke kontrollert direkte. Kildene oppgir ikke entydig om tidene er netto- eller bruttotider."
 }

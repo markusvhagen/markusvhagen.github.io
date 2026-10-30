@@ -7,6 +7,14 @@
 @media(max-width:390px){.portal-tabs{gap:17px}.portal-tabs a{font-size:10px}.result-hero-grid{gap:9px}.race-card-grid .race-detail{padding:0 10px 13px}.race-card-grid .race-flag-list{display:none}.official-record .record-time{font-size:32px}.record-gender button{padding:7px 10px;font-size:10px}.record-category-heading>span{font-size:8px}.relay-record-link{gap:10px}.relay-record-time{font-size:9px}}
 
 /* Long result lists retain small cards and clear distance groups. */
+.race-card-grid .race-header .race-summary{padding-bottom:9px;border-bottom:0}
+.race-metadata-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px 17px;padding:0 22px 16px}
+.race-metadata-row time{font-size:10px;color:var(--muted);white-space:nowrap}
+.race-metadata-row .race-news{margin-left:auto}
+.age-grade-status{font-size:11px;line-height:1.6;color:#55644d;margin:0 0 16px;padding:9px 12px;background:#edf3e8;border-radius:4px}
+.age-grade-status[hidden]{display:none}
+.age-grade-person{font-weight:650;color:var(--ink)}
+@media(max-width:760px){.race-metadata-row{padding:0 16px 15px;gap:7px 12px}.race-metadata-row .race-news{margin-left:0}.race-metadata-row time{margin-left:auto;font-size:9px}}
 .portal-panel .filter-bar{flex-wrap:wrap}.portal-panel .search-field{flex:1 1 280px}.portal-panel .select-wrap{flex:0 1 auto}.portal-panel .toggle-label{margin-left:0}
 .race-distance-group+.race-distance-group{margin-top:23px}.race-distance-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:3px 0 11px;padding-bottom:8px;border-bottom:1px solid var(--line)}.race-distance-heading h3{font-family:var(--display);font-size:22px;font-weight:600}.race-distance-heading>span{font-size:9px;color:var(--muted)}
 .race-data-label{display:inline-block;border:1px solid #d6d9d0;border-radius:3px;padding:1px 5px;font-size:8px;line-height:1.5}.race-source-note{margin-top:18px;font-size:10px;line-height:1.7;color:var(--muted)}.race-source-note a{font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:3px}.race-source-note a:hover{color:var(--red)}.race-source-note p{margin-top:5px}

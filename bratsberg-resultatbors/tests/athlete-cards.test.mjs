@@ -58,12 +58,13 @@ test('a red club-record poster keeps a separate silver medal and full record lab
   assert.match(html,/Klubbrekord/);
   assert.doesNotMatch(html,/>KR(?: |<)/);
 });
-test('only computed historical improvements create PB styling and improvement text',()=>{
+test('computed PBs keep their badge and age class without showing improvement margins',()=>{
   const legacy=renderAthleteCard({...runner,time:'31:57',pb:true,previousBest:'33:00'});
   assert.doesNotMatch(legacy,/is-pb|badge pb|athlete-card-improvement/);
   const computed=renderAthleteCard({...runner,time:'31:57',performanceHistory:{isPersonalBest:true,previousBest:'33:00'}});
   assert.match(computed,/is-pb/);
   assert.match(computed,/badge pb/);
-  assert.match(computed,/−1 min 3 s/);
+  assert.match(computed,/>K35-39</);
+  assert.doesNotMatch(computed,/athlete-card-improvement|−1 min 3 s/);
   assert.match(computed,/tidligere registrerte løp/);
 });

@@ -1,5 +1,5 @@
 /** A layout-independent countdown. Pauses retain progress; reset is explicit. */
-export function createCarouselClock(duration=8000) {
+export function createCarouselClock(duration=20000) {
   let elapsed=0;
   return {
     advance(delta,blocked=false){

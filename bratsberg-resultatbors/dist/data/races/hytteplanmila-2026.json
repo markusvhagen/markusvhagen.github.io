@@ -348,5 +348,28 @@
       "clubRecord": false,
       "recordEligible": false
     }
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "10 km",
+      "men": {
+        "name": "José Carlos Pinto",
+        "time": "27:58",
+        "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=200&language=us",
+        "verified": true,
+        "timeBasis": "net",
+        "checkedAt": "2026-10-30"
+      },
+      "women": {
+        "name": "Therese Johaug",
+        "time": "30:50",
+        "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=2&language=us",
+        "verified": true,
+        "timeBasis": "net",
+        "checkedAt": "2026-10-30"
+      },
+      "scope": "Samlet resultatliste, alle aldersklasser"
+    }
+  ],
+  "winnersNote": "Vinnerne er nummer 1 innen kjønn i arrangørens offisielle UltimateLIVE-liste. Tidene er kontrollert mot deltakerkortene; nettotiden er brukt."
 }

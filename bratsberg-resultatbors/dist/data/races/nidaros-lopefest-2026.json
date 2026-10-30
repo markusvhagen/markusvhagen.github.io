@@ -1168,5 +1168,48 @@
         "directEqVerified": false
       }
     }
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "10 km",
+      "men": {
+        "name": "Ørjan Kjeldsli",
+        "time": "29:57.2",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30"
+      },
+      "women": {
+        "name": "Sofie Karoline Haugen",
+        "time": "33:30.6",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30"
+      },
+      "scope": "Totalvinner innen kjønn og distanse, alle klubber"
+    },
+    {
+      "distance": "5 km",
+      "men": {
+        "name": "Alexander Hofstad",
+        "time": "15:32.1",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30"
+      },
+      "women": {
+        "name": "Camilla-Marie Flaaten",
+        "time": "17:08.8",
+        "sourceUrl": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30"
+      },
+      "scope": "Totalvinner innen kjønn og distanse, alle klubber"
+    }
+  ],
+  "winnersNote": "Vinnere er kontrollert mot Sportsidiotens komplette kjønnsdelte resultatkopi og sammenholdt med Kondis. Tideler er bevart fra Sportsidioten; Kondis viser hele sekunder. Kildene skiller ikke netto- og bruttotid. Den dynamiske EQ-listen kunne ikke leses direkte."
 }

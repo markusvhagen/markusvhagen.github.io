@@ -2732,5 +2732,100 @@
       "positionGender": null,
       "positionGenderVerified": false
     }
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "5 km",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Sebastian Reinertsen",
+        "time": "15:01",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false
+      },
+      "women": {
+        "name": "Grethe Tyldum",
+        "time": "17:40",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false
+      }
+    },
+    {
+      "distance": "10 km",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Thomas Fremo",
+        "time": "31:11",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://sportsbasen.no/lop/resultater/trondheim-maraton-2026-bdo-mila/"
+      },
+      "women": {
+        "name": "Hanne Mjøen Maridal",
+        "time": "31:44",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://sportsbasen.no/lop/resultater/trondheim-maraton-2026-bdo-mila/"
+      }
+    },
+    {
+      "distance": "Halvmaraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Stijn Burghoorn",
+        "time": "1:10:02",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://sportsbasen.no/lop/resultater/trondheim-maraton-2026-brilliant-halvmaraton/"
+      },
+      "women": {
+        "name": "Camilla-Marie Flaaten",
+        "time": "1:17:26",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false,
+        "corroboratingSourceUrl": "https://sportsbasen.no/lop/resultater/trondheim-maraton-2026-brilliant-halvmaraton/"
+      }
+    },
+    {
+      "distance": "Maraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Tobias Gjerde",
+        "time": "2:29:40",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false
+      },
+      "women": {
+        "name": "Hanna Sandbakken Mørkved",
+        "time": "3:00:41",
+        "sourceUrl": "https://www.kondis.no/resultater/resultater-trondheim-maraton-2026/1589374",
+        "verified": true,
+        "timeBasis": "unspecified",
+        "checkedAt": "2026-10-30",
+        "directEqVerified": false
+      }
+    }
+  ],
+  "winnersNote": "Vinnere i hele startfeltet per distanse og kjønn, kontrollert mot publiserte resultatkopier 30.10.2026. EQ Timings dynamiske resultatliste er ikke kontrollert direkte. Kildene oppgir ikke entydig om tidene er netto- eller bruttotider."
 }

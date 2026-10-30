@@ -63,11 +63,12 @@ export function collectManualPersonalBests(registryData){
       const comparison=performanceKey(pb,{...pb,athleteId});
       if(!athleteId){issue('missing-athlete-id');return;}
       if(!date){issue('invalid-personal-best-date');return;}
+      if(pb.raceId!==undefined&&(typeof pb.raceId!=='string'||!pb.raceId.trim())){issue('invalid-personal-best-race-id');return;}
       if(!isFinishedResult(pb)){issue('invalid-personal-best-time-or-status');return;}
       if(!comparison.key){issue(comparison.reason);return;}
       if(pb.demo===true){issue('demo');return;}
       const manual={athleteId,index,date:achievedDate,...(!achievedDate?{asOf:date}:{}),time:pb.time,type:pb.type,distance:pb.distance};
-      for(const key of ['environment','courseId','eventName','source','sourceUrl']){
+      for(const key of ['environment','courseId','eventName','source','sourceUrl','raceId']){
         if(typeof pb[key]==='string')manual[key]=pb[key];
       }
       entries.push({key:comparison.key,date,time:pb.time,seconds,raceId:null,manual});
@@ -78,8 +79,10 @@ export function collectManualPersonalBests(registryData){
 
 /**
  * Recalculate from the archive and dated manual PBs without changing sources.
- * A PB means a strict improvement on a comparable result on an earlier date;
- * it is a best in the registered history, not proof of a lifetime best.
+ * A PB is a strict improvement on an earlier comparable result, or an explicit
+ * manually confirmed PB linked to this exact race, date and numeric time.
+ * A manual confirmation cannot override an earlier equal or faster result.
+ * Derived improvements alone are not proof of a lifetime best.
  * Same-day results are evaluated together because start order is unknown.
  * isBestRecorded describes the current archive; isPersonalBest describes the
  * event on its original date and therefore survives later improvements.
@@ -94,7 +97,7 @@ export function derivePerformanceHistory(races,registryData=null){
   const output=races.map(race=>({...race,results:(race.results||[]).map(source=>{
     const {pb,previousBest,performanceHistory,...result}=source;
     result.time=performanceTime(result,race);
-    const history={eligible:false,basis:'recorded-history',hasManualBaseline:false,previousBest:null,previousBestSeconds:null,previousRaceIds:[],previousPersonalBests:[],isPersonalBest:false,isBestRecorded:false,bestRecorded:null,improvementSeconds:null,reason:null};
+    const history={eligible:false,basis:'recorded-history',hasManualBaseline:false,previousBest:null,previousBestSeconds:null,previousRaceIds:[],previousPersonalBests:[],isPersonalBest:false,isManualPersonalBest:false,confirmedPersonalBests:[],isBestRecorded:false,bestRecorded:null,improvementSeconds:null,reason:null};
     result.performanceHistory=history;
     const date=historyDate(race.date),comparison=performanceKey(race,result);
     if(race.demo===true||result.demo===true)history.reason='demo';
@@ -125,11 +128,15 @@ export function derivePerformanceHistory(races,registryData=null){
         history.previousBestSeconds=priorBest?.seconds??null;
         history.previousRaceIds=[...new Set(priorEntries.map(previous=>previous.raceId).filter(Boolean))];
         history.previousPersonalBests=priorEntries.filter(previous=>previous.manual).map(previous=>({...previous.manual}));
-        history.isPersonalBest=priorBest!==null&&entry.seconds<priorBest.seconds;
+        const improved=priorBest!==null&&entry.seconds<priorBest.seconds;
+        const confirmations=sameDay.filter(candidate=>candidate.manual&&candidate.manual.raceId===entry.raceId&&candidate.manual.date===entry.date&&candidate.seconds===entry.seconds);
+        history.isManualPersonalBest=confirmations.length>0&&(priorBest===null||improved);
+        history.confirmedPersonalBests=history.isManualPersonalBest?confirmations.map(candidate=>({...candidate.manual})):[];
+        history.isPersonalBest=improved||history.isManualPersonalBest;
         history.isBestRecorded=entry.seconds===absoluteBest.seconds;
         history.bestRecorded=absoluteBest.time;
-        history.improvementSeconds=history.isPersonalBest?Math.round((priorBest.seconds-entry.seconds)*1000)/1000:null;
-        history.reason=priorBest===null?'first-recorded-result':history.isPersonalBest?'improvement':entry.seconds===priorBest.seconds?'equal-previous-best':'slower-than-previous-best';
+        history.improvementSeconds=improved?Math.round((priorBest.seconds-entry.seconds)*1000)/1000:null;
+        history.reason=history.isManualPersonalBest?'manual-confirmed-personal-best':confirmations.length?'manual-personal-best-conflict':priorBest===null?'first-recorded-result':improved?'improvement':entry.seconds===priorBest.seconds?'equal-previous-best':'slower-than-previous-best';
       }
       for(const entry of sameDay){
         if(entry.manual)hasManualBaseline=true;

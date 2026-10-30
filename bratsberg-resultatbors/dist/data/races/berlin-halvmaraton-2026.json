@@ -107,5 +107,28 @@
     "jonas-onshuus",
     "markus-valas-hagen",
     "kristoffer-krogh"
-  ]
+  ],
+  "winners": [
+    {
+      "distance": "Halvmaraton",
+      "men": {
+        "name": "Andrea Kiptoo",
+        "time": "59:11",
+        "sourceUrl": "https://www.generali-berliner-halbmarathon.de/en/news-media/news/detail/generali-berlin-half-marathon-kiptoo-and-amebaw-triumph-in-berlin-petros-breaks-german-record",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-10-30"
+      },
+      "women": {
+        "name": "Likina Amebaw",
+        "time": "1:05:07",
+        "sourceUrl": "https://www.generali-berliner-halbmarathon.de/en/news-media/news/detail/generali-berlin-half-marathon-kiptoo-and-amebaw-triumph-in-berlin-petros-breaks-german-record",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-10-30"
+      },
+      "scope": "Samlet resultatliste, inkludert elitefeltet"
+    }
+  ],
+  "winnersNote": "Offisielle vinnere fra arrangørens løpsrapport 29.03.2026. Eliten rangeres etter bruttotid; klubbens tre resultater utenfor topp 50 beholder nettotid. Dennis Kipkemoi hadde samme publiserte sekundtid som Andrea Kiptoo, men ble offisielt nummer 2."
 }

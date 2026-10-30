@@ -9,7 +9,7 @@
 .athlete-card h4{font-size:11px;font-weight:550;line-height:1.35;margin:0;overflow-wrap:anywhere;min-height:30px;text-align:left}
 .athlete-card-time{font-family:var(--display);font-size:29px;font-weight:600;line-height:1;letter-spacing:.2px;font-variant-numeric:tabular-nums;margin:5px 0 8px;white-space:nowrap}
 .athlete-card-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px;min-height:15px;width:100%;margin-top:auto;font-size:8px;font-variant-numeric:tabular-nums}
-.athlete-card-badges{display:flex;gap:4px}.athlete-card-badges .badge{font-size:8px;padding:3px 5px;border-radius:2px}.athlete-card-badges .badge-long{display:inline}.athlete-card-badges .cr{background:#e6d29b;color:#463714}.athlete-card-badges .pb{background:#c2ddc7;color:#233f2b}.athlete-card-improvement{color:#c3ddbb;font-weight:500;white-space:nowrap}.athlete-card.is-record .athlete-card-improvement{color:#e0d5b9}
+.athlete-card-badges{display:flex;gap:4px}.athlete-card-badges .badge{font-size:8px;padding:3px 5px;border-radius:2px}.athlete-card-badges .badge-long{display:inline}.athlete-card-badges .cr{background:#e6d29b;color:#463714}.athlete-card-badges .pb{background:#c2ddc7;color:#233f2b}
 .athlete-card.compact{grid-template-columns:90px minmax(0,1fr);gap:12px;min-height:136px;padding:9px}.athlete-card.compact .athlete-card-portrait{min-height:116px}.athlete-card.compact h4{font-size:12px;min-height:32px}.athlete-card.compact .athlete-card-time{font-size:31px}
 /* The same portrait-left card adapts to the space inside each race. */
 .bf-athlete-grid{container-type:inline-size}
@@ -29,8 +29,7 @@
 .athlete-card.podium-bronze:hover{background:linear-gradient(130deg,#dbb89e,#c19373);border-color:#815739}
 .athlete-card:is(.podium-gold,.podium-silver,.podium-bronze) .athlete-card-top,
 .athlete-card:is(.podium-gold,.podium-silver,.podium-bronze) .athlete-card-position,
-.athlete-card:is(.podium-gold,.podium-silver,.podium-bronze) .athlete-card-category,
-.athlete-card:is(.podium-gold,.podium-silver,.podium-bronze) .athlete-card-improvement{color:inherit}
+.athlete-card:is(.podium-gold,.podium-silver,.podium-bronze) .athlete-card-category{color:inherit}
 .athlete-card:is(.podium-gold,.podium-silver,.podium-bronze) .athlete-card-position{font-weight:650}
 .athlete-card.podium-gold .athlete-card-portrait{background:#b29456;color:#302711}
 .athlete-card.podium-silver .athlete-card-portrait{background:#aabac5;color:#26333b}
@@ -50,6 +49,6 @@
 /* A club record owns the poster color, even if it also earns a podium medal. */
 .athlete-card.is-record{background:linear-gradient(135deg,#a42c31,#731d25);border-color:#c44b4f;color:#fff7f1;box-shadow:0 4px 12px #6d172326,inset 0 1px 0 #ee878733}
 .athlete-card.is-record:hover{background:linear-gradient(135deg,#b33338,#85232c);border-color:#e18a85}
-.athlete-card.is-record .athlete-card-top,.athlete-card.is-record .athlete-card-category,.athlete-card.is-record .athlete-card-improvement{color:#ffded6}
+.athlete-card.is-record .athlete-card-top,.athlete-card.is-record .athlete-card-category{color:#ffded6}
 .athlete-card.is-record .athlete-card-portrait{background:#651f29;color:#ffe2da}
 @container(max-width:335px){.athlete-card.compact .award-medal{font-size:7px;padding:2px 3px}.athlete-card.compact .award-medal .award-icon{width:13px;height:13px}.athlete-card.compact .badge{font-size:7px;padding:3px 4px}.athlete-card.compact .badge .award-icon{width:12px;height:12px}}
