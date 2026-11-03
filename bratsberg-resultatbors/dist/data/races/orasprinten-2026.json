@@ -1,0 +1,141 @@
+{
+  "id": "orasprinten-2026",
+  "name": "Ørasprinten",
+  "date": "2026-04-19",
+  "location": "Kyrksæterøra",
+  "type": "road",
+  "distances": [
+    "5 km"
+  ],
+  "demo": false,
+  "sourceUrl": "https://live.eqtiming.com/81981",
+  "source": {
+    "type": "official-result-api",
+    "provider": "EQ Timing",
+    "eventId": 81981,
+    "raceId": 334709,
+    "checkedAt": "2026-11-03",
+    "timeBasis": "net",
+    "scope": "Alle Bratsberg-oppføringer i EQs komplette deltakerliste og begge kjønnsdelte 5 km-resultatlister.",
+    "dateVerified": true,
+    "referenceUrls": [
+      "https://live.eqtiming.com/api/Event/81981",
+      "https://live.eqtiming.com/api/Contestants/81981",
+      "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+      "https://live.eqtiming.com/api/Result/Gender/81981/334709/female",
+      "https://www.sportsidioten.no/resultater/orasprinten-2026/",
+      "https://kil.wisweb.no/34571/2829/36135-61718.html"
+    ],
+    "notes": [
+      "Offisiell EQ-resultatkilde er hentet direkte. Begge kjønnslister har én side: 48 menn og 21 kvinner, hvorav 66 med sluttid og tre DNS. Begge Bratsberg-oppføringene har sluttid.",
+      "Visningstiden er EQs NettoFormatert; den er identisk med Formatert og bruttotiden for begge klubbresultater.",
+      "Kjønnsplassering er hentet direkte fra Plassering.Kjonn, ikke antatt ut fra totalplassering. Markus er 11. mann / 11. totalt; Pål er 19. mann / 20. totalt.",
+      "Sportsidiotens komplette kjønnsdelte kopi bekrefter begge klubbresultatene og vinnertiden for hvert kjønn.",
+      "5 km som gateløp og dato 19.04.2026 er også bekreftet av arrangøren Kyrksæterøra IL.",
+      "Fødselsår er hentet fra Deltaker.Utover.Aar. Utover.Alder brukes ikke, ettersom dette feltet kan være foreldet."
+    ]
+  },
+  "results": [
+    {
+      "athleteId": "markus-valas-hagen",
+      "name": "Markus Valås Hagen",
+      "sourceName": "Markus Valås Hagen",
+      "gender": "M",
+      "birthYear": 1999,
+      "birthYearSource": {
+        "type": "official-result-api",
+        "url": "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+        "field": "Deltaker.Utover.Aar",
+        "eventId": 81981,
+        "sourceParticipantId": "14390022",
+        "checkedAt": "2026-11-03"
+      },
+      "distance": "5 km",
+      "category": "M23-39",
+      "time": "18:11",
+      "netTime": "18:11",
+      "gunTime": "18:11",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 11,
+      "positionScope": "overall",
+      "positionGender": 11,
+      "positionGenderVerified": true,
+      "positionClass": 7,
+      "club": "Bratsberg IL",
+      "sourceBib": "123",
+      "sourceParticipantId": "14390022",
+      "clubRecord": false,
+      "recordEligible": false,
+      "positionGenderSource": {
+        "type": "official-gender-ranking",
+        "url": "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+        "field": "Plassering.Kjonn",
+        "checkedAt": "2026-11-03",
+        "directEqVerified": true
+      }
+    },
+    {
+      "athleteId": "pal-kleveland",
+      "name": "Pål Kleveland",
+      "sourceName": "Pål Kleveland",
+      "gender": "M",
+      "birthYear": 1988,
+      "birthYearSource": {
+        "type": "official-result-api",
+        "url": "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+        "field": "Deltaker.Utover.Aar",
+        "eventId": 81981,
+        "sourceParticipantId": "14394771",
+        "checkedAt": "2026-11-03"
+      },
+      "distance": "5 km",
+      "category": "M23-39",
+      "time": "19:14",
+      "netTime": "19:14",
+      "gunTime": "19:14",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 20,
+      "positionScope": "overall",
+      "positionGender": 19,
+      "positionGenderVerified": true,
+      "positionClass": 11,
+      "club": "Bratsberg IL",
+      "sourceBib": "116",
+      "sourceParticipantId": "14394771",
+      "clubRecord": false,
+      "recordEligible": false,
+      "positionGenderSource": {
+        "type": "official-gender-ranking",
+        "url": "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+        "field": "Plassering.Kjonn",
+        "checkedAt": "2026-11-03",
+        "directEqVerified": true
+      }
+    }
+  ],
+  "winners": [
+    {
+      "distance": "5 km",
+      "men": {
+        "name": "Mathias Flak",
+        "time": "14:47",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "women": {
+        "name": "Ingrid Stølan Husøy",
+        "time": "19:05",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/81981/334709/female",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "scope": "Totalvinner innen kjønn og distanse, alle klubber"
+    }
+  ],
+  "winnersNote": "Vinnernes publiserte Formatert fra EQs kjønnsdelte mållister brukes. Brutto- og nettoformatert tid er identiske for begge vinnere."
+}

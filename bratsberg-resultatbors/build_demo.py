@@ -14,6 +14,7 @@ data={
  'athletes':json.loads((dist/manifest['athletes']).read_text()) if manifest.get('athletes') else None,
  'records':json.loads((dist/manifest['records']).read_text()),
  'relays':json.loads((dist/manifest['relays']).read_text()) if manifest.get('relays') else [],
+ 'nationalPoints':json.loads((dist/manifest['nationalPoints']).read_text()) if manifest.get('nationalPoints') else {'entries':[]},
  'upcoming':sorted(json.loads((dist/manifest['upcoming']).read_text()),key=lambda r:r['date']),
 }
 embedded=json.dumps(data,ensure_ascii=False).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
@@ -38,9 +39,9 @@ portal_main=re.search(r'<main.*?</main>',portal,re.S).group(0).replace('id="main
 home_main=re.search(r'<main.*?</main>',home,re.S).group(0).replace('id="main"','id="home-main"')
 html=re.sub(r'<main.*?</main>','<div id="home-view">'+home_main+'</div><div id="portal-view" hidden>'+portal_main+'</div>',home,count=1,flags=re.S)
 html=re.sub(r'<link rel="stylesheet"[^>]+>','',html).replace('<script type="module" src="app.js"></script>','')
-css='\n'.join((dist/name).read_text() for name in ['styles.css','athlete-cards.css','widget.css','portal.css','relays.css','calendar.css','race-extras.css','age-grade-ui.css'])
+css='\n'.join((dist/name).read_text() for name in ['styles.css','athlete-cards.css','widget.css','portal.css','relays.css','calendar.css','race-extras.css','age-grade-ui.css','points-view.css'])
 html=html.replace('</head>','<style>'+css+'</style></head>')
-script='\n'.join([module('record-check.js'),module('result-order.js'),module('performance-history.js'),module('age-standards.js'),module('age-grading.js'),module('age-grade-ui.js'),module('race-extras.js'),module('athlete-registry.js'),common,module('portrait.js'),module('athlete-cards.js'),module('archive.js'),module('carousel-clock.js'),module('widget.js'),module('relays.js'),module('calendar.js'),app])
+script='\n'.join([module('record-check.js'),module('result-order.js'),module('performance-history.js'),module('age-standards.js'),module('age-grading.js'),module('age-grade-ui.js'),module('race-extras.js'),module('athlete-registry.js'),common,module('portrait.js'),module('athlete-cards.js'),module('archive.js'),module('carousel-clock.js'),module('widget.js'),module('relays.js'),module('calendar.js'),module('points-leaderboard.js'),module('points-view.js'),app])
 html=html.replace('</body>','<script type="module">'+script+'</script></body>')
 html=html.replace('resultater.html#','#').replace('resultater.html','#resultater').replace('index.html','#hjem')
 logo='data:image/svg+xml,'+quote((dist/'assets/mark.svg').read_text(),safe='')

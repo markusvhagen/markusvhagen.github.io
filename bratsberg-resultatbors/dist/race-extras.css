@@ -8,6 +8,7 @@
 .race-winner-panels{display:block;flex:1 1 240px;min-width:0;max-width:420px}
 .race-winner-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:6px;min-width:0}
 .race-winner-pair[hidden]{display:none!important}
+.race-winner-scope{grid-column:1/-1;justify-self:start;font-size:9px;line-height:1.2;font-weight:650;color:#64705b}
 .race-winner-badge{display:flex;align-items:center;gap:7px;min-width:0;min-height:43px;padding:6px 8px;border:1px solid;border-radius:5px;line-height:1.3;box-shadow:0 1px 2px #2633430b,inset 0 1px 0 #ffffffa6}
 .race-winner-men{border-color:#8eb4db;background:#f0f6fd;color:#315f8a}
 .race-winner-women{border-color:#dda0bc;background:#fff2f7;color:#8e4262}

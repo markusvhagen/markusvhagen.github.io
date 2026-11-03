@@ -5,6 +5,7 @@ import {resolve,relative,isAbsolute} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {applyAthleteRegistry} from '../dist/athlete-registry.js';
 import {derivePerformanceHistory,collectManualPersonalBests} from '../dist/performance-history.js';
+import {performanceDate} from '../dist/record-check.js';
 
 const dist=fileURLToPath(new URL('../dist/',import.meta.url));
 const readJSON=async path=>JSON.parse(await readFile(path,'utf8'));
@@ -30,7 +31,7 @@ try{
   const resolved=applyAthleteRegistry({races,athletes});
   const calculated=derivePerformanceHistory(resolved.races,resolved.athletes);
   const manual=collectManualPersonalBests(resolved.athletes);
-  const performances=calculated.filter(race=>!importedId||race.id===importedId).flatMap(race=>race.results.filter(result=>result.performanceHistory.eligible).map(result=>({raceId:race.id,race:race.name,date:race.date,athleteId:result.athleteId,name:result.name,distance:result.distance,time:result.time,...result.performanceHistory})));
+  const performances=calculated.filter(race=>!importedId||race.id===importedId).flatMap(race=>race.results.filter(result=>result.performanceHistory.eligible).map(result=>({raceId:race.id,race:race.name,date:performanceDate(race,result),athleteId:result.athleteId,name:result.name,distance:result.distance,time:result.time,...result.performanceHistory})));
   process.stdout.write(JSON.stringify({basis:'Tidligere sammenlignbare resultater og manuelle perser. En bekreftet pers kan kobles til et bestemt løp med raceId, dato og tid. Første kjente resultat er ikke automatisk PB.',mode:importedId?'new-race':'all-data',racesChecked:calculated.length,performancesChecked:performances.length,personalBestResults:performances.filter(result=>result.isPersonalBest).length,personalBestImprovements:performances.filter(result=>result.isPersonalBest&&result.improvementSeconds>0).length,manuallyConfirmedResults:performances.filter(result=>result.isManualPersonalBest).length,manualPersonalBestsChecked:manual.entries.length,personalBestIssues:manual.issues,unresolvedAthletes:resolved.unresolvedAthletes,performances},null,2)+'\n');
   process.exitCode=resolved.unresolvedAthletes.length||manual.issues.length?1:0;
 }catch(error){

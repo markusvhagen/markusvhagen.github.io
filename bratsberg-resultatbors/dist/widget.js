@@ -1,5 +1,5 @@
 import {esc,shortDate} from './data.js';
-import {renderAthleteCard,installPortraitFallback,genderPosition} from './athlete-cards.js';
+import {renderAthleteCard,installPortraitFallback,awardPosition} from './athlete-cards.js';
 import {createCarouselClock} from './carousel-clock.js';
 import {parsePerformanceTime} from './record-check.js';
 import {compareResultTimes} from './result-order.js';
@@ -22,8 +22,7 @@ export function renderWidgetPlaceholder() {
 
 const widgetAwardPriority=result=>{
   if(result.clubRecord)return 0;
-  const gender=result.gender||result.category?.[0];
-  const position=['K','M'].includes(gender)?genderPosition(result):null;
+  const position=awardPosition(result);
   return position>=1&&position<=3?position:4;
 };
 

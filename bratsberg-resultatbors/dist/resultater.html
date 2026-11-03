@@ -4,13 +4,13 @@
 <meta name="description" content="Bratsberg Friidrett: løpsresultater, klubbrekorder, stafettrekorder og terminliste.">
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="athlete-cards.css"><link rel="stylesheet" href="portal.css"><link rel="stylesheet" href="relays.css">
 <script type="module" src="app.js"></script><link rel="stylesheet" href="calendar.css">
-<link rel="stylesheet" href="race-extras.css"><link rel="stylesheet" href="age-grade-ui.css"></head>
+<link rel="stylesheet" href="race-extras.css"><link rel="stylesheet" href="age-grade-ui.css"><link rel="stylesheet" href="points-view.css"></head>
 <body data-page="portal"><a class="skip-link" href="#main">Hopp til innhold</a>
 <main id="main" class="page-shell portal-shell">
   <a class="back-link" href="index.html">← Til resultatbørsen</a>
   <div class="portal-intro"><div><p class="eyebrow"><span class="red-line"></span> BRATSBERG FRIIDRETT</p><h1>Resultatportalen</h1></div></div>
   <div class="stats-strip" id="stats-strip" aria-label="Statistikk for løpene"></div>
-  <nav class="portal-tabs" aria-label="Resultatportal"><a href="#resultater" data-tab="resultater">Løpsresultater</a><a href="#klubbrekorder" data-tab="klubbrekorder">Klubbrekorder</a><a href="#stafettrekorder" data-tab="stafettrekorder">Stafettrekorder</a><a href="#terminliste" data-tab="terminliste">Terminliste</a></nav>
+  <nav class="portal-tabs" aria-label="Resultatportal"><a href="#resultater" data-tab="resultater">Løpsresultater</a><a href="#poengnoteringer" data-tab="poengnoteringer">Poengnoteringer</a><a href="#klubbrekorder" data-tab="klubbrekorder">Klubbrekorder</a><a href="#stafettrekorder" data-tab="stafettrekorder">Stafettrekorder</a><a href="#terminliste" data-tab="terminliste">Terminliste</a></nav>
   <section id="results-panel" class="portal-panel" aria-labelledby="results-title">
     <div class="section-heading"><h2 id="results-title" tabindex="-1">Løpsresultater</h2><span class="muted small" id="result-count"></span></div>
     <div class="filter-bar"><label class="search-field"><span aria-hidden="true" class="search-icon"></span><span class="sr-only">Søk etter løp eller løper</span><input id="search" type="search" placeholder="Søk etter løp eller løper …" autocomplete="off"></label><label class="select-wrap"><span class="sr-only">Distanse</span><select id="distance"><option value="">Alle distanser</option></select></label><label class="select-wrap"><span class="sr-only">År</span><select id="year"><option value="">Alle år</option></select></label><label class="select-wrap"><span class="sr-only">Kjønn</span><select id="result-gender"><option value="">Alle kjønn</option><option value="K">Kvinner</option><option value="M">Menn</option></select></label><label class="select-wrap"><span class="sr-only">Sorter resultater innen hver distanse</span><select id="result-sort"><option value="time">Raskeste tid først</option><option value="age-grade">Høyeste justerte poeng først</option></select></label><label class="toggle-label"><input type="checkbox" id="only-pb"><span class="toggle-track"></span>Kun PB / rekord</label></div>
@@ -19,6 +19,7 @@
     <div id="race-list" class="race-list" aria-live="polite"><p class="loading">Henter løpsresultater …</p></div>
     <nav id="archive-pagination" class="archive-pagination" aria-label="Bla i løpsarkivet" hidden></nav>
   </section>
+  <section id="points-panel" class="portal-panel" hidden aria-label="Poengnoteringer"><div id="points-root"></div></section>
   <section id="records-panel" class="portal-panel" hidden aria-labelledby="records-title">
     <div class="section-heading records-heading"><div><h2 id="records-title">Klubbrekorder</h2><p id="records-updated" class="records-updated">Oppdatert 17.10.2026</p></div><div class="segmented record-gender" aria-label="Velg rekordklasse"><button data-gender="K" class="active" aria-pressed="true">Kvinner</button><button data-gender="M" aria-pressed="false">Menn</button></div></div>
     <div id="record-candidates" class="record-candidates" hidden></div>

@@ -7,6 +7,7 @@
 .athlete-card-content{min-width:0;display:flex;flex-direction:column;align-items:flex-start;padding:3px 0 2px}
 .athlete-card-top{width:100%;display:flex;align-items:center;justify-content:space-between;gap:5px;margin-bottom:7px;font-size:9px;line-height:1.2;color:#bdc9bd;font-variant-numeric:tabular-nums}.athlete-card-distance{font-weight:550}.athlete-card-position{font-size:8px;white-space:nowrap;color:#b2beb2}
 .athlete-card h4{font-size:11px;font-weight:550;line-height:1.35;margin:0;overflow-wrap:anywhere;min-height:30px;text-align:left}
+.athlete-card-round{width:100%;font-size:8px;line-height:1.4;margin:-2px 0 7px;color:inherit;opacity:.85;overflow-wrap:anywhere}
 .athlete-card-time{font-family:var(--display);font-size:29px;font-weight:600;line-height:1;letter-spacing:.2px;font-variant-numeric:tabular-nums;margin:5px 0 8px;white-space:nowrap}
 .athlete-card-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px;min-height:15px;width:100%;margin-top:auto;font-size:8px;font-variant-numeric:tabular-nums}
 .athlete-card-badges{display:flex;gap:4px}.athlete-card-badges .badge{font-size:8px;padding:3px 5px;border-radius:2px}.athlete-card-badges .badge-long{display:inline}.athlete-card-badges .cr{background:#e6d29b;color:#463714}.athlete-card-badges .pb{background:#c2ddc7;color:#233f2b}

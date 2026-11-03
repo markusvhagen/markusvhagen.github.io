@@ -1,0 +1,116 @@
+{
+  "id": "kobenhavn-5k-2026",
+  "name": "København 5 km",
+  "date": "2026-09-19",
+  "location": "København",
+  "type": "road",
+  "distances": [
+    "5 km"
+  ],
+  "demo": false,
+  "sourceUrl": "https://live.ultimate.dk/desktop/front/index.php?eventid=7951&ignoreuseragent=true",
+  "source": {
+    "type": "official-results",
+    "provider": "Ultimate Sport Service",
+    "eventId": "7951",
+    "checkedAt": "2026-11-03",
+    "timeBasis": "net",
+    "scope": "Petter Vea Monseths resultat, etter brukerens bestilling",
+    "dateVerified": true,
+    "referenceUrls": [
+      "https://live.ultimate.dk/desktop/front/index.php?eventid=7951&ignoreuseragent=true",
+      "https://live.ultimate.dk/desktop/front/data.php?eventid=7951&mode=participantinfo&pid=53400&language=us",
+      "https://live.ultimate.dk/desktop/front/data.php?eventid=7951&mode=search&searchmode=quick&search_quick=53400&language=us",
+      "https://worldathletics.org/competitions/world-athletics-road-running-championships/copenhagen26/results/women/5-kilometres/final/result",
+      "https://www.bratsbergfriidrett.no/2026/09/20/klubbrekorder-i-koben/",
+      "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php"
+    ],
+    "notes": [
+      "Løpet er WRRC 5 km i København 19.09.2026, Ultimate eventid 7951. Petter deltok i Mass Race, ikke i VM-elitefeltet.",
+      "Ultimate-deltakerkortet oppgir eksplisitt net time 00:14:20, rank gender 52 av 4420 startere og rank category 2 av 195 i Men 15-19 years. Kjønnsplasseringen er fra arrangørens samlede resultatliste, inkludert VM-eliten, og er ikke utledet fra overall-plasseringen.",
+      "Deltakerkortets gross time er 00:10:16. Dette er åpenbart inkonsistent med nettotid 00:14:20, og kortets official start time 14:55:36 ligger etter actual start time 14:51:32. Bruttoverdien lagres bare i sourceTimingRaw og brukes ikke som løpstid eller gunTime.",
+      "14:20 er bekreftet som klubbrekord i klubbens artikkel og stemmer med eksisterende rekordregister på samme utøver, distanse og dato.",
+      "Fødselsår 2010 er hentet fra Norges Friidrettsforbunds landsstatistikk, som oppgir F.Dato 05.04.10. Bare fødselsåret brukes i resultatet.",
+      "Utvalget er avgrenset til Petter Vea Monseth og er ikke et komplett søk etter alle Bratsberg-deltakere."
+    ],
+    "displayNote": "Plasseringen gjelder den samlede kjønnslisten, inkludert VM-eliten."
+  },
+  "results": [
+    {
+      "athleteId": "petter-vea-monseth",
+      "name": "Petter Vea Monseth",
+      "gender": "M",
+      "birthYear": 2010,
+      "birthYearSource": "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php",
+      "distance": "5 km",
+      "category": "M15-19",
+      "time": "14:20",
+      "netTime": "14:20",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 52,
+      "positionScope": "gender",
+      "positionGender": 52,
+      "positionGenderVerified": true,
+      "positionGenderSource": "https://live.ultimate.dk/desktop/front/data.php?eventid=7951&mode=participantinfo&pid=53400&language=us",
+      "positionGenderVerificationNote": "Ultimate-deltakerkortet viser rank gender 52 of 4420 starters. Samme samlede liste har VM-vinner Dawit Seare som nummer 1. Petters klasseplass 2 i M15-19 er ikke en samlet andreplass.",
+      "sourceBib": "53400",
+      "sourceParticipantId": "53400",
+      "club": "Bratsberg IL",
+      "clubRecord": true,
+      "recordEligible": false,
+      "clubRecordSource": "https://www.bratsbergfriidrett.no/2026/09/20/klubbrekorder-i-koben/",
+      "clubRecordVerificationNote": "Klubbens oppslag bekrefter 14:20 som ny klubbrekord; tid, utøver og dato samsvarer med den eksisterende rekorden i records.json.",
+      "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7951&mode=participantinfo&pid=53400&language=us",
+      "sourceTimingRaw": {
+        "netTime": "00:14:20",
+        "grossTime": "00:10:16",
+        "officialStartTime": "14:55:36",
+        "actualStartTime": "14:51:32",
+        "finishTimeOfDay": "15:05:51",
+        "grossTimeUsable": false
+      },
+      "sourceRow": {
+        "raceNo": "53400",
+        "name": "Petter Vea Monseth",
+        "club": "Bratsberg IL",
+        "distance": "5 km",
+        "category": "M15-19",
+        "time": "14:20",
+        "rankGender": 52,
+        "rankCategory": 2,
+        "startGroup": "Mass Race"
+      },
+      "positionClass": 2
+    }
+  ],
+  "winners": [
+    {
+      "distance": "5 km",
+      "men": {
+        "name": "Dawit Seare",
+        "time": "12:56",
+        "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7951&mode=participantinfo&pid=184&language=us",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "women": {
+        "name": "Likina Amebaw",
+        "time": "14:41",
+        "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7951&mode=participantinfo&pid=674&language=us",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "scope": "Samlet resultatliste for WRRC 5 km, inkludert VM-eliten"
+    }
+  ],
+  "winnersNote": "Vinnerne gjelder den samlede Ultimate-listen for WRRC 5 km (event 7951), inkludert VM-eliten. Begge vinnernes netto- og bruttotider er identiske. Petters 52. herreplass gjelder samme felt.",
+  "news": [
+    {
+      "title": "Klubbrekorder i Køben",
+      "url": "https://www.bratsbergfriidrett.no/2026/09/20/klubbrekorder-i-koben/"
+    }
+  ]
+}

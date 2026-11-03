@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {parsePerformanceTime,normalizeDistance,findRecordCandidates} from '../dist/record-check.js';
+import {parsePerformanceTime,normalizeDistance,findRecordCandidates,performanceDate} from '../dist/record-check.js';
 const records=JSON.parse(readFileSync(new URL('../dist/data/records.json',import.meta.url),'utf8'));
 assert.equal(records.length,22);
 assert.equal(records.filter(r=>r.status==='unlisted').length,2);
@@ -10,6 +10,13 @@ assert.equal(parsePerformanceTime('2:23.40'),143.4);
 assert.equal(parsePerformanceTime('1:09:17'),4157);
 assert.equal(parsePerformanceTime('9:31,0'),571);
 for(const t of ['DNF','DNS','–','',null,0,'0:00','1:70','1:20:99','1:02,3.4','3:-20']) assert.equal(parsePerformanceTime(t),null);
+assert.equal(performanceDate({date:'2026-07-23'},{date:'2026-07-25'}),'2026-07-25');
+assert.equal(performanceDate({date:'2026-07-23'}),'2026-07-23');
+assert.equal(performanceDate({date:'invalid'},{date:'2024-02-29'}),'2024-02-29');
+for(const date of ['2026-02-29','2026-04-31','2026-13-01','2026-7-25','2026-07-25T12:00:00Z','',null,42]) {
+  assert.equal(performanceDate({date:'2026-07-23'},{date}),'2026-07-23');
+  assert.equal(performanceDate({date}),null);
+}
 assert.equal(normalizeDistance('3 000 m hinder','track'),'3000mh');
 assert.equal(normalizeDistance('3000mh','road'),null);
 assert.equal(normalizeDistance('5 km','track'),'5000m');
@@ -24,6 +31,16 @@ assert.equal(candidates[0].record.name,'Sofie Karoline Haugen');
 assert.equal(candidates[0].improvementSeconds,1);
 assert.equal(candidates[0].result,baseResult);
 assert.equal(candidates[0].race,baseRace);
+assert.equal(candidates[0].date,baseRace.date);
+const datedResult={...baseResult,date:'2026-11-01'};
+const datedRace={...baseRace,results:[datedResult]};
+const datedSnapshot=JSON.stringify(datedRace);
+const datedCandidate=findRecordCandidates([datedRace],records)[0];
+assert.equal(datedCandidate.date,'2026-11-01');
+assert.equal(datedCandidate.race,datedRace);
+assert.equal(datedCandidate.result,datedResult);
+assert.equal(JSON.stringify(datedRace),datedSnapshot);
+assert.equal(findRecordCandidates([{...baseRace,results:[{...baseResult,date:'2026-02-30'}]}],records)[0].date,baseRace.date);
 for(const patch of [{demo:true},{demo:undefined},{type:'trail'},{verified:false}]) assert.equal(findRecordCandidates([{...baseRace,...patch}],records).length,0);
 for(const patch of [{recordEligible:false},{recordEligible:undefined},{status:'DNF'},{status:'DNS'},{verified:false},{time:'31:31'},{time:'31:32'}]) assert.equal(findRecordCandidates([{...baseRace,results:[{...baseResult,...patch}]}],records).length,0);
 const track={...baseRace,type:'track',environment:'outdoor',results:[{...baseResult,gender:'M',distance:'800 m',time:'1:55,00'}]};

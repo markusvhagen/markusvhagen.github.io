@@ -12,6 +12,18 @@ export function parsePerformanceTime(value) {
   return Number.isFinite(seconds) && seconds > 0 ? seconds : null;
 }
 
+/** Prefer the actual performance day in a multi-day meeting, otherwise its
+ * race date. Only real ISO calendar dates are accepted; neither source mutates.
+ */
+export function performanceDate(race = {}, result = {}) {
+  for (const value of [result.date, race.date]) {
+    if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) continue;
+    const stamp = Date.parse(value + 'T12:00:00Z');
+    if (Number.isFinite(stamp) && new Date(stamp).toISOString().slice(0, 10) === value) return value;
+  }
+  return null;
+}
+
 /** Normalize event names only within an explicitly known race surface/type.
  * A road 5 km and a track 5 000 m remain different records through category.
  * Unknown, trail, indoor and unsupported events are intentionally not matched.
@@ -66,7 +78,7 @@ export function findRecordCandidates(races, records) {
       const previousSeconds = parsePerformanceTime(record.time);
       if (!isFirstRecord && (previousSeconds === null || seconds >= previousSeconds)) continue;
       candidates.push({
-        record, race, result, seconds, previousSeconds, isFirstRecord,
+        record, race, result, date: performanceDate(race, result), seconds, previousSeconds, isFirstRecord,
         improvementSeconds: previousSeconds === null ? null : previousSeconds - seconds
       });
     }

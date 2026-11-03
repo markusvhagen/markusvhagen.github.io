@@ -1,0 +1,225 @@
+{
+  "id": "um-2026",
+  "name": "UM 2026",
+  "date": "2026-09-13",
+  "endDate": "2026-09-13",
+  "location": "Bærum idrettspark, Bærum",
+  "type": "track",
+  "environment": "outdoor",
+  "distances": [
+    "2 000 m",
+    "3 000 m"
+  ],
+  "demo": false,
+  "sourceUrl": "https://liveres.andro.no/liveres/349?day=alle",
+  "source": {
+    "type": "official-results",
+    "provider": "Frisys Live",
+    "eventId": "349",
+    "checkedAt": "2026-11-03",
+    "timeBasis": "gun",
+    "dateVerified": true,
+    "scope": "Alle tre Bratsberg-resultater i arrangørens komplette resultatliste for alle stevnedagene.",
+    "referenceUrls": [
+      "https://liveres.andro.no/liveres/349?day=alle",
+      "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10023348&showevent=0&showseason=0&outdoor=Y&listtype=All",
+      "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10020877&showevent=0&showseason=0&outdoor=Y&listtype=All",
+      "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10007821&showevent=0&showseason=0&outdoor=Y&listtype=All"
+    ],
+    "rankingNote": "Plasseringene gjelder aldersklassene G-15, J-15 og G-16. De er ikke totalplasseringer innen kjønn. Alle klubbens øvelser ble gjennomført søndag 13.09.2026.",
+    "notes": [
+      "Stevnet gikk 11.–13. september. Den faktiske øvelsesdatoen 13.09.2026 er lagret på hvert resultat.",
+      "To resultater samsvarer med klubbens eksisterende rekordregister: Kristian Stokke Selnes på 2000 m og Petter Vea Monseth på 3000 m.",
+      "Kristian og Oda er merket PB i arrangørens resultatliste. PB-bekreftelsene håndteres separat i utøverregisteret.",
+      "Vinnerne gjelder bare de aldersklassene klubben deltok i."
+    ]
+  },
+  "results": [
+    {
+      "athleteId": "kristian-stokke-selnes",
+      "name": "Kristian Stokke Selnes",
+      "gender": "M",
+      "birthYear": 2011,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10023348&showevent=0&showseason=0&outdoor=Y&listtype=All",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra utøverprofilens eksplisitte fødselsdato."
+      },
+      "distance": "2 000 m",
+      "discipline": "2000m",
+      "category": "G15",
+      "time": "5:53,69",
+      "position": 3,
+      "positionClass": 3,
+      "sourceBib": "39",
+      "sourceAthleteId": "10023348",
+      "clubRecord": true,
+      "roundLabel": "3. plass · G-15",
+      "sourceName": "Kristian Stokke Selnes",
+      "sourceCategory": "G-15",
+      "date": "2026-09-13",
+      "type": "track",
+      "environment": "outdoor",
+      "timeBasis": "gun",
+      "status": "finished",
+      "positionScope": "class",
+      "positionGenderVerified": false,
+      "positionClassVerified": true,
+      "positionClassSource": {
+        "type": "official-class-ranking",
+        "provider": "Frisys Live",
+        "url": "https://liveres.andro.no/liveres/349?day=alle",
+        "checkedAt": "2026-11-03"
+      },
+      "club": "Bratsberg IL",
+      "recordEligible": true,
+      "clubRecordTime": "5:53,69",
+      "clubRecordTimeBasis": "gun",
+      "clubRecordSource": {
+        "type": "club-record-register",
+        "reference": "data/records.json",
+        "discipline": "2000m",
+        "date": "2026-09-13",
+        "note": "Eksakt samsvar med klubbens eksisterende rekordregister: utøver, øvelse, kjønn, tid og dato."
+      },
+      "awardScope": "championship-class"
+    },
+    {
+      "athleteId": "oda-randli-elden",
+      "name": "Oda Randli Elden",
+      "gender": "K",
+      "birthYear": 2011,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10020877&showevent=0&showseason=0&outdoor=Y&listtype=All",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra utøverprofilens eksplisitte fødselsdato."
+      },
+      "distance": "2 000 m",
+      "discipline": "2000m",
+      "category": "J15",
+      "time": "6:42,55",
+      "position": 2,
+      "positionClass": 2,
+      "sourceBib": "40",
+      "sourceAthleteId": "10020877",
+      "clubRecord": false,
+      "roundLabel": "2. plass · J-15",
+      "sourceName": "Oda Randli Elden",
+      "sourceCategory": "J-15",
+      "date": "2026-09-13",
+      "type": "track",
+      "environment": "outdoor",
+      "timeBasis": "gun",
+      "status": "finished",
+      "positionScope": "class",
+      "positionGenderVerified": false,
+      "positionClassVerified": true,
+      "positionClassSource": {
+        "type": "official-class-ranking",
+        "provider": "Frisys Live",
+        "url": "https://liveres.andro.no/liveres/349?day=alle",
+        "checkedAt": "2026-11-03"
+      },
+      "club": "Bratsberg IL",
+      "recordEligible": false,
+      "awardScope": "championship-class"
+    },
+    {
+      "athleteId": "petter-vea-monseth",
+      "name": "Petter Vea Monseth",
+      "gender": "M",
+      "birthYear": 2010,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10007821&showevent=0&showseason=0&outdoor=Y&listtype=All",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra utøverprofilens eksplisitte fødselsdato."
+      },
+      "distance": "3 000 m",
+      "discipline": "3000m",
+      "category": "G16",
+      "time": "8:23,56",
+      "position": 1,
+      "positionClass": 1,
+      "sourceBib": "41",
+      "sourceAthleteId": "10007821",
+      "clubRecord": true,
+      "roundLabel": "1. plass · G-16",
+      "sourceName": "Petter Vea Monseth",
+      "sourceCategory": "G-16",
+      "date": "2026-09-13",
+      "type": "track",
+      "environment": "outdoor",
+      "timeBasis": "gun",
+      "status": "finished",
+      "positionScope": "class",
+      "positionGenderVerified": false,
+      "positionClassVerified": true,
+      "positionClassSource": {
+        "type": "official-class-ranking",
+        "provider": "Frisys Live",
+        "url": "https://liveres.andro.no/liveres/349?day=alle",
+        "checkedAt": "2026-11-03"
+      },
+      "club": "Bratsberg IL",
+      "recordEligible": true,
+      "clubRecordTime": "8:23,56",
+      "clubRecordTimeBasis": "gun",
+      "clubRecordSource": {
+        "type": "club-record-register",
+        "reference": "data/records.json",
+        "discipline": "3000m",
+        "date": "2026-09-13",
+        "note": "Eksakt samsvar med klubbens eksisterende rekordregister: utøver, øvelse, kjønn, tid og dato."
+      },
+      "awardScope": "championship-class"
+    }
+  ],
+  "winners": [
+    {
+      "distance": "2 000 m",
+      "scope": "15 år",
+      "category": "G15 / J15",
+      "men": {
+        "name": "Albert Askeland",
+        "time": "5:48,06",
+        "category": "G15",
+        "sourceUrl": "https://liveres.andro.no/liveres/349?day=alle",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "women": {
+        "name": "Linea Helgevold Fjelldalselv",
+        "time": "6:22,08",
+        "category": "J15",
+        "sourceUrl": "https://liveres.andro.no/liveres/349?day=alle",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "distance": "3 000 m",
+      "scope": "G16",
+      "category": "G16",
+      "men": {
+        "name": "Petter Vea Monseth",
+        "time": "8:23,56",
+        "category": "G16",
+        "sourceUrl": "https://liveres.andro.no/liveres/349?day=alle",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "women": {
+        "applicable": false,
+        "reason": "Denne vinneroppføringen gjelder gutter 16 år."
+      }
+    }
+  ],
+  "winnersNote": "Klassevinnere på øvelsene og i aldersklassene der Bratsberg deltok. 2000 m gjelder 15-årsklassene; 3000 m gjelder gutter 16 år.",
+  "startDate": "2026-09-11"
+}

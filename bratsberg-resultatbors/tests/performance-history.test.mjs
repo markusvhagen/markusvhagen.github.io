@@ -87,3 +87,52 @@ test('unknown identity, invalid date, indoor track and demo data cannot claim PB
   assert.equal(history(out[4]).isBestRecorded,true);
   assert.equal(history(out[4]).isPersonalBest,false);
 });
+
+test('multi-day meetings use each performance date for PB chronology without reordering the source',()=>{
+  const track={type:'track',environment:'outdoor'};
+  const input=[
+    race('nm','2026-07-23',[
+      result('3:59',{distance:'1500 m',date:'2026-07-25'}),
+      result('4:05',{distance:'1500 m',date:'2026-07-23'})
+    ],track),
+    race('between','2026-07-24',[result('4:03',{distance:'1500 m'})],track),
+    race('earlier','2026-07-22',[result('4:10',{distance:'1500 m'})],track)
+  ];
+  const snapshot=JSON.stringify(input),out=derivePerformanceHistory(input);
+  assert.equal(history(out[0]).previousBest,'4:03');
+  assert.equal(history(out[0]).improvementSeconds,4);
+  assert.deepEqual(history(out[0]).previousRaceIds,['between']);
+  assert.equal(out[0].results[1].performanceHistory.previousBest,'4:10');
+  assert.equal(history(out[1]).previousBest,'4:05');
+  assert.deepEqual(out.map(event=>event.id),input.map(event=>event.id));
+  assert.deepEqual(out[0].results.map(entry=>entry.date),['2026-07-25','2026-07-23']);
+  assert.equal(JSON.stringify(input),snapshot);
+});
+
+test('a manually confirmed PB must match the performance date, not the meeting start date',()=>{
+  const meeting=race('nm','2026-07-23',[
+    result('3:59.0',{distance:'1500 m',date:'2026-07-25'})
+  ],{type:'track',environment:'outdoor'});
+  const registry=date=>({athletes:[{id:'runner',personalBests:[{
+    raceId:'nm',type:'track',environment:'outdoor',distance:'1500 m',time:'3:59',date
+  }]}]});
+  const confirmed=history(derivePerformanceHistory([meeting],registry('2026-07-25'))[0]);
+  assert.equal(confirmed.isManualPersonalBest,true);
+  assert.equal(confirmed.reason,'manual-confirmed-personal-best');
+  assert.equal(confirmed.confirmedPersonalBests[0].date,'2026-07-25');
+  assert.equal(history(derivePerformanceHistory([meeting],registry('2026-07-23'))[0]).isManualPersonalBest,false);
+});
+
+test('invalid result dates fall back to the race date while valid result dates can rescue an invalid race date',()=>{
+  const out=derivePerformanceHistory([
+    race('earlier','2026-07-23',[result('40:00')]),
+    race('invalid-result-date','2026-07-24',[result('39:00',{date:'2026-02-30'})]),
+    race('invalid-race-date','invalid',[result('38:00',{date:'2026-07-25'})]),
+    race('no-valid-date','2026-02-30',[result('37:00',{date:'2026-13-01'})])
+  ]);
+  assert.equal(history(out[1]).previousBest,'40:00');
+  assert.equal(history(out[2]).previousBest,'39:00');
+  assert.equal(history(out[2]).isPersonalBest,true);
+  assert.equal(history(out[3]).eligible,false);
+  assert.equal(history(out[3]).reason,'invalid-race-date');
+});

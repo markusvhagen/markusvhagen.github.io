@@ -18,6 +18,7 @@ function raceWinnerDistances(race){
 }
 
 function renderRaceWinnerBadge(winner,gender,distance,scope){
+  if(winner?.applicable===false)return '';
   const label=gender==='men'?'menn':'kvinner',short=gender==='men'?'M':'K';
   const valid=winner?.verified===true&&raceWinnerTimeIsValid(winner.time);
   const time=valid?winner.time:'—',name=valid&&typeof winner.name==='string'?winner.name.trim():'';
@@ -38,7 +39,8 @@ export function renderRaceWinners(race,{instanceId,selectedDistance,clone=false}
   const panels=distances.map(distance=>{
     const entry=entries.find(candidate=>candidate?.distance===distance);
     const scope=typeof entry?.scope==='string'&&entry.scope!=='overall-gender'?entry.scope:'';
-    return `<span class="race-winner-pair" data-winner-panel="${raceExtrasEscape(distance)}"${distance===current?'':' hidden'}>${renderRaceWinnerBadge(entry?.men,'men',distance,scope)}${renderRaceWinnerBadge(entry?.women,'women',distance,scope)}</span>`;
+    const visibleScope=scope&&(race?.type==='track'||/^(?:[KM]\s*)?U\d{2}$|^[KM]\d{1,3}(?:[-–]\d{1,3}|\+)?$/.test(scope));
+    return `<span class="race-winner-pair" data-winner-panel="${raceExtrasEscape(distance)}"${distance===current?'':' hidden'}>${visibleScope?`<span class="race-winner-scope">${raceExtrasEscape(scope)}</span>`:''}${renderRaceWinnerBadge(entry?.men,'men',distance,scope)}${renderRaceWinnerBadge(entry?.women,'women',distance,scope)}</span>`;
   }).join('');
   return `<div class="race-winners" data-race-winners="${raceExtrasEscape(race?.id??'')}"${instanceId?` data-winner-instance="${raceExtrasEscape(instanceId)}"`:''} role="group" aria-label="Vinnertider i løpet">${selector}<span class="race-winner-panels" aria-live="polite" aria-atomic="true">${panels}</span></div>`;
 }

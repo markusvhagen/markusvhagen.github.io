@@ -1,0 +1,412 @@
+{
+  "year": 2026,
+  "checkedAt": "2026-11-03",
+  "note": "Høyeste beregnede poeng i publiserte senior- og veteranlister for norske utøvere, også løp i utlandet. Listene har tidsgrenser og kan mangle resultater. Dette er ingen offisiell rekordliste.",
+  "method": {
+    "calculator": "Kjapp age- and sex-adjusted tables (local snapshot 2026-10-30), not World Athletics open scoring",
+    "ageBasis": "race year minus birth year",
+    "comparison": "unrounded points, recomputed by age-grading.js",
+    "scope": "Norwegian athletes according to the source lists; performances worldwide",
+    "excluded": [
+      "foreign citizens marked (*)",
+      "track, indoor and passing splits",
+      "marathon supplementary short-course or downhill lists",
+      "missing or uncertain birth year",
+      "invalid times/dates and unsupported ages"
+    ],
+    "limitations": [
+      "Published lists have time cutoffs and can omit unreported performances.",
+      "Source lists have different update dates.",
+      "Calendar-year age may differ from attained age on race day.",
+      "Points above 100 are possible."
+    ]
+  },
+  "entries": [
+    {
+      "name": "Synøve Brox",
+      "gender": "K",
+      "birthYear": 1959,
+      "distance": "5 km",
+      "time": "19:46",
+      "date": "2026-04-18",
+      "eventName": "Boston (USA)",
+      "sourceUrl": "https://www.kondis.no/statistikk/de-beste-2026-5-km-kvinner/1547216",
+      "sourceUpdatedAt": "2026-11-02T16:55:05.000Z",
+      "sourceUrls": [
+        "https://www.kondis.no/statistikk/de-beste-2026-5-km-kvinner/1547216",
+        "https://www.kondis.no/statistikk/veteranstatistikk-2026-5-km-kvinner/1547271"
+      ],
+      "verified": true
+    },
+    {
+      "name": "Synøve Brox",
+      "gender": "K",
+      "birthYear": 1959,
+      "distance": "10 km",
+      "time": "40:33",
+      "date": "2026-01-11",
+      "eventName": "Valencia (ESP)",
+      "sourceUrl": "https://www.kondis.no/statistikk/de-beste-2026-10-km-kvinner/1547232",
+      "sourceUpdatedAt": "2026-11-02T16:58:56.000Z",
+      "sourceUrls": [
+        "https://www.kondis.no/statistikk/de-beste-2026-10-km-kvinner/1547232",
+        "https://www.kondis.no/statistikk/veteranstatistikk-2026-10-km-kvinner/1547283"
+      ],
+      "verified": true
+    },
+    {
+      "name": "Inger Dagny Saanum",
+      "gender": "K",
+      "birthYear": 1963,
+      "distance": "Halvmaraton",
+      "time": "1:28:56",
+      "date": "2026-03-07",
+      "eventName": "Egersund",
+      "sourceUrl": "https://www.kondis.no/statistikk/de-beste-2026-halvmaraton-kvinner/1547244",
+      "sourceUpdatedAt": "2026-11-02T17:01:06.000Z",
+      "sourceUrls": [
+        "https://www.kondis.no/statistikk/de-beste-2026-halvmaraton-kvinner/1547244",
+        "https://www.kondis.no/statistikk/veteranstatistikk-2026-halvmaraton-kvinner/1547470"
+      ],
+      "verified": true
+    },
+    {
+      "name": "Inger Dagny Saanum",
+      "gender": "K",
+      "birthYear": 1963,
+      "distance": "Maraton",
+      "time": "3:03:22",
+      "date": "2026-04-26",
+      "eventName": "Hamburg, GER",
+      "sourceUrl": "https://www.kondis.no/statistikk/de-beste-2026-maraton-kvinner/1547450",
+      "sourceUpdatedAt": "2026-10-21T09:16:18.000Z",
+      "sourceUrls": [
+        "https://www.kondis.no/statistikk/de-beste-2026-maraton-kvinner/1547450",
+        "https://www.kondis.no/statistikk/veteranstatistikk-2026-maraton-kvinner/1547485"
+      ],
+      "verified": true
+    },
+    {
+      "name": "Jakob Ingebrigtsen",
+      "gender": "M",
+      "birthYear": 2000,
+      "time": "12:59",
+      "date": "2026-09-19",
+      "sourceUrl": "https://www.kondis.no/statistikk/de-beste-2026-5-km-menn/1547210",
+      "distance": "5 km",
+      "eventName": "WRRC Copenhagen (DEN) (norsk rek.)",
+      "sourceUpdatedAt": "2026-11-02",
+      "verified": true,
+      "verification": {
+        "name": "Jakob Ingebrigtsen",
+        "birthDate": "2000-09-19",
+        "performanceSource": "https://www.friidrett.no/nyheter/2026/jakob-jakter-vm-medalje-i-kobenhavn/",
+        "birthSource": "https://worldathletics.org/competition/calendar-results/results/7204187?eventId=204597&gender=M",
+        "primaryResultSource": "https://worldathletics.org/records/toplists/road-running/5-kilometres/all/men/senior/2026"
+      }
+    },
+    {
+      "name": "Magnus Tuv Myhre",
+      "gender": "M",
+      "birthYear": 2000,
+      "time": "27:22",
+      "date": "2026-01-11",
+      "sourceUrl": "https://www.kondis.no/statistikk/de-beste-2026-10-km-menn/1547222",
+      "distance": "10 km",
+      "eventName": "Valencia (ESP) (norsk rek.)",
+      "sourceUpdatedAt": "2026-11-02",
+      "verified": true,
+      "verification": {
+        "name": "Magnus Tuv Myhre",
+        "birthDate": "2000-06-15",
+        "performanceSource": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7235984/result",
+        "secondaryPrimarySource": "https://www.friidrett.no/nyheter/2025/januar-2026/"
+      }
+    },
+    {
+      "name": "Zerei Kbrom Mezngi",
+      "gender": "M",
+      "birthYear": 1986,
+      "time": "1:01:08",
+      "date": "2026-09-20",
+      "sourceUrl": "https://www.kondis.no/statistikk/veteranstatistikk-2026-halvmaraton-menn/1547461",
+      "distance": "Halvmaraton",
+      "eventName": "København",
+      "sourceUpdatedAt": "2026-11-02",
+      "verified": true,
+      "verification": {
+        "name": "Zerei Kbrom Mezngi",
+        "birthDate": "1986-01-12",
+        "performanceSource": "https://www.friidrett.no/nyheter/2026/jakob-jakter-vm-medalje-i-kobenhavn/",
+        "birthSource": "https://worldathletics.org/competition/calendar-results/results/7235597?eventId=10229634"
+      }
+    },
+    {
+      "name": "Zerei Kbrom Mezngi",
+      "gender": "M",
+      "birthYear": 1986,
+      "time": "2:07:00",
+      "date": "2026-04-12",
+      "sourceUrl": "https://www.kondis.no/statistikk/veteranstatistikk-2026-maraton-menn/1547479",
+      "distance": "Maraton",
+      "eventName": "Paris",
+      "sourceUpdatedAt": "2026-11-02",
+      "verified": true,
+      "verification": {
+        "name": "Zerei Kbrom Mezngi",
+        "birthDate": "1986-01-12",
+        "performanceSource": "https://worldathletics.org/competition/calendar-results/results/7235597?eventId=10229634",
+        "secondaryPrimarySource": "https://www.friidrett.no/nyheter/2026/april-2026/"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "distance": "5 km",
+      "kind": "open",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-5-km-kvinner/1547216",
+      "updatedAt": "2026-11-02T16:55:05.000Z",
+      "tableRowCount": 388,
+      "resultRowCount": 385,
+      "eligibleRowCount": 320,
+      "excluded": {
+        "nonResult": 3,
+        "foreignCitizenship": 13,
+        "nonRoadOrSplit": 49,
+        "nonEligibleCourse": 0,
+        "unknownBirthYear": 3,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "5 km",
+      "kind": "veteran",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-5-km-kvinner/1547271",
+      "updatedAt": "2026-11-02T17:17:06.000Z",
+      "tableRowCount": 602,
+      "resultRowCount": 588,
+      "eligibleRowCount": 544,
+      "excluded": {
+        "nonResult": 14,
+        "foreignCitizenship": 14,
+        "nonRoadOrSplit": 25,
+        "nonEligibleCourse": 0,
+        "unknownBirthYear": 5,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "10 km",
+      "kind": "open",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-10-km-kvinner/1547232",
+      "updatedAt": "2026-11-02T16:58:56.000Z",
+      "tableRowCount": 925,
+      "resultRowCount": 922,
+      "eligibleRowCount": 845,
+      "excluded": {
+        "nonResult": 3,
+        "foreignCitizenship": 44,
+        "nonRoadOrSplit": 20,
+        "nonEligibleCourse": 0,
+        "unknownBirthYear": 13,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "10 km",
+      "kind": "veteran",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-10-km-kvinner/1547283",
+      "updatedAt": "2026-11-02T17:19:12.000Z",
+      "tableRowCount": 1044,
+      "resultRowCount": 1030,
+      "eligibleRowCount": 975,
+      "excluded": {
+        "nonResult": 14,
+        "foreignCitizenship": 31,
+        "nonRoadOrSplit": 4,
+        "nonEligibleCourse": 0,
+        "unknownBirthYear": 20,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "Halvmaraton",
+      "kind": "open",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-halvmaraton-kvinner/1547244",
+      "updatedAt": "2026-11-02T17:01:06.000Z",
+      "tableRowCount": 858,
+      "resultRowCount": 856,
+      "eligibleRowCount": 794,
+      "excluded": {
+        "nonResult": 2,
+        "foreignCitizenship": 25,
+        "nonRoadOrSplit": 5,
+        "nonEligibleCourse": 0,
+        "unknownBirthYear": 32,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "Halvmaraton",
+      "kind": "veteran",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-halvmaraton-kvinner/1547470",
+      "updatedAt": "2026-11-02T13:41:31.000Z",
+      "tableRowCount": 1058,
+      "resultRowCount": 1058,
+      "eligibleRowCount": 1032,
+      "excluded": {
+        "nonResult": 0,
+        "foreignCitizenship": 13,
+        "nonRoadOrSplit": 3,
+        "nonEligibleCourse": 0,
+        "unknownBirthYear": 10,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "Maraton",
+      "kind": "open",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-maraton-kvinner/1547450",
+      "updatedAt": "2026-10-21T09:16:18.000Z",
+      "tableRowCount": 888,
+      "resultRowCount": 888,
+      "eligibleRowCount": 830,
+      "excluded": {
+        "nonResult": 0,
+        "foreignCitizenship": 6,
+        "nonRoadOrSplit": 4,
+        "nonEligibleCourse": 15,
+        "unknownBirthYear": 33,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "distance": "Maraton",
+      "kind": "veteran",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-maraton-kvinner/1547485",
+      "updatedAt": "2026-10-27T11:17:25.000Z",
+      "tableRowCount": 563,
+      "resultRowCount": 563,
+      "eligibleRowCount": 535,
+      "excluded": {
+        "nonResult": 0,
+        "foreignCitizenship": 8,
+        "nonRoadOrSplit": 6,
+        "nonEligibleCourse": 1,
+        "unknownBirthYear": 13,
+        "invalidTime": 0,
+        "invalidDate": 0,
+        "unsupportedAge": 0
+      },
+      "gender": "K"
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-5-km-menn/1547265",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 547,
+      "excluded": {
+        "foreign-national": 15,
+        "track-or-indoor": 63,
+        "missing-or-uncertain-birth-year": 4
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-10-km-menn/1547277",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 892,
+      "excluded": {
+        "foreign-national": 33,
+        "track-or-indoor": 20
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-halvmaraton-menn/1547461",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 1122,
+      "excluded": {
+        "foreign-national": 18,
+        "track-or-indoor": 15,
+        "missing-or-uncertain-birth-year": 8
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/veteranstatistikk-2026-maraton-menn/1547479",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 845,
+      "excluded": {
+        "track-or-indoor": 6,
+        "foreign-national": 13,
+        "missing-or-uncertain-birth-year": 18
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-5-km-menn/1547210",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 502,
+      "excluded": {
+        "foreign-national": 22,
+        "track-or-indoor": 117,
+        "missing-or-uncertain-birth-year": 3
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-10-km-menn/1547222",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 1066,
+      "excluded": {
+        "foreign-national": 52,
+        "track-or-indoor": 31,
+        "missing-or-uncertain-birth-year": 4
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-halvmaraton-menn/1547238",
+      "updatedAt": "2026-11-02",
+      "eligibleRowCount": 527,
+      "excluded": {
+        "foreign-national": 22,
+        "track-or-indoor": 4,
+        "missing-or-uncertain-birth-year": 3
+      }
+    },
+    {
+      "gender": "M",
+      "url": "https://www.kondis.no/statistikk/de-beste-2026-maraton-menn/1547444",
+      "updatedAt": "2026-10-22",
+      "eligibleRowCount": 815,
+      "excluded": {
+        "foreign-national": 14,
+        "track-or-indoor": 10,
+        "missing-or-uncertain-birth-year": 31
+      }
+    }
+  ]
+}

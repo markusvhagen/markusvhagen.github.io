@@ -37,6 +37,31 @@ test('single-distance races omit the select and unknown winners never come from 
   assert.equal(renderRaceWinners({}), '');
 });
 
+test('events outside the class programme are omitted only when explicitly inapplicable',()=>{
+  const input={id:'junior',type:'track',distances:['3000 m'],winners:[{distance:'3000 m',scope:'U20',men:{applicable:false,reason:'Ikke på programmet i U20'},women:winner('Testløper','9:20.20')}]};
+  const before=JSON.stringify(input),html=renderRaceWinners(input);
+  assert.match(html,/<span class="race-winner-scope">U20<\/span>/);
+  assert.match(html,/race-winner-women/);
+  assert.doesNotMatch(html,/race-winner-men|Ikke bekreftet|<strong>—<\/strong>/);
+  assert.equal(JSON.stringify(input),before);
+  for(const applicable of [undefined,null,'false',0]){
+    const modified=structuredClone(input);modified.winners[0].men={applicable};
+    assert.match(renderRaceWinners(modified),/race-winner-men is-unavailable/);
+  }
+  input.winners[0].men={...winner('Not on programme','8:00'),applicable:false};
+  assert.doesNotMatch(renderRaceWinners(input),/Not on programme|8:00/);
+});
+
+test('track class scope is visible and escaped while road scope explanations keep their existing presentation',()=>{
+  const input={...race,type:'track',winners:[{distance:'5 km',scope:'U20 <klasse>',men:winner('Test','14:30')}]};
+  assert.match(renderRaceWinners(input),/<span class="race-winner-scope">U20 &lt;klasse&gt;<\/span>/);
+  input.winners[0].scope='overall-gender';
+  assert.doesNotMatch(renderRaceWinners(input),/race-winner-scope|overall-gender/);
+  const road={...race,type:'road',winners:[{distance:'5 km',scope:'Samlet resultatliste, inkludert VM-eliten',men:winner('Test','14:30')}]};
+  assert.doesNotMatch(renderRaceWinners(road),/class="race-winner-scope"/);
+  assert.match(renderRaceWinners(road),/Samlet resultatliste, inkludert VM-eliten/);
+});
+
 test('winner components escape source text and keep carousel clone controls out of tab order',()=>{
   const html=renderRaceWinners({id:'"><script>',name:'<Race>',distances:['<5 km>','10 km'],winners:[{distance:'<5 km>',men:winner('<Runner>','14:30')}]},{clone:true,instanceId:'"><img>'});
   assert.match(html,/disabled tabindex="-1"/);

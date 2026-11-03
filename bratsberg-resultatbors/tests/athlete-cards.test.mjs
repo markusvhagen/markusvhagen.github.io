@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {renderAthleteCard,resultStatus,genderPosition} from '../dist/athlete-cards.js';
+import {renderAthleteCard,resultStatus,genderPosition,awardPosition} from '../dist/athlete-cards.js';
 
 const runner={name:'Test Løper',athleteId:'test-loper',distance:'10 km',category:'K35-39'};
 test('non-finishers never receive a time, rank, record badge or medal',()=>{
@@ -67,4 +67,59 @@ test('computed PBs keep their badge and age class without showing improvement ma
   assert.match(computed,/>K35-39</);
   assert.doesNotMatch(computed,/athlete-card-improvement|−1 min 3 s/);
   assert.match(computed,/tidligere registrerte løp/);
+});
+
+test('track round context is escaped and heat placings cannot create podium cards',()=>{
+  for(const positionScope of ['heat','round','qualifying']){
+    const entry={...runner,time:'4:10.00',distance:'1500 m',gender:'K',position:1,positionGender:1,positionGenderVerified:true,positionScope,roundLabel:'Forsøk · heat 2 · 1. plass'};
+    assert.equal(genderPosition(entry),null);
+    const html=renderAthleteCard(entry);
+    assert.match(html,/Forsøk · heat 2 · 1\. plass/);
+    assert.doesNotMatch(html,/podium-|award-medal|Nr\. 1 kvinner/);
+  }
+  const final=renderAthleteCard({...runner,time:'4:10.00',distance:'1500 m',positionScope:'gender',positionGender:11,positionGenderVerified:true,roundLabel:'B-finale · 1. i heatet <test>'});
+  assert.match(final,/Nr\. 11 kvinner/);
+  assert.match(final,/B-finale · 1\. i heatet &lt;test&gt;/);
+  assert.doesNotMatch(final,/podium-|<test>/);
+});
+
+test('explicit result date is shown with its round and invalid dates are omitted',()=>{
+  const base={...runner,time:'32:28.89',distance:'10000 m'};
+  const html=renderAthleteCard({...base,date:'2026-07-25',roundLabel:'Finale'});
+  assert.match(html,/<p class="athlete-card-round"><time datetime="2026-07-25">25\. juli<\/time> · Finale<\/p>/);
+  for(const date of ['2026-02-30','not-a-date','2026-07-25<script>',null]){
+    const invalid=renderAthleteCard({...base,date,roundLabel:'Finale'});
+    assert.doesNotMatch(invalid,/<time|<script>|Invalid Date/);
+    assert.match(invalid,/<p class="athlete-card-round">Finale<\/p>/);
+  }
+  assert.doesNotMatch(renderAthleteCard(base),/athlete-card-round/);
+});
+
+test('verified championship class awards show the exact class without changing gender ranking semantics',()=>{
+  const base={...runner,time:'5:53.69',distance:'2000 m',positionScope:'class',awardScope:'championship-class',positionClassVerified:true};
+  for(const [positionClass,category,medal] of [[1,'G16','gold'],[2,'J15','silver'],[3,'G15','bronze'],[7,'U20',null]]){
+    const result={...base,positionClass,category};
+    assert.equal(genderPosition(result),null);
+    assert.equal(awardPosition(result),positionClass);
+    const html=renderAthleteCard(result);
+    assert.match(html,new RegExp(`Nr\\. ${positionClass} ${category}`));
+    assert.match(html,new RegExp(`>${category}<`));
+    assert.doesNotMatch(html,/Nr\. \d+ kvinner|Nr\. \d+ menn/);
+    if(medal)assert.match(html,new RegExp('podium-'+medal));
+    else assert.doesNotMatch(html,/podium-|award-medal/);
+  }
+});
+
+test('ordinary age-class wins and unverified or heat class placings cannot create championship awards',()=>{
+  const base={...runner,time:'35:00',position:1,positionScope:'class',positionClass:1,positionClassVerified:true};
+  for(const result of [base,{...base,awardScope:'class'},...[
+    {positionClassVerified:false},{positionClassVerified:undefined},{positionClass:0},{positionClass:1.5},{positionClass:'1'},{category:''},{category:null},
+    {positionScope:'heat'},{positionScope:'round'},{positionScope:'qualifying'}
+  ].map(extra=>({...base,awardScope:'championship-class',...extra}))]){
+    assert.equal(awardPosition(result),null);
+    assert.doesNotMatch(renderAthleteCard(result),/podium-|award-medal|Nr\. 1/);
+  }
+  const escaped=renderAthleteCard({...base,awardScope:'championship-class',category:'U20 <test>'});
+  assert.match(escaped,/Nr\. 1 U20 &lt;test&gt;/);
+  assert.doesNotMatch(escaped,/<test>/);
 });

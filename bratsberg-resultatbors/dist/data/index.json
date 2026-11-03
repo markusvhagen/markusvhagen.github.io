@@ -2,21 +2,31 @@
   "schemaVersion": 1,
   "demo": false,
   "dataMode": "real",
-  "updatedAt": "2026-10-30",
+  "updatedAt": "2026-11-03",
   "races": [
     "data/races/hytteplanmila-2026.json",
     "data/races/trondheim-skogsmaraton-2026.json",
     "data/races/heim-halvmaraton-2026.json",
     "data/races/kobenhavn-halvmaraton-2026.json",
+    "data/races/kobenhavn-5k-2026.json",
+    "data/races/um-2026.json",
     "data/races/trondheim-maraton-2026.json",
+    "data/races/junior-nm-2026.json",
     "data/races/tronderenergi-mila-2026.json",
+    "data/races/nm-bane-2026.json",
     "data/races/tronder-ostlopet-2026.json",
+    "data/races/rekordmila-2026.json",
     "data/races/nidaros-lopefest-2026.json",
-    "data/races/berlin-halvmaraton-2026.json"
+    "data/races/tordenskioldlopet-2026.json",
+    "data/races/orasprinten-2026.json",
+    "data/races/berlin-halvmaraton-2026.json",
+    "data/races/barcelona-halvmaraton-2026.json",
+    "data/races/valencia-10k-2026.json"
   ],
   "records": "data/records.json",
   "upcoming": "data/upcoming.json",
   "relays": "data/relays.json",
   "recordsUpdatedAt": "2026-10-17",
-  "athletes": "data/athletes.json"
+  "athletes": "data/athletes.json",
+  "nationalPoints": "data/national-points.json"
 }

@@ -63,6 +63,23 @@ test('only the same verified gender podiums as the rendered cards receive priori
   assert.deepEqual(selectWidgetHighlights({results}).map(r=>r.athleteId),['verified','gender-scoped','overall','class','unverified','unknown-gender']);
 });
 
+test('explicit championship class medals receive podium priority while road class and heat wins do not',()=>{
+  const entry=(id,time,extra={})=>({athleteId:id,time,gender:'M',category:'G16',...extra});
+  const championship=(rank,extra={})=>({awardScope:'championship-class',positionScope:'class',positionClass:rank,positionClassVerified:true,...extra});
+  const results=[
+    entry('road-class','4:00',{category:'M35-39',positionScope:'class',positionClass:1,positionClassVerified:true}),
+    entry('heat','4:05',championship(1,{positionScope:'heat'})),
+    entry('unverified','4:10',championship(1,{positionClassVerified:false})),
+    entry('bronze','5:53.69',championship(3,{category:'G15'})),
+    entry('silver','6:33.08',championship(2,{category:'J15',gender:'K'})),
+    entry('gold','8:23.56',championship(1)),
+    entry('record','9:20.20',{clubRecord:true})
+  ];
+  const before=structuredClone(results);
+  assert.deepEqual(selectWidgetHighlights({results}).map(result=>result.athleteId),['record','gold','silver','bronze','road-class','heat']);
+  assert.deepEqual(results,before);
+});
+
 test('non-finishers and malformed times never become highlights, even with awards',()=>{
   const results=[
     {athleteId:'dns',time:'DNS',status:'DNS',clubRecord:true},

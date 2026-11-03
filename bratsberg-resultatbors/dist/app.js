@@ -7,6 +7,7 @@ import {renderCalendarParticipant,renderParticipantPreview} from './calendar.js'
 import {renderRaceWinners,installRaceWinnerControls,renderRaceNews} from './race-extras.js';
 import {gradeRaceResult} from './age-grading.js';
 import {readBirthYearOverrides,writeBirthYearOverrides,validateBirthYear} from './age-grade-ui.js';
+import {mountPointsView} from './points-view.js';
 const portal=document.body.dataset.page==='portal';
 let data;
 installPortraitFallback();
@@ -45,12 +46,13 @@ function initPortal(){
       return {...result,ageGrade:{...ageGrade,ageBasis:'local-birth-year',localOverride:true}};
     })}));
   }
+  const pointsView=mountPointsView(document.querySelector('#points-root'),{getRaces:racesWithLocalAges,references:data.nationalPoints});
   function raceSource(race){
     let sourceLink='';
     try{const url=new URL(race.sourceUrl);if(url.protocol==='https:'&&!url.username&&!url.password)sourceLink=`<a href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">Åpne resultatkilden ↗</a>`;}catch{}
     const rankingNote='Plassering vises innen kjønn når den er kontrollert.';
     const pdfNote=race.source?.type==='pdf'?'Tidene er gjengitt fra PDF-en. '+(race.source.timeBasis==='unspecified'?'Kilden oppgir ikke om dette er netto- eller bruttotid. ':''):'';
-    return `<div class="race-source-note">${sourceLink}<p>${pdfNote}${rankingNote}</p></div>`;
+    return `<div class="race-source-note">${sourceLink}<p>${pdfNote}${rankingNote}</p>${race.source?.displayNote?`<p>${esc(race.source.displayNote)}</p>`:''}</div>`;
   }
   function resultGroups(matching){
     const groups=new Map();
@@ -161,18 +163,21 @@ function initPortal(){
     const linkedRace=tab==='lop'?id:null;
     if(tab==='lop'){tab='resultater';if(id){clearFilters();openRaces.add(id);}}
     if(tab==='stafetter')tab='stafettrekorder';
-    if(!['resultater','klubbrekorder','stafettrekorder','terminliste'].includes(tab))tab='resultater';
+    if(tab==='poeng')tab='poengnoteringer';
+    if(!['resultater','poengnoteringer','klubbrekorder','stafettrekorder','terminliste'].includes(tab))tab='resultater';
     document.querySelectorAll('[data-tab]').forEach(a=>{a.classList.toggle('active',a.dataset.tab===tab);if(a.dataset.tab===tab)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
     document.querySelector('#results-panel').hidden=tab!=='resultater';
+    document.querySelector('#points-panel').hidden=tab!=='poengnoteringer';
     document.querySelector('#records-panel').hidden=tab!=='klubbrekorder';
     document.querySelector('#relays-panel').hidden=tab!=='stafettrekorder';
     document.querySelector('#calendar-panel').hidden=tab!=='terminliste';
     document.querySelector('#stats-strip').hidden=tab!=='resultater';
     if(tab==='resultater'){renderResults(linkedRace);if(linkedRace)requestAnimationFrame(()=>document.getElementById('race-'+linkedRace)?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));}
     if(tab==='klubbrekorder')renderRecords();
+    if(tab==='poengnoteringer')pointsView.render();
     if(tab==='stafettrekorder')renderRelays(document.querySelector('#relay-root'),data,id,relayGender);
     if(tab==='terminliste')renderCalendar(id);
-    const pageNames={resultater:'Løpsresultater',klubbrekorder:'Klubbrekorder',stafettrekorder:'Stafettrekorder',terminliste:'Terminliste'};
+    const pageNames={resultater:'Løpsresultater',poengnoteringer:'Poengnoteringer',klubbrekorder:'Klubbrekorder',stafettrekorder:'Stafettrekorder',terminliste:'Terminliste'};
     document.title=pageNames[tab]+' · Bratsberg Friidrett';
   }
   window.addEventListener('hashchange',route);route();

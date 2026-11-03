@@ -1,0 +1,307 @@
+{
+  "id": "barcelona-halvmaraton-2026",
+  "name": "Barcelona halvmaraton",
+  "date": "2026-02-15",
+  "location": "Barcelona, Spania",
+  "type": "road",
+  "distances": [
+    "Halvmaraton"
+  ],
+  "demo": false,
+  "sourceUrl": "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+  "source": {
+    "type": "official-results",
+    "provider": "RockTheSport / RPM Sports; RFEA",
+    "checkedAt": "2026-11-03",
+    "timeBasis": "net",
+    "scope": "De fem navngitte utøverne i brukerens bestilling",
+    "dateVerified": true,
+    "referenceUrls": [
+      "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+      "https://www.rfeacontent.es/resultados/2026/ruta/mmaraton_Barcelona.pdf",
+      "https://www.mitjamarato.barcelona/es/soy-corredor-a/resultados/",
+      "https://worldathletics.org/competition/calendar-results/results/7237513?eventId=10229633",
+      "https://worldathletics.org/competition/calendar-results/results/7237513?eventId=10229541"
+    ],
+    "notes": [
+      "Nettotid er hentet fra den eksplisitte kolonnen TIEMPO NETO i arrangørens offentlige RockTheSport-søk på startnumrene 6974, 6409, 6217, 22505 og 180. TIEMPO er bevart som gunTime.",
+      "Kjønn, aldersklasse og kjønnsplassering er kontrollert mot RFEAs separate herre- og kvinnelister. Plasseringene følger denne offisielle bruttotidsrangeringen selv om kortene viser nettotid.",
+      "RockTheSports plasskolonner har misvisende etiketter: tabellens POSICIÓN CATEGORÍA viser samlet plass og PUESTO viser klasseplass. Disse tallene er bevart bare i sourceRow og brukes ikke som kjønnsplassering.",
+      "RFEA-PDF-en gir Ingrid Lunde Steen plass 83 blant kvinnene. Eldre sekundære resultatkopier oppgir 89; den primære PDF-listen brukes her.",
+      "Utvalget er avgrenset til brukerens fem navn og er ikke et komplett søk etter alle Bratsberg-deltakere.",
+      "Nettotidene er ikke automatisk kvalifisert for klubbrekordkontroll.",
+      "Tommy Bangjord Hoves nettotid 1:03:01 samsvarer med klubbens allerede registrerte halvmaratonrekord for ham 15.02.2026 og er derfor markert som bekreftet klubbrekord. Bruttotiden er 1:03:06."
+    ],
+    "displayNote": "Nettotid vises. Plasseringene følger arrangørens offisielle kjønnsrangering etter bruttotid."
+  },
+  "results": [
+    {
+      "athleteId": "markus-valas-hagen",
+      "name": "Markus Valås Hagen",
+      "sourceName": "Markus Valås Hagen",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "Senior M",
+      "time": "1:22:04",
+      "netTime": "1:22:04",
+      "gunTime": "1:23:05",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 1668,
+      "positionScope": "gender",
+      "positionGender": 1668,
+      "positionGenderVerified": true,
+      "positionGenderSource": "https://www.rfeacontent.es/resultados/2026/ruta/mmaraton_Barcelona.pdf",
+      "positionGenderVerificationNote": "Publisert plassering i RFEAs separate kjønnsdelte bruttotidsliste, PDF-side 37. Nettotid vises i kortet; plasseringen følger den offisielle bruttotidslisten, ikke en ny beregning etter nettotid.",
+      "sourceBib": "6974",
+      "club": "Bratsberg IL",
+      "clubRecord": false,
+      "recordEligible": false,
+      "sourceUrl": "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+      "sourceRow": {
+        "columns": [
+          "DIPLOMA",
+          "NOMBRE",
+          "APELLIDOS",
+          "DORSAL",
+          "TIEMPO",
+          "POSICIÓN CATEGORÍA",
+          "PUESTO",
+          "TIEMPO NETO"
+        ],
+        "values": [
+          "",
+          "Markus Valås",
+          "Hagen",
+          "6974",
+          "01:23:05",
+          "1808",
+          "992",
+          "01:22:04"
+        ]
+      }
+    },
+    {
+      "athleteId": "ingrid-lunde-steen",
+      "name": "Ingrid Lunde Steen",
+      "sourceName": "Ingrid Lunde Steen",
+      "gender": "K",
+      "distance": "Halvmaraton",
+      "category": "F40",
+      "time": "1:20:00",
+      "netTime": "1:20:00",
+      "gunTime": "1:20:27",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 83,
+      "positionScope": "gender",
+      "positionGender": 83,
+      "positionGenderVerified": true,
+      "positionGenderSource": "https://www.rfeacontent.es/resultados/2026/ruta/mmaraton_Barcelona.pdf",
+      "positionGenderVerificationNote": "Publisert plassering i RFEAs separate kjønnsdelte bruttotidsliste, PDF-side 417. Nettotid vises i kortet; plasseringen følger den offisielle bruttotidslisten, ikke en ny beregning etter nettotid.",
+      "sourceBib": "6409",
+      "club": "Bratsberg IL",
+      "clubRecord": false,
+      "recordEligible": false,
+      "sourceUrl": "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+      "sourceRow": {
+        "columns": [
+          "DIPLOMA",
+          "NOMBRE",
+          "APELLIDOS",
+          "DORSAL",
+          "TIEMPO",
+          "POSICIÓN CATEGORÍA",
+          "PUESTO",
+          "TIEMPO NETO"
+        ],
+        "values": [
+          "",
+          "Ingrid",
+          "Lunde Steen",
+          "6409",
+          "01:20:27",
+          "1331",
+          "4",
+          "01:20:00"
+        ]
+      }
+    },
+    {
+      "athleteId": "magnus-cato-andersen",
+      "name": "Magnus Cato Andersen",
+      "sourceName": "Magnus Cato Andersen",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M35",
+      "time": "1:21:58",
+      "netTime": "1:21:58",
+      "gunTime": "1:22:59",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 1644,
+      "positionScope": "gender",
+      "positionGender": 1644,
+      "positionGenderVerified": true,
+      "positionGenderSource": "https://www.rfeacontent.es/resultados/2026/ruta/mmaraton_Barcelona.pdf",
+      "positionGenderVerificationNote": "Publisert plassering i RFEAs separate kjønnsdelte bruttotidsliste, PDF-side 37. Nettotid vises i kortet; plasseringen følger den offisielle bruttotidslisten, ikke en ny beregning etter nettotid.",
+      "sourceBib": "6217",
+      "club": "Bratsberg IL",
+      "clubRecord": false,
+      "recordEligible": false,
+      "sourceUrl": "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+      "sourceRow": {
+        "columns": [
+          "DIPLOMA",
+          "NOMBRE",
+          "APELLIDOS",
+          "DORSAL",
+          "TIEMPO",
+          "POSICIÓN CATEGORÍA",
+          "PUESTO",
+          "TIEMPO NETO"
+        ],
+        "values": [
+          "",
+          "Magnus Cato",
+          "Andersen",
+          "6217",
+          "01:22:59",
+          "1782",
+          "299",
+          "01:21:58"
+        ]
+      }
+    },
+    {
+      "athleteId": "thea-elise-andersen",
+      "name": "Thea Elise Andersen",
+      "sourceName": "Thea Elise Andersen",
+      "gender": "K",
+      "distance": "Halvmaraton",
+      "category": "Senior F",
+      "time": "1:50:00",
+      "netTime": "1:50:00",
+      "gunTime": "1:50:42",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 2991,
+      "positionScope": "gender",
+      "positionGender": 2991,
+      "positionGenderVerified": true,
+      "positionGenderSource": "https://www.rfeacontent.es/resultados/2026/ruta/mmaraton_Barcelona.pdf",
+      "positionGenderVerificationNote": "Publisert plassering i RFEAs separate kjønnsdelte bruttotidsliste, PDF-side 481. Nettotid vises i kortet; plasseringen følger den offisielle bruttotidslisten, ikke en ny beregning etter nettotid.",
+      "sourceBib": "22505",
+      "club": "Bratsberg IL",
+      "clubRecord": false,
+      "recordEligible": false,
+      "sourceUrl": "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+      "sourceRow": {
+        "columns": [
+          "DIPLOMA",
+          "NOMBRE",
+          "APELLIDOS",
+          "DORSAL",
+          "TIEMPO",
+          "POSICIÓN CATEGORÍA",
+          "PUESTO",
+          "TIEMPO NETO"
+        ],
+        "values": [
+          "",
+          "Thea Elise",
+          "Andersen",
+          "22505",
+          "01:50:42",
+          "13855",
+          "1906",
+          "01:50:00"
+        ]
+      }
+    },
+    {
+      "athleteId": "tommy-bangjord-hove",
+      "name": "Tommy Bangjord Hove",
+      "sourceName": "Tommy Bangjord Hove",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "Senior M",
+      "time": "1:03:01",
+      "netTime": "1:03:01",
+      "gunTime": "1:03:06",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 30,
+      "positionScope": "gender",
+      "positionGender": 30,
+      "positionGenderVerified": true,
+      "positionGenderSource": "https://www.rfeacontent.es/resultados/2026/ruta/mmaraton_Barcelona.pdf",
+      "positionGenderVerificationNote": "Publisert plassering i RFEAs separate kjønnsdelte bruttotidsliste, PDF-side 1. Nettotid vises i kortet; plasseringen følger den offisielle bruttotidslisten, ikke en ny beregning etter nettotid.",
+      "sourceBib": "180",
+      "club": "Bratsberg IL",
+      "clubRecord": true,
+      "recordEligible": false,
+      "sourceUrl": "https://inscripciones.rpmsports.es/es/evento/hyundai-mitja-marato-barcelona-by-brooks-2026/clasificaciones",
+      "sourceRow": {
+        "columns": [
+          "DIPLOMA",
+          "NOMBRE",
+          "APELLIDOS",
+          "DORSAL",
+          "TIEMPO",
+          "POSICIÓN CATEGORÍA",
+          "PUESTO",
+          "TIEMPO NETO"
+        ],
+        "values": [
+          "",
+          "Tommy",
+          "Bangjord Hove",
+          "180",
+          "01:03:06",
+          "30",
+          "25",
+          "01:03:01"
+        ]
+      },
+      "clubRecordSource": "dist/data/records.json: klubbens oppgitte halvmaratonrekord 1:03:01, Tommy Bangjord Hove, 2026-02-15",
+      "clubRecordVerificationNote": "Nettotid og dato samsvarer nøyaktig med den eksisterende rekorden som klubben har oppgitt. Arrangørens TIEMPO NETO er 1:03:01; offisiell bruttotid er 1:03:06. Dette er en bekreftelse av registrert rekord, ikke automatisk godkjenning av nye nettotidsrekorder.",
+      "clubRecordTime": "1:03:01",
+      "clubRecordTimeBasis": "net",
+      "clubRecordVerification": {
+        "source": "Klubbens innsendte rekordliste",
+        "matchedFields": [
+          "athleteId",
+          "distance",
+          "date"
+        ],
+        "recordTime": "1:03:01",
+        "matchedTimeField": "netTime",
+        "checkedAt": "2026-11-03"
+      }
+    }
+  ],
+  "winners": [
+    {
+      "distance": "Halvmaraton",
+      "men": {
+        "name": "Hagos Gebrhiwet",
+        "time": "58:05",
+        "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7237513?eventId=10229633",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "women": {
+        "name": "Loice Chemnung",
+        "time": "1:04:01",
+        "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7237513?eventId=10229541",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "scope": "Offisiell samlet resultatliste innen kjønn, inkludert elitefeltet"
+    }
+  ],
+  "winnersNote": "Offisielle vinnertider er bruttotider fra World Athletics og RFEA. De fem klubbresultatene vises med TIEMPO NETO fra arrangøren."
+}

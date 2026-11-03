@@ -94,7 +94,14 @@
         "illustrative": false,
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Eira-Rapp-360x640.jpg"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2000,
+      "birthYearSource": {
+        "provider": "Bratsberg Friidrett",
+        "url": "https://www.bratsbergfriidrett.no/2026/07/21/her-er-vart-nm-lag/",
+        "checkedAt": "2026-11-03",
+        "note": "Utøverens fødselsår oppgitt i klubbens presentasjon av NM-laget."
+      }
     },
     {
       "id": "espen-roistad",
@@ -135,7 +142,15 @@
         "preferredSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKUDMeSmaAH9NiQqkYuJD9Dc6k-ZbrjaCbFnNNUVdPzLp08GiwuzIlAAs7&s=10",
         "illustrative": false
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1991,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1",
+        "sourceName": "Espen Tveit",
+        "sourceParticipantId": "c53189c1-b0cc-4e08-c16d-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "eva-ingebrigtsen",
@@ -324,7 +339,16 @@
         "preferredSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvv9Y5PrYJkkEPc9o2cPzBCK_f9QcocbQ-JXjO2v7miZ4z6ngjlnAJWsZW&s=10",
         "illustrative": false
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1985,
+      "birthYearSource": {
+        "provider": "World Athletics",
+        "url": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+        "sourceName": "Ingrid LUNDE-STEEN",
+        "field": "Born",
+        "evidence": "07 JUN 1985",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "ingvild-saksvik-lehouillier",
@@ -402,7 +426,15 @@
         "illustrative": false,
         "checkedAt": "2026-10-29"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1998,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=2",
+        "sourceName": "Jonas Onshuus",
+        "sourceParticipantId": "889e6568-c959-4d44-c1e9-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "jonas-udjus-frorud",
@@ -426,7 +458,14 @@
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Jonas-Frorud-360x640.jpg",
         "framingReviewed": true
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1992,
+      "birthYearSource": {
+        "provider": "Bratsberg Friidrett",
+        "url": "https://www.bratsbergfriidrett.no/2026/07/21/her-er-vart-nm-lag/",
+        "checkedAt": "2026-11-03",
+        "note": "Utøverens fødselsår oppgitt i klubbens presentasjon av NM-laget."
+      }
     },
     {
       "id": "julian-grotte",
@@ -456,7 +495,15 @@
         "preferredSource": "https://premium.vgc.no/v2/images/20df580f-bc7a-43c3-918f-c5318da8ec21?fit=crop&format=auto&h=1267&w=1900&s=0f2043ef00f0469275f7b516bf6bfe42670c309f",
         "illustrative": false
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1994,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1",
+        "sourceName": "Jørgen Skevik",
+        "sourceParticipantId": "e26057ce-a12f-4802-c1b3-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "kjersti-solli",
@@ -482,7 +529,21 @@
       "aliases": [],
       "kind": "member",
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "discipline": "2000m",
+          "distance": "2 000 m",
+          "time": "5:53,69",
+          "date": "2026-09-13",
+          "type": "track",
+          "environment": "outdoor",
+          "raceId": "um-2026",
+          "sourceUrl": "https://liveres.andro.no/liveres/349?day=alle",
+          "note": "Eksplisitt PB-markering i arrangørens resultatliste.",
+          "eventName": "UM 2026",
+          "source": "PB bekreftet i arrangørens resultatliste"
+        }
+      ],
       "birthYear": 2011,
       "birthYearSource": {
         "fileName": "02ResultListsSluttresultater.pdf",
@@ -518,7 +579,14 @@
         "illustrative": false,
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Kristin-Opland-360x640.jpg"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1982,
+      "birthYearSource": {
+        "provider": "Bratsberg Friidrett",
+        "url": "https://www.bratsbergfriidrett.no/2026/07/21/her-er-vart-nm-lag/",
+        "checkedAt": "2026-11-03",
+        "note": "Utøverens fødselsår oppgitt i klubbens presentasjon av NM-laget."
+      }
     },
     {
       "id": "mari-steinkjer-oyen",
@@ -594,9 +662,11 @@
           "type": "road",
           "distance": "5 km",
           "time": "18:11",
-          "date": null,
-          "asOf": "2026-10-29",
-          "source": "Oppgitt av utøveren 29.10.2026"
+          "date": "2026-04-19",
+          "source": "Pers bekreftet av utøveren 29.10.2026; tid og dato kontrollert mot EQ Timing.",
+          "raceId": "orasprinten-2026",
+          "eventName": "Ørasprinten",
+          "sourceUrl": "https://live.eqtiming.com/81981"
         },
         {
           "type": "road",
@@ -617,7 +687,16 @@
           "source": "Pers bekreftet av utøveren 29.10.2026; nettotid fra tidligere innsendt resultatliste.",
           "raceId": "berlin-halvmaraton-2026"
         }
-      ]
+      ],
+      "birthYear": 1999,
+      "birthYearSource": {
+        "type": "official-result-api",
+        "url": "https://live.eqtiming.com/api/Result/Gender/81981/334709/male",
+        "field": "Deltaker.Utover.Aar",
+        "eventId": 81981,
+        "sourceParticipantId": "14390022",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "mats-flaaten",
@@ -693,7 +772,28 @@
         "preferredSource": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffPWaQ21imdx5uhbQEupg4jdHluQYq3oMm2Y6a67vcVrbHvgrwtnwwxWE&s=10",
         "illustrative": false
       },
-      "personalBests": []
+      "personalBests": [
+        {
+          "discipline": "2000m",
+          "distance": "2 000 m",
+          "time": "6:42,55",
+          "date": "2026-09-13",
+          "type": "track",
+          "environment": "outdoor",
+          "raceId": "um-2026",
+          "sourceUrl": "https://liveres.andro.no/liveres/349?day=alle",
+          "note": "Eksplisitt PB-markering i arrangørens resultatliste.",
+          "eventName": "UM 2026",
+          "source": "PB bekreftet i arrangørens resultatliste"
+        }
+      ],
+      "birthYear": 2011,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10020877&showevent=0&showseason=0&outdoor=Y&listtype=All",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra utøverprofilens eksplisitte fødselsdato."
+      }
     },
     {
       "id": "ola-rossvoll",
@@ -715,7 +815,15 @@
         "subjectBib": "449",
         "framingReviewed": true
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1983,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1",
+        "sourceName": "Ola Rossvoll",
+        "sourceParticipantId": "1cef6cdb-306a-49f3-c164-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "petter-vea-monseth",
@@ -738,7 +846,28 @@
         "illustrative": false,
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/09/Petter-i-farta-i-Koben-818x1024.jpeg"
       },
-      "personalBests": []
+      "personalBests": [
+        {
+          "discipline": "5000m",
+          "distance": "5 000 m",
+          "type": "track",
+          "environment": "outdoor",
+          "time": "14:38,08",
+          "date": "2026-08-30",
+          "raceId": "junior-nm-2026",
+          "sourceUrl": "https://liveres.andro.no/liveres/347?day=3",
+          "corroboratingSourceUrl": "https://www.bratsbergfriidrett.no/2026/09/05/de-lop-langt-bratt-og-fort/",
+          "eventName": "Junior-NM 2026",
+          "source": "PB bekreftet av arrangørens resultatliste og klubbens oppslag"
+        }
+      ],
+      "birthYear": 2010,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra NFIFs landsoversikt 2026, kontrollert mot Petter Vea Monseth / Bratsberg IL på 1500 m, 3000 m og 5000 m."
+      }
     },
     {
       "id": "sebastian-reinertsen",
@@ -759,7 +888,16 @@
         "illustrative": false,
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Sebastian-Reinertsen-360x640.jpg"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2003,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3605520",
+        "sourceParticipantId": "14451744",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "signe-by-eide",
@@ -982,7 +1120,15 @@
           "zoom": 1
         }
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1995,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=2",
+        "sourceName": "Vibeke Jensen",
+        "sourceParticipantId": "609a22bb-7d8b-4219-c1b4-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "jonas-olaf-onshuus",
@@ -1095,7 +1241,15 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1994,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=7",
+        "sourceName": "Sofie Søraunet Wangberg",
+        "sourceParticipantId": "6aae2658-1b8d-4a7f-c171-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "unni-karin-moksnes",
@@ -1134,7 +1288,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1985,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "574464",
+        "sourceParticipantId": "14430525",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "thea-elise-andersen",
@@ -1186,7 +1349,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1994,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "707069",
+        "sourceParticipantId": "14456036",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "henning-spets",
@@ -1199,7 +1371,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1981,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "1682301",
+        "sourceParticipantId": "14425016",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "elisabeth-stubberud",
@@ -1284,7 +1465,16 @@
         "status": "unconfirmed",
         "note": "Navnevariant fra PDF; profilene er foreløpig ikke slått sammen."
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1995,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "5875648",
+        "sourceParticipantId": "14445403",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "jonatan-olander",
@@ -1362,7 +1552,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1995,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "520177",
+        "sourceParticipantId": "14452476",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "torje-nes-furu",
@@ -1505,7 +1704,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1984,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "111737",
+        "sourceParticipantId": "14453002",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "ane-korsvold",
@@ -1518,7 +1726,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1991,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3569920",
+        "sourceParticipantId": "14412074",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "luca-bessems",
@@ -1676,7 +1893,15 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1989,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1",
+        "sourceName": "Øyvind Ytterhus Utengen",
+        "sourceParticipantId": "208e7ce3-00fc-4a2b-c1de-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "agnes-holstad",
@@ -1689,7 +1914,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1994,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "4138122",
+        "sourceParticipantId": "14452340",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "joachim-hafsmo",
@@ -1704,7 +1938,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1989,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "354454",
+        "sourceParticipantId": "14407925",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "heidi-stokka-skullerud",
@@ -1743,7 +1986,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1978,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "4909429",
+        "sourceParticipantId": "14443812",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "joachim-henriksen",
@@ -1808,7 +2060,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1976,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "1836781",
+        "sourceParticipantId": "14256694",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "stine-helena-bang-svendsen",
@@ -1821,7 +2082,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1983,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3336372",
+        "sourceParticipantId": "14407981",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "ane-gangas-bromset",
@@ -1886,7 +2156,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1994,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3986084",
+        "sourceParticipantId": "14452667",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "caroline-heggelund-berg",
@@ -2029,7 +2308,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2015,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "6008596",
+        "sourceParticipantId": "14452201",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "aksel-berg-frigard",
@@ -2042,7 +2330,16 @@
         "eventId": "79896",
         "url": "https://live.eqtiming.com/79896"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 2015,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "4741346",
+        "sourceParticipantId": "14452251",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "emilie-tondel-sliper",
@@ -2106,7 +2403,16 @@
         "eventId": "heim-halvmaraton-2026",
         "url": "https://live.eqtiming.com/81982"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1987,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "1897221",
+        "sourceParticipantId": "14446141",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "rikard-sunde",
@@ -2130,7 +2436,16 @@
         "eventId": "heim-halvmaraton-2026",
         "url": "https://live.eqtiming.com/81982"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3949974",
+        "sourceParticipantId": "14407917",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "stig-erlend-almasbakk",
@@ -2228,7 +2543,16 @@
         "eventId": "tronderenergi-mila-2026",
         "url": "https://live.eqtiming.com/79516"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3845439",
+        "sourceParticipantId": "14448375",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "sofia-malene-sliper",
@@ -2264,7 +2588,15 @@
         "eventId": "trondheim-skogsmaraton-2026",
         "url": "https://live.eqtiming.com/79466"
       },
-      "personalBests": []
+      "personalBests": [],
+      "birthYear": 1988,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=3",
+        "sourceName": "Michael Watts",
+        "sourceParticipantId": "b168bc00-1e26-494c-c2a3-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
     },
     {
       "id": "mona-bull-rokkesaune",
@@ -2659,6 +2991,15 @@
       "source": {
         "eventId": "hytteplanmila-2026",
         "url": "https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=search&searchmode=advanced&search_club=Bratsberg&search_distance=1&search_time=Finish&search_sortby=%5BTIMEFIELD%5D&search_sorttype=ASC&language=us"
+      },
+      "birthYear": 1988,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "616353",
+        "sourceParticipantId": "14438318",
+        "checkedAt": "2026-11-03"
       }
     },
     {
@@ -2712,6 +3053,15 @@
       "source": {
         "eventId": "nidaros-lopefest-2026",
         "url": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/"
+      },
+      "birthYear": 1976,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "380842",
+        "sourceParticipantId": "14416661",
+        "checkedAt": "2026-11-03"
       }
     },
     {
@@ -2724,6 +3074,15 @@
       "source": {
         "eventId": "nidaros-lopefest-2026",
         "url": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/"
+      },
+      "birthYear": 1985,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "619922",
+        "sourceParticipantId": "14452803",
+        "checkedAt": "2026-11-03"
       }
     },
     {
@@ -2736,6 +3095,15 @@
       "source": {
         "eventId": "nidaros-lopefest-2026",
         "url": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/"
+      },
+      "birthYear": 1965,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "2567860",
+        "sourceParticipantId": "14448844",
+        "checkedAt": "2026-11-03"
       }
     },
     {
@@ -2760,6 +3128,15 @@
       "source": {
         "eventId": "nidaros-lopefest-2026",
         "url": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/"
+      },
+      "birthYear": 1992,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "4124812",
+        "sourceParticipantId": "14257813",
+        "checkedAt": "2026-11-03"
       }
     },
     {
@@ -2784,6 +3161,354 @@
       "source": {
         "eventId": "nidaros-lopefest-2026",
         "url": "https://www.sportsidioten.no/resultater/nidaros-lopefest-2026/"
+      },
+      "birthYear": 1997,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "4622303",
+        "sourceParticipantId": "14452131",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "erik-johannes-husom",
+      "name": "Erik Johannes Husom",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "birthYear": 1995,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "5541150",
+        "sourceParticipantId": "14447549",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "julian-grottr",
+      "name": "Julian Grøttr",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "identityReview": {
+        "status": "unconfirmed",
+        "possibleAthleteIds": [
+          "julian-grotte"
+        ],
+        "reason": "Kildenavn avviker fra eksisterende profil; koblingen er ikke bekreftet.",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/80522/328697/male?count=1000&startAt=1"
+      },
+      "birthYear": 2005,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "6834126",
+        "sourceParticipantId": "14456026",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "nicolai-momyr",
+      "name": "Nicolai Momyr",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "birthYear": 2011,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "4792622",
+        "sourceParticipantId": "14374708",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "david-krokli",
+      "name": "David Krokli",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "birthYear": 1995,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "6550208",
+        "sourceParticipantId": "14257332",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "anne-sofie-berg",
+      "name": "Anne-Sofie Berg",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "birthYear": 1973,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "3945085",
+        "sourceParticipantId": "14452263",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "identityReview": {
+        "status": "unconfirmed",
+        "possibleAthleteIds": [
+          "michael-watts"
+        ],
+        "reason": "Kildenavn avviker fra eksisterende profil; koblingen er ikke bekreftet.",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/80522/328698/male?count=1000&startAt=1"
+      },
+      "birthYear": 1988,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "5774522",
+        "sourceParticipantId": "14437125",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "ludwik-monsrud-sikorski",
+      "name": "Ludwik Monsrud-Sikorski",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "birthYear": 2009,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "5586712",
+        "sourceParticipantId": "14445179",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "sebastian-leistad",
+      "name": "Sebastian Leistad",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "EQ Timing",
+        "eventId": "tordenskioldlopet-2026",
+        "url": "https://live.eqtiming.com/80522"
+      },
+      "birthYear": 1986,
+      "birthYearSource": {
+        "provider": "EQ Timing",
+        "url": "https://live.eqtiming.com/api/Contestants/80522",
+        "field": "Utover.Aar",
+        "sourceAthleteId": "5601891",
+        "sourceParticipantId": "14453014",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "stian-karlsen-dyrseth",
+      "name": "Stian Karlsen Dyrseth",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "Racedays Timing",
+        "eventId": "rekordmila-2026",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/"
+      },
+      "birthYear": 1989,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1",
+        "sourceName": "Stian Karlsen Dyrseth",
+        "sourceParticipantId": "98e06e4f-f7dd-48b0-c24d-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "alexandros-tsagkas",
+      "name": "Alexandros Tsagkas",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "Racedays Timing",
+        "eventId": "rekordmila-2026",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/"
+      },
+      "birthYear": 1991,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=2",
+        "sourceName": "Alexandros Tsagkas",
+        "sourceParticipantId": "3b638423-571e-430d-c26d-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "oystein-ingebrigtsen-haugen",
+      "name": "Øystein Ingebrigtsen Haugen",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "Racedays Timing",
+        "eventId": "rekordmila-2026",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/"
+      },
+      "identityReview": {
+        "status": "unconfirmed",
+        "possibleAthleteIds": [
+          "oystein-haugen"
+        ],
+        "note": "Lengre navn i kilden. Ikke slått sammen uten bekreftelse."
+      },
+      "birthYear": 1984,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=3",
+        "sourceName": "Øystein Ingebrigtsen Haugen",
+        "sourceParticipantId": "c5837099-e240-4486-c1a0-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "eline-bjorgvik",
+      "name": "Eline Bjørgvik",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "Racedays Timing",
+        "eventId": "rekordmila-2026",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/"
+      },
+      "identityReview": {
+        "status": "unconfirmed",
+        "possibleAthleteIds": [
+          "eline-megard-bjorgvik"
+        ],
+        "note": "Kortere navn i kilden. Ikke slått sammen uten bekreftelse."
+      },
+      "birthYear": 1986,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=4",
+        "sourceName": "Eline Bjørgvik",
+        "sourceParticipantId": "d90455ab-e97a-4093-c204-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "per-einar-torbergsen",
+      "name": "Per-Einar Torbergsen",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "Racedays Timing",
+        "eventId": "rekordmila-2026",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/"
+      },
+      "birthYear": 1980,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=6",
+        "sourceName": "Per-Einar Torbergsen",
+        "sourceParticipantId": "db445e61-dc31-42e8-c168-08dec464609b",
+        "checkedAt": "2026-11-03"
+      }
+    },
+    {
+      "id": "brede-brostrup-muller",
+      "name": "Brede Brostrup Müller",
+      "aliases": [],
+      "kind": "member",
+      "photo": null,
+      "personalBests": [],
+      "source": {
+        "provider": "Racedays Timing",
+        "eventId": "rekordmila-2026",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/"
+      },
+      "identityReview": {
+        "status": "unconfirmed",
+        "possibleAthleteIds": [
+          "brede-muller"
+        ],
+        "note": "Lengre navn i kilden. Ikke slått sammen uten bekreftelse."
+      },
+      "birthYear": 1993,
+      "birthYearSource": {
+        "provider": "Racedays",
+        "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=7",
+        "sourceName": "Brede Brostrup Müller",
+        "sourceParticipantId": "a52f9e6f-57d2-46e4-c1e4-08dec464609b",
+        "checkedAt": "2026-11-03"
       }
     }
   ]

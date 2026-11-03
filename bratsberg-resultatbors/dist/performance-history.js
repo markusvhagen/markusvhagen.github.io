@@ -1,4 +1,4 @@
-import {parsePerformanceTime,normalizeDistance} from './record-check.js';
+import {parsePerformanceTime,normalizeDistance,performanceDate} from './record-check.js';
 
 /** Only actual completed performances belong in the public result archive. */
 export function isFinishedResult(result){
@@ -83,6 +83,7 @@ export function collectManualPersonalBests(registryData){
  * manually confirmed PB linked to this exact race, date and numeric time.
  * A manual confirmation cannot override an earlier equal or faster result.
  * Derived improvements alone are not proof of a lifetime best.
+ * A valid result.date takes precedence over race.date in multi-day meetings.
  * Same-day results are evaluated together because start order is unknown.
  * isBestRecorded describes the current archive; isPersonalBest describes the
  * event on its original date and therefore survives later improvements.
@@ -99,7 +100,7 @@ export function derivePerformanceHistory(races,registryData=null){
     result.time=performanceTime(result,race);
     const history={eligible:false,basis:'recorded-history',hasManualBaseline:false,previousBest:null,previousBestSeconds:null,previousRaceIds:[],previousPersonalBests:[],isPersonalBest:false,isManualPersonalBest:false,confirmedPersonalBests:[],isBestRecorded:false,bestRecorded:null,improvementSeconds:null,reason:null};
     result.performanceHistory=history;
-    const date=historyDate(race.date),comparison=performanceKey(race,result);
+    const date=performanceDate(race,result),comparison=performanceKey(race,result);
     if(race.demo===true||result.demo===true)history.reason='demo';
     else if(!isFinishedResult(result))history.reason='not-finished';
     else if(!date)history.reason='invalid-race-date';

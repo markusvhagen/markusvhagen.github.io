@@ -1,0 +1,166 @@
+{
+  "id": "junior-nm-2026",
+  "name": "Junior-NM 2026",
+  "date": "2026-08-30",
+  "startDate": "2026-08-28",
+  "endDate": "2026-08-30",
+  "location": "Bislett stadion, Oslo",
+  "type": "track",
+  "environment": "outdoor",
+  "distances": [
+    "3 000 m",
+    "5 000 m"
+  ],
+  "demo": false,
+  "sourceUrl": "https://liveres.andro.no/liveres/347?day=3",
+  "source": {
+    "type": "official-results",
+    "provider": "Frisys Live",
+    "eventId": "347",
+    "checkedAt": "2026-11-03",
+    "timeBasis": "gun",
+    "scope": "Begge Bratsberg-utøverne i junior-NM. 3000 m kvinner U20 og 5000 m menn U20 ble løpt 30.08.2026.",
+    "dateVerified": true,
+    "referenceUrls": [
+      "https://liveres.andro.no/liveres/347?day=3",
+      "https://www.jrnm2026.no/",
+      "https://www.friidrett.no/nyheter/2026/vare-mest-lovende-jakter-medaljer-pa-bislett/",
+      "https://www.bratsbergfriidrett.no/2026/09/05/de-lop-langt-bratt-og-fort/",
+      "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10020877&showevent=0&showseason=0&outdoor=Y&listtype=All",
+      "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10007821&showevent=0&showseason=0&outdoor=Y&listtype=All"
+    ],
+    "rankingNote": "Plasseringene gjelder U20 i hver øvelse. Petters 7. plass er bekreftet i den samlede listen for begge heat. Oda er nummer 8 i arrangørens resultatliste; klubbartikkelen oppgir feilaktig 7.",
+    "notes": [
+      "Arrangementet i klubbartikkelen er Junior-NM på Bislett, ikke UM 2026.",
+      "Tidene bevarer hundredeler og gjelder utendørs bane.",
+      "Petters resultat er merket PB både hos arrangøren og i klubbartikkelen; PB-bekreftelsen håndteres i utøverregisteret."
+    ]
+  },
+  "results": [
+    {
+      "athleteId": "oda-randli-elden",
+      "name": "Oda Randli Elden",
+      "gender": "K",
+      "birthYear": 2011,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10020877&showevent=0&showseason=0&outdoor=Y&listtype=All",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra utøverprofilens eksplisitte fødselsdato."
+      },
+      "distance": "3 000 m",
+      "discipline": "3000m",
+      "category": "K-U20",
+      "sourceCategory": "U20 Kvinner",
+      "time": "10:42,58",
+      "position": 8,
+      "positionClass": 8,
+      "sourceBib": "22",
+      "sourceAthleteId": "10020877",
+      "roundLabel": "Finale · 8. plass i U20",
+      "sourceName": "Oda Randli Elden",
+      "date": "2026-08-30",
+      "type": "track",
+      "environment": "outdoor",
+      "timeBasis": "gun",
+      "status": "finished",
+      "positionScope": "class",
+      "positionGenderVerified": false,
+      "positionClassVerified": true,
+      "positionClassSource": {
+        "type": "official-class-ranking",
+        "provider": "Frisys Live",
+        "url": "https://liveres.andro.no/liveres/347?day=3",
+        "checkedAt": "2026-11-03"
+      },
+      "club": "Bratsberg IL",
+      "clubRecord": false,
+      "recordEligible": false
+    },
+    {
+      "athleteId": "petter-vea-monseth",
+      "name": "Petter Vea Monseth",
+      "gender": "M",
+      "birthYear": 2010,
+      "birthYearSource": {
+        "provider": "Norges Friidrettsforbund",
+        "url": "https://www.minfriidrettsstatistikk.info/php/UtoverStatistikk.php?showathl=10007821&showevent=0&showseason=0&outdoor=Y&listtype=All",
+        "checkedAt": "2026-11-03",
+        "note": "Fødselsår fra utøverprofilens eksplisitte fødselsdato."
+      },
+      "distance": "5 000 m",
+      "discipline": "5000m",
+      "category": "M-U20",
+      "sourceCategory": "U20 Menn",
+      "time": "14:38,08",
+      "position": 7,
+      "positionClass": 7,
+      "sourceBib": "23",
+      "sourceAthleteId": "10007821",
+      "roundLabel": "7. plass i U20 · samlet over 2 heat",
+      "sourceName": "Petter Vea Monseth",
+      "date": "2026-08-30",
+      "type": "track",
+      "environment": "outdoor",
+      "timeBasis": "gun",
+      "status": "finished",
+      "positionScope": "class",
+      "positionGenderVerified": false,
+      "positionClassVerified": true,
+      "positionClassSource": {
+        "type": "official-class-ranking",
+        "provider": "Frisys Live",
+        "url": "https://liveres.andro.no/liveres/347?day=3",
+        "checkedAt": "2026-11-03"
+      },
+      "club": "Bratsberg IL",
+      "clubRecord": false,
+      "recordEligible": false
+    }
+  ],
+  "winners": [
+    {
+      "distance": "3 000 m",
+      "scope": "U20",
+      "category": "U20",
+      "women": {
+        "name": "Venus Abraham Teffera",
+        "time": "9:33,58",
+        "category": "K-U20",
+        "sourceUrl": "https://liveres.andro.no/liveres/347?day=3",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "men": {
+        "applicable": false,
+        "reason": "Ikke på programmet i U20"
+      }
+    },
+    {
+      "distance": "5 000 m",
+      "scope": "U20",
+      "category": "U20",
+      "men": {
+        "name": "Philip Storm Regbo Gulbrandsen",
+        "time": "14:12,06",
+        "category": "M-U20",
+        "sourceUrl": "https://liveres.andro.no/liveres/347?day=3",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-03"
+      },
+      "women": {
+        "applicable": false,
+        "reason": "Ikke på programmet i U20"
+      }
+    }
+  ],
+  "winnersNote": "Klassevinnere i de to aktuelle U20-øvelsene, kontrollert mot arrangørens samlede resultatlister.",
+  "news": [
+    {
+      "title": "De løp langt, bratt og fort",
+      "url": "https://www.bratsbergfriidrett.no/2026/09/05/de-lop-langt-bratt-og-fort/"
+    }
+  ]
+}
