@@ -1,8 +1,8 @@
+import {displayTime,displayPoints} from './display-format.js';
 import {selectPointsLeaderboard} from './points-leaderboard.js';
 import {gradeRaceResult} from './age-grading.js';
 
 const pointsViewEscape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const pointsViewNumber=value=>new Intl.NumberFormat('nb-NO',{minimumFractionDigits:1,maximumFractionDigits:1}).format(value);
 const pointsViewDistances=['5 km','10 km','Halvmaraton','Maraton'];
 const pointsViewGender=gender=>gender==='K'?'Kvinner':'Menn';
 function pointsViewDate(value){
@@ -31,7 +31,7 @@ export function renderPointsReferences(references={},gender=''){
     const item=byDistance.get(distance+'|'+sex);
     if(!item)return `<div class="points-reference-entry points-reference-${sex} is-unlisted"><span class="points-reference-sex">${pointsViewGender(sex)}</span><p>Ikke bekreftet</p></div>`;
     const {entry,grade}=item;
-    return `<div class="points-reference-entry points-reference-${sex}"><div class="points-reference-top"><span class="points-reference-sex">${pointsViewGender(sex)}</span><span class="points-reference-score">${pointsViewNumber(grade.score)} <small>poeng</small></span></div><p class="points-reference-name">${pointsViewEscape(entry.name)}</p><p class="points-reference-time">${pointsViewEscape(entry.time)} · ${grade.age} år</p><div class="points-reference-bottom"><time datetime="${pointsViewEscape(entry.date)}">${pointsViewEscape(pointsViewDate(entry.date))}</time><a href="${pointsViewEscape(pointsViewSource(entry.sourceUrl))}" target="_blank" rel="noopener noreferrer" aria-label="Kilde for ${pointsViewEscape(entry.name)}, ${pointsViewEscape(distance)}">Kilde ↗</a></div></div>`;
+    return `<div class="points-reference-entry points-reference-${sex}"><div class="points-reference-top"><span class="points-reference-sex">${pointsViewGender(sex)}</span><span class="points-reference-score">${displayPoints(grade.score)} <small>poeng</small></span></div><p class="points-reference-name">${pointsViewEscape(entry.name)}</p><p class="points-reference-time">${pointsViewEscape(displayTime(entry.time,entry.measuredTime))} · ${grade.age} år</p><div class="points-reference-bottom"><time datetime="${pointsViewEscape(entry.date)}">${pointsViewEscape(pointsViewDate(entry.date))}</time><a href="${pointsViewEscape(pointsViewSource(entry.sourceUrl))}" target="_blank" rel="noopener noreferrer" aria-label="Kilde for ${pointsViewEscape(entry.name)}, ${pointsViewEscape(distance)}">Kilde ↗</a></div></div>`;
   }).join('')}</article>`).join('')}</div><p class="points-national-note">${pointsViewEscape(references?.note||'Høyeste beregnede poeng blant de kildebelagte resultatene som er lagt inn. Dette er ingen offisiell rekordliste.')} Alder beregnes med samme metode som i resultatportalen.</p></section>`;
 }
 
@@ -45,7 +45,7 @@ export function renderPointsTable(view,{sort='asc'}={}){
     const local=row.result?.ageGrade?.localOverride===true||row.ageBasis==='local-birth-year';
     const age=Number.isInteger(row.age)?row.age+' år':'';
     const gender=['K','M'].includes(row.gender)?pointsViewGender(row.gender):'';
-    return `<tr${row===best?' class="points-best-row"':''}><th scope="row"><span class="points-athlete-name">${name}</span><span class="points-cell-meta">${pointsViewEscape([gender,age].filter(Boolean).join(' · '))}${local?' · alder angitt manuelt':''}</span></th><td class="points-score-cell"><strong>${pointsViewNumber(row.score)}</strong>${row===best?'<span class="points-best-mark">Beste i utvalget</span>':''}</td><td><strong class="points-result-time">${pointsViewEscape(row.time)}</strong><span class="points-cell-meta">${pointsViewEscape(row.distance)}</span></td><td><time datetime="${pointsViewEscape(row.date)}">${pointsViewEscape(pointsViewDate(row.date))}</time><span class="points-cell-meta">${pointsViewEscape(row.raceName)}</span></td></tr>`;
+    return `<tr${row===best?' class="points-best-row"':''}><th scope="row"><span class="points-athlete-name">${name}</span><span class="points-cell-meta">${pointsViewEscape([gender,age].filter(Boolean).join(' · '))}${local?' · alder angitt manuelt':''}</span></th><td class="points-score-cell"><strong>${displayPoints(row.score)}</strong>${row===best?'<span class="points-best-mark">Beste i utvalget</span>':''}</td><td><strong class="points-result-time">${pointsViewEscape(displayTime(row.time,row.result?.measuredTime))}</strong><span class="points-cell-meta">${pointsViewEscape(row.distance)}</span></td><td><time datetime="${pointsViewEscape(row.date)}">${pointsViewEscape(pointsViewDate(row.date))}</time><span class="points-cell-meta">${pointsViewEscape(row.raceName)}</span></td></tr>`;
   }).join('')}</tbody></table></div>`;
 }
 
@@ -62,7 +62,7 @@ export function mountPointsView(root,{getRaces,references={}}={}){
   }
   function render(){
     const races=typeof getRaces==='function'?getRaces():[];
-    const actual=Array.isArray(races)?races.filter(race=>race&&race.demo!==true):[];
+    const actual=Array.isArray(races)?races.filter(Boolean):[];
     setOptions(distance,[...new Set(actual.flatMap(race=>(race.results||[]).map(result=>result.distance)).filter(value=>typeof value==='string'&&value))].sort((a,b)=>a.localeCompare(b,'nb-NO',{numeric:true})),'Alle distanser');
     setOptions(year,[...new Set(actual.map(race=>String(race.date||'').slice(0,4)).filter(value=>/^\d{4}$/.test(value)))].sort().reverse(),'Alle år');
     const view=selectPointsLeaderboard(actual,{gender,distance:distance.value,year:year.value,query:query.value,sort:'desc'});

@@ -6,7 +6,7 @@ import {compareAgeGradeResults} from './age-grade-ui.js';
 export function selectArchivePage(races,filters={},requestedPage=1,{focusRaceId=null,pageSize=10}={}){
   const query=String(filters.query||'').trim().toLocaleLowerCase('nb-NO');
   const size=Number.isInteger(pageSize)&&pageSize>0?pageSize:10;
-  const ordered=(Array.isArray(races)?races:[]).filter(race=>race.demo!==true).slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))||a.id.localeCompare(b.id));
+  const ordered=(Array.isArray(races)?races:[]).filter(Boolean).sort((a,b)=>String(b.date).localeCompare(String(a.date))||a.id.localeCompare(b.id));
   const matches=ordered.map(race=>{
     const raceMatch=(race.name+' '+(race.location||'')).toLocaleLowerCase('nb-NO').includes(query);
     const matching=sortResultsByTime((race.results||[]).filter(result=>

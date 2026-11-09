@@ -14,15 +14,15 @@ test('scores sort highest first, with numeric time ties and missing grades last'
   assert.equal(compareAgeGradeResults(scored(80),scored(80)),0);
 });
 
-test('score row has one decimal, truthful year-age help, and escaped editing identifiers',()=>{
-  const html=renderAgeGrade({...scored(76.249),athleteId:'runner\" onclick=\"bad'});
-  assert.match(html,/<strong>76,2<\/strong> poeng/);
+test('score row truncates points, with year-age help and escaped editing identifiers',()=>{
+  const html=renderAgeGrade({...scored(76.99),athleteId:'runner\" onclick=\"bad'});
+  assert.match(html,/<strong>76<\/strong> poeng/);
   assert.match(html,/100 poeng tilsvarer omtrent verdensrekordnivå/);
   assert.match(html,/Alder i løpsåret, beregnet fra fødselsår/);
   assert.match(html,/data-edit-birth-year="runner&quot; onclick=&quot;bad"/);
   assert.match(html,/>38 år<\/button>/);
   assert.doesNotMatch(html,/ onclick="bad/);
-  assert.match(renderAgeGrade({...scored(105.4),athleteId:'runner'}),/<strong>105,4<\/strong>/);
+  assert.match(renderAgeGrade({...scored(105.9),athleteId:'runner'}),/<strong>105<\/strong>/);
 });
 
 test('missing age does not invent points; unsupported events do not offer an irrelevant age edit',()=>{
@@ -30,7 +30,7 @@ test('missing age does not invent points; unsupported events do not offer an irr
   assert.match(missing,/<strong>—<\/strong> poeng/);
   assert.match(missing,/Legg inn alder/);
   assert.doesNotMatch(missing,/>42 år|>0[,<]/);
-  for(const reason of ['unsupported-distance','unsupported-discipline','unsupported-gender','not-finished','invalid-time','demo']){
+  for(const reason of ['unsupported-distance','unsupported-discipline','unsupported-gender','not-finished','invalid-time']){
     const html=renderAgeGrade({athleteId:'runner',ageGrade:{eligible:false,reason}});
     assert.match(html,/Ikke beregnet/);
     assert.doesNotMatch(html,/<button/);
@@ -73,5 +73,20 @@ test('blocked or missing browser storage never prevents results from rendering',
     assert.equal(writeBirthYearOverrides({runner:1986}),false);
   }finally{
     if(prior)Object.defineProperty(globalThis,'localStorage',prior);else delete globalThis.localStorage;
+  }
+});
+
+test('confirmed ID merges move a local year once and prefer an existing canonical choice',()=>{
+  const merges={'old-runner':'runner'};
+  for(const [initial,expected] of [
+    [{'old-runner':1991,other:1980},{runner:1991,other:1980}],
+    [{'old-runner':1991,runner:1993},{runner:1993}]
+  ]){
+    let saved=JSON.stringify(initial),writes=0;
+    const storage={getItem:()=>saved,setItem:(key,value)=>{saved=value;writes++;}};
+    assert.deepEqual({...readBirthYearOverrides(storage,merges)},expected);
+    assert.deepEqual(JSON.parse(saved),expected);
+    assert.deepEqual({...readBirthYearOverrides(storage,merges)},expected);
+    assert.equal(writes,1);
   }
 });

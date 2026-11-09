@@ -19,11 +19,11 @@ export function selectPointsLeaderboard(races,filters={}){
   const bestByAthlete=new Map();
   let eligibleResults=0,missingAgeResults=0,unsupportedResults=0;
   for(const race of Array.isArray(races)?races:[]){
-    if(!race||race.demo===true)continue;
+    if(!race)continue;
     const raceId=pointsText(race.id),raceName=pointsText(race.name),date=pointsText(race.date);
     if(year&&date.slice(0,4)!==year)continue;
     for(const result of Array.isArray(race.results)?race.results:[]){
-      if(!result||result.demo===true||!isFinishedResult(result))continue;
+      if(!result||!isFinishedResult(result))continue;
       const athleteId=pointsText(result.athleteId).trim();
       if(!athleteId)continue;
       const grade=result.ageGrade,name=pointsText(result.name)||athleteId;

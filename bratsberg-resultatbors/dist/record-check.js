@@ -47,7 +47,7 @@ export function normalizeDistance(distance, type) {
 }
 
 /** Find review candidates without changing the official club-record array.
- * The scraper must explicitly assert both real data and record eligibility.
+ * The importer must explicitly assert record eligibility.
  * recordEligible covers membership, course/certification, event classification,
  * timing and any applicable conditions; this UI cannot establish those facts.
  * Track candidates also require race.environment === 'outdoor', so an indoor
@@ -60,11 +60,11 @@ export function findRecordCandidates(races, records) {
   ]));
   const candidates = [];
   for (const race of races) {
-    if (!race || race.demo !== false || !['track', 'road'].includes(race.type)) continue;
+    if (!race || !['track', 'road'].includes(race.type)) continue;
     if (race.type === 'track' && race.environment !== 'outdoor') continue;
     if (!Array.isArray(race.results)) continue;
     for (const result of race.results) {
-      if (!result || result.recordEligible !== true || result.demo === true) continue;
+      if (!result || result.recordEligible !== true) continue;
       if (!['K','M'].includes(result.gender)) continue;
       if (result.status && !['OK','FINISHED','VALID'].includes(String(result.status).trim().toUpperCase())) continue;
       if (race.verified === false || result.verified === false) continue;

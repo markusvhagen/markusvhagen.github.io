@@ -14,8 +14,6 @@
 @media(min-width:1400px){.relay-lineup{grid-template-columns:repeat(5,minmax(0,1fr))}.relay-runner-card{grid-template-columns:78px minmax(0,1fr);gap:10px}.relay-portrait{width:78px}}
 @media(max-width:1150px){.relay-lineup{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:850px){.relay-lineup{grid-template-columns:repeat(2,minmax(0,1fr))}.relay-record-banner{padding:18px 20px}.relay-record-summary{gap:10px}.relay-record-summary>strong{font-size:39px}.relay-record-summary>span{font-size:8px}.relay-event-heading h3{font-size:30px}}
-@media(max-width:580px){.relay-event-tabs{gap:7px;padding-bottom:18px}.relay-event-tabs a{padding:11px 13px;gap:12px;font-size:11px}.relay-event-tabs a>span{font-size:8px}.relay-event-heading{align-items:flex-start;flex-direction:column;gap:16px;margin:22px 0 17px}.relay-gender-tabs{width:100%}.relay-gender-tabs button{flex:1}.relay-record-banner{padding:17px 16px;gap:13px}.relay-record-summary{display:block}.relay-record-summary>span,.relay-record-summary>small{display:block}.relay-record-summary>strong{display:block;font-size:39px;margin:7px 0}.relay-record-meta{font-size:9px;max-width:120px;line-height:1.5}.relay-position{font-size:13px}.relay-lineup{gap:10px}.relay-runner-card{grid-template-columns:64px minmax(0,1fr);gap:9px;padding:8px}.relay-portrait{width:64px;min-height:115px}.relay-runner-card h5{font-size:11px;margin-top:7px}.relay-leg-number{font-size:7px;letter-spacing:.3px}.relay-leg-distance{font-size:8px}.relay-runner-stats{gap:5px}.relay-runner-stats>div+div{padding-left:6px}.relay-runner-stats strong{font-size:22px}.relay-runner-stats span{font-size:6px}.relay-lineup-toolbar{gap:12px;flex-wrap:wrap}.relay-heading .text-link{font-size:10px}}
-@media(max-width:460px){.relay-lineup{grid-template-columns:1fr}.relay-runner-card{grid-template-columns:82px minmax(0,1fr);gap:13px;padding:10px}.relay-portrait{width:82px;min-height:104px}.relay-runner-card h5{font-size:13px}.relay-leg-number{font-size:8px}.relay-leg-distance{font-size:9px}.relay-runner-stats{grid-template-columns:1fr 1fr;max-width:180px}.relay-runner-stats strong{font-size:28px}.relay-runner-stats span{font-size:8px}.relay-record-summary>strong{font-size:37px}}
 
 .relay-image-sources{margin-top:10px;font-size:9px;color:#7f8877;line-height:1.7}.relay-image-sources summary{cursor:pointer;width:fit-content;font-weight:550}.relay-image-sources ul{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}.relay-image-sources li>span{display:block;font-size:8px;color:#949b8b;max-width:900px}.relay-image-sources a{text-decoration:underline;text-underline-offset:2px}
 
@@ -24,4 +22,139 @@
 .relay-position{align-self:flex-end;font-weight:800}
 .relay-position.award-medal{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:7px 11px;font-size:12px;line-height:1.3;white-space:normal;text-align:center;border-radius:5px;box-shadow:0 3px 6px #0000001c,inset 0 1px 0 #ffffffb3}
 .relay-position.award-medal .award-icon{width:25px;height:25px;stroke-width:1.9;flex:0 0 auto}
-@media(max-width:580px){.relay-record-banner{flex-wrap:wrap;gap:12px}.relay-record-summary{min-width:115px}.relay-record-meta{margin-left:auto}.relay-position.award-medal{font-size:10px;gap:5px;padding:6px 8px}.relay-position.award-medal .award-icon{width:21px;height:21px}}
+
+@media (max-width: 760px) {
+  .relay-heading,
+  .relay-event-heading,
+  .relay-lineup-toolbar,
+  .relay-record-banner {
+    flex-wrap: wrap;
+  }
+
+  .relay-event-tabs {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .5rem;
+  }
+
+  .relay-event-tabs a {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .25rem .75rem;
+  }
+
+  .relay-heading .eyebrow,
+  .relay-heading .text-link,
+  .relay-event-tabs a,
+  .relay-event-tabs a > span,
+  .relay-event-heading p,
+  .relay-gender-tabs button,
+  .relay-record-summary > span,
+  .relay-record-summary > small,
+  .relay-record-meta,
+  .relay-position,
+  .relay-position.award-medal,
+  .relay-record-note,
+  .relay-lineup-toolbar h4,
+  .relay-lineup-toolbar > span,
+  .relay-day-tabs button,
+  .relay-search input,
+  .relay-leg-number,
+  .relay-leg-distance,
+  .relay-runner-stats span,
+  .relay-lineup-summary,
+  .relay-no-match,
+  .relay-source,
+  .relay-image-sources,
+  .relay-image-sources li > span {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .relay-record-note,
+  .relay-lineup-toolbar > span,
+  .relay-lineup-summary,
+  .relay-no-match,
+  .relay-source,
+  .relay-image-sources,
+  .relay-image-sources li > span {
+    color: #576453;
+  }
+
+  .relay-heading .text-link,
+  .relay-event-tabs a,
+  .relay-gender-tabs button,
+  .relay-day-tabs button,
+  .relay-search input {
+    min-block-size: 2.75rem;
+  }
+
+  .relay-image-sources summary {
+    padding-block: .625rem;
+  }
+
+  .relay-source a,
+  .relay-image-sources a {
+    display: inline-block;
+    min-block-size: 2.75rem;
+    padding-block: .625rem;
+    overflow-wrap: anywhere;
+  }
+
+  .relay-event-heading {
+    align-items: start;
+    gap: .75rem;
+  }
+
+  .relay-record-banner {
+    gap: .75rem;
+    padding: 1rem;
+  }
+
+  .relay-record-meta {
+    min-width: 0;
+    text-align: start;
+  }
+
+  .relay-position {
+    align-self: start;
+  }
+
+  .relay-lineup {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .75rem;
+  }
+
+  .relay-runner-card {
+    grid-template-columns: clamp(4.5rem, 22vw, 6rem) minmax(0, 1fr);
+    gap: .75rem;
+    padding: .625rem;
+  }
+
+  .relay-portrait {
+    width: 100%;
+  }
+
+  .relay-runner-card h5 {
+    margin-block-start: .375rem;
+    font-size: 1.125rem;
+    line-height: 1.35;
+  }
+
+  .relay-leg-number {
+    flex-wrap: wrap;
+  }
+
+  .relay-leg-distance {
+    overflow-wrap: anywhere;
+  }
+
+  .relay-runner-stats {
+    grid-template-columns: repeat(auto-fit, minmax(min(5rem, 100%), 1fr));
+    gap: .5rem;
+  }
+
+  .relay-runner-stats strong {
+    font-size: 1.5rem;
+  }
+}

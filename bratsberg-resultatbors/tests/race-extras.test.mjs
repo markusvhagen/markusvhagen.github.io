@@ -11,6 +11,7 @@ const race={id:'race',name:'Fjordløpet',distances:['5 km','10 km'],winners:[
 test('a native distance selector exposes just one verified pair at a time',()=>{
   const snapshot=JSON.stringify(race);
   const html=renderRaceWinners(race,{selectedDistance:'10 km'});
+  assert.match(html,/<span class="race-winner-select-label">Vis vinnere for/);
   assert.match(html,/<select data-winner-distance>/);
   assert.match(html,/<option value="10 km" selected>/);
   assert.match(html,/data-winner-panel="5 km" hidden/);
@@ -18,9 +19,9 @@ test('a native distance selector exposes just one verified pair at a time',()=>{
   assert.match(html,/race-winner-men/);
   assert.match(html,/race-winner-women/);
   assert.match(html,/Vinner kvinner, 10 km:/);
-  assert.match(html,/Kvinne To · 33:30.6 · Nettotid · Alle fullførte/);
-  assert.match(html,/<span class="race-winner-name">Mann To<\/span><strong>29:57.2<\/strong>/);
-  assert.match(html,/<span class="race-winner-name">Kvinne To<\/span><strong>33:30.6<\/strong>/);
+  assert.match(html,/Kvinne To · 33:30 · Nettotid · Alle fullførte/);
+  assert.match(html,/<span class="race-winner-name">Mann To<\/span><strong>29:57<\/strong>/);
+  assert.match(html,/<span class="race-winner-name">Kvinne To<\/span><strong>33:30<\/strong>/);
   assert.equal(JSON.stringify(race),snapshot);
 });
 
@@ -122,4 +123,12 @@ test('news links are explicit, deduplicated, escaped and confined to the club we
   assert.match(renderRaceNews({news:[{url:'https://bratsbergfriidrett.no/post'}]}),/target="_blank"/);
   assert.equal(renderRaceNews({news:[]}), '');
   assert.equal(renderRaceNews({sourceUrl:url}), '');
+});
+
+test('winner time and its accessible description use truncated measured seconds',()=>{
+  const data={distances:['10 km'],winners:[{distance:'10 km',men:winner('Runner','31:00',{measuredTime:'00:30:59.950'}),women:winner('Runner','36:00,99')}]};
+  const html=renderRaceWinners(data);
+  assert.match(html,/<strong>30:59<\/strong>/);
+  assert.match(html,/title="[^"]*Runner · 30:59/);
+  assert.match(html,/<strong>36:00<\/strong>/);
 });

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {derivePerformanceHistory,isFinishedResult,performanceTime} from '../dist/performance-history.js';
 
 const result=(time,extra={})=>({athleteId:'runner',name:'Runner',distance:'10 km',status:'finished',time,...extra});
-const race=(id,date,results,extra={})=>({id,name:id,date,type:'road',demo:false,results,...extra});
+const race=(id,date,results,extra={})=>({id,name:id,date,type:'road',results,...extra});
 const history=race=>race.results[0].performanceHistory;
 
 test('unsorted history uses strictly earlier dates and never trusts stored PB flags',()=>{
@@ -74,18 +74,17 @@ test('distance aliases normalize but athlete IDs, surfaces, and trail courses re
   assert.equal(history(out[7]).isPersonalBest,true);
 });
 
-test('unknown identity, invalid date, indoor track and demo data cannot claim PB',()=>{
+test('unknown identity, invalid date and indoor track cannot claim PB',()=>{
   const out=derivePerformanceHistory([
     race('invalid-date','2026-02-30',[result('40:00')]),
     race('unresolved','2026-03-01',[result('39:00',{athleteId:null})]),
     race('indoor','2026-03-01',[result('38:00',{distance:'10000 m'})],{type:'track',environment:'indoor'}),
-    race('demo','2026-03-01',[result('37:00')],{demo:true}),
     race('real','2026-04-01',[result('40:00')])
   ]);
-  assert.ok(out.slice(0,4).every(r=>!history(r).eligible));
-  assert.equal(history(out[4]).previousBest,null);
-  assert.equal(history(out[4]).isBestRecorded,true);
-  assert.equal(history(out[4]).isPersonalBest,false);
+  assert.ok(out.slice(0,3).every(r=>!history(r).eligible));
+  assert.equal(history(out[3]).previousBest,null);
+  assert.equal(history(out[3]).isBestRecorded,true);
+  assert.equal(history(out[3]).isPersonalBest,false);
 });
 
 test('multi-day meetings use each performance date for PB chronology without reordering the source',()=>{

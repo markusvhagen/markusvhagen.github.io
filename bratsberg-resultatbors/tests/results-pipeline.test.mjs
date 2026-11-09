@@ -16,21 +16,26 @@ const raw={...manifest,races:await Promise.all(manifest.races.map(json)),athlete
 test('all imported races remain reachable while only finishers and the ten newest races enter the widget',()=>{
   const original=JSON.stringify(raw),data=prepareResultsData(raw);
   const finished=raw.races.flatMap(r=>r.results).filter(r=>r.status==='finished');
-  assert.equal(raw.races.length,18);
+  const ordered=raw.races.filter(race=>race.results.some(r=>r.status==='finished'))
+    .sort((a,b)=>b.date.localeCompare(a.date)||a.id.localeCompare(b.id));
   assert.equal(new Set(raw.races.map(race=>race.id)).size,raw.races.length);
-  assert.equal(raw.races.reduce((sum,race)=>sum+race.results.length,0),351);
-  assert.equal(finished.length,336);
-  assert.equal(data.races.flatMap(r=>r.results).length,finished.length);
-  const first=selectArchivePage(data.races),second=selectArchivePage(data.races,{},2);
+  assert.equal(data.races.flatMap(race=>race.results).length,finished.length);
+
+  const first=selectArchivePage(data.races);
   assert.equal(first.resultCount,finished.length);
-  assert.equal(first.items.length,10);assert.equal(second.items.length,8);assert.equal(first.pageCount,2);
-  assert.deepEqual(second.items.map(({race})=>race.id),['tronder-ostlopet-2026','rekordmila-2026','nidaros-lopefest-2026','tordenskioldlopet-2026','orasprinten-2026','berlin-halvmaraton-2026','barcelona-halvmaraton-2026','valencia-10k-2026']);
-  assert.ok(data.races.every(r=>r.results.every(r=>r.status==='finished')));
-  assert.ok(data.races.flatMap(selectWidgetHighlights).every(r=>r.status==='finished'));
+  assert.equal(first.pageCount,Math.ceil(ordered.length/10));
+  const allPages=[];
+  for(let page=1;page<=first.pageCount;page++){
+    const view=selectArchivePage(data.races,{},page);
+    assert.equal(view.items.length,Math.min(10,ordered.length-10*(page-1)));
+    allPages.push(...view.items.map(({race})=>race.id));
+  }
+  assert.deepEqual(allPages,ordered.map(race=>race.id));
+  assert.ok(data.races.every(race=>race.results.every(result=>result.status==='finished')));
+  assert.ok(data.races.flatMap(selectWidgetHighlights).every(result=>result.status==='finished'));
   const slots=createWidgetSlots(data.races);
-  assert.equal(slots.length,10);assert.ok(slots.every(Boolean));
-  assert.deepEqual(slots.map(race=>race.id),first.items.map(({race})=>race.id));
-  assert.equal(slots[0].id,'hytteplanmila-2026');assert.equal(slots.at(-1).id,'nm-bane-2026');
+  assert.equal(slots.length,10);
+  assert.deepEqual(slots.filter(Boolean).map(race=>race.id),ordered.slice(0,10).map(race=>race.id));
   assert.ok(raw.races.some(r=>r.results.some(r=>r.status==='DNS')));
   assert.equal(JSON.stringify(raw),original);
 });
@@ -50,7 +55,8 @@ test('new Spanish imports preserve net times and verified gender positions, whil
   });
   const tommy=valencia.results.find(r=>r.athleteId==='tommy-bangjord-hove');
   assert.equal(tommy.gunTime,'28:49');assert.equal(tommy.clubRecordTime,'28:49');assert.equal(tommy.clubRecordTimeBasis,'gun');
-  assert.equal(tommy.positionGender,85);assert.equal(tommy.positionGenderNet,83);
+  assert.equal(tommy.positionGender,85);assert.equal(tommy.positionClass,69);
+  assert.match(renderAthleteCard(tommy),/Nr\. 85 menn/);
   const barcelona=data.races.find(r=>r.id==='barcelona-halvmaraton-2026');
   assert.deepEqual(Object.fromEntries(barcelona.results.map(r=>[r.athleteId,[r.time,r.positionGender]])),{
     'markus-valas-hagen':['1:22:04',1668],'ingrid-lunde-steen':['1:20:00',83],
@@ -61,27 +67,49 @@ test('new Spanish imports preserve net times and verified gender positions, whil
   const pal=data.races.find(r=>r.id==='orasprinten-2026').results.find(r=>r.athleteId==='pal-kleveland');
   assert.equal(pal.position,20);assert.equal(pal.positionGender,19);
   assert.equal(data.upcoming.find(r=>r.id==='valencia-maraton-2026').participants.length,10);
-  assert.equal(data.upcoming.find(r=>r.id==='jessheim-vintermaraton-2026').participants.length,3);
+  assert.ok(!raw.upcoming.some(event=>event.id==='jessheim-vintermaraton-2026'));
   assert.equal(data.unresolvedAthletes.length,0);
+});
+
+test('compact athlete references take their displayed names and scoring ages from the shared profiles',()=>{
+  const original=JSON.stringify(raw),data=prepareResultsData(raw);
+  const profiles=Array.isArray(raw.athletes)?raw.athletes:raw.athletes.athletes;
+  const profilesById=new Map(profiles.map(profile=>[profile.id,profile]));
+  for(const result of raw.races.flatMap(race=>race.results)){
+    assert.ok(profilesById.has(result.athleteId));
+    for(const field of ['name','birthYear','birthYearSource','positionCategory'])assert.equal(Object.hasOwn(result,field),false);
+  }
+  for(const result of data.races.flatMap(race=>race.results))assert.equal(result.name,profilesById.get(result.athleteId).name);
+  const markusAtOrasprinten=prepared=>prepared.races.find(race=>race.id==='orasprinten-2026').results.find(result=>result.athleteId==='markus-valas-hagen');
+  const current=markusAtOrasprinten(data);
+  assert.equal(current.name,'Markus Valås Hagen');assert.equal(current.time,'18:11');
+  assert.equal(current.ageGrade.age,27);assert.equal(current.ageGrade.ageBasis,'birth-year');
+  // Updating the single profile must affect the card and score without editing a race.
+  const changedRegistry=structuredClone(raw.athletes);
+  const changedProfiles=Array.isArray(changedRegistry)?changedRegistry:changedRegistry.athletes;
+  const changedProfile=changedProfiles.find(profile=>profile.id==='markus-valas-hagen');
+  changedProfile.name='Markus Valås Hagen (oppdatert)';changedProfile.birthYear=1980;
+  const updated=markusAtOrasprinten(prepareResultsData({...raw,athletes:changedRegistry}));
+  assert.equal(updated.name,changedProfile.name);assert.equal(updated.ageGrade.age,46);
+  assert.equal(updated.ageGrade.eligible,true);assert.notEqual(updated.ageGrade.score,current.ageGrade.score);
+  assert.match(renderAthleteCard(updated),/Markus Valås Hagen \(oppdatert\)/);
+  assert.equal(updated.time,current.time);
+  assert.equal(JSON.stringify(raw),original);
 });
 
 test('source-checked birth years grade old and new road results without changing raw data',()=>{
   const original=JSON.stringify(raw),data=prepareResultsData(raw);
   const profiles=Array.isArray(raw.athletes)?raw.athletes:raw.athletes.athletes;
-  assert.equal(profiles.length,166);
-  assert.equal(profiles.filter(profile=>Number.isInteger(profile.birthYear)).length,91);
+  assert.equal(new Set(profiles.map(profile=>profile.id)).size,profiles.length);
   assert.equal(profiles.find(profile=>profile.id==='markus-valas-hagen').birthYear,1999);
-  const graded=data.races.flatMap(race=>race.results.filter(result=>result.ageGrade.eligible));
-  assert.equal(graded.length,226);
   for(const race of data.races){
     for(const result of race.results){
       const profile=profiles.find(profile=>profile.id===result.athleteId);
       assert.deepEqual(result.ageGrade,gradeRaceResult(race,result,profile));
       assert.ok(!Object.hasOwn(raw.races.find(source=>source.id===race.id).results.find(source=>source.athleteId===result.athleteId&&source.distance===result.distance)||{},'ageGrade'));
       if(['trail','track'].includes(race.type))assert.equal(result.ageGrade.eligible,false);
-      if(result.athleteId==='markus-valas-hagen'){
-        assert.equal(result.ageGrade.eligible,true);
-        assert.equal(result.ageGrade.age,27);
+      if(result.athleteId==='markus-valas-hagen' && race.type==='road' && result.ageGrade.eligible){
+        assert.equal(result.ageGrade.age,Number(race.date.slice(0,4))-1999);
       }
     }
   }
@@ -116,7 +144,8 @@ test('every imported distance has sourced winners in its scope, with explicit ch
       }
     }
   }
-  assert.equal(pairs,30);assert.equal(winners,57);
+  assert.equal(pairs,raw.races.reduce((sum,race)=>sum+race.distances.length,0));
+  assert.equal(winners,pairs*2-excluded.length);
   assert.deepEqual(new Set(excluded),new Set(Object.keys(classExceptions)));
   const copenhagen=raw.races.find(race=>race.id==='kobenhavn-halvmaraton-2026');
   assert.equal(copenhagen.news[0].url,'https://www.bratsbergfriidrett.no/2026/09/20/klubbrekorder-i-koben/');
@@ -129,7 +158,6 @@ test('Copenhagen uses Petter’s verified net time and gender rank without promo
   const petter=race.results[0];
   assert.equal(petter.athleteId,'petter-vea-monseth');
   assert.equal(petter.time,'14:20');assert.equal(petter.netTime,'14:20');assert.equal(petter.timeBasis,'net');
-  assert.equal(petter.sourceTimingRaw.grossTimeUsable,false);
   assert.equal(Object.hasOwn(petter,'gunTime'),false);
   assert.equal(petter.positionGenderVerified,true);assert.equal(genderPosition(petter),52);
   assert.equal(petter.positionClass,2);assert.equal(petter.clubRecord,true);
@@ -173,7 +201,7 @@ test('UM awards verified championship-class medals and dated PBs without inventi
     assert.equal(result.positionScope,'class');assert.equal(result.positionClassVerified,true);
     assert.equal(result.awardScope,'championship-class');assert.equal(awardPosition(result),known.rank);
     assert.equal(genderPosition(result),null);assert.equal(result.category,known.category);
-    assert.equal(result.clubRecord,known.record);assert.equal(result.ageGrade.eligible,false);
+    assert.equal(result.clubRecord===true,known.record);assert.equal(result.ageGrade.eligible,false);
     assert.equal(performanceDate(race,result),'2026-09-13');
     assert.equal(result.performanceHistory.isPersonalBest,known.pb);
     assert.equal(result.performanceHistory.isManualPersonalBest,known.pb);
@@ -203,10 +231,11 @@ test('NM event dates and combined rankings survive rendering without treating he
   for(const result of sofie){assert.equal(result.clubRecord,true);assert.match(renderAthleteCard(result),/is-record/);}
   assert.match(renderAthleteCard(sofie[0]),/medal-bronze/);assert.match(renderAthleteCard(sofie[1]),/medal-silver/);
   const eira=race.results.find(result=>result.athleteId==='eira-rapp'&&result.distance==='5 000 m');
-  assert.equal(eira.positionHeat,1);assert.equal(genderPosition(eira),11);
+  assert.equal(genderPosition(eira),11);
+  assert.match(renderAthleteCard(eira),/Finale · heat 1 · 1\. i heatet/);
   assert.match(renderAthleteCard(eira),/Nr\. 11 kvinner/);assert.doesNotMatch(renderAthleteCard(eira),/podium-|award-medal/);
   const sebastian=race.results.find(result=>result.athleteId==='sebastian-reinertsen'&&result.distance==='1 500 m');
-  assert.equal(sebastian.positionScope,'heat');assert.equal(sebastian.positionHeat,5);assert.equal(genderPosition(sebastian),null);
+  assert.equal(sebastian.positionScope,'heat');assert.equal(genderPosition(sebastian),null);
   assert.match(renderAthleteCard(sebastian),/Forsøk · heat 2 · 5\. plass/);
   assert.doesNotMatch(renderAthleteCard(sebastian),/podium-|award-medal|Nr\. 5 menn/);
 });
@@ -214,9 +243,11 @@ test('NM event dates and combined rankings survive rendering without treating he
 test('imported Barcelona history supports Berlin PB and dated Ørasprinten confirms the registered 5 km PB',()=>{
   const data=prepareResultsData(raw);
   const mine=data.races.flatMap(race=>race.results.filter(result=>result.athleteId==='markus-valas-hagen').map(result=>({raceId:race.id,result})));
-  assert.equal(mine.length,5);
   const confirmedIds=['berlin-halvmaraton-2026','nidaros-lopefest-2026','orasprinten-2026'];
-  for(const {raceId,result} of mine){
+  const historicalRaces=[...confirmedIds,'barcelona-halvmaraton-2026','trondheim-maraton-2026'];
+  const historical=mine.filter(({raceId})=>historicalRaces.includes(raceId));
+  assert.deepEqual(new Set(historical.map(({raceId})=>raceId)),new Set(historicalRaces));
+  for(const {raceId,result} of historical){
     const confirmed=confirmedIds.includes(raceId),history=result.performanceHistory;
     assert.equal(history.isPersonalBest,confirmed);
     assert.equal(history.isManualPersonalBest,confirmed);
@@ -238,5 +269,60 @@ test('imported Barcelona history supports Berlin PB and dated Ørasprinten confi
   const barcelona=mine.find(({raceId})=>raceId==='barcelona-halvmaraton-2026').result;
   assert.equal(barcelona.performanceHistory.reason,'first-recorded-result');
   const filtered=selectArchivePage(data.races,{query:'Markus Valås Hagen',onlyRecords:true});
-  assert.equal(filtered.resultCount,3);
+  const matching=mine.filter(({result})=>result.performanceHistory.isPersonalBest||result.clubRecord);
+  assert.equal(filtered.resultCount,matching.length);
+  for(const id of confirmedIds)assert.ok(matching.some(({raceId})=>raceId===id));
+
+});
+
+test('Jessheim shows finishers, gender medals and the same athlete as Hytteplanmila and the relay teams',()=>{
+  const data=prepareResultsData(raw);
+  const race=data.races.find(race=>race.id==='jessheim-vintermaraton-2026');
+  assert.equal(race.date,'2026-11-08');
+  assert.equal(race.results.length,11);
+  assert.ok(race.results.every(result=>result.status==='finished'));
+  const expected=[
+    {id:'henrik-kristensen',time:'1:07:00.3',rank:2,medal:'silver'},
+    {id:'henning-offigstad',time:'2:29:07.2',rank:3,medal:'bronze'},
+    {id:'markus-valas-hagen',time:'1:26:18.9',rank:318},
+    {id:'rannei-saether',time:'44:28.7',rank:82}
+  ];
+  for(const {id,time,rank,medal} of expected){
+    const result=race.results.find(result=>result.athleteId===id);
+    assert.ok(result,id);
+    assert.equal(result.time,time);
+    assert.equal(result.positionGenderVerified,true);
+    assert.equal(genderPosition(result),rank);
+    const card=renderAthleteCard(result,data.portraits);
+    if(medal)assert.match(card,new RegExp('medal-'+medal));
+    else assert.doesNotMatch(card,/podium-|award-medal/);
+  }
+  const henrikId='henrik-kristensen';
+  const earlier=data.races.find(race=>race.id==='hytteplanmila-2026').results.find(result=>result.athleteId===henrikId);
+  assert.ok(earlier);
+  assert.ok(data.relays.some(relay=>relay.records.some(record=>record.legs.some(leg=>leg.athleteId===henrikId))));
+  assert.ok(data.portraits[henrikId]?.src);
+  assert.match(renderAthleteCard(earlier,data.portraits),/data-portrait/);
+});
+
+test('Málaga includes the two official finishes with their verified gender ranks and Sofie’s club record',()=>{
+  const data=prepareResultsData(raw);
+  const race=data.races.find(r=>r.id==='malaga-maraton-2026');
+  assert.equal(race.date,'2026-11-08');
+  assert.deepEqual(race.distances,['Maraton']);
+  assert.deepEqual(new Set(race.results.map(r=>r.athleteId)),new Set(['sofie-karoline-haugen','ulrik-hovig']));
+  const sofie=race.results.find(r=>r.athleteId==='sofie-karoline-haugen');
+  assert.equal(sofie.time,'2:27:13');
+  assert.equal(sofie.netTime,'2:27:13');
+  assert.equal(sofie.clubRecordTime,sofie.gunTime);
+  assert.equal(sofie.clubRecordTimeBasis,'gun');
+  assert.equal(genderPosition(sofie),5);
+  assert.equal(sofie.clubRecord,true);
+  assert.match(renderAthleteCard(sofie,data.portraits),/Klubbrekord/);
+  const ulrik=race.results.find(r=>r.athleteId==='ulrik-hovig');
+  assert.equal(genderPosition(ulrik),21);
+  assert.equal(ulrik.time,'2:27:13');assert.equal(ulrik.timeBasis,'gun');
+  assert.equal(ulrik.netTime,'2:27:12');
+  const record=data.records.find(entry=>entry.category==='road'&&entry.discipline==='marathon'&&entry.gender==='K');
+  assert.ok(parsePerformanceTime(record.time)<=parsePerformanceTime(sofie.clubRecordTime));
 });

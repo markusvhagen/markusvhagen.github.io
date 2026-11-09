@@ -1,6 +1,41 @@
 import {esc,initials} from './data.js';
 import {renderPortraitImage} from './portrait.js';
 
+const osloDay = new Intl.DateTimeFormat('sv-SE', {
+  timeZone: 'Europe/Oslo', year: 'numeric', month: '2-digit', day: '2-digit'
+});
+
+export function selectUpcomingEvents(events, now = new Date()) {
+  const today = osloDay.format(now);
+  return events
+    .filter(event => /^\d{4}-\d{2}-\d{2}$/.test(event.date) && event.date >= today)
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/** Oslo midnight always falls on a UTC hour boundary, including across DST changes. */
+export function watchUpcomingEvents(events, render) {
+  const hour = 60 * 60 * 1000;
+  let timer;
+  let displayed;
+
+  function refresh() {
+    clearTimeout(timer);
+    const now = new Date();
+    const upcoming = selectUpcomingEvents(events, now);
+    if (!displayed || upcoming.length !== displayed.length ||
+        upcoming.some((event, index) => event !== displayed[index])) {
+      displayed = upcoming;
+      render(upcoming);
+    }
+    if (!document.hidden) timer = setTimeout(refresh, hour - now.getTime() % hour);
+  }
+
+  document.addEventListener('visibilitychange', refresh);
+  window.addEventListener('pagehide', () => clearTimeout(timer));
+  window.addEventListener('pageshow', refresh);
+  refresh();
+}
+
 /** Calendar entries use the resolved athlete ID, just like result and relay cards. */
 export function renderCalendarParticipant(person,portraits={}){
   const name=String(person?.name||'Ukjent utøver');

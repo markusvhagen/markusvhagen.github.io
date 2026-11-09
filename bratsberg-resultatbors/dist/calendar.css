@@ -13,4 +13,65 @@
 .participant-preview-photo{position:relative;display:grid;place-items:center;flex:0 0 32px;width:32px;height:40px;overflow:hidden;margin-left:-5px;border:2px solid var(--paper);border-radius:3px;background:#536257;color:#f5f7f0;font-size:9px;font-weight:600}
 .calendar-summary .participant-preview-photo{border-color:white}
 @media(max-width:950px){.calendar-card .participant-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.calendar-card .participant-list{grid-template-columns:1fr;padding:16px 14px;gap:10px}.calendar-person{gap:15px}.calendar-person-details strong{font-size:14px}.calendar-summary .participant-preview{display:none}.mini-event-members .participant-preview{display:none}}
+@media (max-width: 760px) {
+  .calendar-card .participant-list {
+    grid-template-columns: minmax(0, 1fr);
+    padding: .875rem;
+    gap: .625rem;
+  }
+
+  .calendar-person-details strong,
+  .calendar-person-distance,
+  .calendar-summary .race-meta,
+  .calendar-summary .race-athlete-count,
+  .calendar-card .calendar-source,
+  .participant-preview-photo {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .calendar-person-details strong {
+    font-size: 1.125rem;
+  }
+
+  .calendar-card .calendar-source a {
+    display: inline-block;
+    min-block-size: 2.75rem;
+    padding-block: .625rem;
+  }
+
+  .calendar-summary {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: .375rem .75rem;
+    padding: .875rem;
+  }
+
+  .calendar-summary .date-tile {
+    grid-row: 1 / 3;
+  }
+
+  .calendar-summary .race-title,
+  .calendar-summary .race-athlete-count {
+    grid-column: 2;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .calendar-summary .race-title strong {
+    font-size: 1.125rem;
+    line-height: 1.35;
+  }
+
+  .calendar-summary .chevron {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    margin: 0;
+  }
+
+  .calendar-summary .participant-preview,
+  .mini-event-members .participant-preview {
+    display: none;
+  }
+}

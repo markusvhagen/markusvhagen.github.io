@@ -4,7 +4,7 @@ import {collectManualPersonalBests,derivePerformanceHistory} from '../dist/perfo
 import {prepareResultsData} from '../dist/data.js';
 
 const result=(time,extra={})=>({athleteId:'runner',name:'Runner',distance:'10 km',status:'finished',time,...extra});
-const race=(id,date,time,extra={})=>({id,name:id,date,type:'road',demo:false,distances:['10 km'],results:[result(time)],...extra});
+const race=(id,date,time,extra={})=>({id,name:id,date,type:'road',distances:['10 km'],results:[result(time)],...extra});
 const pb=(time,date='2025-09-14',extra={})=>({type:'road',distance:'10 km',time,date,...extra});
 const registry=personalBests=>({athletes:[{id:'runner',name:'Runner',kind:'member',personalBests}]});
 const history=event=>event.results[0].performanceHistory;
@@ -142,14 +142,13 @@ test('invalid manual values are reported and cannot establish a best',()=>{
     pb('10:00','2025-01-01',{status:'DNF'}),
     pb('40:00','2025-01-01',{type:'track',environment:'indoor',distance:'10000 m'}),
     pb('40:00','2025-01-01',{type:'trail'}),
-    pb('40:00','2025-01-01',{distance:'unknown'}),
-    pb('40:00','2025-01-01',{demo:true})
+    pb('40:00','2025-01-01',{distance:'unknown'})
   ]);
-  athletes.athletes.push({id:'broken',personalBests:{}},{id:'',personalBests:[pb('40:00')]},{id:'demo',kind:'demo',personalBests:[pb('10:00')]});
+  athletes.athletes.push({id:'broken',personalBests:{}},{id:'',personalBests:[pb('40:00')]});
   const snapshot=JSON.stringify(athletes),{entries,issues}=collectManualPersonalBests(athletes);
   assert.equal(entries.length,0);
-  assert.equal(issues.length,11);
-  assert.deepEqual(issues.filter(issue=>issue.athleteId==='runner').map(issue=>issue.index),[0,1,2,3,4,5,6,7,8]);
+  assert.equal(issues.length,10);
+  assert.deepEqual(issues.filter(issue=>issue.athleteId==='runner').map(issue=>issue.index),[0,1,2,3,4,5,6,7]);
   assert.deepEqual(issues.find(issue=>issue.athleteId==='broken'),{athleteId:'broken',index:null,reason:'personal-bests-not-array'});
   assert.ok(issues.every(issue=>typeof issue.reason==='string'&&issue.reason));
   const out=derivePerformanceHistory([race('first','2026-01-01','39:00')],athletes);

@@ -1,0 +1,89 @@
+{
+  "id": "malaga-maraton-2026",
+  "name": "Málaga maraton",
+  "date": "2026-11-08",
+  "location": "Málaga, Spania",
+  "type": "road",
+  "distances": [
+    "Maraton"
+  ],
+  "sourceUrl": "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026/6af079db-f158-44ef-9b21-4a27ac1f0a9c/rankings",
+  "source": {
+    "provider": "Sportmaniacs / Timingsense",
+    "type": "official-results",
+    "timeBasis": "gun",
+    "displayNote": "Bruttotidene vises i hele sekunder fra tidtakingen. Sofie og Ulrik vises med 2:27:12, som i klubboppslaget. Arrangørens offisielle resultatliste oppgir 2:27:13 for begge."
+  },
+  "results": [
+    {
+      "athleteId": "sofie-karoline-haugen",
+      "gender": "K",
+      "distance": "Maraton",
+      "time": "2:27:13",
+      "timeBasis": "gun",
+      "gunTime": "2:27:13",
+      "netTime": "2:27:13",
+      "status": "finished",
+      "category": "Senior F",
+      "sourceBib": "58",
+      "position": 25,
+      "positionScope": "overall",
+      "positionGender": 5,
+      "positionGenderVerified": true,
+      "positionClass": 4,
+      "clubRecord": true,
+      "recordEligible": true,
+      "clubRecordTime": "2:27:13",
+      "clubRecordTimeBasis": "gun",
+      "measuredTime": "2:27:12.259"
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "gender": "M",
+      "distance": "Maraton",
+      "time": "2:27:13",
+      "timeBasis": "gun",
+      "gunTime": "2:27:13",
+      "netTime": "2:27:12",
+      "status": "finished",
+      "category": "M35",
+      "sourceBib": "17",
+      "position": 26,
+      "positionScope": "overall",
+      "positionGender": 21,
+      "positionGenderVerified": true,
+      "positionClass": 4,
+      "measuredTime": "2:27:12.526"
+    }
+  ],
+  "winners": [
+    {
+      "distance": "Maraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Simon Njuguna Waithira",
+        "time": "2:08:18",
+        "timeBasis": "gun",
+        "verified": true,
+        "sourceUrl": "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026/6af079db-f158-44ef-9b21-4a27ac1f0a9c/rankings",
+        "checkedAt": "2026-11-09",
+        "measuredTime": "2:08:17.794"
+      },
+      "women": {
+        "name": "Rebecca Kangogo Chesir",
+        "time": "2:21:18",
+        "timeBasis": "gun",
+        "verified": true,
+        "sourceUrl": "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026/6af079db-f158-44ef-9b21-4a27ac1f0a9c/rankings",
+        "checkedAt": "2026-11-09",
+        "measuredTime": "2:21:17.806"
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Sofie og Bratsberg på maraton-toppen",
+      "url": "https://www.bratsbergfriidrett.no/2026/11/08/sofie-pa-maraton-toppen/"
+    }
+  ]
+}

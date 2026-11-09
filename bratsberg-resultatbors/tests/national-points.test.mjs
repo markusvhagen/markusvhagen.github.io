@@ -28,7 +28,7 @@ test('all eight national references are dated, sourced, and computed with the sh
 
 test('national points above the age standard remain above 100 and gender filter preserves every distance',()=>{
  const women=renderPointsReferences(data,'K'),men=renderPointsReferences(data,'M');
- assert.match(women,/101,3 <small>poeng/);
+ assert.match(women,/101 <small>poeng/);
  assert.doesNotMatch(women,/Jakob Ingebrigtsen/);
  assert.doesNotMatch(men,/Synøve Brox/);
  for(const html of [women,men]){

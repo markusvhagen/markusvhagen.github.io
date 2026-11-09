@@ -1,9 +1,10 @@
+import {displayTime} from './display-format.js';
 import {loadData,esc,dateTile,badges,dateParts,shortDate,initials,participantCount,avatarStack,showError} from './data.js';
 import {mountWidget} from './widget.js';
 import {renderAthleteCard,installPortraitFallback,resultStatus} from './athlete-cards.js';
 import {renderRelays} from './relays.js';
 import {selectArchivePage} from './archive.js';
-import {renderCalendarParticipant,renderParticipantPreview} from './calendar.js';
+import {renderCalendarParticipant,renderParticipantPreview,watchUpcomingEvents} from './calendar.js';
 import {renderRaceWinners,installRaceWinnerControls,renderRaceNews} from './race-extras.js';
 import {gradeRaceResult} from './age-grading.js';
 import {readBirthYearOverrides,writeBirthYearOverrides,validateBirthYear} from './age-grade-ui.js';
@@ -14,29 +15,54 @@ installPortraitFallback();
 try{data=await loadData();if(portal)initPortal();else initHome();}catch(error){console.error(error);showError(document.querySelector(portal?'#race-list':'#result-widget'));if(!portal)document.querySelector('#home-upcoming').innerHTML='<p class="loading">Kommende løp kunne ikke hentes.</p>';}
 function initHome(){
   mountWidget(document.querySelector('#result-widget'),data);
-  document.querySelector('#home-upcoming').innerHTML=data.upcoming.slice(0,3).map(event=>{
-    const participants=Array.isArray(event.participants)?event.participants:[];
-    return `<a class="mini-event" href="resultater.html#terminliste/${encodeURIComponent(event.id)}">${dateTile(event.date)}<span class="mini-event-name"><strong>${esc(event.name)}</strong><span>${esc(event.location)} <span aria-hidden="true">·</span> ${esc(event.distances.join(' / '))}</span></span>${participants.length?`<span class="mini-event-members">${renderParticipantPreview(participants,data.portraits)}${participants.length} fra klubben</span>`:''}<span aria-hidden="true">↗</span></a>`;
-  }).join('')||'<p class="loading">Ingen nye løp er lagt inn ennå.</p>';
+  watchUpcomingEvents(data.upcoming, upcoming => {
+    document.querySelector('#home-upcoming').innerHTML=upcoming.slice(0,3).map(event=>{
+      const participants=Array.isArray(event.participants)?event.participants:[];
+      return `<a class="mini-event" href="resultater.html#terminliste/${encodeURIComponent(event.id)}">${dateTile(event.date)}<span class="mini-event-name"><strong>${esc(event.name)}</strong><span>${esc(event.location)} <span aria-hidden="true">·</span> ${esc(event.distances.join(' / '))}</span></span>${participants.length?`<span class="mini-event-members">${renderParticipantPreview(participants,data.portraits)}${participants.length} fra klubben</span>`:''}<span aria-hidden="true">↗</span></a>`;
+    }).join('')||'<p class="loading">Ingen nye løp er lagt inn ennå.</p>';
+  });
 }
 function initPortal(){
-  const portalRaces=data.races.filter(r=>r.demo!==true).slice().sort((a,b)=>b.date.localeCompare(a.date));
+  const portalRaces=data.races.slice().sort((a,b)=>b.date.localeCompare(a.date));
   const results=portalRaces.flatMap(r=>r.results),statsPeriod='I resultatarkivet';
   const stats=document.querySelector('#stats-strip');
   stats.setAttribute('aria-label','Statistikk for '+statsPeriod.toLocaleLowerCase('nb-NO'));
   stats.innerHTML=[[portalRaces.length,'løp'],[results.length,'resultater'],[new Set(results.map(r=>r.athleteId)).size,'løpere'],[results.filter(r=>r.clubRecord).length,'klubbrekorder']].map(([n,label])=>`<div class="stat"><strong>${n}</strong><span>${label}<br><span class="stat-period">${statsPeriod}</span></span></div>`).join('');
-  const search=document.querySelector('#search'),distance=document.querySelector('#distance'),year=document.querySelector('#year'),pbOnly=document.querySelector('#only-pb'),resultGender=document.querySelector('#result-gender');
+  const toolbar=document.querySelector('#archive-toolbar');
+  const filterDialog=document.querySelector('#archive-filter-dialog');
+  const filterForm=document.querySelector('#archive-filter-form');
+  const filterToggle=document.querySelector('#archive-filter-toggle');
+  const filterCount=document.querySelector('#archive-filter-count');
+  const quickGender=document.querySelector('#result-gender');
+  const quickSort=document.querySelector('#archive-quick-sort');
+  const distance=filterForm.elements.distance;
+  const year=filterForm.elements.year;
+  const defaultFilters={query:'',distance:'',year:'',gender:'',sort:'time',onlyRecords:false};
+  let filters={...defaultFilters},dialogAnchor=null;
   [...new Set(portalRaces.flatMap(r=>r.distances))].forEach(d=>{const o=document.createElement('option');o.value=d;o.textContent=d;distance.append(o);});
   [...new Set(portalRaces.map(r=>r.date.slice(0,4)))].sort().reverse().forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;year.append(o);});
-  const firstRace=portalRaces[0],openRaces=new Set(firstRace?[firstRace.id]:[]);
-  const resultSort=document.querySelector('#result-sort'),raceList=document.querySelector('#race-list');
+  const firstRace=portalRaces[0];
+  const raceExpansion=new Map(firstRace?[[firstRace.id,true]]:[]);
+  const raceList=document.querySelector('#race-list');
   const profileList=Array.isArray(data.athletes)?data.athletes:data.athletes?.athletes||[];
   const profilesById=new Map(profileList.map(athlete=>[athlete.id,athlete]));
-  const birthYearOverrides=readBirthYearOverrides();
+  const birthYearOverrides=readBirthYearOverrides(undefined,data.athletes?.mergedAthleteIds);
   installRaceWinnerControls(raceList);
   let archivePage=1;
   const pager=document.querySelector('#archive-pagination');
-  function clearFilters(){search.value='';distance.value='';year.value='';resultGender.value='';pbOnly.checked=false;resultSort.value='time';archivePage=1;}
+  function syncFilterBar(){
+    quickGender.value=filters.gender;
+    quickSort.value=filters.sort;
+    const count=Object.keys(defaultFilters).filter(key=>filters[key]!==defaultFilters[key]).length;
+    filterCount.textContent=String(count);
+    filterCount.hidden=count===0;
+    filterToggle.setAttribute('aria-label',count?`Filtre og sortering, ${count} aktive valg`:'Filtre og sortering');
+  }
+  function clearFilters(){
+    filters={...defaultFilters};
+    archivePage=1;
+    syncFilterBar();
+  }
   function racesWithLocalAges(){
     return portalRaces.map(race=>({...race,results:race.results.map(result=>{
       const birthYear=birthYearOverrides[result.athleteId];
@@ -57,25 +83,102 @@ function initPortal(){
   function resultGroups(matching){
     const groups=new Map();
     matching.forEach(result=>{if(!groups.has(result.distance))groups.set(result.distance,[]);groups.get(result.distance).push(result);});
-    return [...groups].map(([label,entries])=>`<section class="race-distance-group" aria-label="${esc(label)}"><div class="race-distance-heading"><h3>${esc(label)}</h3><span>${entries.length} resultater${resultSort.value==='age-grade'?' · høyeste poeng først':''}</span></div><div class="result-hero-grid">${entries.map(r=>renderAthleteCard(r,data.portraits,{compact:false,showAgeGrade:true})).join('')}</div></section>`).join('');
+    return [...groups].map(([label,entries])=>`<section class="race-distance-group" aria-label="${esc(label)}"><div class="race-distance-heading"><h3>${esc(label)}</h3><span>${entries.length} resultater${filters.sort==='age-grade'?' · høyeste poeng først':''}</span></div><div class="result-hero-grid">${entries.map(r=>renderAthleteCard(r,data.portraits,{compact:false,showAgeGrade:true})).join('')}</div></section>`).join('');
   }
   function renderResults(focusRaceId=null){
-    const q=search.value.trim().toLocaleLowerCase('nb-NO');
-    const view=selectArchivePage(racesWithLocalAges(),{query:q,distance:distance.value,gender:resultGender.value,year:year.value,onlyRecords:pbOnly.checked,sort:resultSort.value},archivePage,{focusRaceId});
+    const view=selectArchivePage(racesWithLocalAges(),filters,archivePage,{focusRaceId});
     archivePage=view.page;
-    const filtering=!!(q||distance.value||resultGender.value||pbOnly.checked||year.value);
+    const filtering=Boolean(filters.query||filters.distance||filters.gender||filters.onlyRecords||filters.year);
     document.querySelector('#result-count').textContent=view.total?`${view.from}–${view.to} av ${view.total} løp · ${view.resultCount} resultater`:'Ingen treff';
     document.querySelector('#race-list').innerHTML=view.items.map(({race,matching})=>{
-      const pbs=matching.filter(r=>r.performanceHistory?.isPersonalBest).length,krs=matching.filter(r=>r.clubRecord).length,expanded=openRaces.has(race.id)||filtering;
-      return `<article class="race-card race-card-grid" id="race-${esc(race.id)}"><div class="race-header"><button class="race-summary" type="button" data-open-race="${esc(race.id)}" aria-expanded="${expanded}" aria-controls="detail-${esc(race.id)}"><span class="race-title"><strong>${esc(race.name)}</strong></span><span class="race-flag-list">${krs?`<span class="badge cr"><span class="award-icon" aria-hidden="true">★</span> ${krs} ${krs===1?'Klubbrekord':'klubbrekorder'}</span>`:''}${pbs?`<span class="badge pb">${pbs} PB</span>`:''}</span><span class="race-athlete-count">${matching.length} resultater</span><span class="chevron" aria-hidden="true">⌄</span></button><div class="race-metadata-row">${renderRaceWinners(race,{selectedDistance:distance.value})}<time datetime="${esc(race.date)}" title="${esc(dateParts(race.date).full)}">${esc(shortDate(race.date))} ${esc(race.date.slice(0,4))}</time>${renderRaceNews(race)}</div></div><div class="race-detail" id="detail-${esc(race.id)}"${expanded?'':' hidden'}>${resultGroups(matching)}${filtering?`<p class="detail-footnote">Viser ${matching.length} av ${race.results.length} klubbresultater.</p>`:''}${raceSource(race)}</div></article>`;
+      const pbs=matching.filter(r=>r.performanceHistory?.isPersonalBest).length,krs=matching.filter(r=>r.clubRecord).length,expanded=raceExpansion.get(race.id)??Boolean(filters.query);
+      return `<article class="race-card race-card-grid" id="race-${esc(race.id)}"><div class="race-header"><button class="race-summary" type="button" data-open-race="${esc(race.id)}" aria-expanded="${expanded}" aria-controls="detail-${esc(race.id)}"><span class="race-title"><strong>${esc(race.name)}</strong></span><span class="race-flag-list">${krs?`<span class="badge cr"><span class="award-icon" aria-hidden="true">★</span> ${krs} ${krs===1?'Klubbrekord':'klubbrekorder'}</span>`:''}${pbs?`<span class="badge pb">${pbs} PB</span>`:''}</span><span class="race-athlete-count">${matching.length} resultater</span><span class="chevron" aria-hidden="true">⌄</span></button><div class="race-metadata-row">${renderRaceWinners(race,{selectedDistance:filters.distance})}<time datetime="${esc(race.date)}" title="${esc(dateParts(race.date).full)}">${esc(shortDate(race.date))} ${esc(race.date.slice(0,4))}</time>${renderRaceNews(race)}</div></div><div class="race-detail" id="detail-${esc(race.id)}"${expanded?'':' hidden'}>${resultGroups(matching)}${filtering?`<p class="detail-footnote">Viser ${matching.length} av ${race.results.length} klubbresultater.</p>`:''}${raceSource(race)}</div></article>`;
     }).join('')||'<div class="empty-state"><h3>Ingen løp passer søket</h3><p>Prøv et annet navn, eller fjern noen filtre.</p><button class="filter-reset" id="reset-filters">Nullstill filtrene</button></div>';
     pager.hidden=view.pageCount<2;
     pager.innerHTML=`<button type="button" data-archive-step="-1"${view.page===1?' disabled':''}>← Nyere løp</button><span aria-live="polite">Side <strong>${view.page}</strong> av ${view.pageCount}</span><button type="button" data-archive-step="1"${view.page===view.pageCount?' disabled':''}>Eldre løp →</button>`;
-    document.querySelector('#reset-filters')?.addEventListener('click',()=>{clearFilters();renderResults();search.focus();});
+    document.querySelector('#reset-filters')?.addEventListener('click',()=>{clearFilters();renderResults();filterToggle.focus();});
   }
-  document.querySelector('#race-list').addEventListener('click',event=>{const button=event.target.closest('[data-open-race]');if(!button)return;const id=button.dataset.openRace;const expanded=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(expanded));document.getElementById('detail-'+id).hidden=!expanded;if(expanded)openRaces.add(id);else openRaces.delete(id);});
-  const filterChanged=()=>{archivePage=1;renderResults();};
-  search.addEventListener('input',filterChanged);[distance,year,resultGender,pbOnly,resultSort].forEach(control=>control.addEventListener('change',filterChanged));
+  raceList.addEventListener('click',event=>{
+    const button=event.target.closest('[data-open-race]');
+    if(!button)return;
+    const id=button.dataset.openRace;
+    const expanded=button.getAttribute('aria-expanded')!=='true';
+    button.setAttribute('aria-expanded',String(expanded));
+    document.getElementById('detail-'+id).hidden=!expanded;
+    raceExpansion.set(id,expanded);
+  });
+  function readingAnchor(){
+    const bar=toolbar.getBoundingClientRect();
+    if(bar.top>parseFloat(getComputedStyle(toolbar).top)+1)return null;
+    const readingLine=bar.bottom+8;
+    const crossesLine=element=>{
+      const rect=element.getBoundingClientRect();
+      return rect.top<=readingLine && rect.bottom>readingLine;
+    };
+    if(raceList.getBoundingClientRect().top>readingLine)return null;
+    const race=[...raceList.children].find(card=>{
+      if(!card.classList.contains('race-card'))return false;
+      const rect=card.getBoundingClientRect();
+      return rect.bottom>readingLine && rect.top<window.innerHeight;
+    });
+    if(!race)return null;
+    const group=[...race.querySelectorAll('.race-distance-group')].find(crossesLine);
+    const athlete=group && [...group.querySelectorAll('.athlete-card')].find(crossesLine);
+    return {
+      id:race.id.slice(5),
+      open:race.querySelector('[data-open-race]').getAttribute('aria-expanded')==='true',
+      distance:group?.getAttribute('aria-label'),
+      athleteId:athlete?.dataset.athleteId,
+      athleteTop:athlete?.getBoundingClientRect().top
+    };
+  }
+  function restoreReadingAnchor(anchor){
+    if(!anchor)return;
+    const race=document.getElementById('race-'+anchor.id);
+    const group=race && [...race.querySelectorAll('.race-distance-group')].find(item=>item.getAttribute('aria-label')===anchor.distance);
+    const athlete=anchor.athleteId && group && [...group.querySelectorAll('.athlete-card')]
+      .find(card=>card.dataset.athleteId===anchor.athleteId);
+    const target=athlete||group||race||raceList;
+    const top=athlete?anchor.athleteTop:toolbar.getBoundingClientRect().bottom+8;
+    window.scrollBy({top:target.getBoundingClientRect().top-top,behavior:'instant'});
+  }
+  function applyFilters(next,anchor){
+    filters=next;
+    archivePage=1;
+    if(anchor)raceExpansion.set(anchor.id,anchor.open);
+    syncFilterBar();
+    renderResults(anchor?.id);
+    restoreReadingAnchor(anchor);
+  }
+  quickGender.addEventListener('change',()=>applyFilters({...filters,gender:quickGender.value},readingAnchor()));
+  quickSort.addEventListener('change',()=>applyFilters({...filters,sort:quickSort.value},readingAnchor()));
+  filterToggle.addEventListener('click',()=>{
+    dialogAnchor=readingAnchor();
+    for(const [key,value] of Object.entries(filters)){
+      const field=filterForm.elements.namedItem(key);
+      if(field.type==='checkbox')field.checked=value;
+      else field.value=value;
+    }
+    filterDialog.showModal();
+  });
+  filterForm.addEventListener('submit',event=>{
+    event.preventDefault();
+    const values=new FormData(filterForm);
+    const next={
+      query:values.get('query').trim(),distance:values.get('distance'),
+      year:values.get('year'),gender:values.get('gender'),sort:values.get('sort'),
+      onlyRecords:values.has('onlyRecords')
+    };
+    filterDialog.close();
+    applyFilters(next,dialogAnchor);
+  });
+  document.querySelector('#cancel-archive-filter').addEventListener('click',()=>filterDialog.close());
+  filterDialog.addEventListener('close',()=>{
+    if(!filterDialog.open && !document.querySelector('#results-panel').hidden){
+      filterToggle.focus({preventScroll:true});
+    }
+  });
+  syncFilterBar();
   const ageDialog=document.querySelector('#age-grade-dialog'),ageForm=document.querySelector('#age-grade-form'),birthYearInput=document.querySelector('#birth-year-input'),ageReset=document.querySelector('#reset-birth-year'),ageStatus=document.querySelector('#age-grade-status');
   let editingAthleteId=null,editingRaceId=null,editingRaceYear=null;
   raceList.addEventListener('click',event=>{
@@ -133,7 +236,7 @@ function initPortal(){
   let gender='K';
   function renderRecordCard(r){
     const missing=r.status==='unlisted'||!r.time;
-    return `<article class="record-card official-record${missing?' record-unlisted':''}"><div class="record-card-top"><span class="record-distance">${esc(r.distance)}</span>${r.ageClass?`<span class="record-age">${esc(r.ageClass)}</span>`:''}</div><p class="record-time">${missing?'—':esc(r.time)}</p><p class="record-owner">${missing?'Ingen registrert rekord':esc(r.name)}</p>${r.location?`<p class="record-race">${esc(r.location)}</p>`:''}${r.date?`<p class="record-date">${esc(dateParts(r.date).full)}</p>`:''}</article>`;
+    return `<article class="record-card official-record${missing?' record-unlisted':''}"><div class="record-card-top"><span class="record-distance">${esc(r.distance)}</span>${r.ageClass?`<span class="record-age">${esc(r.ageClass)}</span>`:''}</div><p class="record-time">${missing?'—':esc(displayTime(r.time,r.measuredTime))}</p><p class="record-owner">${missing?'Ingen registrert rekord':esc(r.name)}</p>${r.location?`<p class="record-race">${esc(r.location)}</p>`:''}${r.date?`<p class="record-date">${esc(dateParts(r.date).full)}</p>`:''}</article>`;
   }
   function renderRecords(){
     const updated=data.recordsUpdatedAt||'2026-10-17';
@@ -143,25 +246,35 @@ function initPortal(){
     const candidates=(data.recordCandidates||[]).filter(c=>c.result.gender===gender);
     const candidatePanel=document.querySelector('#record-candidates');
     candidatePanel.hidden=!candidates.length;
-    candidatePanel.innerHTML=candidates.length?`<h3>Nye resultater til kontroll</h3><ul>${candidates.map(c=>`<li><strong>${esc(c.result.name)} · ${esc(c.result.time)}</strong><span>${esc(c.result.distance)} · ${esc(c.race.name)}</span></li>`).join('')}</ul><p>Resultatene er raskere enn den registrerte rekorden. Rekordlisten oppdateres etter kontroll.</p>`:'';
+    candidatePanel.innerHTML=candidates.length?`<h3>Nye resultater til kontroll</h3><ul>${candidates.map(c=>`<li><strong>${esc(c.result.name)} · ${esc(displayTime(c.result.time,c.result.measuredTime))}</strong><span>${esc(c.result.distance)} · ${esc(c.race.name)}</span></li>`).join('')}</ul><p>Resultatene er raskere enn den registrerte rekorden. Rekordlisten oppdateres etter kontroll.</p>`:'';
     const relayList=(data.relays||[]).flatMap(event=>(event.records||[]).filter(record=>record.gender===gender).map(record=>({event,record})));
-    document.querySelector('#relay-record-links').innerHTML=relayList.map(({event,record})=>`<a class="relay-record-link" href="#stafettrekorder/${encodeURIComponent(event.id)}/${gender}"><span><strong>${esc(event.name)}</strong><small>${esc(record.year)} · ${event.legCount} etapper</small></span><span class="relay-record-time">${esc(record.time)}</span><span class="relay-link-arrow" aria-hidden="true">↗</span></a>`).join('')||'<p class="muted small">Ingen stafettrekorder er lagt inn ennå.</p>';
+    document.querySelector('#relay-record-links').innerHTML=relayList.map(({event,record})=>`<a class="relay-record-link" href="#stafettrekorder/${encodeURIComponent(event.id)}/${gender}"><span><strong>${esc(event.name)}</strong><small>${esc(record.year)} · ${event.legCount} etapper</small></span><span class="relay-record-time">${esc(displayTime(record.time,record.measuredTime))}</span><span class="relay-link-arrow" aria-hidden="true">↗</span></a>`).join('')||'<p class="muted small">Ingen stafettrekorder er lagt inn ennå.</p>';
   }
   document.querySelectorAll('[data-gender]').forEach(button=>button.addEventListener('click',()=>{gender=button.dataset.gender;document.querySelectorAll('[data-gender]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});renderRecords();}));
-  function renderCalendar(openId){
-    document.querySelector('#calendar-list').innerHTML=data.upcoming.map(event=>{
+  const calendarList = document.querySelector('#calendar-list');
+  const calendarPanel = document.querySelector('#calendar-panel');
+  let calendarEvents;
+  watchUpcomingEvents(data.upcoming, upcoming => {
+    calendarEvents = upcoming;
+    if (calendarPanel.hidden) return;
+    const expanded = calendarList.querySelectorAll('[data-calendar][aria-expanded="true"]');
+    renderCalendar(new Set([...expanded].map(button => button.dataset.calendar)));
+  });
+  function renderCalendar(openIds) {
+    calendarList.innerHTML=calendarEvents.map(event=>{
       const participants=Array.isArray(event.participants)?event.participants:[];
       let sourceLink='';
       try{const url=new URL(event.sourceUrl);if(url.protocol==='https:'&&!url.username&&!url.password)sourceLink=`<p class="calendar-source"><a href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">Arrangørens nettside ↗</a></p>`;}catch{}
-      return `<article class="calendar-card" id="event-${esc(event.id)}"><button type="button" class="calendar-summary" data-calendar="${esc(event.id)}" aria-expanded="${event.id===openId}" aria-controls="participants-${esc(event.id)}">${dateTile(event.date)}<span class="race-title"><strong>${esc(event.name)}</strong><span class="race-meta">${esc(event.location)} <b>·</b> ${esc(event.distances.join(' / '))} <b>·</b> ${event.date.slice(0,4)}</span></span>${participants.length?`${renderParticipantPreview(participants,data.portraits)}<span class="race-athlete-count">${participants.length} fra klubben</span>`:''}<span class="chevron" aria-hidden="true">⌄</span></button><div class="participant-list" id="participants-${esc(event.id)}"${event.id===openId?'':' hidden'}>${participants.map(person=>renderCalendarParticipant(person,data.portraits)).join('')||'<p>Ingen klubbpåmeldinger er registrert ennå.</p>'}${sourceLink}</div></article>`;
+      return `<article class="calendar-card" id="event-${esc(event.id)}"><button type="button" class="calendar-summary" data-calendar="${esc(event.id)}" aria-expanded="${openIds.has(event.id)}" aria-controls="participants-${esc(event.id)}">${dateTile(event.date)}<span class="race-title"><strong>${esc(event.name)}</strong><span class="race-meta">${esc(event.location)} <b>·</b> ${esc(event.distances.join(' / '))} <b>·</b> ${event.date.slice(0,4)}</span></span>${participants.length?`${renderParticipantPreview(participants,data.portraits)}<span class="race-athlete-count">${participants.length} fra klubben</span>`:''}<span class="chevron" aria-hidden="true">⌄</span></button><div class="participant-list" id="participants-${esc(event.id)}"${openIds.has(event.id)?'':' hidden'}>${participants.map(person=>renderCalendarParticipant(person,data.portraits)).join('')||'<p>Ingen klubbpåmeldinger er registrert ennå.</p>'}${sourceLink}</div></article>`;
     }).join('')||'<div class="empty-state">Ingen kommende løp er lagt inn ennå.</div>';
   }
-  document.querySelector('#calendar-list').addEventListener('click',e=>{const b=e.target.closest('[data-calendar]');if(!b)return;const opened=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(opened));document.getElementById('participants-'+b.dataset.calendar).hidden=!opened;});
+  calendarList.addEventListener('click',e=>{const b=e.target.closest('[data-calendar]');if(!b)return;const opened=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(opened));document.getElementById('participants-'+b.dataset.calendar).hidden=!opened;});
   function route(){
+    if(filterDialog.open)filterDialog.close();
     let [tab,id,relayGender]=location.hash.slice(1).split('/');
     try{id=id?decodeURIComponent(id):null;}catch{id=null;}
     const linkedRace=tab==='lop'?id:null;
-    if(tab==='lop'){tab='resultater';if(id){clearFilters();openRaces.add(id);}}
+    if(tab==='lop'){tab='resultater';if(id){clearFilters();raceExpansion.set(id,true);}}
     if(tab==='stafetter')tab='stafettrekorder';
     if(tab==='poeng')tab='poengnoteringer';
     if(!['resultater','poengnoteringer','klubbrekorder','stafettrekorder','terminliste'].includes(tab))tab='resultater';
@@ -176,7 +289,7 @@ function initPortal(){
     if(tab==='klubbrekorder')renderRecords();
     if(tab==='poengnoteringer')pointsView.render();
     if(tab==='stafettrekorder')renderRelays(document.querySelector('#relay-root'),data,id,relayGender);
-    if(tab==='terminliste')renderCalendar(id);
+    if(tab==='terminliste')renderCalendar(new Set(id ? [id] : []));
     const pageNames={resultater:'Løpsresultater',poengnoteringer:'Poengnoteringer',klubbrekorder:'Klubbrekorder',stafettrekorder:'Stafettrekorder',terminliste:'Terminliste'};
     document.title=pageNames[tab]+' · Bratsberg Friidrett';
   }

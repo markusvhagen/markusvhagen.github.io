@@ -111,6 +111,5 @@ test('race integration uses selected net timing and rejects unfinished or unsupp
   for(const status of ['DNS','DNF','DSQ'])assert.equal(gradeRaceResult(race,{...result,status},athlete).eligible,false);
   assert.equal(gradeRaceResult({...race,type:'trail'},{...result,age:undefined},{}).reason,'unsupported-discipline');
   assert.equal(gradeRaceResult(race,{...result,age:undefined},{}).reason,'missing-age');
-  assert.equal(gradeRaceResult({...race,demo:true},result,athlete).reason,'demo');
   assert.equal(JSON.stringify({race,result,athlete}),before);
 });

@@ -66,4 +66,125 @@
 @media(min-width:1100px){.points-reference-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:7px;row-gap:2px}.points-reference-top,.points-reference-name{grid-column:1 / -1}.points-reference-top{margin-bottom:0}.points-reference-time,.points-reference-bottom{margin-top:0;align-self:center}.points-reference-bottom{gap:6px;flex-wrap:nowrap}.points-reference-time{white-space:nowrap}.points-reference-entry.is-unlisted{display:block}}
 @media(max-width:1050px){.points-table th,.points-table td{padding:14px}}
 @media(max-width:860px){.points-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.points-national{padding:12px 11px;margin-top:24px;margin-bottom:0}.points-club h2{font-size:28px}.points-national h2{font-size:24px}.points-national-heading{gap:10px}.points-reference-grid{gap:8px}.points-reference-card{padding:7px}.points-reference-card h3{font-size:19px}.points-reference-entry{padding:6px}.points-reference-name{font-size:10px;min-height:0}.points-reference-score{font-size:19px}.points-reference-bottom{font-size:8px}.points-filters{gap:10px}.points-filters label{flex-basis:calc(50% - 5px)}.points-filters label.points-search{flex-basis:100%}.points-gender button{padding:9px 14px}.points-table{min-width:550px}.points-table th,.points-table td{padding:13px 12px}.points-table thead th:first-child{width:31%}.points-table thead th:nth-child(2){width:18%}.points-table thead th:nth-child(3){width:23%}.points-table thead th:nth-child(4){width:28%}.points-score-cell strong{font-size:20px}.points-result-time{font-size:18px}.points-club-heading{gap:15px}}
+@media (max-width: 760px) {
+  .points-national {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .points-national-heading,
+  .points-club-heading {
+    align-items: start;
+    gap: .75rem;
+  }
+
+  .points-reference-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .75rem;
+  }
+
+  .points-reference-card,
+  .points-reference-entry {
+    padding: .75rem;
+  }
+
+  .points-reference-card h3 {
+    font-size: 1.375rem;
+  }
+
+  .points-kicker,
+  .points-national-heading p:not(.points-kicker),
+  .points-club-heading p:not(.points-kicker),
+  .points-checked,
+  .points-reference-sex,
+  .points-reference-score small,
+  .points-reference-name,
+  .points-reference-time,
+  .points-reference-bottom,
+  .points-reference-entry.is-unlisted p,
+  .points-national-note,
+  .points-filters label > span,
+  .points-gender button,
+  .points-filters input,
+  .points-filters select,
+  .points-summary,
+  .points-table,
+  .points-table thead th,
+  .points-cell-meta,
+  .points-athlete-name a > span,
+  .points-best-mark,
+  .points-coverage,
+  .points-empty p,
+  .points-empty a {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .points-checked {
+    white-space: normal;
+  }
+
+  .points-kicker,
+  .points-cell-meta,
+  .points-best-mark,
+  .points-summary,
+  .points-national-note,
+  .points-coverage,
+  .points-club-heading p:not(.points-kicker) {
+    color: #52614d;
+  }
+
+  .points-reference-bottom a,
+  .points-athlete-name a,
+  .points-coverage a,
+  .points-empty a {
+    display: inline-block;
+    min-block-size: 2.75rem;
+    align-content: center;
+    overflow-wrap: anywhere;
+  }
+
+  .points-gender button,
+  .points-filters input,
+  .points-filters select {
+    min-block-size: 2.75rem;
+  }
+
+  .points-gender {
+    gap: .375rem;
+  }
+
+  .points-gender button {
+    padding-inline: .75rem;
+  }
+
+  .points-filters {
+    gap: .75rem;
+    margin-block: 1rem;
+  }
+
+  .points-filters label.points-search {
+    flex-basis: 100%;
+  }
+
+  /* Keep the four table columns readable in their own horizontal scroll area. */
+  .points-table {
+    min-width: 38rem;
+  }
+
+  .points-table th,
+  .points-table td {
+    padding: .75rem;
+  }
+
+  .points-table thead th:first-child { width: 31%; }
+  .points-table thead th:nth-child(2) { width: 18%; }
+  .points-table thead th:nth-child(3) { width: 23%; }
+  .points-table thead th:nth-child(4) { width: 28%; }
+
+  .points-result-time,
+  .points-score-cell strong,
+  .points-reference-score {
+    font-size: 1.375rem;
+  }
+}

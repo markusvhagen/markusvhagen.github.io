@@ -1,0 +1,1179 @@
+{
+  "title": "Bratsberg resultatbørs – observerte JSON-felter",
+  "sourceVersion": 27,
+  "checkedAt": "2026-11-09",
+  "basis": {
+    "athletes": 167,
+    "races": 20,
+    "rawResults": 364,
+    "finishedResults": 349
+  },
+  "notes": [
+    "Fullstendig oversikt over observerte felter i v27-dataene. Oppføringen viser hvor mange objekter som faktisk har hvert felt.",
+    "[] betyr et listeelement. Antall forekomster gjelder observerte foreldreobjekter.",
+    "Utøvernavn og fødselsår hentes fra registeret. Kjønn er fortsatt lagret på resultater.",
+    "Klasseplassering bruker positionClass. Usikker kjønnsplassering har uttrykkelig positionGenderVerified:false.",
+    "Detaljerte importmetadata er flyttet til docs/import-metadata-v23.json og er ikke del av dataene nettsiden laster.",
+    "PB, justerte poeng og profiler beregnes ved innlasting.",
+    "På registerets toppnivå kobler mergedAthleteIds en tidligere registrert ID til riktig nåværende profil.",
+    "measuredTime er valgfri. Ved visning kan den gi de hele sekundene fra en nøyaktig måling når arrangørens fullsekundstid er rundet opp."
+  ],
+  "athleteFields": [
+    {
+      "path": "aliases",
+      "types": [
+        "array"
+      ],
+      "occurrences": 167,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "birthYear",
+      "types": [
+        "number"
+      ],
+      "occurrences": 96,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "birthYearSource",
+      "types": [
+        "object"
+      ],
+      "occurrences": 96,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "birthYearSource.checkedAt",
+      "types": [
+        "string"
+      ],
+      "occurrences": 96,
+      "parentObjects": 96,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "birthYearSource.fileName",
+      "types": [
+        "string"
+      ],
+      "occurrences": 37,
+      "parentObjects": 96,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "birthYearSource.note",
+      "types": [
+        "string"
+      ],
+      "occurrences": 5,
+      "parentObjects": 96,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "birthYearSource.provider",
+      "types": [
+        "string"
+      ],
+      "occurrences": 58,
+      "parentObjects": 96,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "birthYearSource.url",
+      "types": [
+        "string"
+      ],
+      "occurrences": 96,
+      "parentObjects": 96,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "id",
+      "types": [
+        "string"
+      ],
+      "occurrences": 167,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "identityReview",
+      "types": [
+        "object"
+      ],
+      "occurrences": 13,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "identityReview.note",
+      "types": [
+        "string"
+      ],
+      "occurrences": 9,
+      "parentObjects": 13,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "identityReview.possibleAthleteIds",
+      "types": [
+        "array"
+      ],
+      "occurrences": 7,
+      "parentObjects": 13,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "identityReview.possibleDuplicateOf",
+      "types": [
+        "string"
+      ],
+      "occurrences": 6,
+      "parentObjects": 13,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "identityReview.reason",
+      "types": [
+        "string"
+      ],
+      "occurrences": 4,
+      "parentObjects": 13,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "identityReview.sourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 4,
+      "parentObjects": 13,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "identityReview.status",
+      "types": [
+        "string"
+      ],
+      "occurrences": 13,
+      "parentObjects": 13,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "name",
+      "types": [
+        "string"
+      ],
+      "occurrences": 167,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "personalBests",
+      "types": [
+        "array"
+      ],
+      "occurrences": 167,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "personalBests[].asOf",
+      "types": [
+        "string"
+      ],
+      "occurrences": 1,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].corroboratingSourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 5,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].date",
+      "types": [
+        "null",
+        "string"
+      ],
+      "occurrences": 11,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "personalBests[].distance",
+      "types": [
+        "string"
+      ],
+      "occurrences": 11,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "personalBests[].environment",
+      "types": [
+        "string"
+      ],
+      "occurrences": 4,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].eventName",
+      "types": [
+        "string"
+      ],
+      "occurrences": 10,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].note",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].raceId",
+      "types": [
+        "string"
+      ],
+      "occurrences": 9,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].source",
+      "types": [
+        "string"
+      ],
+      "occurrences": 11,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "personalBests[].sourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 9,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "personalBests[].time",
+      "types": [
+        "string"
+      ],
+      "occurrences": 11,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "personalBests[].type",
+      "types": [
+        "string"
+      ],
+      "occurrences": 11,
+      "parentObjects": 11,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo",
+      "types": [
+        "null",
+        "object"
+      ],
+      "occurrences": 167,
+      "parentObjects": 167,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.credit",
+      "types": [
+        "string"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.crop",
+      "types": [
+        "object"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.crop.x",
+      "types": [
+        "number"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.crop.y",
+      "types": [
+        "number"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.crop.zoom",
+      "types": [
+        "number"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.fallbackSrc",
+      "types": [
+        "string"
+      ],
+      "occurrences": 9,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "photo.source",
+      "types": [
+        "string"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "photo.src",
+      "types": [
+        "string"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    }
+  ],
+  "raceFields": [
+    {
+      "path": "date",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "distances",
+      "types": [
+        "array"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "endDate",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "environment",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "id",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "location",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "name",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "news",
+      "types": [
+        "array"
+      ],
+      "occurrences": 8,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "news[].title",
+      "types": [
+        "string"
+      ],
+      "occurrences": 8,
+      "parentObjects": 8,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "news[].url",
+      "types": [
+        "string"
+      ],
+      "occurrences": 8,
+      "parentObjects": 8,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "source",
+      "types": [
+        "object"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "source.displayNote",
+      "types": [
+        "string"
+      ],
+      "occurrences": 5,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "source.provider",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "source.timeBasis",
+      "types": [
+        "string"
+      ],
+      "occurrences": 19,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "source.type",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "sourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "startDate",
+      "types": [
+        "string"
+      ],
+      "occurrences": 2,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "timeBasis",
+      "types": [
+        "string"
+      ],
+      "occurrences": 1,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "type",
+      "types": [
+        "string"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "winners",
+      "types": [
+        "array"
+      ],
+      "occurrences": 20,
+      "parentObjects": 20,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "winners[].category",
+      "types": [
+        "string"
+      ],
+      "occurrences": 4,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].distance",
+      "types": [
+        "string"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "winners[].men",
+      "types": [
+        "object"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "winners[].men.applicable",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 1,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.category",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.checkedAt",
+      "types": [
+        "string"
+      ],
+      "occurrences": 33,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.date",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.measuredTime",
+      "types": [
+        "string"
+      ],
+      "occurrences": 2,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.name",
+      "types": [
+        "string"
+      ],
+      "occurrences": 33,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.reason",
+      "types": [
+        "string"
+      ],
+      "occurrences": 1,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.sourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 33,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.time",
+      "types": [
+        "string"
+      ],
+      "occurrences": 33,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.timeBasis",
+      "types": [
+        "string"
+      ],
+      "occurrences": 33,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].men.verified",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 33,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].scope",
+      "types": [
+        "string"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "winners[].women",
+      "types": [
+        "object"
+      ],
+      "occurrences": 34,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "winners[].women.applicable",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 2,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.category",
+      "types": [
+        "string"
+      ],
+      "occurrences": 2,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.checkedAt",
+      "types": [
+        "string"
+      ],
+      "occurrences": 32,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.date",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.measuredTime",
+      "types": [
+        "string"
+      ],
+      "occurrences": 2,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.name",
+      "types": [
+        "string"
+      ],
+      "occurrences": 32,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.reason",
+      "types": [
+        "string"
+      ],
+      "occurrences": 2,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.sourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 32,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.time",
+      "types": [
+        "string"
+      ],
+      "occurrences": 32,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.timeBasis",
+      "types": [
+        "string"
+      ],
+      "occurrences": 32,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "winners[].women.verified",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 32,
+      "parentObjects": 34,
+      "presentInEveryObservedParent": false
+    }
+  ],
+  "resultFields": [
+    {
+      "path": "athleteId",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "awardScope",
+      "types": [
+        "string"
+      ],
+      "occurrences": 3,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "category",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "clubRecord",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 11,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "clubRecordTime",
+      "types": [
+        "string"
+      ],
+      "occurrences": 5,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "clubRecordTimeBasis",
+      "types": [
+        "string"
+      ],
+      "occurrences": 5,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "date",
+      "types": [
+        "string"
+      ],
+      "occurrences": 15,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "distance",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "gender",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "gunTime",
+      "types": [
+        "string"
+      ],
+      "occurrences": 61,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "measuredTime",
+      "types": [
+        "string"
+      ],
+      "occurrences": 35,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "netTime",
+      "types": [
+        "string"
+      ],
+      "occurrences": 116,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "position",
+      "types": [
+        "null",
+        "number"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "positionClass",
+      "types": [
+        "number"
+      ],
+      "occurrences": 159,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "positionClassVerified",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 5,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "positionGender",
+      "types": [
+        "null",
+        "number"
+      ],
+      "occurrences": 358,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "positionGenderVerified",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "positionScope",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "recordEligible",
+      "types": [
+        "boolean"
+      ],
+      "occurrences": 13,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "roundLabel",
+      "types": [
+        "string"
+      ],
+      "occurrences": 12,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "sourceBib",
+      "types": [
+        "string"
+      ],
+      "occurrences": 325,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "sourceName",
+      "types": [
+        "string"
+      ],
+      "occurrences": 66,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "sourceUrl",
+      "types": [
+        "string"
+      ],
+      "occurrences": 41,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": false
+    },
+    {
+      "path": "status",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "time",
+      "types": [
+        "null",
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    },
+    {
+      "path": "timeBasis",
+      "types": [
+        "string"
+      ],
+      "occurrences": 364,
+      "parentObjects": 364,
+      "presentInEveryObservedParent": true
+    }
+  ],
+  "calculatedAtRuntime": {
+    "storedInRaceJson": false,
+    "result": {
+      "performanceHistory": [
+        "eligible",
+        "basis",
+        "hasManualBaseline",
+        "previousBest",
+        "previousBestSeconds",
+        "previousRaceIds",
+        "previousPersonalBests",
+        "isPersonalBest",
+        "isManualPersonalBest",
+        "confirmedPersonalBests",
+        "isBestRecorded",
+        "bestRecorded",
+        "improvementSeconds",
+        "reason",
+        "comparisonKey"
+      ],
+      "ageGrade": [
+        "eligible",
+        "score",
+        "ratio",
+        "standardSeconds",
+        "actualSeconds",
+        "age",
+        "gender",
+        "distance",
+        "equivalentTimes",
+        "method",
+        "reason",
+        "ageBasis",
+        "localOverride"
+      ],
+      "equivalentTimesEntry": [
+        "distance",
+        "seconds",
+        "time"
+      ],
+      "personalBestReference": [
+        "athleteId",
+        "index",
+        "date",
+        "asOf",
+        "time",
+        "type",
+        "distance",
+        "environment",
+        "courseId",
+        "eventName",
+        "source",
+        "sourceUrl",
+        "raceId"
+      ]
+    },
+    "loadedDataset": {
+      "portraits": "Oppslag athleteId -> photo",
+      "unresolvedAthletes": [
+        "name",
+        "athleteId",
+        "reason",
+        "candidates",
+        "occurrences"
+      ],
+      "personalBestIssues": [
+        "athleteId",
+        "index",
+        "reason"
+      ],
+      "recordCandidates": [
+        "record",
+        "race",
+        "result",
+        "date",
+        "seconds",
+        "previousSeconds",
+        "isFirstRecord",
+        "improvementSeconds"
+      ]
+    },
+    "notes": [
+      "Farge og medalje beregnes fra verifisert plassering; gold/silver/bronze er ikke lagrede flagg.",
+      "clubRecord er derimot lagret og bekreftet manuelt; rekordkontrollen lager kandidater uten å overskrive registeret.",
+      "Lokale fødselsår lagres i nettleseren og endrer ikke klubbens JSON-filer."
+    ]
+  },
+  "supportedButNotCurrentlyStored": [
+    {
+      "field": "birthDate",
+      "objects": [
+        "athlete",
+        "result"
+      ],
+      "type": "string",
+      "format": "YYYY-MM-DD"
+    },
+    {
+      "field": "age",
+      "objects": [
+        "result"
+      ],
+      "type": "integer"
+    },
+    {
+      "field": "courseId",
+      "objects": [
+        "race",
+        "result",
+        "personalBest"
+      ],
+      "type": "string"
+    },
+    {
+      "field": "verified",
+      "objects": [
+        "race",
+        "result"
+      ],
+      "type": "boolean",
+      "note": "false utelukker fra rekordkandidater; ikke en generell vis/skjul-bryter"
+    },
+    {
+      "field": "status",
+      "objects": [
+        "personalBest"
+      ],
+      "type": "string",
+      "note": "Finnes allerede på resultatnivå"
+    }
+  ],
+  "dataSchemaVersion": 2,
+  "cleanup": {
+    "beforeResultFields": 68,
+    "afterResultFields": 25,
+    "duplicateNamesRemoved": 351,
+    "duplicateBirthYearsRemoved": 98,
+    "normalizedClassPositions": 91
+  }
+}

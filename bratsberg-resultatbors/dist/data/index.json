@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
-  "demo": false,
-  "dataMode": "real",
-  "updatedAt": "2026-11-03",
+  "schemaVersion": 2,
+  "updatedAt": "2026-11-09",
   "races": [
+    "data/races/jessheim-vintermaraton-2026.json",
+    "data/races/malaga-maraton-2026.json",
     "data/races/hytteplanmila-2026.json",
     "data/races/trondheim-skogsmaraton-2026.json",
     "data/races/heim-halvmaraton-2026.json",
@@ -26,7 +26,7 @@
   "records": "data/records.json",
   "upcoming": "data/upcoming.json",
   "relays": "data/relays.json",
-  "recordsUpdatedAt": "2026-10-17",
+  "recordsUpdatedAt": "2026-11-08",
   "athletes": "data/athletes.json",
   "nationalPoints": "data/national-points.json"
 }

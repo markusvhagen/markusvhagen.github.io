@@ -1,33 +1,16 @@
 [
   {
-    "id": "jessheim-vintermaraton-2026",
-    "name": "Jessheim Vintermaraton",
-    "date": "2026-11-08",
-    "location": "Jessheim",
+    "id": "nidaros-vinterkarusell-2026-11-21",
+    "name": "Nidaros Vinterkarusell – løp 1",
+    "date": "2026-11-21",
+    "location": "Ranheimhallen",
     "distances": [
-      "10 km",
-      "Halvmaraton",
-      "Maraton"
+      "600 m",
+      "1 000 m",
+      "3 000 m"
     ],
-    "participants": [
-      {
-        "athleteId": "oivind-estensen",
-        "name": "Øivind Estensen",
-        "distance": "Maraton"
-      },
-      {
-        "athleteId": "markus-valas-hagen",
-        "name": "Markus Valås Hagen",
-        "distance": "Halvmaraton"
-      },
-      {
-        "athleteId": "oystein-haugen",
-        "name": "Øystein Haugen",
-        "distance": "Halvmaraton"
-      }
-    ],
-    "sourceUrl": "https://www.vintermaraton.no/event-details/jessheim-vintermaraton-2026",
-    "demo": false
+    "participants": [],
+    "sourceUrl": "https://live.eqtiming.com/84879#dashboard"
   },
   {
     "id": "valencia-maraton-2026",
@@ -89,7 +72,47 @@
         "distance": "Maraton"
       }
     ],
-    "sourceUrl": "https://www.valenciaciudaddelrunning.com/en/marathon/regulations-valencia-marathon/",
-    "demo": false
+    "sourceUrl": "https://www.valenciaciudaddelrunning.com/en/marathon/regulations-valencia-marathon/"
+  },
+  {
+    "id": "nidaros-vinterkarusell-2027-01-09",
+    "name": "Nidaros Vinterkarusell – løp 2",
+    "date": "2027-01-09",
+    "location": "Ranheimhallen",
+    "distances": [
+      "600 m",
+      "1 000 m",
+      "3 000 m"
+    ],
+    "participants": [],
+    "sourceUrl": "https://live.eqtiming.com/84882#dashboard"
+  },
+  {
+    "id": "nidaros-vinterkarusell-2027-02-13",
+    "name": "Nidaros Vinterkarusell – løp 3",
+    "date": "2027-02-13",
+    "location": "Ranheimhallen",
+    "distances": [
+      "600 m",
+      "1 000 m",
+      "3 000 m"
+    ],
+    "participants": [],
+    "sourceUrl": "https://live.eqtiming.com/84883#dashboard"
+  },
+  {
+    "id": "nidaros-vinterkarusell-2027-04-17",
+    "name": "Nidaros Vinterkarusell – løp 4 (Trønderjogg)",
+    "date": "2027-04-17",
+    "location": "Trondheim stadion",
+    "distances": [
+      "600 m",
+      "1 000 m",
+      "5 km",
+      "10 km",
+      "5 km gange"
+    ],
+    "participants": [],
+    "sourceUrl": "https://live.eqtiming.com/84884#dashboard"
   }
 ]

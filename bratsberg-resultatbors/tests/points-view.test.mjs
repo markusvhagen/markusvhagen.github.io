@@ -11,7 +11,7 @@ test('national references recalculate scores and require verified dated sources'
   ]};
   const html=renderPointsReferences(references);
   assert.match(html,/Verified &lt;runner&gt;/);
-  assert.match(html,/100,0 <small>poeng/);
+  assert.match(html,/100 <small>poeng/);
   assert.doesNotMatch(html,/9999|Unverified|Wrong season|Unsafe source|javascript:/);
   assert.match(html,/Kontrollert 03\.11\.2026/);
   assert.equal((html.match(/Ikke bekreftet/g)||[]).length,7);
@@ -19,12 +19,14 @@ test('national references recalculate scores and require verified dated sources'
 });
 
 test('points table preserves supplied ascending order, safely links races and highlights only the best row',()=>{
-  const row={athleteId:'runner',name:'Runner <script>',score:75.25,gender:'K',age:45,date:'2026-05-01',raceId:'race/one',raceName:'Race & field',distance:'10 km',time:'41:00',ageBasis:'birth-year'};
+  const row={athleteId:'runner',name:'Runner <script>',score:75.99,gender:'K',age:45,date:'2026-05-01',raceId:'race/one',raceName:'Race & field',distance:'10 km',time:'41:00',result:{measuredTime:'00:40:59.900'},ageBasis:'birth-year'};
   const html=renderPointsTable({rows:[row,{...row,athleteId:'runner2',name:'Second',score:85}]});
   assert.match(html,/aria-sort="ascending"/);
   assert.match(html,/Runner &lt;script&gt;/);
   assert.match(html,/href="#lop\/race%2Fone"/);
   assert.match(html,/Race &amp; field/);
+  assert.match(html,/<strong>75<\/strong>/);
+  assert.match(html,/class="points-result-time">40:59<\/strong>/);
   assert.equal((html.match(/class="points-best-row"/g)||[]).length,1);
   assert.ok(html.indexOf('Runner &lt;script&gt;')<html.indexOf('Second'));
   assert.match(renderPointsTable({rows:[row]},{sort:'desc'}),/aria-sort="descending"/);

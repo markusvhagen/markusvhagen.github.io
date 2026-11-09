@@ -1,3 +1,4 @@
+import {displayTime} from './display-format.js';
 const raceExtrasEscape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const raceWinnerControlRoots=new WeakSet();
 
@@ -21,7 +22,7 @@ function renderRaceWinnerBadge(winner,gender,distance,scope){
   if(winner?.applicable===false)return '';
   const label=gender==='men'?'menn':'kvinner',short=gender==='men'?'M':'K';
   const valid=winner?.verified===true&&raceWinnerTimeIsValid(winner.time);
-  const time=valid?winner.time:'—',name=valid&&typeof winner.name==='string'?winner.name.trim():'';
+  const time=valid?displayTime(winner.time,winner.measuredTime):'—',name=valid&&typeof winner.name==='string'?winner.name.trim():'';
   const basis=valid&&winner.timeBasis==='net'?'Nettotid':valid&&winner.timeBasis==='gun'?'Bruttotid':'';
   const explanation=valid?['Vinner '+label,distance,name,time,basis,scope].filter(Boolean).join(' · '):`Vinnertid for ${label} på ${distance} er ikke bekreftet`;
   const visibleName=valid?(name||'Navn ikke oppgitt'):'Ikke bekreftet';
@@ -35,7 +36,17 @@ export function renderRaceWinners(race,{instanceId,selectedDistance,clone=false}
   const current=distances.includes(selectedDistance)?selectedDistance:distances[0];
   const entries=Array.isArray(race?.winners)?race.winners:[];
   const raceName=typeof race?.name==='string'?race.name:'';
-  const selector=distances.length>1?`<label class="race-winner-select"><span class="sr-only">Distanse for vinnertider${raceName?' i '+raceExtrasEscape(raceName):''}</span><select data-winner-distance${clone?' disabled tabindex="-1"':''}>${distances.map(distance=>`<option value="${raceExtrasEscape(distance)}"${distance===current?' selected':''}>${raceExtrasEscape(distance)}</option>`).join('')}</select></label>`:`<span class="race-winner-distance">${raceExtrasEscape(current)}</span>`;
+  let selector = `<span class="race-winner-distance">${raceExtrasEscape(current)}</span>`;
+  if (distances.length > 1) {
+    const options = distances.map(distance =>
+      `<option value="${raceExtrasEscape(distance)}"${distance === current ? ' selected' : ''}>${raceExtrasEscape(distance)}</option>`
+    ).join('');
+    const context = raceName ? ` i ${raceExtrasEscape(raceName)}` : '';
+    selector = `<label class="race-winner-select">
+      <span class="race-winner-select-label">Vis vinnere for<span class="sr-only"> valgt øvelse${context}</span></span>
+      <select data-winner-distance${clone ? ' disabled tabindex="-1"' : ''}>${options}</select>
+    </label>`;
+  }
   const panels=distances.map(distance=>{
     const entry=entries.find(candidate=>candidate?.distance===distance);
     const scope=typeof entry?.scope==='string'&&entry.scope!=='overall-gender'?entry.scope:'';

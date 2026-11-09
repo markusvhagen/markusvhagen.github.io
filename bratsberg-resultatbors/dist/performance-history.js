@@ -46,7 +46,7 @@ export function collectManualPersonalBests(registryData){
   const entries=[],issues=[];
   if(!Array.isArray(athletes))return {entries,issues};
   for(const athlete of athletes){
-    if(!athlete||athlete.kind==='demo'||athlete.demo===true)continue;
+    if(!athlete)continue;
     if(athlete.personalBests===undefined)continue;
     const athleteId=typeof athlete.id==='string'?athlete.id.trim():'';
     if(!Array.isArray(athlete.personalBests)){
@@ -66,7 +66,6 @@ export function collectManualPersonalBests(registryData){
       if(pb.raceId!==undefined&&(typeof pb.raceId!=='string'||!pb.raceId.trim())){issue('invalid-personal-best-race-id');return;}
       if(!isFinishedResult(pb)){issue('invalid-personal-best-time-or-status');return;}
       if(!comparison.key){issue(comparison.reason);return;}
-      if(pb.demo===true){issue('demo');return;}
       const manual={athleteId,index,date:achievedDate,...(!achievedDate?{asOf:date}:{}),time:pb.time,type:pb.type,distance:pb.distance};
       for(const key of ['environment','courseId','eventName','source','sourceUrl','raceId']){
         if(typeof pb[key]==='string')manual[key]=pb[key];
@@ -101,8 +100,7 @@ export function derivePerformanceHistory(races,registryData=null){
     const history={eligible:false,basis:'recorded-history',hasManualBaseline:false,previousBest:null,previousBestSeconds:null,previousRaceIds:[],previousPersonalBests:[],isPersonalBest:false,isManualPersonalBest:false,confirmedPersonalBests:[],isBestRecorded:false,bestRecorded:null,improvementSeconds:null,reason:null};
     result.performanceHistory=history;
     const date=performanceDate(race,result),comparison=performanceKey(race,result);
-    if(race.demo===true||result.demo===true)history.reason='demo';
-    else if(!isFinishedResult(result))history.reason='not-finished';
+    if(!isFinishedResult(result))history.reason='not-finished';
     else if(!date)history.reason='invalid-race-date';
     else if(!comparison.key)history.reason=comparison.reason;
     else{

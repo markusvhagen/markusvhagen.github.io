@@ -1,0 +1,278 @@
+{
+  "id": "jessheim-vintermaraton-2026",
+  "name": "Jessheim Vintermaraton",
+  "date": "2026-11-08",
+  "location": "Jessheim",
+  "type": "road",
+  "distances": [
+    "10 km",
+    "Halvmaraton",
+    "Maraton"
+  ],
+  "sourceUrl": "https://live.eqtiming.com/79399#result",
+  "source": {
+    "provider": "EQ Timing",
+    "type": "official-results",
+    "displayNote": "Tidene følger EQs resultatliste. Elitepuljene bruker bruttotid, de øvrige individuell tid fra start til mål. Plasseringene gjelder kjønn på distansen."
+  },
+  "results": [
+    {
+      "athleteId": "martin-nesse",
+      "gender": "M",
+      "distance": "10 km",
+      "category": "M35-39",
+      "time": "33:03.8",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "3138",
+      "position": 25,
+      "positionScope": "overall",
+      "positionGender": 25,
+      "positionGenderVerified": true,
+      "positionClass": 2,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325491/male?count=3000&startAt=1",
+      "netTime": "33:03.8"
+    },
+    {
+      "athleteId": "kjetil-oygard",
+      "gender": "M",
+      "distance": "10 km",
+      "category": "M35-39",
+      "time": "34:13.2",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "4294",
+      "position": 53,
+      "positionScope": "overall",
+      "positionGender": 53,
+      "positionGenderVerified": true,
+      "positionClass": 9,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325491/male?count=3000&startAt=1",
+      "netTime": "34:13.2"
+    },
+    {
+      "athleteId": "rannei-saether",
+      "gender": "K",
+      "distance": "10 km",
+      "category": "K60-64",
+      "time": "44:28.7",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "3822",
+      "position": 516,
+      "positionScope": "overall",
+      "positionGender": 82,
+      "positionGenderVerified": true,
+      "positionClass": 1,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325491/female?count=3000&startAt=1",
+      "netTime": "44:28.7"
+    },
+    {
+      "athleteId": "henrik-kristensen",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M23-34",
+      "time": "1:07:00.3",
+      "timeBasis": "gun",
+      "status": "finished",
+      "sourceBib": "30",
+      "position": 2,
+      "positionScope": "overall",
+      "positionGender": 2,
+      "positionGenderVerified": true,
+      "positionClass": 1,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
+      "gunTime": "1:07:00.3"
+    },
+    {
+      "athleteId": "morten-schei",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M23-34",
+      "time": "1:12:59.0",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "528",
+      "position": 28,
+      "positionScope": "overall",
+      "positionGender": 28,
+      "positionGenderVerified": true,
+      "positionClass": 16,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
+      "netTime": "1:12:59.0"
+    },
+    {
+      "athleteId": "oystein-ingebrigtsen-haugen",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M40-44",
+      "time": "1:19:31.9",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "108",
+      "position": 135,
+      "positionScope": "overall",
+      "positionGender": 128,
+      "positionGenderVerified": true,
+      "positionClass": 12,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
+      "sourceName": "Øystein I Haugen",
+      "netTime": "1:19:31.9"
+    },
+    {
+      "athleteId": "markus-valas-hagen",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M23-34",
+      "time": "1:26:18.9",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "377",
+      "position": 338,
+      "positionScope": "overall",
+      "positionGender": 318,
+      "positionGenderVerified": true,
+      "positionClass": 160,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
+      "sourceName": "Markus Hagen",
+      "netTime": "1:26:18.9"
+    },
+    {
+      "athleteId": "david-krokli",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M23-34",
+      "time": "1:28:49.9",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "1421",
+      "position": 451,
+      "positionScope": "overall",
+      "positionGender": 413,
+      "positionGenderVerified": true,
+      "positionClass": 204,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
+      "netTime": "1:28:49.9"
+    },
+    {
+      "athleteId": "signe-by-eide",
+      "gender": "K",
+      "distance": "Halvmaraton",
+      "category": "K23-34",
+      "time": "1:19:17.1",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "1189",
+      "position": 127,
+      "positionScope": "overall",
+      "positionGender": 7,
+      "positionGenderVerified": true,
+      "positionClass": 4,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/female?count=3000&startAt=1",
+      "netTime": "1:19:17.1"
+    },
+    {
+      "athleteId": "henning-offigstad",
+      "gender": "M",
+      "distance": "Maraton",
+      "category": "M40-44",
+      "time": "2:29:07.2",
+      "timeBasis": "gun",
+      "status": "finished",
+      "sourceBib": "5013",
+      "position": 3,
+      "positionScope": "overall",
+      "positionGender": 3,
+      "positionGenderVerified": true,
+      "positionClass": 1,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325493/male?count=3000&startAt=1",
+      "sourceName": "Henning Halvorsen Offigstad",
+      "gunTime": "2:29:07.2"
+    },
+    {
+      "athleteId": "oivind-estensen",
+      "gender": "M",
+      "distance": "Maraton",
+      "category": "M35-39",
+      "time": "2:49:40.2",
+      "timeBasis": "net",
+      "status": "finished",
+      "sourceBib": "5191",
+      "position": 45,
+      "positionScope": "overall",
+      "positionGender": 43,
+      "positionGenderVerified": true,
+      "positionClass": 10,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325493/male?count=3000&startAt=1",
+      "netTime": "2:49:40.2"
+    }
+  ],
+  "winners": [
+    {
+      "distance": "10 km",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Jon Breivold",
+        "time": "30:07.1",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325491/male?count=3000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-09"
+      },
+      "women": {
+        "name": "Anzu Lovise Kvam",
+        "time": "34:20.5",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325491/female?count=3000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-09"
+      }
+    },
+    {
+      "distance": "Halvmaraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Elias Haugen Torjussen",
+        "time": "1:05:46.2",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-09"
+      },
+      "women": {
+        "name": "Astrid Brathaug Sørset",
+        "time": "1:16:29.9",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/female?count=3000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-09"
+      }
+    },
+    {
+      "distance": "Maraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Eivind Øygard",
+        "time": "2:24:34.6",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325493/male?count=3000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-09"
+      },
+      "women": {
+        "name": "Helene Støle Melsom Tungesvik",
+        "time": "2:46:00.9",
+        "timeBasis": "net",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325493/female?count=3000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-09"
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Sofie og Bratsberg på maraton-toppen",
+      "url": "https://www.bratsbergfriidrett.no/2026/11/08/sofie-pa-maraton-toppen/"
+    }
+  ]
+}

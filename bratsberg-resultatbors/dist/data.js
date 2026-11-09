@@ -1,3 +1,4 @@
+import {displayTime} from './display-format.js';
 import {findRecordCandidates} from './record-check.js';
 import {applyAthleteRegistry} from './athlete-registry.js';
 import {derivePerformanceHistory,isFinishedResult,collectManualPersonalBests} from './performance-history.js';
@@ -7,7 +8,26 @@ export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','
 export const dateParts = s => {const date = new Date(s+'T12:00:00');return {day:date.getDate(),month:new Intl.DateTimeFormat('nb-NO',{month:'short'}).format(date).replace('.',''),full:new Intl.DateTimeFormat('nb-NO',{day:'numeric',month:'long',year:'numeric'}).format(date)};};
 export const shortDate = s => new Intl.DateTimeFormat('nb-NO',{day:'numeric',month:'short'}).format(new Date(s+'T12:00:00'));
 export const initials = s => s.split(' ').map(x=>x[0]).slice(0,2).join('');
-export const badges = r => (r.clubRecord?`<span class="badge cr" title="${esc(r.clubRecordTime?'Bekreftet klubbrekord: '+r.clubRecordTime+(r.clubRecordTimeBasis==='gun'?' (bruttotid)':'')+'. Kortet viser '+(r.timeBasis==='net'?'nettotid.':'løpstiden.'):'Bekreftet klubbrekord')}"><span class="award-icon" aria-hidden="true">★</span> Klubbrekord</span>`:'')+(r.performanceHistory?.isPersonalBest?`<span class="badge pb" title="${r.performanceHistory.isManualPersonalBest?'Personlig rekord bekreftet i utøverregisteret for dette løpet':r.performanceHistory.hasManualBaseline?'Forbedring mot beste kjente tid, inkludert manuelt registrerte perser':'Forbedring mot tidligere registrerte løp; eldre perser kan mangle'}">PB</span>`:'');
+export function badges(result) {
+  let recordBadge = '';
+  if (result.clubRecord) {
+    let title = 'Bekreftet klubbrekord';
+    if (result.clubRecordTime) {
+      const sameBasis = result.clubRecordTimeBasis === result.timeBasis &&
+        result.clubRecordTime === result.time;
+      const time = displayTime(result.clubRecordTime, sameBasis ? result.measuredTime : undefined);
+      const basis = result.clubRecordTimeBasis === 'gun' ? ' (bruttotid)' : '';
+      title += ': ' + time + basis + '. Kortet viser ' + (result.timeBasis === 'net' ? 'nettotid.' : 'løpstiden.');
+    }
+    recordBadge = `<span class="badge cr" title="${esc(title)}"><span class="award-icon" aria-hidden="true">★</span> Klubbrekord</span>`;
+  }
+  const history = result.performanceHistory;
+  if (!history?.isPersonalBest) return recordBadge;
+  const title = history.isManualPersonalBest ? 'Personlig rekord bekreftet i utøverregisteret for dette løpet'
+    : history.hasManualBaseline ? 'Forbedring mot beste kjente tid, inkludert manuelt registrerte perser'
+    : 'Forbedring mot tidligere registrerte løp; eldre perser kan mangle';
+  return recordBadge + `<span class="badge pb" title="${esc(title)}">PB</span>`;
+}
 export const dateTile = s => {const d=dateParts(s);return `<span class="date-tile"><strong>${d.day}</strong><span>${esc(d.month)}</span></span>`;};
 export const participantCount = race => new Set(race.results.map((r,index)=>r.athleteId||'unresolved:'+index)).size;
 export const avatarStack = names => `<span class="avatar-stack" aria-hidden="true">${names.slice(0,3).map((n,i)=>`<span class="avatar avatar-${i}">${esc(initials(n))}</span>`).join('')}</span>`;

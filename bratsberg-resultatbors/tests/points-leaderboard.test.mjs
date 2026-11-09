@@ -48,7 +48,7 @@ test('ties retain the earliest achievement, then stable race ID; equal athletes 
   assert.deepEqual(selectPointsLeaderboard(input.toReversed()).rows.map(row=>[row.athleteId,row.raceId]),view.rows.map(row=>[row.athleteId,row.raceId]));
 });
 
-test('scoped counters distinguish missing ages while excluding demos, nonfinishers and unknown identities',()=>{
+test('scoped counters distinguish missing ages while excluding nonfinishers and unknown identities',()=>{
   const input=[race('valid','2026-06-01',[
     runner('ready',75),
     runner('no-age',null,{ageGrade:{eligible:false,reason:'missing-age'}}),
@@ -56,8 +56,8 @@ test('scoped counters distinguish missing ages while excluding demos, nonfinishe
     runner('trail',null,{ageGrade:{eligible:false,reason:'unsupported-discipline'}}),
     runner('invalid-score',Infinity),
     runner('dnf',99,{status:'DNF'}),runner('dns',99,{status:'DNS'}),
-    runner('bad-time',99,{time:'bad'}),runner('',99),runner('example',99,{demo:true})
-  ]),race('demo','2026-06-01',[runner('demorunner',100)],{demo:true})];
+    runner('bad-time',99,{time:'bad'}),runner('',99)
+  ])];
   const view=selectPointsLeaderboard(input);
   assert.deepEqual(view.rows.map(row=>row.athleteId),['ready']);
   assert.equal(view.eligibleResults,1);assert.equal(view.missingAgeResults,2);assert.equal(view.unsupportedResults,2);

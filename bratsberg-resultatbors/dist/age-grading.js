@@ -86,7 +86,6 @@ export function resolveRaceAge(race={},result={},athlete={}){
 
 /** Compute a display-only grade after profile resolution; source rows stay intact. */
 export function gradeRaceResult(race={},result={},athlete={}){
-  if(race.demo===true||result.demo===true||athlete?.kind==='demo')return failedGrade('demo');
   const time=performanceTime(result,race);
   if(!isFinishedResult({...result,time}))return failedGrade('not-finished');
   // Report unsupported events before missing age: no age can grade this trail.

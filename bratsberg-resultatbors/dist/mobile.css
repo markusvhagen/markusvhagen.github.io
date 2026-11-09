@@ -1,0 +1,272 @@
+/* Keep the native option menu, with a full-size control on WebKit as well. */
+:is(.race-winner-select, .archive-toolbar, .archive-filter-dialog, .points-filters) select {
+  -webkit-appearance: none;
+  appearance: none;
+  min-height: 2.75rem;
+  padding-inline-end: 2.125rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2337463b' stroke-width='2'%3E%3Cpath d='m3 6 5 5 5-5'/%3E%3C/svg%3E");
+  background-position: right .625rem center;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  :is(.race-winner-select, .archive-toolbar, .archive-filter-dialog, .points-filters) select {
+    appearance: auto;
+    background-image: none;
+  }
+}
+
+/* Shared reading layout for the home page, embedded widget and portal. */
+@media (max-width: 760px) {
+  body {
+    --muted: #596257;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .bf-athlete-grid,
+  .result-hero-grid,
+  .record-category .record-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .bf-athlete-grid {
+    min-height: 0;
+    grid-auto-rows: auto;
+  }
+
+  :is(.bf-athlete-grid, .result-hero-grid) .athlete-card {
+    grid-template-columns: clamp(4.5rem, 21vw, 6.75rem) minmax(0, 1fr);
+    min-height: 0;
+    padding: 0.625rem;
+    gap: 0.75rem;
+    text-align: start;
+  }
+
+  :is(.bf-athlete-grid, .result-hero-grid) .athlete-card-portrait {
+    min-height: 6.75rem;
+  }
+
+  :is(.bf-athlete-grid, .result-hero-grid) .athlete-card h4 {
+    min-height: 0;
+    font-size: 1.125rem;
+    font-weight: 650;
+    line-height: 1.3;
+  }
+
+  :is(.bf-athlete-grid, .result-hero-grid) .athlete-card-time {
+    margin: 0.375rem 0 0.5rem;
+    font-size: 2rem;
+    line-height: 1.05;
+  }
+
+  :is(.bf-athlete-grid, .result-hero-grid) .athlete-card :is(
+    .athlete-card-top, .athlete-card-position, .athlete-card-round,
+    .athlete-card-bottom, .athlete-card-category, .athlete-status-label, .badge,
+    .age-grade-row, .age-grade-edit, .age-grade-score, .age-grade-unavailable
+  ) {
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  .athlete-card-top {
+    gap: 0.25rem 0.5rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .athlete-card-bottom,
+  .athlete-card-badges {
+    gap: 0.375rem;
+  }
+
+  .athlete-card-badges:empty {
+    display: none;
+  }
+
+  .age-grade-edit {
+    min-height: 2.75rem;
+    padding: 0.375rem 0.5rem;
+  }
+
+  .age-grade-score strong {
+    font-size: 1.125rem;
+  }
+
+  .page-shell .section-heading,
+  .record-category-heading,
+  .race-distance-heading {
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 0.875rem;
+  }
+
+  .page-shell .section-heading .text-link,
+  .race-distance-heading > span,
+  .section-heading .small,
+  .page-shell .eyebrow,
+  .portal-shell .back-link,
+  .portal-tabs a,
+  .page-shell .muted.small,
+  .race-card-grid .race-meta,
+  .race-card-grid .race-athlete-count,
+  .race-header .badge,
+  .race-metadata-row time,
+  .race-source-note,
+  .race-card-grid .detail-footnote,
+  .archive-pagination > span,
+  .archive-pagination button,
+  .age-grade-guide-heading p,
+  .age-grade-formula strong,
+  .age-grade-formula span,
+  .age-grade-guide .age-grade-help,
+  .age-grade-dialog p,
+  .age-grade-dialog label,
+  .age-grade-dialog-actions button,
+  .age-grade-status {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .portal-tabs {
+    scrollbar-width: thin;
+  }
+
+  .portal-tabs::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+  }
+
+  .race-header .race-summary .race-title {
+    flex: 1 1 60%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .race-distance-heading > span {
+    color: #586250;
+  }
+
+  .age-grade-guide-heading h3 {
+    font-size: 1.125rem;
+  }
+
+  .archive-pagination {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .archive-pagination button,
+  .record-gender button,
+  .age-grade-dialog-actions button {
+    min-height: 2.75rem;
+  }
+
+  .stats-strip .stat {
+    display: block;
+    padding: 0.75rem;
+  }
+
+  .stats-strip .stat > span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .widget-caption {
+    display: grid;
+    gap: 0.375rem;
+    padding-block: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .widget-caption > span:first-child {
+    display: block;
+  }
+
+  .widget-caption > span:last-child {
+    max-width: none;
+    text-align: start;
+  }
+
+  .widget-caption .badge {
+    font-size: 1rem;
+    vertical-align: baseline;
+  }
+
+  .home-bottom .mini-event {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 0.25rem 0.75rem;
+  }
+
+  .mini-event .date-tile {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .mini-event .mini-event-members {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .mini-event > span[aria-hidden="true"] {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .date-tile {
+    width: 3.25rem;
+    height: auto;
+    min-height: 3.25rem;
+    padding-block: 0.25rem;
+  }
+
+  .date-tile > span,
+  .mini-event-name > span,
+  .mini-event-members,
+  .record-feature p,
+  .record-feature .feature-link,
+  .record-feature .eyebrow,
+  .records-heading .records-updated,
+  .record-category-heading > span,
+  .record-gender button,
+  .record-card .record-distance,
+  .record-card .record-age,
+  .official-record .record-owner,
+  .official-record .record-race,
+  .official-record .record-date,
+  .relay-record-link small,
+  .relay-record-time,
+  .calendar-source {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .mini-event-name strong {
+    font-size: 1.125rem;
+    overflow-wrap: anywhere;
+  }
+
+  .official-record {
+    min-height: 0;
+    gap: 0.375rem;
+  }
+
+  .official-record .record-owner {
+    min-height: 0;
+  }
+
+  .relay-record-link {
+    flex-wrap: wrap;
+  }
+
+  .relay-record-link > span:first-child {
+    flex-basis: 60%;
+    min-width: 0;
+  }
+}

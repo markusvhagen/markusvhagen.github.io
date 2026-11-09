@@ -123,3 +123,17 @@ test('ordinary age-class wins and unverified or heat class placings cannot creat
   assert.match(escaped,/Nr\. 1 U20 &lt;test&gt;/);
   assert.doesNotMatch(escaped,/<test>/);
 });
+
+test('cards truncate both decimal notations and keep record times in their own timing basis',()=>{
+  const render = (time, extra={}) => renderAthleteCard({...runner,time,...extra});
+  assert.match(render('1:26:18.9'), /athlete-card-time">1:26:18<\/p>/);
+  assert.match(render('10:42,58'), /athlete-card-time">10:42<\/p>/);
+  const measured = {measuredTime:'2:27:12.259',timeBasis:'gun',clubRecord:true,clubRecordTime:'2:27:13',clubRecordTimeBasis:'gun'};
+  const card = render('2:27:13',measured);
+  assert.match(card,/athlete-card-time">2:27:12<\/p>/);
+  assert.match(card,/Bekreftet klubbrekord: 2:27:12 \(bruttotid\)/);
+  const different = render('28:44',{...measured,timeBasis:'net',measuredTime:'28:44.390',clubRecordTime:'28:49'});
+  assert.match(different,/athlete-card-time">28:44<\/p>/);
+  assert.match(different,/Bekreftet klubbrekord: 28:49 \(bruttotid\)/);
+  assert.match(render('31:31',{measuredTime:'DNF'}),/athlete-card-time">31:31<\/p>/);
+});

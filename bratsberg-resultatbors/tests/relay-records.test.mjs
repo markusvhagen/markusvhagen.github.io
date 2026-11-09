@@ -25,7 +25,7 @@ const data={portraits:{},relays:[
     {gender:'K',year:2026,time:'3:00',legs:[leg]},
     {gender:'M',year:2026,time:'2:50',legs:[{...leg,name:'Mannlig løper',time:'2:50'}]},
   ]},
-  {id:'unregistered',name:'Uregistrert stafett',records:[],history:[{time:'2:00'}],demoTeam:{demo:true,legs:[leg]}},
+  {id:'unregistered',name:'Uregistrert stafett',records:[],history:[{time:'2:00'}]},
 ]};
 
 test('an explicit gender link overrides the prior relay selection',()=>{
@@ -54,6 +54,7 @@ test('source pace is retained instead of deriving a different rounded pace',()=>
   assert.match(root.lineup.innerHTML,/<strong>2:59<\/strong>/);
   assert.equal(relayPace('3:00',1000),'3:00');
   assert.equal(relayPace('1:29,5',500),'2:59');
+  assert.equal(relayPace('1:29,9',500),'2:59');
   for(const [time,metres] of [['DNF',1000],['3:60',1000],['0:00',1000],['3:00',0],['3:00',null],['3:00',Infinity]]){
     assert.equal(relayPace(time,metres),'–');
   }

@@ -2,21 +2,21 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {selectWidgetHighlights,selectWidgetRaces,createWidgetSlots,renderWidgetPlaceholder} from '../dist/widget.js';
 
-test('only actual races appear, ordered newest first without mutating the archive',()=>{
+test('races appear newest first without requiring extra flags or mutating the archive',()=>{
   const races=[
-    {id:'example-old',demo:true,date:'2026-09-07'},
-    {id:'actual-old',demo:false,date:'2026-09-06'},
-    {id:'example-new',demo:true,date:'2026-10-20'},
-    {id:'actual-new',demo:false,date:'2026-10-01'}
+    {id:'september-later',date:'2026-09-07'},
+    {id:'september-earlier',date:'2026-09-06'},
+    {id:'october-later',date:'2026-10-20'},
+    {id:'october-earlier',date:'2026-10-01'}
   ];
   const original=structuredClone(races);
-  assert.deepEqual(selectWidgetRaces(races).map(r=>r.id),['actual-new','actual-old']);
+  assert.deepEqual(selectWidgetRaces(races).map(r=>r.id),['october-later','october-earlier','september-later','september-earlier']);
   assert.deepEqual(races,original);
-  assert.equal(selectWidgetRaces(Array.from({length:12},(_,i)=>({id:i,demo:false,date:'2026-10-01'}))).length,10);
+  assert.equal(selectWidgetRaces(Array.from({length:12},(_,i)=>({id:i,date:'2026-10-01'}))).length,10);
 });
 
 test('the ribbon has ten slots but placeholders never add records to the archive',()=>{
-  const races=[{id:'one',demo:false,date:'2026-01-01'},{id:'two',demo:false,date:'2026-02-01'}];
+  const races=[{id:'one',date:'2026-01-01'},{id:'two',date:'2026-02-01'}];
   const original=structuredClone(races),slots=createWidgetSlots(races);
   assert.equal(slots.length,10);
   assert.deepEqual(slots.slice(0,2).map(race=>race.id),['two','one']);
@@ -24,7 +24,7 @@ test('the ribbon has ten slots but placeholders never add records to the archive
   assert.deepEqual(races,original);
   assert.deepEqual(createWidgetSlots([]),Array(10).fill(null));
   assert.deepEqual(createWidgetSlots(undefined),Array(10).fill(null));
-  const full=createWidgetSlots(Array.from({length:12},(_,i)=>({id:i,demo:false,date:`2026-10-${String(i+1).padStart(2,'0')}`})));
+  const full=createWidgetSlots(Array.from({length:12},(_,i)=>({id:i,date:`2026-10-${String(i+1).padStart(2,'0')}`})));
   assert.deepEqual(full.map(r=>r.id),[11,10,9,8,7,6,5,4,3,2]);
 });
 
@@ -34,7 +34,7 @@ test('placeholder cards have no navigation, fabricated dates, or athlete results
   assert.doesNotMatch(html,/<a\b|<button\b|tabindex|href=|datetime=|athlete-card/);
 });
 
-test('awards determine all six highlights even when an old featured list disagrees',()=>{
+test('awards determine all six highlights in record, gold, silver and bronze order',()=>{
   const result=(id,time,rank,extra={})=>({athleteId:id,time,gender:'K',positionGender:rank,positionGenderVerified:true,...extra});
   const results=[
     result('ordinary','15:00',8),
@@ -46,7 +46,7 @@ test('awards determine all six highlights even when an old featured list disagre
     result('other-slower','22:00',9)
   ];
   const original=structuredClone(results);
-  const selected=selectWidgetHighlights({results,featuredAthleteIds:['ordinary','other-slower','bronze']});
+  const selected=selectWidgetHighlights({results});
   assert.deepEqual(selected.map(r=>r.athleteId),['record','gold-faster','gold-slower','silver','bronze','ordinary']);
   assert.deepEqual(results,original);
 });
@@ -88,7 +88,7 @@ test('non-finishers and malformed times never become highlights, even with award
     {athleteId:'finished',time:'32:11',status:'finished'},
     {athleteId:'legacy',time:'32:12'}
   ];
-  assert.deepEqual(selectWidgetHighlights({results,featuredAthleteIds:['dns','dnf','invalid','finished']}).map(r=>r.athleteId),['finished','legacy']);
+  assert.deepEqual(selectWidgetHighlights({results}).map(r=>r.athleteId),['finished','legacy']);
 });
 
 test('six distinct athletes are selected; each keeps their highest-priority performance',()=>{

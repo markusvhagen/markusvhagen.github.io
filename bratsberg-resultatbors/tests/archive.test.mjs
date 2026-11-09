@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {selectArchivePage} from '../dist/archive.js';
 
-const races=Array.from({length:25},(_,i)=>({id:'race-'+i,name:'Løp '+i,date:'2026-01-'+String(i+1).padStart(2,'0'),location:'Trondheim',demo:false,
+const races=Array.from({length:25},(_,i)=>({id:'race-'+i,name:'Løp '+i,date:'2026-01-'+String(i+1).padStart(2,'0'),location:'Trondheim',
   results:[{name:'Løper '+i,sourceName:i===0?'Unikt kildenavn':'',gender:i%2?'K':'M',distance:'10 km',time:'40:00',status:'finished'}]}));
 
 test('archive shows ten newest races and keeps every older race reachable without mutating input',()=>{
@@ -29,8 +29,8 @@ test('a deep-linked race selects its correct page and page requests clamp safely
   assert.equal(empty.page,1);assert.equal(empty.total,0);assert.deepEqual(empty.items,[]);
 });
 
-test('demo races stay excluded and combined filters count only matching entries',()=>{
-  const input=[...races,{...races[0],id:'example',demo:true,date:'2027-01-01'}];
+test('combined filters count only entries matching distance, status, year and gender',()=>{
+  const input=[...races,{...races[0],id:'next-year',date:'2027-01-01'}];
   const result=selectArchivePage(input,{distance:'10 km',status:'finished',year:'2026',gender:'M'});
   assert.equal(result.total,13);assert.equal(result.resultCount,13);
   assert.equal(selectArchivePage(input,{onlyRecords:true}).total,0);

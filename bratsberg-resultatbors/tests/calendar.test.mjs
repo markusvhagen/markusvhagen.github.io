@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {applyAthleteRegistry} from '../dist/athlete-registry.js';
-import {renderCalendarParticipant,renderParticipantPreview} from '../dist/calendar.js';
+import {renderCalendarParticipant,renderParticipantPreview,selectUpcomingEvents} from '../dist/calendar.js';
 
 test('calendar and collapsed preview use the shared resolved profile and crop',()=>{
   const data=applyAthleteRegistry({
@@ -50,4 +50,17 @@ test('previews are bounded, decorative and empty-safe',()=>{
   assert.equal(renderParticipantPreview(undefined),'');
   assert.equal(renderParticipantPreview(people,{}, {limit:0}),'');
   assert.equal((renderParticipantPreview(people,{}, {limit:100}).match(/class="participant-preview-photo"/g)||[]).length,6);
+});
+
+
+test('calendar keeps race day through Oslo midnight in both winter and summer', () => {
+  const next = {date: '2026-12-06'};
+  const jessheim = {date: '2026-11-08'};
+  const entries = [next, jessheim];
+  assert.deepEqual(selectUpcomingEvents(entries, new Date('2026-11-08T22:59:59Z')), [jessheim, next]);
+  assert.deepEqual(selectUpcomingEvents(entries, new Date('2026-11-08T23:00:00Z')), [next]);
+  const summer = [{date: '2026-06-07'}];
+  assert.deepEqual(selectUpcomingEvents(summer, new Date('2026-06-07T21:59:59Z')), summer);
+  assert.deepEqual(selectUpcomingEvents(summer, new Date('2026-06-07T22:00:00Z')), []);
+  assert.deepEqual(entries, [next, jessheim]);
 });
