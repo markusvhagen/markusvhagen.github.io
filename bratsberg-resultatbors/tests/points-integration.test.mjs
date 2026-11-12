@@ -4,6 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {prepareResultsData} from '../dist/data.js';
 import {selectPointsLeaderboard} from '../dist/points-leaderboard.js';
 import {gradeRaceResult} from '../dist/age-grading.js';
+import {gradeWaResult} from '../dist/wa-scoring.js';
 
 const root=new URL('../dist/',import.meta.url);
 const json=async path=>JSON.parse(await readFile(new URL(path,root),'utf8'));
@@ -18,23 +19,18 @@ const profilesById=new Map(profiles.map(profile=>[profile.id,profile]));
 
 test('expanded club archive yields one best per athlete and accounts for every completed result',()=>{
   const view=selectPointsLeaderboard(data.races);
-  const scored=data.races.flatMap(race=>race.results.filter(result=>result.ageGrade.eligible));
-  const supportedRoadDistances=new Set(['5 km','10 km','Halvmaraton','Maraton']);
-  const roadResults=data.races.filter(race=>race.type==='road')
-    .flatMap(race=>race.results.filter(result=>supportedRoadDistances.has(result.distance)));
-  const missingAges=roadResults.filter(result=>{
-    const profile=profilesById.get(result.athleteId);
-    return result.age==null && result.birthDate==null && profile.birthDate==null && profile.birthYear==null;
-  });
+  const scored=data.races.flatMap(race=>race.results.filter(result=>result.waScore.eligible));
+  for(const result of scored)assert.equal(result.waScore.gender,result.gender,result.name);
+  const missingAges=scored.filter(result=>result.ageGrade.reason==='missing-age');
   assert.equal(view.missingAgeResults,missingAges.length);
-  assert.equal(view.unsupportedResults,data.races.flatMap(race=>race.results).length-roadResults.length);
+  assert.equal(view.unsupportedResults,data.races.flatMap(race=>race.results).length-scored.length);
   assert.equal(view.eligibleResults,scored.length);
   assert.equal(view.athleteCount,new Set(scored.map(result=>result.athleteId)).size);
   assert.equal(view.rows.length,new Set(scored.map(result=>result.athleteId)).size);
   assert.equal(new Set(view.rows.map(row=>row.athleteId)).size,view.rows.length);
-  assert.equal(view.eligibleResults+view.missingAgeResults+view.unsupportedResults,data.races.reduce((sum,race)=>sum+race.results.length,0));
+  assert.equal(view.eligibleResults+view.unsupportedResults,data.races.reduce((sum,race)=>sum+race.results.length,0));
   for(const row of view.rows){
-    const best=Math.max(...scored.filter(result=>result.athleteId===row.athleteId).map(result=>result.ageGrade.score));
+    const best=Math.max(...scored.filter(result=>result.athleteId===row.athleteId).map(result=>result.waScore.score));
     assert.equal(row.score,best,row.name);
     assert.equal(row.name,profilesById.get(row.athleteId).name);
     if(row.ageBasis==='birth-year'){
@@ -50,17 +46,15 @@ test('expanded club archive yields one best per athlete and accounts for every c
   assert.equal(JSON.stringify(raw),original);
 });
 
-test('scores sort in either direction and verified historical performances reproduce their known scores',()=>{
-  const ascending=selectPointsLeaderboard(data.races),descending=selectPointsLeaderboard(data.races,{sort:'desc'});
-  for(let i=1;i<ascending.rows.length;i++)assert.ok(ascending.rows[i-1].score<=ascending.rows[i].score);
+test('WA scores sort descending and verified historical performances retain their secondary age scores',()=>{
+  const descending=selectPointsLeaderboard(data.races);
   for(let i=1;i<descending.rows.length;i++)assert.ok(descending.rows[i-1].score>=descending.rows[i].score);
-  assert.equal(ascending.rows.at(-1).score,descending.rows[0].score);
-  assert.deepEqual(new Set(ascending.rows.map(row=>row.athleteId)),new Set(descending.rows.map(row=>row.athleteId)));
+  assert.deepEqual(selectPointsLeaderboard(data.races,{sort:'asc',metric:'age'}),descending);
 
   const examples=[
-    {raceId:'valencia-10k-2026',athleteId:'tommy-bangjord-hove',distance:'10 km',time:'28:44',date:'2026-01-11',age:34,score:92.4013921113689},
-    {raceId:'kobenhavn-5k-2026',athleteId:'petter-vea-monseth',distance:'5 km',time:'14:20',date:'2026-09-19',age:16,score:90.69767441860465},
-    {raceId:'hytteplanmila-2026',athleteId:'sofie-karoline-haugen',distance:'10 km',time:'31:31',date:'2026-10-17'}
+    {raceId:'valencia-10k-2026',athleteId:'tommy-bangjord-hove',distance:'10 km',time:'28:44',date:'2026-01-11',age:34,score:1065,ageScore:92.4013921113689},
+    {raceId:'kobenhavn-5k-2026',athleteId:'petter-vea-monseth',distance:'5 km',time:'14:20',date:'2026-09-19',age:16,score:934,ageScore:90.69767441860465},
+    {raceId:'hytteplanmila-2026',athleteId:'sofie-karoline-haugen',distance:'10 km',time:'31:31',date:'2026-10-17',score:1165}
   ];
   for(const example of examples){
     const race=data.races.find(r=>r.id===example.raceId);
@@ -68,21 +62,22 @@ test('scores sort in either direction and verified historical performances repro
     assert.ok(row,example.athleteId);
     for(const field of ['distance','time','date'])assert.equal(row[field],example[field]);
     if(example.age!==undefined)assert.equal(row.age,example.age);
-    if(example.score!==undefined)assert.ok(Math.abs(row.score-example.score)<1e-10);
+    assert.equal(row.score,example.score);
+    if(example.ageScore!==undefined)assert.ok(Math.abs(row.ageScore-example.ageScore)<1e-10);
   }
 });
 
 test('gender, distance and year filters choose each best inside the selected performances',()=>{
   const allResults=data.races.flatMap(race=>race.results);
   for(const gender of ['K','M']){
-    const matching=allResults.filter(result=>result.gender===gender && result.ageGrade.eligible);
+    const matching=allResults.filter(result=>result.gender===gender && result.waScore.eligible);
     const view=selectPointsLeaderboard(data.races,{gender});
     assert.equal(view.eligibleResults,matching.length);
     assert.deepEqual(new Set(view.rows.map(row=>row.athleteId)),new Set(matching.map(result=>result.athleteId)));
     assert.ok(view.rows.every(row=>row.gender===gender));
   }
   for(const distance of ['5 km','Maraton']){
-    const matching=allResults.filter(result=>result.distance===distance && result.ageGrade.eligible);
+    const matching=allResults.filter(result=>result.distance===distance && result.waScore.eligible);
     const view=selectPointsLeaderboard(data.races,{distance});
     assert.equal(view.eligibleResults,matching.length);
     assert.deepEqual(new Set(view.rows.map(row=>row.athleteId)),new Set(matching.map(result=>result.athleteId)));
@@ -150,11 +145,25 @@ test('points rankings retain age at the performance even when viewed ten years l
       {athleteId:'historical-runner',name:'Historical runner',gender:'M',distance:'10 km',time:'40:00',status:'finished'}
     ]}));
     // This is the same local-birth-year path used by racesWithLocalAges().
-    const local=races.map(race=>({...race,results:race.results.map(result=>({...result,ageGrade:gradeRaceResult(race,{...result,age:null,birthDate:null,birthYear:1980},{birthDate:null,birthYear:1980})}))}));
+    const local=races.map(race=>({...race,results:race.results.map(result=>({...result,waScore:gradeWaResult(race,result),ageGrade:gradeRaceResult(race,{...result,age:null,birthDate:null,birthYear:1980},{birthDate:null,birthYear:1980})}))}));
     assert.equal(local[0].results[0].ageGrade.age,45);
     assert.equal(local[1].results[0].ageGrade.age,46);
     assert.equal(selectPointsLeaderboard(local,{year:'2025'}).rows[0].age,45);
     assert.equal(selectPointsLeaderboard(local,{year:'2026'}).rows[0].age,46);
     assert.notEqual(local[0].results[0].ageGrade.score,local[1].results[0].ageGrade.score);
   }finally{globalThis.Date=RealDate;}
+});
+
+
+test('the same marathon time uses separate women and men WA tables through the full registry pipeline',()=>{
+  const malaga=data.races.find(race=>race.id==='malaga-maraton-2026');
+  assert.ok(malaga);
+  const sofie=malaga.results.find(result=>result.athleteId==='sofie-karoline-haugen');
+  const ulrik=malaga.results.find(result=>result.athleteId==='ulrik-hovig');
+  assert.equal(sofie.time,ulrik.time);
+  assert.equal(sofie.waScore.gender,'K');assert.equal(ulrik.waScore.gender,'M');
+  assert.equal(sofie.waScore.score,1143);assert.equal(ulrik.waScore.score,840);
+  const rows=selectPointsLeaderboard([malaga]).rows;
+  assert.equal(rows[0].athleteId,sofie.athleteId);
+  assert.equal(rows[1].athleteId,ulrik.athleteId);
 });

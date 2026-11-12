@@ -118,10 +118,10 @@
   .race-card-grid .detail-footnote,
   .archive-pagination > span,
   .archive-pagination button,
-  .age-grade-guide-heading p,
+  .score-guide-heading p,
   .age-grade-formula strong,
   .age-grade-formula span,
-  .age-grade-guide .age-grade-help,
+  .score-guide .score-guide-help,
   .age-grade-dialog p,
   .age-grade-dialog label,
   .age-grade-dialog-actions button,
@@ -149,7 +149,7 @@
     color: #586250;
   }
 
-  .age-grade-guide-heading h3 {
+  .score-guide-heading h3 {
     font-size: 1.125rem;
   }
 

@@ -15,29 +15,32 @@
     <p class="archive-result-count" id="result-count" role="status"></p>
     <div id="archive-toolbar" class="archive-toolbar" role="group" aria-label="Filtrer løpsresultater">
       <label class="archive-quick-select"><span class="sr-only">Kjønn</span><select id="result-gender"><option value="">Alle kjønn</option><option value="K">Kvinner</option><option value="M">Menn</option></select></label>
-      <label class="archive-quick-select archive-quick-sort"><span class="sr-only">Sorter resultater innen hver distanse</span><select id="archive-quick-sort"><option value="time">Raskeste tid først</option><option value="age-grade">Høyeste poeng først</option></select></label>
-      <button id="archive-filter-toggle" type="button" aria-haspopup="dialog" aria-controls="archive-filter-dialog">Filtre og sortering<span id="archive-filter-count" hidden></span></button>
+      <button id="archive-filter-toggle" type="button" aria-haspopup="dialog" aria-controls="archive-filter-dialog">Filtre<span id="archive-filter-count" hidden></span></button>
     </div>
     <dialog id="archive-filter-dialog" class="archive-filter-dialog" aria-labelledby="archive-filter-title">
       <form id="archive-filter-form">
-        <h2 id="archive-filter-title" tabindex="-1" autofocus>Filtre og sortering</h2>
+        <h2 id="archive-filter-title" tabindex="-1" autofocus>Filtre</h2>
         <label class="archive-filter-field archive-filter-wide">Søk etter løp eller løper<input id="search" name="query" type="search" autocomplete="off"></label>
         <label class="archive-filter-field">Kjønn<select name="gender"><option value="">Alle kjønn</option><option value="K">Kvinner</option><option value="M">Menn</option></select></label>
         <label class="archive-filter-field">Distanse<select id="distance" name="distance"><option value="">Alle distanser</option></select></label>
         <label class="archive-filter-field">År<select id="year" name="year"><option value="">Alle år</option></select></label>
-        <label class="archive-filter-field">Sortering<select id="result-sort" name="sort"><option value="time">Raskeste tid først</option><option value="age-grade">Høyeste poeng først</option></select></label>
         <label class="archive-records-only archive-filter-wide"><input type="checkbox" name="onlyRecords" id="only-pb">Kun PB / rekord</label>
         <div class="archive-filter-actions archive-filter-wide">
           <button type="reset">Nullstill valg</button><button type="button" id="cancel-archive-filter">Avbryt</button><button type="submit">Vis resultater</button>
         </div>
       </form>
     </dialog>
-    <details class="age-grade-guide age-grade-guide-compact"><summary id="age-grade-help-title"><span>Om aldersjusterte poeng</span><strong>100 poeng ≈ verdensrekordnivå</strong><span class="age-guide-chevron" aria-hidden="true">⌄</span></summary><div class="age-grade-help"><p>Poengene justerer for alder og kjønn. Høyere poeng er bedre. 100 poeng tilsvarer omtrent verdensrekordnivå for din alder og ditt kjønn på distansen.</p><p>Referansetidene bygger på verdensbeste prestasjoner og er bearbeidet til tabeller for alder, kjønn og distanse. De er ikke nødvendigvis identiske med dagens offisielle rekorder. Poengene beregnes som referansetid ÷ løpstid × 100. Løper du raskere enn referansetiden, får du over 100 poeng. Vi bruker de samme tabellene som <a href="https://markusvhagen.github.io/kjapp/" target="_blank" rel="noopener noreferrer">Kjapp-kalkulatoren ↗</a>. Velg «Høyeste poeng først» i sorteringsmenyen for å sammenligne resultatene innen hver distanse. Resultater uten poeng vises sist.</p><p>Fødselsår lagres på utøveren i fellesregisteret og brukes automatisk i alle løp. Med bare fødselsår bruker vi alderen utøveren fyller i løpsåret. Der fødselsdato eller eksakt løpsalder er oppgitt, brukes alder på løpsdagen. Aldersklasse alene gir ikke poeng.</p><p>Tabellen dekker 5 km, 10 km, halvmaraton og maraton på gate, for alder 5–100 år; terreng får ingen beregning. Om alderen din ikke ligger inne i systemet, kan du skrive den inn manuelt.</p></div></details>
-    <p id="age-grade-status" class="age-grade-status" role="status" hidden></p>
+    <details class="score-guide score-guide-compact"><summary id="wa-score-help-title"><span>Om WA-poeng</span><strong>Høyere poeng er bedre</strong><span class="score-guide-chevron" aria-hidden="true">⌄</span></summary><div class="score-guide-help"><p>WA-poeng vurderer tiden ut fra øvelse og kjønn med World Athletics sine poengtabeller. Kvinner og menn har egne tabeller. Alder inngår ikke i beregningen.</p><p>Vi bruker 2025-tabellene og viser hele poeng. Poengene beregnes fra resultatets registrerte tidsgrunnlag, før tiden forkortes for visning. Det legges ikke til bonus for plassering. Dette er en beregnet poengverdi, ikke en offisiell verdensranking.</p><p>Resultatene er sortert etter raskeste tid innen hver distanse. «—» betyr at resultatet ikke kan beregnes med tabellene vi støtter. <a href="https://worldathletics.org/about-iaaf/documents/technical-information" target="_blank" rel="noopener noreferrer">World Athletics-tabellene ↗</a></p></div></details>
     <div id="race-list" class="race-list"><p class="loading">Henter løpsresultater …</p></div>
     <nav id="archive-pagination" class="archive-pagination" aria-label="Bla i løpsarkivet" hidden></nav>
   </section>
-  <section id="points-panel" class="portal-panel" hidden aria-label="Poengnoteringer"><div id="points-root"></div></section>
+  <section id="points-panel" class="portal-panel" hidden aria-label="Poengnoteringer">
+    <p id="age-grade-status" class="age-grade-status" role="status" hidden></p>
+    <div id="points-root"></div>
+  <dialog id="age-grade-dialog" class="age-grade-dialog" aria-labelledby="age-grade-title" aria-describedby="age-grade-context">
+    <form id="age-grade-form"><h2 id="age-grade-title">Alder til aldersjusterte poeng</h2><p id="age-grade-person" class="age-grade-person"></p><p id="age-grade-context"></p><label for="birth-year-input">Fødselsår</label><input id="birth-year-input" name="birthYear" type="number" step="1" inputmode="numeric" required autocomplete="off"><p>Fødselsåret lagres bare i denne nettleseren. Aldersjusteringen bruker løpsåret og utøverens kjønn. Du kan tilbakestille til utøverregisteret.</p><div class="age-grade-dialog-actions"><button type="submit" class="solid-button">Lagre fødselsår</button><button type="button" id="reset-birth-year">Tilbakestill</button><button type="button" id="cancel-birth-year">Avbryt</button></div></form>
+  </dialog>
+  </section>
   <section id="records-panel" class="portal-panel" hidden aria-labelledby="records-title">
     <div class="section-heading records-heading"><div><h2 id="records-title">Klubbrekorder</h2><p id="records-updated" class="records-updated"></p></div><div class="segmented record-gender" aria-label="Velg rekordklasse"><button data-gender="K" class="active" aria-pressed="true">Kvinner</button><button data-gender="M" aria-pressed="false">Menn</button></div></div>
     <div id="record-candidates" class="record-candidates" hidden></div>
@@ -46,7 +49,4 @@
   </section>
   <section id="relays-panel" class="portal-panel" hidden aria-label="Stafettrekorder"><div id="relay-root"></div></section>
   <section id="calendar-panel" class="portal-panel" hidden aria-labelledby="calendar-title"><div class="section-heading"><h2 id="calendar-title">Terminliste</h2></div><div id="calendar-list" class="calendar-list"></div></section>
-  <dialog id="age-grade-dialog" class="age-grade-dialog" aria-labelledby="age-grade-title" aria-describedby="age-grade-context">
-    <form id="age-grade-form"><h2 id="age-grade-title">Alder til poengberegning</h2><p id="age-grade-person" class="age-grade-person"></p><p id="age-grade-context"></p><label for="birth-year-input">Fødselsår</label><input id="birth-year-input" name="birthYear" type="number" step="1" inputmode="numeric" required autocomplete="off"><p>Lagres bare i denne nettleseren og brukes på utøverens resultater i alle løp. Du kan tilbakestille til utøverregisteret.</p><div class="age-grade-dialog-actions"><button type="submit" class="solid-button">Lagre fødselsår</button><button type="button" id="reset-birth-year">Tilbakestill</button><button type="button" id="cancel-birth-year">Avbryt</button></div></form>
-  </dialog>
 </main></body></html>

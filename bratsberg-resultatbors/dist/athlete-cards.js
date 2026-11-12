@@ -2,7 +2,6 @@ import {displayTime} from './display-format.js';
 import {esc,initials,badges} from './data.js';
 import {parsePerformanceTime} from './record-check.js';
 import {renderPortraitImage,installPortraitErrors} from './portrait.js';
-import {renderAgeGrade} from './age-grade-ui.js';
 
 export function resultStatus(result){
   const status=String(result.status||'').toUpperCase();
@@ -50,7 +49,27 @@ export function renderAwardIcon(kind='medal'){
   return `<svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${path}</svg>`;
 }
 
-export function renderAthleteCard(result,portraits={}, {compact=false,showAgeGrade=false}={}) {
+/** WA result points use the event's gender table and never an age adjustment. */
+function renderWaScore(result){
+  const grade=result.waScore;
+  const sourceGender=result.gender??result.category?.[0];
+  const gender=sourceGender==='male'?'M':sourceGender==='female'?'K':sourceGender;
+  const matchesGender=['M','K'].includes(gender)&&grade?.gender===gender;
+  const available=grade?.eligible===true&&matchesGender&&Number.isInteger(grade.score)&&grade.score>0;
+  const genderLabel=gender==='K'?'kvinner':'menn';
+  const notes={
+    'unsupported-discipline':'WA-poeng er ikke tilgjengelige for denne typen løp.',
+    'unsupported-environment':'Denne baneøvelsen støttes ikke av de innlagte WA-tabellene.',
+    'unsupported-distance':'Øvelsen finnes ikke i de innlagte WA-tabellene.',
+    'unsupported-gender':'Kjønn må være kjent for å velge riktig WA-tabell.',
+    'above-table-range':'Tiden ligger utenfor poengområdet i den publiserte WA-tabellen.',
+    'below-table-range':'Tiden ligger utenfor poengområdet i den publiserte WA-tabellen.'
+  };
+  const note=available?`World Athletics-poeng fra tabellen for ${genderLabel} på denne øvelsen. Alder påvirker ikke poengene.`:grade?.eligible&&!matchesGender?notes['unsupported-gender']:notes[grade?.reason]||'WA-poeng er ikke beregnet for dette resultatet.';
+  return `<div class="athlete-wa-score${available?'':' is-unavailable'}" title="${esc(note)}"><span>WA-poeng</span><strong>${available?grade.score:'—'}</strong></div>`;
+}
+
+export function renderAthleteCard(result,portraits={}, {compact=false,showWaScore=false}={}) {
   const photo=portraits[result.athleteId],status=resultStatus(result),finished=status==='finished';
   const statusLabel=status==='DNS'?'Ikke startet':status==='DNF'?'Brutt':status==='DSQ'?'Diskvalifisert':'Tid mangler';
   const gender=result.gender||result.category?.[0],position=finished?awardPosition(result):null;
@@ -64,7 +83,7 @@ export function renderAthleteCard(result,portraits={}, {compact=false,showAgeGra
   const roundMarkup=athleteResultContext(result);
   const medalLabel={gold:'Gull',silver:'Sølv',bronze:'Bronse'}[medal];
   const rankMarkup=position!==null?`<span class="athlete-card-position${medal?' award-medal medal-'+medal:''}" title="${esc(placementTitle)}">${medal?renderAwardIcon()+`<span class="sr-only">${medalLabel}: </span>`:''}Nr. ${position} ${esc(placementLabel)}</span>`:'';
-  return `<article data-athlete-id="${esc(result.athleteId||'')}" class="athlete-card${compact?' compact':''}${!finished?' is-unfinished':result.clubRecord?' is-record':isPersonalBest?' is-pb':''}${medal?' podium-'+medal:''}"><div class="athlete-card-portrait" aria-hidden="true"><span>${esc(initials(result.name))}</span>${renderPortraitImage(photo,{width:96,height:120})}</div><div class="athlete-card-content"><div class="athlete-card-top"><span class="athlete-card-distance">${esc(result.distance)}</span>${rankMarkup}</div>${roundMarkup}<h4>${esc(result.name)}</h4><p class="athlete-card-time${finished?'':' athlete-card-status'}">${finished?esc(displayTime(result.time,result.measuredTime)):status==='unknown'?'—':status}</p><div class="athlete-card-bottom"><span class="athlete-card-badges">${finished?badges(result):`<span class="athlete-status-label">${statusLabel}</span>`}</span>${category?`<span class="athlete-card-category" title="Aldersklasse">${esc(category)}</span>`:''}</div>${showAgeGrade&&finished?renderAgeGrade(result):''}</div></article>`;
+  return `<article data-athlete-id="${esc(result.athleteId||'')}" class="athlete-card${compact?' compact':''}${!finished?' is-unfinished':result.clubRecord?' is-record':isPersonalBest?' is-pb':''}${medal?' podium-'+medal:''}"><div class="athlete-card-portrait" aria-hidden="true"><span>${esc(initials(result.name))}</span>${renderPortraitImage(photo,{width:96,height:120})}</div><div class="athlete-card-content"><div class="athlete-card-top"><span class="athlete-card-distance">${esc(result.distance)}</span>${rankMarkup}</div>${roundMarkup}<h4>${esc(result.name)}</h4><p class="athlete-card-time${finished?'':' athlete-card-status'}">${finished?esc(displayTime(result.time,result.measuredTime)):status==='unknown'?'—':status}</p><div class="athlete-card-bottom"><span class="athlete-card-badges">${finished?badges(result):`<span class="athlete-status-label">${statusLabel}</span>`}</span>${category?`<span class="athlete-card-category" title="Aldersklasse">${esc(category)}</span>`:''}</div>${showWaScore&&finished?renderWaScore(result):''}</div></article>`;
 }
 
 export function installPortraitFallback(root=document){

@@ -215,7 +215,6 @@
     grid-template-columns: minmax(6rem, 1fr) minmax(0, 1.55fr);
     gap: .5rem;
   }
-  .archive-quick-sort { display: none; }
   .archive-quick-select select { width: 100%; }
 }
 @media (max-width: 420px) {

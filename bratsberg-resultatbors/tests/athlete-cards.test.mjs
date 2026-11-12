@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {renderAthleteCard,resultStatus,genderPosition,awardPosition} from '../dist/athlete-cards.js';
+import {gradeWaResult} from '../dist/wa-scoring.js';
 
 const runner={name:'Test Løper',athleteId:'test-loper',distance:'10 km',category:'K35-39'};
 test('non-finishers never receive a time, rank, record badge or medal',()=>{
@@ -136,4 +137,46 @@ test('cards truncate both decimal notations and keep record times in their own t
   assert.match(different,/athlete-card-time">28:44<\/p>/);
   assert.match(different,/Bekreftet klubbrekord: 28:49 \(bruttotid\)/);
   assert.match(render('31:31',{measuredTime:'DNF'}),/athlete-card-time">31:31<\/p>/);
+});
+
+test('result cards display integer WA points from the correct gender table without age controls',()=>{
+  const race={type:'road',date:'2026-10-17'};
+  const scores=[];
+  for(const [gender,category,label] of [['K','K35-39','kvinner'],['M','M35-39','menn']]){
+    const result={...runner,gender,category,time:'34:43',ageGrade:{eligible:true,score:92.4,age:38}};
+    result.waScore=gradeWaResult(race,result);
+    scores.push(result.waScore.score);
+    const html=renderAthleteCard(result,{}, {showWaScore:true});
+    assert.match(html,new RegExp(`WA-poeng<\\/span><strong>${result.waScore.score}<\\/strong>`));
+    assert.match(html,new RegExp(`tabellen for ${label}`));
+    assert.match(html,new RegExp(`>${category}<`));
+    assert.doesNotMatch(html,/92,4|92\.4|age-grade|data-edit-birth-year|Legg inn alder/);
+  }
+  assert.equal(scores[0],1000);
+  assert.ok(scores[1]<scores[0]);
+});
+
+test('unavailable or mismatched WA data never invents points or uses the other gender table',()=>{
+  const result={...runner,gender:'K',time:'34:43'};
+  const valid=gradeWaResult({type:'road'},result);
+  for(const waScore of [undefined,{...valid,eligible:false},{...valid,gender:'M'},...[0,-1,1.5,'1000',NaN,Infinity].map(score=>({...valid,score}))]){
+    const html=renderAthleteCard({...result,waScore},{},{showWaScore:true});
+    assert.match(html,/athlete-wa-score is-unavailable/);
+    assert.match(html,/WA-poeng<\/span><strong>—<\/strong>/);
+    assert.doesNotMatch(html,/Legg inn alder|data-edit-birth-year/);
+  }
+  const unknownGender=renderAthleteCard({...result,gender:null,category:null,waScore:valid},{},{showWaScore:true});
+  assert.match(unknownGender,/WA-poeng<\/span><strong>—<\/strong>/);
+  const trail=renderAthleteCard({...result,waScore:gradeWaResult({type:'trail'},result)},{},{showWaScore:true});
+  assert.match(trail,/ikke tilgjengelige for denne typen løp/);
+});
+
+test('WA display is opt-in and non-finishers never show a score',()=>{
+  const result={...runner,gender:'K',time:'34:43',ageGrade:{eligible:true,score:90,age:35}};
+  result.waScore=gradeWaResult({type:'road'},result);
+  assert.doesNotMatch(renderAthleteCard(result,{}, {compact:true}),/athlete-wa-score|age-grade/);
+  assert.doesNotMatch(renderAthleteCard(result,{}, {showAgeGrade:true}),/age-grade|data-edit-birth-year/);
+  for(const status of ['DNS','DNF','DSQ']){
+    assert.doesNotMatch(renderAthleteCard({...result,status},{},{showWaScore:true}),/athlete-wa-score/);
+  }
 });

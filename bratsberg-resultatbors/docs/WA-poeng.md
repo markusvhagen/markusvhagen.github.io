@@ -23,3 +23,7 @@ Poengsummen er en lokal **tabellsammenligning av prestasjonen**. Den er ikke en 
 Uavhengig av ekstraksjonskodens valgte kolonner er 1000-poengradene lest fra sidene 137, 167, 197, 227 og 257 for menn og 556, 586, 616, 646 og 676 for kvinner. Disse brukes som fasit i testene for alle 20 støttede tabeller. Tester dekker også grenseverdier, desimaler, sparsomme gatekolonner, kjønn/underlag, net/gun-valg, DNF/DNS og manglende alder. Alle ekstraherte tidsterskler kjøres tilbake gjennom beregningen.
 
 WA-poeng og eksisterende alders-/kjønnsjusterte Kjapp-poeng er forskjellige målestokker. 100 poeng ≈ verdensrekordnivå gjelder den eksisterende aldersjusterte skalaen, ikke WA-poengene.
+
+## Visning fra versjon 33
+
+Løpsresultatene viser WA-poeng og sorteres alltid etter tid innen distansen. Poengnoteringer viser hver utøvers beste WA-prestasjon i valgt kjønn-, distanse-, års- og søkefilter, sortert etter høyest WA-poeng. Den sekundære aldersjusterte verdien gjelder samme prestasjon. Lokal aldersregistrering finnes bare på Poengnoteringer og påvirker ikke WA-rangeringen. Norge-plakaten bruker kildebelagte WA-bestenoteringer per kjønn og distanse.

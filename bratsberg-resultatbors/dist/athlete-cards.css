@@ -53,3 +53,9 @@
 .athlete-card.is-record .athlete-card-top,.athlete-card.is-record .athlete-card-category{color:#ffded6}
 .athlete-card.is-record .athlete-card-portrait{background:#651f29;color:#ffe2da}
 @container(max-width:335px){.athlete-card.compact .award-medal{font-size:7px;padding:2px 3px}.athlete-card.compact .award-medal .award-icon{width:13px;height:13px}.athlete-card.compact .badge{font-size:7px;padding:3px 4px}.athlete-card.compact .badge .award-icon{width:12px;height:12px}}
+
+/* A consistent blue result score remains readable on every award poster. */
+.athlete-wa-score{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 8px;width:100%;margin-top:9px;padding:6px 8px;border:1px solid #a6c9e8;border-radius:4px;background:#eef6ff;color:#245779;font-size:11px;line-height:1.4;font-weight:600;font-variant-numeric:tabular-nums}
+.athlete-wa-score strong{font-size:16px;font-weight:800;line-height:1.2}
+.athlete-wa-score.is-unavailable{background:#edf1f4;border-color:#bac7d0;color:#4b6070}
+@media(max-width:760px){.athlete-wa-score{font-size:1rem;padding:6px 8px}.athlete-wa-score strong{font-size:1.125rem}}

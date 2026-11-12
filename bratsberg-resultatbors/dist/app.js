@@ -9,6 +9,7 @@ import {renderRaceWinners,installRaceWinnerControls,renderRaceNews} from './race
 import {gradeRaceResult} from './age-grading.js';
 import {readBirthYearOverrides,writeBirthYearOverrides,validateBirthYear} from './age-grade-ui.js';
 import {mountPointsView} from './points-view.js';
+import {performanceDate} from './record-check.js';
 const portal=document.body.dataset.page==='portal';
 let data;
 installPortraitFallback();
@@ -30,10 +31,9 @@ function initPortal(){
   const filterToggle=document.querySelector('#archive-filter-toggle');
   const filterCount=document.querySelector('#archive-filter-count');
   const quickGender=document.querySelector('#result-gender');
-  const quickSort=document.querySelector('#archive-quick-sort');
   const distance=filterForm.elements.distance;
   const year=filterForm.elements.year;
-  const defaultFilters={query:'',distance:'',year:'',gender:'',sort:'time',onlyRecords:false};
+  const defaultFilters={query:'',distance:'',year:'',gender:'',onlyRecords:false};
   let filters={...defaultFilters},dialogAnchor=null;
   [...new Set(portalRaces.flatMap(r=>r.distances))].forEach(d=>{const o=document.createElement('option');o.value=d;o.textContent=d;distance.append(o);});
   [...new Set(portalRaces.map(r=>r.date.slice(0,4)))].sort().reverse().forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;year.append(o);});
@@ -48,11 +48,10 @@ function initPortal(){
   const pager=document.querySelector('#archive-pagination');
   function syncFilterBar(){
     quickGender.value=filters.gender;
-    quickSort.value=filters.sort;
     const count=Object.keys(defaultFilters).filter(key=>filters[key]!==defaultFilters[key]).length;
     filterCount.textContent=String(count);
     filterCount.hidden=count===0;
-    filterToggle.setAttribute('aria-label',count?`Filtre og sortering, ${count} aktive valg`:'Filtre og sortering');
+    filterToggle.setAttribute('aria-label',count?`Filtre, ${count} aktive valg`:'Filtre');
   }
   function clearFilters(){
     filters={...defaultFilters};
@@ -68,7 +67,8 @@ function initPortal(){
       return {...result,ageGrade:{...ageGrade,ageBasis:'local-birth-year',localOverride:true}};
     })}));
   }
-  const pointsView=mountPointsView(document.querySelector('#points-root'),{getRaces:racesWithLocalAges,references:data.nationalPoints});
+  const pointsRoot=document.querySelector('#points-root');
+  const pointsView=mountPointsView(pointsRoot,{getRaces:racesWithLocalAges,references:data.nationalPoints,onEditAge:openPointsAgeDialog});
   function raceSource(race){
     let sourceLink='';
     try{const url=new URL(race.sourceUrl);if(url.protocol==='https:'&&!url.username&&!url.password)sourceLink=`<a href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">Åpne resultatkilden ↗</a>`;}catch{}
@@ -79,10 +79,10 @@ function initPortal(){
   function resultGroups(matching){
     const groups=new Map();
     matching.forEach(result=>{if(!groups.has(result.distance))groups.set(result.distance,[]);groups.get(result.distance).push(result);});
-    return [...groups].map(([label,entries])=>`<section class="race-distance-group" aria-label="${esc(label)}"><div class="race-distance-heading"><h3>${esc(label)}</h3><span>${entries.length} resultater${filters.sort==='age-grade'?' · høyeste poeng først':''}</span></div><div class="result-hero-grid">${entries.map(r=>renderAthleteCard(r,data.portraits,{compact:false,showAgeGrade:true})).join('')}</div></section>`).join('');
+    return [...groups].map(([label,entries])=>`<section class="race-distance-group" aria-label="${esc(label)}"><div class="race-distance-heading"><h3>${esc(label)}</h3><span>${entries.length} resultater</span></div><div class="result-hero-grid">${entries.map(r=>renderAthleteCard(r,data.portraits,{compact:false,showWaScore:true})).join('')}</div></section>`).join('');
   }
   function renderResults(focusRaceId=null){
-    const view=selectArchivePage(racesWithLocalAges(),filters,archivePage,{focusRaceId});
+    const view=selectArchivePage(portalRaces,filters,archivePage,{focusRaceId});
     archivePage=view.page;
     const filtering=Boolean(filters.query||filters.distance||filters.gender||filters.onlyRecords||filters.year);
     document.querySelector('#result-count').textContent=view.total?`${view.from}–${view.to} av ${view.total} løp · ${view.resultCount} resultater`:'Ingen treff';
@@ -147,7 +147,6 @@ function initPortal(){
     restoreReadingAnchor(anchor);
   }
   quickGender.addEventListener('change',()=>applyFilters({...filters,gender:quickGender.value},readingAnchor()));
-  quickSort.addEventListener('change',()=>applyFilters({...filters,sort:quickSort.value},readingAnchor()));
   filterToggle.addEventListener('click',()=>{
     dialogAnchor=readingAnchor();
     for(const [key,value] of Object.entries(filters)){
@@ -162,7 +161,7 @@ function initPortal(){
     const values=new FormData(filterForm);
     const next={
       query:values.get('query').trim(),distance:values.get('distance'),
-      year:values.get('year'),gender:values.get('gender'),sort:values.get('sort'),
+      year:values.get('year'),gender:values.get('gender'),
       onlyRecords:values.has('onlyRecords')
     };
     filterDialog.close();
@@ -176,25 +175,23 @@ function initPortal(){
   });
   syncFilterBar();
   const ageDialog=document.querySelector('#age-grade-dialog'),ageForm=document.querySelector('#age-grade-form'),birthYearInput=document.querySelector('#birth-year-input'),ageReset=document.querySelector('#reset-birth-year'),ageStatus=document.querySelector('#age-grade-status');
-  let editingAthleteId=null,editingRaceId=null,editingRaceYear=null;
-  raceList.addEventListener('click',event=>{
-    const button=event.target.closest('[data-edit-birth-year]');
-    if(!button)return;
-    const id=button.dataset.editBirthYear,profile=profilesById.get(id);
+  let editingAthleteId=null,editingRaceYear=null;
+  function openPointsAgeDialog({athleteId:id,raceId,result}){
+    const profile=profilesById.get(id);
     if(!profile)return;
-    const raceId=button.closest('.race-card')?.id.slice(5);
     const race=portalRaces.find(candidate=>candidate.id===raceId);
     if(!race)return;
-    editingAthleteId=id;editingRaceId=raceId;editingRaceYear=Number(race.date.slice(0,4));
+    editingAthleteId=id;editingRaceYear=Number(performanceDate(race,result)?.slice(0,4));
+    if(!Number.isInteger(editingRaceYear))return;
     document.querySelector('#age-grade-person').textContent=profile.name;
-    document.querySelector('#age-grade-context').textContent=`${race.name} · ${editingRaceYear}. Poengene bruker alderen utøveren fyller i løpsåret.`;
+    document.querySelector('#age-grade-context').textContent=`${race.name} · ${editingRaceYear}. Aldersjusterte poeng bruker alderen utøveren fyller i løpsåret. WA-poeng og rangeringen påvirkes ikke.`;
     birthYearInput.min=String(Math.max(1900,editingRaceYear-100));
     birthYearInput.max=String(Math.min(2100,editingRaceYear-5));
     birthYearInput.value=birthYearOverrides[id]??profile.birthYear??'';
     birthYearInput.setCustomValidity('');
     ageReset.disabled=!Object.hasOwn(birthYearOverrides,id);
     ageDialog.showModal();birthYearInput.focus();birthYearInput.select();
-  });
+  }
   birthYearInput.addEventListener('input',()=>birthYearInput.setCustomValidity(''));
   ageForm.addEventListener('submit',event=>{
     event.preventDefault();
@@ -206,22 +203,20 @@ function initPortal(){
     birthYearOverrides[editingAthleteId]=birthYear;
     const stored=writeBirthYearOverrides(birthYearOverrides);
     ageStatus.hidden=false;
-    ageStatus.textContent=stored?'Fødselsåret er lagret i denne nettleseren og brukes på utøverens resultater.':'Fødselsåret brukes i denne økten. Nettleseren tillater ikke at det lagres til neste besøk.';
-    renderResults();ageDialog.close();
+    ageStatus.textContent=stored?'Fødselsåret er lagret i denne nettleseren og brukes til aldersjusterte poeng. WA-poeng og rangeringen er uendret.':'Fødselsåret brukes til aldersjustering i denne økten. Nettleseren tillater ikke at det lagres til neste besøk.';
+    pointsView.render();ageDialog.close();
   });
   ageReset.addEventListener('click',()=>{
     if(!editingAthleteId)return;
     delete birthYearOverrides[editingAthleteId];
     const stored=writeBirthYearOverrides(birthYearOverrides);
     ageStatus.hidden=false;ageStatus.textContent=stored?'Din lokale endring er fjernet. Utøverregisterets opplysninger brukes igjen.':'Endringen er fjernet for denne økten. Nettleseren tillater ikke at valget lagres.';
-    renderResults();ageDialog.close();
+    pointsView.render();ageDialog.close();
   });
   document.querySelector('#cancel-birth-year').addEventListener('click',()=>ageDialog.close());
   ageDialog.addEventListener('close',()=>requestAnimationFrame(()=>{
-    const raceCard=document.getElementById('race-'+editingRaceId);
-    const detail=raceCard?.querySelector('.race-detail');
-    const button=detail&&!detail.hidden?[...detail.querySelectorAll('[data-edit-birth-year]')].find(candidate=>candidate.dataset.editBirthYear===editingAthleteId):null;
-    (button||raceCard?.querySelector('[data-open-race]'))?.focus({preventScroll:true});
+    if(document.querySelector('#points-panel').hidden)return;
+    [...pointsRoot.querySelectorAll('[data-points-edit-age]')].find(button=>button.dataset.pointsEditAge===editingAthleteId)?.focus({preventScroll:true});
   }));
   pager.addEventListener('click',event=>{
     const button=event.target.closest('[data-archive-step]');if(!button||button.disabled)return;
@@ -267,6 +262,7 @@ function initPortal(){
   calendarList.addEventListener('click',e=>{const b=e.target.closest('[data-calendar]');if(!b)return;const opened=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(opened));document.getElementById('participants-'+b.dataset.calendar).hidden=!opened;});
   function route(){
     if(filterDialog.open)filterDialog.close();
+    if(ageDialog.open)ageDialog.close();
     let [tab,id,relayGender]=location.hash.slice(1).split('/');
     try{id=id?decodeURIComponent(id):null;}catch{id=null;}
     const linkedRace=tab==='lop'?id:null;

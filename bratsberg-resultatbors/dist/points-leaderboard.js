@@ -8,7 +8,7 @@ const pointsNameOrder=(first,second)=>first.name.localeCompare(second.name,'nb-N
 const pointsAchievementOrder=(first,second)=>(first.date||'9999-12-31').localeCompare(second.date||'9999-12-31')||first.raceId.localeCompare(second.raceId)||first.distance.localeCompare(second.distance,'nb-NO')||first.time.localeCompare(second.time);
 
 /**
- * Select each athlete's highest score for the chosen metric inside the filters.
+ * Select each athlete's highest WA score inside the filters, highest first.
  * Both score columns always belong to that same selected performance.
  * Counters describe filtered, real, finished rows before selecting one per person.
  * Scores are supplied by the shared calculation pipeline; this function never
@@ -16,7 +16,6 @@ const pointsAchievementOrder=(first,second)=>(first.date||'9999-12-31').localeCo
  */
 export function selectPointsLeaderboard(races,filters={}){
   const selected=filters&&typeof filters==='object'?filters:{};
-  const metric=selected.metric==='wa'?'wa':'age';
   const query=pointsSearchText(selected.query).trim(),year=String(selected.year??'');
   const bestByAthlete=new Map();
   let eligibleResults=0,missingAgeResults=0,unsupportedResults=0;
@@ -30,21 +29,19 @@ export function selectPointsLeaderboard(races,filters={}){
       const athleteId=pointsText(result.athleteId).trim();
       if(!athleteId)continue;
       const ageGrade=result.ageGrade,waGrade=result.waScore,name=pointsText(result.name)||athleteId;
-      const grade=metric==='wa'?waGrade:ageGrade;
       const ageScore=ageGrade?.eligible===true&&Number.isFinite(ageGrade.score)&&ageGrade.score>0?ageGrade.score:null;
       const waScore=waGrade?.eligible===true&&Number.isInteger(waGrade.score)&&waGrade.score>0?waGrade.score:null;
-      const gender=pointsText(result.gender)||pointsText(grade?.gender)||pointsText(result.category).slice(0,1);
+      const gender=pointsText(result.gender)||pointsText(waGrade?.gender)||pointsText(result.category).slice(0,1);
       const distance=pointsText(result.distance);
       if(selected.gender&&gender!==selected.gender)continue;
       if(selected.distance&&distance!==selected.distance)continue;
       if(query&&!pointsSearchText(name).includes(query)&&!pointsSearchText(raceName).includes(query))continue;
-      const score=metric==='wa'?waScore:ageScore;
+      const score=waScore;
       if(score===null){
-        if(metric==='age'&&pointsMissingAgeReasons.has(ageGrade?.reason))missingAgeResults++;
-        else unsupportedResults++;
+        unsupportedResults++;
         continue;
       }
-      if(metric==='wa'&&pointsMissingAgeReasons.has(ageGrade?.reason))missingAgeResults++;
+      if(pointsMissingAgeReasons.has(ageGrade?.reason))missingAgeResults++;
       eligibleResults++;
       const row={athleteId,name,gender,score,waScore,ageScore,age:ageGrade?.age??null,ageBasis:ageGrade?.ageBasis??null,
         raceId,raceName,date,distance,time:pointsText(result.time),result};
@@ -52,7 +49,6 @@ export function selectPointsLeaderboard(races,filters={}){
       if(!previous||row.score>previous.score||row.score===previous.score&&pointsAchievementOrder(row,previous)<0)bestByAthlete.set(athleteId,row);
     }
   }
-  const direction=selected.sort==='desc'?-1:1;
-  const rows=[...bestByAthlete.values()].sort((first,second)=>direction*(first.score-second.score)||pointsNameOrder(first,second));
+  const rows=[...bestByAthlete.values()].sort((first,second)=>second.score-first.score||pointsNameOrder(first,second));
   return {rows,eligibleResults,athleteCount:rows.length,missingAgeResults,unsupportedResults};
 }

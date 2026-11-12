@@ -50,11 +50,13 @@ test('non-finishers stay absent even when raw rows reach the archive; PB comes f
   assert.equal(selectArchivePage(input,{query:'Did not'}).total,0);
 });
 
-test('points sorting prioritizes scores inside each race and leaves ungraded results last',()=>{
-  const row=(name,time,score)=>({name,time,gender:'M',distance:'10 km',status:'finished',ageGrade:{eligible:score!==null,score}});
-  const input=[{...races[0],results:[row('Unknown','30:00',null),row('Faster','33:00',72),row('Older','35:00',85)]}];
+test('archive always sorts by time even when old score-sort settings are supplied',()=>{
+  const row=(name,time,gender,score)=>({name,time,gender,distance:'10 km',status:'finished',ageGrade:{eligible:true,score},waScore:{eligible:true,score:score*10,gender}});
+  const input=[{...races[0],results:[row('Older','35:00','M',85),row('Faster','33:00','M',72),row('Fastest','30:00','K',95)]}];
   const original=structuredClone(input);
-  assert.deepEqual(selectArchivePage(input).items[0].matching.map(result=>result.name),['Unknown','Faster','Older']);
-  assert.deepEqual(selectArchivePage(input,{sort:'age-grade'}).items[0].matching.map(result=>result.name),['Older','Faster','Unknown']);
+  for(const sort of [undefined,'time','age-grade','wa']){
+    assert.deepEqual(selectArchivePage(input,{sort}).items[0].matching.map(result=>result.name),['Fastest','Faster','Older']);
+    assert.deepEqual(selectArchivePage(input,{sort,gender:'M'}).items[0].matching.map(result=>result.name),['Faster','Older']);
+  }
   assert.deepEqual(input,original);
 });
