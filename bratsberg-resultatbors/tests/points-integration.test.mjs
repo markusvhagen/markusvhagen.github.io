@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {prepareResultsData} from '../dist/data.js';
 import {selectPointsLeaderboard} from '../dist/points-leaderboard.js';
+import {gradeRaceResult} from '../dist/age-grading.js';
 
 const root=new URL('../dist/',import.meta.url);
 const json=async path=>JSON.parse(await readFile(new URL(path,root),'utf8'));
@@ -105,4 +106,55 @@ test('gender, distance and year filters choose each best inside the selected per
   assert.ok(marathon);assert.equal(marathon.time,'3:26:26');
   assert.equal(selectPointsLeaderboard(knownRaces,{year:'2025'}).rows.length,0);
   assert.equal(JSON.stringify(raw),original);
+});
+
+test('WA rankings include athletes without birth years and preserve age grading and raw data',()=>{
+  const scored=data.races.flatMap(race=>race.results.filter(result=>result.waScore.eligible));
+  const view=selectPointsLeaderboard(data.races,{metric:'wa',sort:'desc'});
+  assert.ok(scored.length>244);
+  assert.equal(view.eligibleResults,scored.length);
+  assert.equal(view.rows.length,new Set(scored.map(result=>result.athleteId)).size);
+  assert.ok(view.rows.some(row=>row.ageScore===null));
+  for(let i=1;i<view.rows.length;i++)assert.ok(view.rows[i-1].waScore>=view.rows[i].waScore);
+  for(const row of view.rows){
+    assert.equal(row.score,Math.max(...scored.filter(result=>result.athleteId===row.athleteId).map(result=>result.waScore.score)));
+    assert.equal(row.waScore,row.result.waScore.score);
+    assert.equal(row.ageScore,row.result.ageGrade.eligible?row.result.ageGrade.score:null);
+  }
+  const nm=data.races.find(race=>race.id==='nm-bane-2026')||data.races.find(race=>race.type==='track'&&race.results.some(result=>result.date));
+  assert.ok(nm);
+  const track=selectPointsLeaderboard([nm],{metric:'wa',sort:'desc'});
+  assert.ok(track.rows.length);
+  assert.ok(track.rows.every(row=>row.ageScore===null));
+  for(const row of track.rows)assert.equal(row.date,row.result.date||nm.date);
+  const missing=view.rows.find(row=>row.ageScore===null&&row.result.ageGrade.reason==='missing-age');
+  assert.ok(missing);
+  const withOverride=data.races.map(race=>({...race,results:race.results.map(result=>result.athleteId===missing.athleteId?{...result,ageGrade:{eligible:true,score:123.456,age:75,ageBasis:'local-birth-year'}}:result)}));
+  const after=selectPointsLeaderboard(withOverride,{metric:'wa',sort:'desc'});
+  assert.deepEqual(after.rows.map(row=>[row.athleteId,row.raceId,row.waScore]),view.rows.map(row=>[row.athleteId,row.raceId,row.waScore]));
+  assert.equal(JSON.stringify(raw),original);
+});
+
+test('points rankings retain age at the performance even when viewed ten years later',()=>{
+  const RealDate=globalThis.Date;
+  try{
+    globalThis.Date=class extends RealDate {
+      constructor(...args){super(...(args.length?args:['2036-11-11T12:00:00Z']));}
+      static now(){return RealDate.parse('2036-11-11T12:00:00Z');}
+    };
+    const futureData=prepareResultsData(raw);
+    for(const metric of ['age','wa']){
+      assert.deepEqual(selectPointsLeaderboard(futureData.races,{metric,sort:'desc'}),selectPointsLeaderboard(data.races,{metric,sort:'desc'}));
+    }
+    const races=[2025,2026].map(year=>({id:'race-'+year,name:'Race '+year,date:year+'-05-01',type:'road',results:[
+      {athleteId:'historical-runner',name:'Historical runner',gender:'M',distance:'10 km',time:'40:00',status:'finished'}
+    ]}));
+    // This is the same local-birth-year path used by racesWithLocalAges().
+    const local=races.map(race=>({...race,results:race.results.map(result=>({...result,ageGrade:gradeRaceResult(race,{...result,age:null,birthDate:null,birthYear:1980},{birthDate:null,birthYear:1980})}))}));
+    assert.equal(local[0].results[0].ageGrade.age,45);
+    assert.equal(local[1].results[0].ageGrade.age,46);
+    assert.equal(selectPointsLeaderboard(local,{year:'2025'}).rows[0].age,45);
+    assert.equal(selectPointsLeaderboard(local,{year:'2026'}).rows[0].age,46);
+    assert.notEqual(local[0].results[0].ageGrade.score,local[1].results[0].ageGrade.score);
+  }finally{globalThis.Date=RealDate;}
 });

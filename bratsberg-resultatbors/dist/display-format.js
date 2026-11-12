@@ -11,8 +11,11 @@ export function displayTime(officialTime, measuredTime) {
   return fields.join(':');
 }
 
-const wholePointFormatter = new Intl.NumberFormat('nb-NO', {maximumFractionDigits: 0});
+const pointFormatter = new Intl.NumberFormat('nb-NO', {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1
+});
 
 export function displayPoints(score) {
-  return Number.isFinite(score) ? wholePointFormatter.format(Math.trunc(score)) : '—';
+  return Number.isFinite(score) ? pointFormatter.format(score) : '—';
 }

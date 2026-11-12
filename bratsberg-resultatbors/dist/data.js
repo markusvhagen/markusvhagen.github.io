@@ -3,6 +3,7 @@ import {findRecordCandidates} from './record-check.js';
 import {applyAthleteRegistry} from './athlete-registry.js';
 import {derivePerformanceHistory,isFinishedResult,collectManualPersonalBests} from './performance-history.js';
 import {gradeRaceResult} from './age-grading.js';
+import {gradeWaResult} from './wa-scoring.js';
 const base = new URL('.', import.meta.url);
 export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const dateParts = s => {const date = new Date(s+'T12:00:00');return {day:date.getDate(),month:new Intl.DateTimeFormat('nb-NO',{month:'short'}).format(date).replace('.',''),full:new Intl.DateTimeFormat('nb-NO',{day:'numeric',month:'long',year:'numeric'}).format(date)};};
@@ -37,7 +38,7 @@ export function prepareResultsData(input){
   const resolved=applyAthleteRegistry(input);
   const profiles=Array.isArray(resolved.athletes)?resolved.athletes:resolved.athletes?.athletes;
   const profilesById=new Map((Array.isArray(profiles)?profiles:[]).map(athlete=>[athlete.id,athlete]));
-  const races=derivePerformanceHistory(resolved.races,resolved.athletes).map(race=>({...race,results:race.results.filter(isFinishedResult).map(result=>({...result,ageGrade:gradeRaceResult(race,result,profilesById.get(result.athleteId))}))})).filter(race=>race.results.length);
+  const races=derivePerformanceHistory(resolved.races,resolved.athletes).map(race=>({...race,results:race.results.filter(isFinishedResult).map(result=>({...result,ageGrade:gradeRaceResult(race,result,profilesById.get(result.athleteId)),waScore:gradeWaResult(race,result)}))})).filter(race=>race.results.length);
   const personalBestIssues=collectManualPersonalBests(resolved.athletes).issues;
   return {...resolved,races,personalBestIssues,recordCandidates:findRecordCandidates(races,resolved.records)};
 }

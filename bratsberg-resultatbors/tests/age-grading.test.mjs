@@ -88,6 +88,13 @@ test('birthdays use race day while birth year is clearly identified as calendar-
   assert.equal(resolveRaceAge({date:'2026-03-01'},{},{birthDate:'1980-02-29'}).age,46);
 });
 
+test('a dated performance uses its own race day within a multi-day meeting',()=>{
+  const athlete={birthDate:'1980-06-10'};
+  assert.equal(resolveRaceAge({date:'2026-06-09'},{date:'2026-06-10'},athlete).age,46);
+  assert.equal(resolveRaceAge({date:'2025-12-31'},{date:'2026-01-01'},{birthYear:1980}).age,46);
+  assert.equal(resolveRaceAge({date:'2026-06-09'},{date:'invalid'},athlete).age,45);
+});
+
 test('age brackets are never silently replaced by a midpoint and invalid ages are not rescued',()=>{
   assert.deepEqual(resolveRaceAge({date:'2026-05-23'},{category:'M40-44'},{}),{age:null,basis:null,reason:'missing-age'});
   assert.equal(resolveRaceAge({date:'2026-05-23'},{},{birthDate:null}).reason,'missing-age');

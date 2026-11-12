@@ -35,3 +35,29 @@
 .age-grade-dialog [role=alert]{color:#a02029;font-size:11px}
 .age-grade-dialog [hidden]{display:none!important}
 @media(max-width:760px){.age-grade-row{font-size:9px}.age-grade-edit{min-height:30px}.age-grade-dialog{padding:21px}.age-grade-guide{padding:14px}.age-grade-help{font-size:12px}}
+
+.age-grade-guide-compact { padding: 0; margin-bottom: 14px; }
+.age-grade-guide-compact > summary {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 6px 16px;
+  min-height: 48px;
+  padding: 10px 14px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.age-grade-guide-compact > summary::-webkit-details-marker { display: none; }
+.age-grade-guide-compact > summary > strong { justify-self: end; font-weight: 650; }
+.age-grade-guide-compact > summary:hover { background: #e8f0f7; }
+.age-grade-guide-compact > summary:focus-visible { outline: 3px solid #6489ad; outline-offset: 3px; border-radius: 5px; }
+.age-grade-guide-compact .age-guide-chevron { font-size: 1.25rem; line-height: 1; }
+.age-grade-guide-compact[open] .age-guide-chevron { transform: rotate(180deg); }
+.age-grade-guide-compact > .age-grade-help { padding: 0 14px 14px; border-top: 1px solid #cbdbe8; }
+@media(max-width:760px) {
+  .age-grade-guide-compact > summary { grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; }
+  .age-grade-guide-compact > summary > strong { grid-row: 2; justify-self: start; }
+  .age-grade-guide-compact .age-guide-chevron { grid-column: 2; grid-row: 1 / 3; }
+}

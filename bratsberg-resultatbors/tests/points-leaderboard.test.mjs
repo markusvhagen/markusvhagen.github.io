@@ -64,3 +64,45 @@ test('scoped counters distinguish missing ages while excluding nonfinishers and 
   assert.equal(selectPointsLeaderboard(input,{query:'no-age'}).missingAgeResults,1);
   assert.deepEqual(selectPointsLeaderboard(null),{rows:[],eligibleResults:0,athleteCount:0,missingAgeResults:0,unsupportedResults:0});
 });
+
+test('ranking metric selects one performance and keeps both scores tied to that performance',()=>{
+  const input=[
+    race('fast','2026-05-01',[runner('Ada',80,{waScore:{eligible:true,score:1050}})]),
+    race('age-best','2026-10-01',[runner('Ada',85,{waScore:{eligible:true,score:1000}})])
+  ];
+  const age=selectPointsLeaderboard(input,{metric:'age'}).rows[0];
+  assert.equal(age.raceId,'age-best');
+  assert.equal(age.ageScore,85);
+  assert.equal(age.waScore,1000);
+  const wa=selectPointsLeaderboard(input,{metric:'wa'}).rows[0];
+  assert.equal(wa.raceId,'fast');
+  assert.equal(wa.score,1050);
+  assert.equal(wa.ageScore,80);
+  assert.equal(wa.waScore,1050);
+  assert.equal(selectPointsLeaderboard(input,{metric:'wa',query:'age-best'}).rows[0].raceId,'age-best');
+});
+
+test('WA leaderboard includes missing ages and track, but excludes nonfinishers and unsupported WA rows',()=>{
+  const input=[race('race','2026-06-01',[
+    runner('known',70,{waScore:{eligible:true,score:800}}),
+    runner('missing',null,{ageGrade:{eligible:false,reason:'missing-age'},waScore:{eligible:true,score:900}}),
+    runner('track',null,{ageGrade:{eligible:false,reason:'unsupported-discipline'},waScore:{eligible:true,score:950}}),
+    runner('trail',80,{waScore:{eligible:false,score:null,reason:'unsupported-discipline'}}),
+    runner('dnf',90,{status:'DNF',waScore:{eligible:true,score:1000}})
+  ])];
+  const view=selectPointsLeaderboard(input,{metric:'wa',sort:'desc'});
+  assert.deepEqual(view.rows.map(row=>row.athleteId),['track','missing','known']);
+  assert.equal(view.rows[1].ageScore,null);
+  assert.equal(view.eligibleResults,3);
+  assert.equal(view.missingAgeResults,1);
+  assert.equal(view.unsupportedResults,1);
+});
+
+test('WA date and year filters use the individual performance date in a multi-day meeting',()=>{
+  const input=[race('meeting','2025-12-31',[
+    runner('Ada',null,{date:'2026-01-01',ageGrade:{eligible:false,reason:'unsupported-discipline'},waScore:{eligible:true,score:1000}})
+  ],{type:'track'})];
+  const view=selectPointsLeaderboard(input,{metric:'wa',year:'2026'});
+  assert.equal(view.rows[0].date,'2026-01-01');
+  assert.equal(selectPointsLeaderboard(input,{metric:'wa',year:'2025'}).rows.length,0);
+});

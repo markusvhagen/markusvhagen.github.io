@@ -1,5 +1,5 @@
 import {AGE_GRADE_TABLES,AGE_GRADING_INFO} from './age-standards.js';
-import {parsePerformanceTime,normalizeDistance} from './record-check.js';
+import {parsePerformanceTime,normalizeDistance,performanceDate} from './record-check.js';
 import {isFinishedResult,performanceTime} from './performance-history.js';
 
 const ageGradeDistances=Object.freeze([
@@ -60,7 +60,8 @@ const ageResolution=(age,basis)=>validGradeAge(age)?{age,basis,reason:null}:{age
 /**
  * Resolve only supplied age data. Category brackets never imply an exact age.
  * Explicit result.age is age at that race. birthDate gives completed years on
- * race day. With birthYear only, use age reached in the race's calendar year
+ * performance day (result.date, otherwise race.date). With birthYear only,
+ * use age reached in that performance's calendar year
  * and expose basis='birth-year' so the UI can make that convention visible.
  * A malformed supplied value is rejected rather than masked by a fallback.
  */
@@ -72,7 +73,7 @@ export function resolveRaceAge(race={},result={},athlete={}){
   const birthDate=result.birthDate??athlete?.birthDate;
   const birthYear=result.birthYear??athlete?.birthYear;
   if(birthDate==null&&birthYear==null)return {age:null,basis:null,reason:'missing-age'};
-  const when=gradeDate(race.date);
+  const when=gradeDate(performanceDate(race,result));
   if(!when)return {age:null,basis:null,reason:'invalid-race-date'};
   if(birthDate!==undefined&&birthDate!==null){
     const born=gradeDate(birthDate);

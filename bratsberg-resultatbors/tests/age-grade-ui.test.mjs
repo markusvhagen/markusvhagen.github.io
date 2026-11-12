@@ -14,15 +14,15 @@ test('scores sort highest first, with numeric time ties and missing grades last'
   assert.equal(compareAgeGradeResults(scored(80),scored(80)),0);
 });
 
-test('score row truncates points, with year-age help and escaped editing identifiers',()=>{
-  const html=renderAgeGrade({...scored(76.99),athleteId:'runner\" onclick=\"bad'});
-  assert.match(html,/<strong>76<\/strong> poeng/);
+test('score row shows one decimal, with year-age help and escaped editing identifiers',()=>{
+  const html=renderAgeGrade({...scored(76.249),athleteId:'runner\" onclick=\"bad'});
+  assert.match(html,/<strong>76,2<\/strong> poeng/);
   assert.match(html,/100 poeng tilsvarer omtrent verdensrekordnivå/);
   assert.match(html,/Alder i løpsåret, beregnet fra fødselsår/);
   assert.match(html,/data-edit-birth-year="runner&quot; onclick=&quot;bad"/);
   assert.match(html,/>38 år<\/button>/);
   assert.doesNotMatch(html,/ onclick="bad/);
-  assert.match(renderAgeGrade({...scored(105.9),athleteId:'runner'}),/<strong>105<\/strong>/);
+  assert.match(renderAgeGrade({...scored(105.9),athleteId:'runner'}),/<strong>105,9<\/strong>/);
 });
 
 test('missing age does not invent points; unsupported events do not offer an irrelevant age edit',()=>{

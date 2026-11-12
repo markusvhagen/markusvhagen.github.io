@@ -1,7 +1,7 @@
 {
   "title": "Bratsberg resultatbørs – observerte JSON-felter",
-  "sourceVersion": 27,
-  "checkedAt": "2026-11-09",
+  "sourceVersion": 29,
+  "checkedAt": "2026-11-11",
   "basis": {
     "athletes": 167,
     "races": 20,
@@ -9,12 +9,12 @@
     "finishedResults": 349
   },
   "notes": [
-    "Fullstendig oversikt over observerte felter i v27-dataene. Oppføringen viser hvor mange objekter som faktisk har hvert felt.",
+    "Fullstendig oversikt over observerte felter i v29-dataene. Oppføringen viser hvor mange objekter som faktisk har hvert felt.",
     "[] betyr et listeelement. Antall forekomster gjelder observerte foreldreobjekter.",
     "Utøvernavn og fødselsår hentes fra registeret. Kjønn er fortsatt lagret på resultater.",
     "Klasseplassering bruker positionClass. Usikker kjønnsplassering har uttrykkelig positionGenderVerified:false.",
     "Detaljerte importmetadata er flyttet til docs/import-metadata-v23.json og er ikke del av dataene nettsiden laster.",
-    "PB, justerte poeng og profiler beregnes ved innlasting.",
+    "PB, WA-poeng, aldersjusterte poeng og profiler beregnes ved innlasting.",
     "På registerets toppnivå kobler mergedAthleteIds en tidligere registrert ID til riktig nåværende profil.",
     "measuredTime er valgfri. Ved visning kan den gi de hele sekundene fra en nøyaktig måling når arrangørens fullsekundstid er rundet opp."
   ],
@@ -1091,6 +1091,17 @@
         "source",
         "sourceUrl",
         "raceId"
+      ],
+      "waScore": [
+        "eligible",
+        "score",
+        "event",
+        "gender",
+        "actualSeconds",
+        "scoringSeconds",
+        "edition",
+        "method",
+        "reason"
       ]
     },
     "loadedDataset": {
@@ -1121,7 +1132,8 @@
     "notes": [
       "Farge og medalje beregnes fra verifisert plassering; gold/silver/bronze er ikke lagrede flagg.",
       "clubRecord er derimot lagret og bekreftet manuelt; rekordkontrollen lager kandidater uten å overskrive registeret.",
-      "Lokale fødselsår lagres i nettleseren og endrer ikke klubbens JSON-filer."
+      "Lokale fødselsår lagres i nettleseren og endrer ikke klubbens JSON-filer.",
+      "waScore bruker WA-tabellen fra 2025 uten aldersjustering. ageGrade bruker den eksisterende alders- og kjønnsjusterte Kjapp-tabellen. Begge gjelder samme prestasjon og lagres ikke i løpsfilene."
     ]
   },
   "supportedButNotCurrentlyStored": [

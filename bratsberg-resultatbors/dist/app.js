@@ -24,10 +24,6 @@ function initHome(){
 }
 function initPortal(){
   const portalRaces=data.races.slice().sort((a,b)=>b.date.localeCompare(a.date));
-  const results=portalRaces.flatMap(r=>r.results),statsPeriod='I resultatarkivet';
-  const stats=document.querySelector('#stats-strip');
-  stats.setAttribute('aria-label','Statistikk for '+statsPeriod.toLocaleLowerCase('nb-NO'));
-  stats.innerHTML=[[portalRaces.length,'løp'],[results.length,'resultater'],[new Set(results.map(r=>r.athleteId)).size,'løpere'],[results.filter(r=>r.clubRecord).length,'klubbrekorder']].map(([n,label])=>`<div class="stat"><strong>${n}</strong><span>${label}<br><span class="stat-period">${statsPeriod}</span></span></div>`).join('');
   const toolbar=document.querySelector('#archive-toolbar');
   const filterDialog=document.querySelector('#archive-filter-dialog');
   const filterForm=document.querySelector('#archive-filter-form');
@@ -230,7 +226,7 @@ function initPortal(){
   pager.addEventListener('click',event=>{
     const button=event.target.closest('[data-archive-step]');if(!button||button.disabled)return;
     archivePage+=Number(button.dataset.archiveStep);renderResults();
-    document.querySelector('#results-title').focus({preventScroll:true});
+    filterToggle.focus({preventScroll:true});
     document.querySelector('#results-panel').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   });
   let gender='K';
@@ -279,12 +275,18 @@ function initPortal(){
     if(tab==='poeng')tab='poengnoteringer';
     if(!['resultater','poengnoteringer','klubbrekorder','stafettrekorder','terminliste'].includes(tab))tab='resultater';
     document.querySelectorAll('[data-tab]').forEach(a=>{a.classList.toggle('active',a.dataset.tab===tab);if(a.dataset.tab===tab)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+    const activeTab=document.querySelector('.portal-tabs [aria-current="page"]');
+    const menu=activeTab?.parentElement;
+    if(menu?.clientWidth&&menu.scrollWidth>menu.clientWidth){
+      const left=activeTab.offsetLeft,right=left+activeTab.offsetWidth;
+      if(left<menu.scrollLeft+6)menu.scrollLeft=Math.max(0,left-6);
+      else if(right>menu.scrollLeft+menu.clientWidth-6)menu.scrollLeft=right-menu.clientWidth+6;
+    }
     document.querySelector('#results-panel').hidden=tab!=='resultater';
     document.querySelector('#points-panel').hidden=tab!=='poengnoteringer';
     document.querySelector('#records-panel').hidden=tab!=='klubbrekorder';
     document.querySelector('#relays-panel').hidden=tab!=='stafettrekorder';
     document.querySelector('#calendar-panel').hidden=tab!=='terminliste';
-    document.querySelector('#stats-strip').hidden=tab!=='resultater';
     if(tab==='resultater'){renderResults(linkedRace);if(linkedRace)requestAnimationFrame(()=>document.getElementById('race-'+linkedRace)?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));}
     if(tab==='klubbrekorder')renderRecords();
     if(tab==='poengnoteringer')pointsView.render();
