@@ -11,7 +11,7 @@ For separate JSON-filer og moduler: kjør `python3 -m http.server 8080 --directo
 ## Visning
 
 - Klubbens logo vises på en liten lys flate til venstre i den røde resultatbørs-plakaten. Logoen ligger i `dist/assets/bratsberg-logo.png` og bygges inn i den portable HTML-filen, slik at den også vises uten nett.
-- Forsiden velger de ti nyeste faktiske løpene etter løpsdato. Arkivet har 22 løp; de ti nyeste vises på forsiden. Ved færre enn ti løp fylles ledige plasser med «Her kommer det flere løp snart».
+- Forsiden velger de ti nyeste faktiske løpene etter løpsdato. Arkivet har 25 løp; de ti nyeste vises på forsiden. Ved færre enn ti løp fylles ledige plasser med «Her kommer det flere løp snart».
 - Karusellen viser to løp på desktop og ett på mobil. Den skifter etter 20 sekunder med rød fremdriftsring. Forrige og Neste ligger over løpene, sammen med posisjonen i karusellen. Automatisk blaing starter pauset ved redusert bevegelse.
 - Forsiden velger automatisk inntil seks forskjellige utøvere fra hvert løp: klubbrekord først, deretter gull, sølv, bronse og øvrige resultater. Medaljer krever kontrollert kjønnsplassering eller en eksplisitt verifisert mesterskapsklasse. Innen samme prioritet kommer raskeste tid først; like tider beholder kilderekkefølgen. Rekkefølgen følger kortene fra venstre mot høyre og deretter nedover. Utvalget beregnes automatisk fra resultatene; PB-merker overstyrer ikke prioriteringen.
 - Arkivet viser ti løp per side, nyeste først. Søk og filtre gjelder hele arkivet før paginering. Direktelenker åpner riktig side. Åpnede løp viser alle fullførte resultater, gruppert etter distanse og sortert fra raskeste til langsomste tid. `result-order.js` sammenligner tider numerisk og sorterer en kopi før visning; rådataenes rekkefølge endres ikke. DNS/DNF vises verken som kort, i tellinger eller som filtre.
@@ -73,6 +73,8 @@ NM på bane i Trondheim inneholder bare de tre øvelsene Bratsberg deltok i: 150
 På Jessheim ble 11 Bratsberg-resultater kontrollert mot EQs kjønnsdelte sluttlister. To DNS hadde ingen sluttid. Henrik Berg Kristensen og Henrik Kristensen er koblet til profilen med stafettbildet, etter at klubben og EQ oppga samme sølvresultat. Henning Offigstad har en bekreftet maratonpers på 2:28:52 fra Jessheim 09.11.2025. EQ oppgir 2:29:07.2 for bronseplassen i 2026.
 
 I Málaga er den offisielle bruttotiden 2:27:13 for Sofie Karoline Haugen og Ulrik Hovig. Portalen viser 2:27:12 for begge utøverne ved å kutte desimalene fra de målte bruttotidene. Det samsvarer med klubboppslaget. Joachim Hafsmo har siste registrerte passering ved 15 km og ingen sluttid. Begge arrangementene har lenke til klubbens oppslag.
+
+Hamburg, Praha og Drammen 10K er lagt inn med henholdsvis tre, ett og 17 fullførte resultater. Hamburg bruker nettotid fra den gjengitte tidtakerlisten og kjønnsplassering fra World Athletics. Vibekes historiske klubbrekord og hennes og Eiras bekreftede perser er bevart. Trym Holten mangler verifisert sluttid og står til oppfølging i `docs/import-metadata-v36.json`. Praha viser Signe som 13. kvinne totalt; politimesterskapets bronse gir ikke et samlet bronsekort. Drammen bruker skjermbildets tider og separate kjønns- og klasseplasseringer. De fire oppføringene uten sluttid vises ikke. Alle utøverne bruker eksisterende profiler.
 
 ## Plasseringer og tider
 

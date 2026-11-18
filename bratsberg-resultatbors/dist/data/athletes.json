@@ -72,7 +72,18 @@
         },
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Eira-Rapp-360x640.jpg"
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:41:27",
+          "date": "2026-04-26",
+          "raceId": "hamburg-maraton-2026",
+          "eventName": "Hamburg maraton",
+          "source": "PB og nettotid bekreftet i Kondis sin løpsomtale og resultatliste.",
+          "sourceUrl": "https://www.kondis.no/idrett/loyperekord-og-mange-sterke-norske-prestasjoner-i-hamburg-maraton/1562379"
+        }
+      ],
       "birthYear": 2000,
       "birthYearSource": {
         "provider": "Bratsberg Friidrett",
@@ -911,7 +922,18 @@
           "zoom": 1
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:33:11",
+          "date": "2026-04-26",
+          "raceId": "hamburg-maraton-2026",
+          "eventName": "Hamburg maraton",
+          "source": "PB bekreftet i klubbens oppslag; tid kontrollert mot resultatlisten.",
+          "sourceUrl": "https://www.bratsbergfriidrett.no/2026/06/30/vibeke-skal-til-em/"
+        }
+      ],
       "birthYear": 1995,
       "birthYearSource": {
         "provider": "Racedays",

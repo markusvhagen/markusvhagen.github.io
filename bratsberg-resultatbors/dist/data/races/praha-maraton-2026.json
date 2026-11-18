@@ -1,0 +1,66 @@
+{
+  "id": "praha-maraton-2026",
+  "name": "Praha maraton",
+  "date": "2026-05-03",
+  "location": "Praha, Tsjekkia",
+  "type": "road",
+  "distances": [
+    "Maraton"
+  ],
+  "sourceUrl": "https://www.runczech.com/en/results/vodafone-prague-marathon-2026",
+  "source": {
+    "type": "official-results",
+    "provider": "RunCzech / EvoData og Český atletický svaz",
+    "timeBasis": "net",
+    "checkedAt": "2026-11-18",
+    "urls": [
+      "https://www.runczech.com/wp-content/uploads/2026/05/Ranking-European-Police-Championships_F.pdf",
+      "https://online.atletika.cz/vysledky/85470"
+    ],
+    "displayNote": "Nettotid vises. Plasseringen gjelder alle kvinner i maratonløpet."
+  },
+  "results": [
+    {
+      "athleteId": "signe-by-eide",
+      "sourceName": "BY EIDE SIGNE",
+      "gender": "K",
+      "distance": "Maraton",
+      "category": "SF",
+      "time": "2:48:32",
+      "netTime": "2:48:32",
+      "gunTime": "2:48:32",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 13,
+      "positionScope": "gender",
+      "positionGender": 13,
+      "positionGenderVerified": true,
+      "positionClass": 9,
+      "sourceBib": "F205",
+      "sourceUrl": "https://www.runczech.com/wp-content/uploads/2026/05/Ranking-European-Police-Championships_F.pdf"
+    }
+  ],
+  "winners": [
+    {
+      "distance": "Maraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Berehanu Wendemu Tsegu",
+        "time": "2:05:51",
+        "sourceUrl": "https://www.runczech.com/en/results/vodafone-prague-marathon-2026",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      },
+      "women": {
+        "name": "Milicent Jelimo",
+        "time": "2:24:19",
+        "sourceUrl": "https://online.atletika.cz/vysledky/85470",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      }
+    }
+  ]
+}
+

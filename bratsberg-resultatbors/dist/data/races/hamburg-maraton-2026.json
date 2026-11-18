@@ -1,0 +1,109 @@
+{
+  "id": "hamburg-maraton-2026",
+  "name": "Hamburg maraton",
+  "date": "2026-04-26",
+  "location": "Hamburg, Tyskland",
+  "type": "road",
+  "distances": [
+    "Maraton"
+  ],
+  "sourceUrl": "https://hamburg.r.mikatiming.com/2026/",
+  "source": {
+    "type": "secondary-results",
+    "provider": "Mika Timing gjengitt av Kondis; kjønnsplasseringer fra World Athletics",
+    "timeBasis": "net",
+    "checkedAt": "2026-11-18",
+    "urls": [
+      "https://www.kondis.no/idrett/loyperekord-og-mange-sterke-norske-prestasjoner-i-hamburg-maraton/1562379",
+      "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229634",
+      "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229534"
+    ],
+    "displayNote": "Nettotid vises. Kjønnsplasseringene følger World Athletics' resultatliste etter bruttotid."
+  },
+  "results": [
+    {
+      "athleteId": "jorgen-skevik",
+      "gender": "M",
+      "distance": "Maraton",
+      "time": "2:33:23",
+      "netTime": "2:33:23",
+      "gunTime": "2:33:23",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 59,
+      "positionScope": "gender",
+      "positionGender": 59,
+      "positionGenderVerified": true,
+      "sourceBib": "P13",
+      "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229634"
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "gender": "K",
+      "distance": "Maraton",
+      "category": "W30",
+      "time": "2:33:11",
+      "netTime": "2:33:11",
+      "gunTime": "2:33:11",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 11,
+      "positionScope": "gender",
+      "positionGender": 11,
+      "positionGenderVerified": true,
+      "positionClass": 7,
+      "sourceBib": "F7",
+      "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229534",
+      "clubRecord": true,
+      "clubRecordTime": "2:33:11",
+      "clubRecordTimeBasis": "gun"
+    },
+    {
+      "athleteId": "eira-rapp",
+      "gender": "K",
+      "distance": "Maraton",
+      "category": "W",
+      "time": "2:41:27",
+      "netTime": "2:41:27",
+      "gunTime": "2:42:52",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 13,
+      "positionScope": "gender",
+      "positionGender": 13,
+      "positionGenderVerified": true,
+      "positionClass": 4,
+      "sourceBib": "1058",
+      "sourceUrl": "https://www.kondis.no/idrett/loyperekord-og-mange-sterke-norske-prestasjoner-i-hamburg-maraton/1562379"
+    }
+  ],
+  "winners": [
+    {
+      "distance": "Maraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Othmane El Goumri",
+        "time": "2:04:24",
+        "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229634",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      },
+      "women": {
+        "name": "Brillian Jepkorir Kipkoech",
+        "time": "2:17:05",
+        "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229534",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Vibeke skal til EM",
+      "url": "https://www.bratsbergfriidrett.no/2026/06/30/vibeke-skal-til-em/"
+    }
+  ]
+}
+
