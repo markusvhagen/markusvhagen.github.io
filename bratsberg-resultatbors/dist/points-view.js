@@ -90,7 +90,7 @@ export function mountPointsView(root,{getRaces,references={},onEditAge}={}){
     countLabel.textContent=String(filterCount);countLabel.hidden=filterCount===0;
     const notes=[];
     if(view.missingAgeResults)notes.push(`${view.missingAgeResults} ${view.missingAgeResults===1?'resultat mangler':'resultater mangler'} gyldig alder. WA-poeng er beregnet uavhengig av dette.`);
-    if(view.unsupportedResults)notes.push(`${view.unsupportedResults} ${view.unsupportedResults===1?'resultat har':'resultater har'} ikke grunnlag for WA-poeng.`);
+    if(view.unsupportedResults)notes.push(`${view.unsupportedResults} ${view.unsupportedResults===1?'resultat har':'resultater har'} ikke grunnlag for WA-poeng. WA-poeng beregnes her bare for standardøvelser på bane og vei, og tiden må være innenfor tabellens poengområde.`);
     notes.push('WA-poeng vises som heltall og avgjør rangeringen. Aldersjusterte poeng vises med én desimal og bruker alderen ved løpet.');
     const local=view.rows.some(row=>row.result?.ageGrade?.localOverride===true||row.ageBasis==='local-birth-year');
     if(local)notes.push('Manuelt angitt alder i denne nettleseren er med i aldersjusteringen.');

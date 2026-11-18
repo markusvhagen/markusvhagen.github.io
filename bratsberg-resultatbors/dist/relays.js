@@ -1,7 +1,7 @@
 import {displayTime} from './display-format.js';
 import {esc,initials,dateParts} from './data.js';
 import {renderAwardIcon} from './athlete-cards.js';
-import {renderPortraitImage,installPortraitErrors,safePortraitUrl} from './portrait.js';
+import {renderPortraitImage,installPortraitErrors} from './portrait.js';
 
 const relayStates=new WeakMap();
 const relayTimeSeconds=value=>{
@@ -22,22 +22,6 @@ export function relayPace(time,distanceMeters){
 const relayDistance=meters=>meters>=1000?`${new Intl.NumberFormat('nb-NO',{maximumFractionDigits:2}).format(meters/1000)} km`:`${meters} m`;
 const relayPhoto=(leg,portraits)=>{
   return `<span class="relay-portrait" aria-hidden="true"><span>${esc(initials(leg.name||''))}</span>${renderPortraitImage(portraits?.[leg.athleteId],{width:88,height:112})}</span>`;
-};
-const relayImageSources=(legs,portraits)=>{
-  const groups=new Map();
-  for(const leg of legs){
-    const photo=portraits?.[leg.athleteId];
-    if(!photo?.src||(!photo.credit&&!photo.source))continue;
-    const src=safePortraitUrl(photo.src)||safePortraitUrl(photo.fallbackSrc);let source='';
-    if(!src)continue;
-    try{const url=new URL(photo.source);if(url.protocol==='https:')source=url.href;}catch{}
-    const credit=photo.credit||'Bildekilde';
-    const key=source+'|'+credit;
-    if(!groups.has(key))groups.set(key,{source,credit,names:new Set()});
-    groups.get(key).names.add(leg.name);
-  }
-  if(!groups.size)return '';
-  return `<details class="relay-image-sources"><summary>Bildekilder</summary><ul>${[...groups.values()].map(group=>`<li>${group.source?`<a href="${esc(group.source)}" target="_blank" rel="noopener noreferrer">${esc(group.credit)} ↗</a>`:esc(group.credit)}<span>${esc([...group.names].join(', '))}</span></li>`).join('')}</ul></details>`;
 };
 const relayRecordList=event=>Array.isArray(event?.records)?event.records.filter(record=>record.time&&Array.isArray(record.legs)):[];
 const relayGenderName=gender=>gender==='K'?'Kvinner':gender==='M'?'Menn':gender||'Lag';
@@ -71,9 +55,7 @@ export function renderRelays(root,data,selectedId,selectedGender){
   const medal=['kjønn totalt','klasse','gender','class'].includes(record.positionScope)?({1:'gold',2:'silver',3:'bronze'}[record.position]||null):null;
   const medalLabel={gold:'Gull',silver:'Sølv',bronze:'Bronse'}[medal];
   const positionSuffix=['klasse','class'].includes(record.positionScope)?' i klassen':['kjønn totalt','gender'].includes(record.positionScope)?' blant '+relayGenderName(record.gender).toLocaleLowerCase('nb-NO'):'';
-  const source=typeof record.source==='string'?record.source:'';
-  let sourceUrl='';try{const url=new URL(record.sourceUrl||source);if(url.protocol==='https:')sourceUrl=url.href;}catch{}
-  root.innerHTML=tabs+`<div class="relay-event-heading"><div><h3>${esc(event.name)}</h3><p>${esc(when)}<span aria-hidden="true"> · </span>${esc(event.legCount||legs.length)} etapper</p></div><div class="relay-gender-tabs" role="group" aria-label="Velg lag">${records.map(item=>`<button type="button" data-relay-gender="${esc(item.gender)}" class="relay-gender-${item.gender==='K'?'women':'men'}${item===record?' active':''}" aria-pressed="${item===record}">${esc(relayGenderName(item.gender))}</button>`).join('')}</div></div><div class="relay-record-banner"><div class="relay-record-summary"><strong>${esc(displayTime(record.time,record.measuredTime))}</strong></div><div class="relay-record-meta">${record.position!=null?`<span class="relay-position${medal?' award-medal medal-'+medal:''}">${medal?renderAwardIcon(medal==='gold'?'trophy':'medal')+`<span class="sr-only">${medalLabel}: </span>`:''}${esc(record.position)}. plass${esc(positionSuffix)}</span>`:''}${record.category?`<span>${esc(record.category)}</span>`:''}<span>${esc(relayGenderName(record.gender))} · ${esc(when)}</span></div></div>${record.note?`<p class="relay-record-note">${esc(record.note)}</p>`:''}<div class="relay-lineup-toolbar"><h4>Rekordlaget</h4>${isMultiDay?`<div class="relay-day-tabs" aria-label="Velg dag">${days.map(day=>`<button type="button" data-relay-day="${esc(day)}" aria-pressed="${day===state.day}" class="${day===state.day?'active':''}">Dag ${esc(day)}</button>`).join('')}</div>`:`<span>${legs.length} løpere</span>`}</div>${isMultiDay?'<label class="relay-search"><span class="search-icon" aria-hidden="true"></span><span class="sr-only">Søk etter løper eller etappe, på alle dager</span><input type="search" data-relay-search placeholder="Søk etter løper eller etappe …" autocomplete="off"></label>':''}<div class="relay-lineup" aria-live="polite"></div><div class="relay-lineup-summary"></div>${source||sourceUrl?`<p class="relay-source">Kilde: ${sourceUrl?`<a href="${esc(sourceUrl)}" target="_blank" rel="noopener noreferrer">Resultatliste ↗</a>`:esc(source)}</p>`:''}${relayImageSources(legs,data.portraits)}`;
+  root.innerHTML=tabs+`<div class="relay-event-heading"><div><h3>${esc(event.name)}</h3><p>${esc(when)}<span aria-hidden="true"> · </span>${esc(event.legCount||legs.length)} etapper</p></div><div class="relay-gender-tabs" role="group" aria-label="Velg lag">${records.map(item=>`<button type="button" data-relay-gender="${esc(item.gender)}" class="relay-gender-${item.gender==='K'?'women':'men'}${item===record?' active':''}" aria-pressed="${item===record}">${esc(relayGenderName(item.gender))}</button>`).join('')}</div></div><div class="relay-record-banner"><div class="relay-record-summary"><strong>${esc(displayTime(record.time,record.measuredTime))}</strong></div><div class="relay-record-meta">${record.position!=null?`<span class="relay-position${medal?' award-medal medal-'+medal:''}">${medal?renderAwardIcon(medal==='gold'?'trophy':'medal')+`<span class="sr-only">${medalLabel}: </span>`:''}${esc(record.position)}. plass${esc(positionSuffix)}</span>`:''}${record.category?`<span>${esc(record.category)}</span>`:''}<span>${esc(relayGenderName(record.gender))} · ${esc(when)}</span></div></div><div class="relay-lineup-toolbar"><h4>Rekordlaget</h4>${isMultiDay?`<div class="relay-day-tabs" aria-label="Velg dag">${days.map(day=>`<button type="button" data-relay-day="${esc(day)}" aria-pressed="${day===state.day}" class="${day===state.day?'active':''}">Dag ${esc(day)}</button>`).join('')}</div>`:`<span>${legs.length} løpere</span>`}</div>${isMultiDay?'<label class="relay-search"><span class="search-icon" aria-hidden="true"></span><span class="sr-only">Søk etter løper eller etappe, på alle dager</span><input type="search" data-relay-search placeholder="Søk etter løper eller etappe …" autocomplete="off"></label>':''}<div class="relay-lineup" aria-live="polite"></div><div class="relay-lineup-summary"></div>`;
 
   const drawLineup=()=>{
     const q=state.query.trim().toLocaleLowerCase('nb-NO');

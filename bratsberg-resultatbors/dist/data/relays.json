@@ -18,7 +18,6 @@
         "sourceUrl": "https://www.trondheimstafetten.no/resultater/klassevinnere-etappevinnere-og-etapperekorder/",
         "legDistanceSource": "https://www.trondheimstafetten.no/etappene/",
         "legRecordSource": "https://www.trondheimstafetten.no/resultater/etapperekorder/",
-        "note": "Siste etappe inkluderer forvarsel–mål. Etappetiden følger arrangørens rekordliste.",
         "legs": [
           {
             "number": 1,
@@ -133,7 +132,6 @@
         "sourceUrl": "https://www.trondheimstafetten.no/resultater/klassevinnere-etappevinnere-og-etapperekorder/",
         "legDistanceSource": "https://www.trondheimstafetten.no/etappene/",
         "legRecordSource": "https://www.trondheimstafetten.no/resultater/etapperekorder/",
-        "note": "Siste etappe inkluderer forvarsel–mål. Etappetiden følger arrangørens rekordliste. Bildets to delstrekker summerer til 7:08; arrangøren oppgir 7:09.",
         "legs": [
           {
             "number": 1,
@@ -255,7 +253,6 @@
         "source": "Klubbens vedlagte resultatbilde",
         "sourceAttachment": "image(5).png",
         "sourceUrl": "https://www.sportsidioten.no/resultater/holmenkollstafetten-2026/",
-        "note": "Rekorden bruker offisiell sluttid. Etappetidene vises som i resultatlisten; avrunding gjør at summen kan avvike fra sluttiden.",
         "legs": [
           {
             "number": 1,
@@ -407,7 +404,6 @@
         "source": "Klubbens vedlagte resultatbilde",
         "sourceAttachment": "image(6).png",
         "sourceUrl": "https://www.sportsidioten.no/resultater/holmenkollstafetten-2026/",
-        "note": "Rekorden bruker offisiell sluttid. Etappetidene vises som i resultatlisten; avrunding gjør at summen kan avvike fra sluttiden.",
         "legs": [
           {
             "number": 1,

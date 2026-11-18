@@ -2,7 +2,7 @@
   "year": 2026,
   "checkedAt": "2026-11-12",
   "rankingMetric": "wa",
-  "note": "Beste beregnede WA-poeng per kjønn og distanse fra de kontrollerte Kondis-listene, supplert med Sofie Karoline Haugens nyere maratonresultat i Málaga. Gjelder norske løpere også i utlandet. Listene kan mangle resultater. Dette er ingen offisiell rekordliste.",
+  "note": "Beste beregnede WA-poeng per kjønn og distanse fra de kontrollerte Kondis-listene. Listene kan mangle resultater. Dette er ingen offisiell rekordliste.",
   "method": {
     "calculator": "World Athletics Scoring Tables 2025 revised edition, local exact table lookup",
     "comparison": "Highest WA score within each gender and road distance; the fastest listed performance is selected.",

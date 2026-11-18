@@ -188,11 +188,6 @@
     display: block;
   }
 
-  .widget-caption > span:last-child {
-    max-width: none;
-    text-align: start;
-  }
-
   .widget-caption .badge {
     font-size: 1rem;
     vertical-align: baseline;
