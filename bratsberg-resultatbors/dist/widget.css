@@ -89,6 +89,29 @@
 .bf-dots button:hover::before { background: #909a86; }
 .bf-dots button.active::before { background: var(--red); }
 
+/* Keep the club crest legible against the red title strip. */
+.bf-brandline, .bf-brandcopy { min-width: 0; }
+.bf-club-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 60px;
+  height: 60px;
+  padding: 6px;
+  object-fit: contain;
+  background: #fff9f2;
+  border: 1px solid #ffffffb3;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #75172026;
+}
+@media (max-width: 760px) {
+  .bf-brandline { width: 100%; gap: 12px; }
+  .bf-club-logo { width: 48px; height: 48px; padding: 4px; }
+}
+@media (max-width: 390px) {
+  .bf-brandline { gap: 10px; }
+  .bf-titlebar h2 { font-size: clamp(24px, 7.2vw, 28px); }
+}
+
 /* A clear entrance to the full archive on the red title strip. */
 .bf-titlebar .bf-portal-link {
   min-height: 54px;

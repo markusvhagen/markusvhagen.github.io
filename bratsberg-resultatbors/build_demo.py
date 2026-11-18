@@ -1,5 +1,6 @@
 """Build the portable application from the HTML/CSS/JS and JSON sources."""
 from pathlib import Path
+import base64
 import json
 import re
 from urllib.parse import quote
@@ -46,5 +47,7 @@ html=html.replace('</body>','<script type="module">'+script+'</script></body>')
 html=html.replace('resultater.html#','#').replace('resultater.html','#resultater').replace('index.html','#hjem')
 logo='data:image/svg+xml,'+quote((dist/'assets/mark.svg').read_text(),safe='')
 html=html.replace('assets/mark.svg',logo).replace('<title>Bratsberg Friidrett · Resultatbørsen</title>','<title>Bratsberg · Resultatbørsen</title>')
+club_logo='data:image/png;base64,'+base64.b64encode((dist/'assets/bratsberg-logo.png').read_bytes()).decode('ascii')
+html=html.replace('assets/bratsberg-logo.png',club_logo)
 out=root/'Bratsberg-resultatbors.html';out.write_text(html)
 print(f'Built {out.name} ({out.stat().st_size:,} bytes)')

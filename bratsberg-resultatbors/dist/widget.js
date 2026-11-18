@@ -56,7 +56,7 @@ export function mountWidget(el,data,{embedded=false}={}) {
   };
   el.innerHTML=`
     <div class="bf-titlebar">
-      <div class="bf-brandline"><span class="bf-brand-dot" aria-hidden="true"></span><div><p class="eyebrow">BRATSBERG FRIIDRETT</p><h2>Resultatbørsen<span>.</span></h2></div></div>
+      <div class="bf-brandline"><img class="bf-club-logo" src="assets/bratsberg-logo.png" alt="Bratsberg IL" width="60" height="60"><div class="bf-brandcopy"><p class="eyebrow">BRATSBERG FRIIDRETT</p><h2>Resultatbørsen<span>.</span></h2></div></div>
       <a class="bf-portal-link" href="resultater.html"${target}>Åpne resultatportalen <span aria-hidden="true">↗</span></a>
       <div class="bf-track-art" aria-hidden="true"></div>
     </div>

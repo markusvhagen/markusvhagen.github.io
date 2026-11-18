@@ -10,6 +10,7 @@ For separate JSON-filer og moduler: kjør `python3 -m http.server 8080 --directo
 
 ## Visning
 
+- Klubbens logo vises på en liten lys flate til venstre i den røde resultatbørs-plakaten. Logoen ligger i `dist/assets/bratsberg-logo.png` og bygges inn i den portable HTML-filen, slik at den også vises uten nett.
 - Forsiden velger de ti nyeste faktiske løpene etter løpsdato. Arkivet har 22 løp; de ti nyeste vises på forsiden. Ved færre enn ti løp fylles ledige plasser med «Her kommer det flere løp snart».
 - Karusellen viser to løp på desktop og ett på mobil. Den skifter etter 20 sekunder med rød fremdriftsring. Forrige og Neste ligger over løpene, sammen med posisjonen i karusellen. Automatisk blaing starter pauset ved redusert bevegelse.
 - Forsiden velger automatisk inntil seks forskjellige utøvere fra hvert løp: klubbrekord først, deretter gull, sølv, bronse og øvrige resultater. Medaljer krever kontrollert kjønnsplassering eller en eksplisitt verifisert mesterskapsklasse. Innen samme prioritet kommer raskeste tid først; like tider beholder kilderekkefølgen. Rekkefølgen følger kortene fra venstre mot høyre og deretter nedover. Utvalget beregnes automatisk fra resultatene; PB-merker overstyrer ikke prioriteringen.
