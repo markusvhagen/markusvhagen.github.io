@@ -293,7 +293,9 @@
       "id": "ingvild-saksvik-lehouillier",
       "name": "Ingvild Saksvik Lehouillier",
       "aliases": [
-        "Ingvild Saksvik Lehouiller"
+        "Ingvild Saksvik Lehouiller",
+        "Ingvild Saksvik-Lehouillier",
+        "Ingvild Saksvik-Lehouiller"
       ],
       "photo": {
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3KnnJTAf-CVERMGtsvBV1ggoOQ19qkf-3iRHrTHoWYzmRlepacO9wZsb&s=10",
@@ -1373,7 +1375,9 @@
     {
       "id": "heidi-stokka-skullerud",
       "name": "Heidi Stokka Skullerud",
-      "aliases": [],
+      "aliases": [
+        "Heidi Skullerud"
+      ],
       "photo": null,
       "personalBests": []
     },
@@ -2242,7 +2246,9 @@
     {
       "id": "eline-bjorgvik",
       "name": "Eline Bjørgvik",
-      "aliases": [],
+      "aliases": [
+        "Eline Bjoergvik"
+      ],
       "photo": null,
       "personalBests": [],
       "identityReview": {
@@ -2317,6 +2323,20 @@
         "url": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
         "checkedAt": "2026-11-09"
       }
+    },
+    {
+      "id": "alexander-solnor",
+      "name": "Alexander Solnør",
+      "aliases": [],
+      "photo": null,
+      "personalBests": []
+    },
+    {
+      "id": "anita-kvam",
+      "name": "Anita Kvam",
+      "aliases": [],
+      "photo": null,
+      "personalBests": []
     }
   ],
   "mergedAthleteIds": {

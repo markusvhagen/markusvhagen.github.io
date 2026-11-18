@@ -10,7 +10,7 @@ For separate JSON-filer og moduler: kjør `python3 -m http.server 8080 --directo
 
 ## Visning
 
-- Forsiden velger de ti nyeste faktiske løpene etter løpsdato. Arkivet har 20 løp; de ti nyeste vises på forsiden. Ved færre enn ti løp fylles ledige plasser med «Her kommer det flere løp snart».
+- Forsiden velger de ti nyeste faktiske løpene etter løpsdato. Arkivet har 22 løp; de ti nyeste vises på forsiden. Ved færre enn ti løp fylles ledige plasser med «Her kommer det flere løp snart».
 - Karusellen viser to løp på desktop og ett på mobil. Den skifter etter 20 sekunder med rød fremdriftsring. Forrige og Neste ligger over løpene, sammen med posisjonen i karusellen. Automatisk blaing starter pauset ved redusert bevegelse.
 - Forsiden velger automatisk inntil seks forskjellige utøvere fra hvert løp: klubbrekord først, deretter gull, sølv, bronse og øvrige resultater. Medaljer krever kontrollert kjønnsplassering eller en eksplisitt verifisert mesterskapsklasse. Innen samme prioritet kommer raskeste tid først; like tider beholder kilderekkefølgen. Rekkefølgen følger kortene fra venstre mot høyre og deretter nedover. Utvalget beregnes automatisk fra resultatene; PB-merker overstyrer ikke prioriteringen.
 - Arkivet viser ti løp per side, nyeste først. Søk og filtre gjelder hele arkivet før paginering. Direktelenker åpner riktig side. Åpnede løp viser alle fullførte resultater, gruppert etter distanse og sortert fra raskeste til langsomste tid. `result-order.js` sammenligner tider numerisk og sorterer en kopi før visning; rådataenes rekkefølge endres ikke. DNS/DNF vises verken som kort, i tellinger eller som filtre.
@@ -23,13 +23,17 @@ På skjermer til og med 760 px vises løperkortene i én kolonne. Mobilteksten p
 
 ## Innlagte løp
 
+Versjon 34 (18.11.2026) legger til Amsterdam halv- og maraton og Berlin maraton, med 11 fullførte resultater. Amsterdam bruker nettotid fra MYLAPS Sporthive og arrangørens endelige kjønnsplassering. Berlin bruker nettotid og kjønnsplassering fra den gjengitte Mika Timing-listen hos FindMyRace; primærlisten var ikke tilgjengelig ved kontroll. Sekundærkilden og forskjellen mot Camillas WA-bruttoplassering er dokumentert. Vinnere for begge kjønn og alle tre distansevisninger er med. Anita Kvam er registrert som brukerbekreftet DNS uten oppdiktet distanse. Agnes Holstad har passering, men mangler sluttid og vises derfor ikke. Se `docs/import-metadata-v34.json` og kildelenkene i løpsfilene.
+
 | Løp | Dato | Kildeoppføringer | Vises på nettsiden |
 | --- | --- | ---: | ---: |
 | Jessheim Vintermaraton | 08.11.2026 | 11 | 11 |
 | Málaga maraton | 08.11.2026 | 2 | 2 |
+| Amsterdam halv- og maraton | 18.10.2026 | 10 | 8 |
 | Hytteplanmila | 17.10.2026 | 10 | 10 |
 | Trondheim Skogsmaraton | 03.10.2026 | 16 | 15 |
 | Heim Halvmaraton | 27.09.2026 | 7 | 6 |
+| Berlin maraton | 27.09.2026 | 3 | 3 |
 | København halvmaraton | 20.09.2026 | 10 | 10 |
 | København 5 km | 19.09.2026 | 1 | 1 |
 | UM | 13.09.2026 | 3 | 3 |
@@ -45,9 +49,9 @@ På skjermer til og med 760 px vises løperkortene i én kolonne. Mobilteksten p
 | Berlin halvmaraton | 29.03.2026 | 3 | 3 |
 | Barcelona halvmaraton | 15.02.2026 | 5 | 5 |
 | Valencia 10K | 11.01.2026 | 4 | 4 |
-| **Sum** | | **364** | **349** |
+| **Sum** | | **377** | **360** |
 
-349 oppføringer har sluttid og vises. De 12 DNS- og 3 DNF-oppføringene beholdes bare i kildedataene for etterkontroll. `prepareResultsData` filtrerer dem bort før nettsidens visninger bygges. Kilde-URL, startnummer, originalnavn, klasse og kildens plassering er bevart. Trondheim-PDF-ens ene treff på etternavnet «Bratsberg» med en annen klubb er utelatt. Trønder-Østløpet-PDF-en dekker alle klubber; bare Bratsberg-oppføringer er importert. Sofia Malene Sliper representerer Ranheim i akkurat denne kilden, men er med for Bratsberg i Trønderenergi-importen.
+360 oppføringer har sluttid og vises. De 13 DNS- og 3 DNF-oppføringene, samt én oppføring uten sluttid og uten fastslått DNF/DNS-status, beholdes bare i kildedataene for etterkontroll. `prepareResultsData` filtrerer dem bort før nettsidens visninger bygges. Kilde-URL, startnummer, originalnavn, klasse og kildens plassering er bevart. Trondheim-PDF-ens ene treff på etternavnet «Bratsberg» med en annen klubb er utelatt. Trønder-Østløpet-PDF-en dekker alle klubber; bare Bratsberg-oppføringer er importert. Sofia Malene Sliper representerer Ranheim i akkurat denne kilden, men er med for Bratsberg i Trønderenergi-importen.
 
 Hytteplanmila er hentet fra arrangørens komplette UltimateLIVE-søk etter Bratsberg: 10 med sluttid, samt fem påmeldinger uten tid som ikke er tatt inn som resultater. Kjønns-, total- og klasseplassering er kontrollert mot de offisielle deltakerkortene. Nettotid vises; bruttotid bevares separat.
 
@@ -113,7 +117,7 @@ Aldersjusterte poeng vises bare under **Poengnoteringer**, sammen med WA-poeng f
 
 Aldersgrunnlaget prioriteres slik: eksplisitt heltallsalder i `result.age`, deretter `birthDate` (ISO-dato), deretter `birthYear` (heltall). Fødselsdato/-år på resultatet har prioritet over samme felt i utøverregisteret. Med fødselsdato brukes alder på løpsdagen. Med bare fødselsår brukes alderen utøveren fyller i løpsåret, tydelig forklart i visningen. Gyldig `result.date` prioriteres foran `race.date`. Dagens dato brukes aldri til aldersberegning; dette er også kontrollert for poengnoteringer og lokale fødselsår ved simulert visning ti år senere. Aldersklasser omgjøres aldri til en antatt alder.
 
-96 profiler har kildebelagt `birthYear`, hentet fra Trønder-Østløpet-PDF-en, EQ Timing, Racedays, World Athletics, NFIF og klubbens utøverpresentasjoner. Kilden er bevart i `birthYearSource`. Dette gir poeng for 244 av dagens 349 fullførte resultater. For øvrige profiler kan et bekreftet fødselsår eller en fødselsdato legges til i `dist/data/athletes.json` og brukes automatisk i alle løp.
+96 profiler har kildebelagt `birthYear`, hentet fra Trønder-Østløpet-PDF-en, EQ Timing, Racedays, World Athletics, NFIF og klubbens utøverpresentasjoner. Kilden er bevart i `birthYearSource`. Dette gir aldersjusterte poeng for 252 av dagens 360 fullførte resultater. For øvrige profiler kan et bekreftet fødselsår eller en fødselsdato legges til i `dist/data/athletes.json` og brukes automatisk i alle løp.
 
 På **Poengnoteringer** åpner «Legg inn alder», eller alderen ved en beregnet poengsum, en fødselsårdialog. Endringer gjelder bare egen nettleser, lagres per utøver-ID og kan tilbakestilles til registeret. De påvirker aldersjusterte poeng, men ikke WA-poeng, valgt bestenotering eller rangering. Ingen JSON-filer eller andre besøkendes visning endres. Hvis nettleseren blokkerer lagring, virker endringen i gjeldende økt med en tydelig beskjed.
 
@@ -125,7 +129,7 @@ Filtre for kjønn, distanse, år og søk brukes **før** beste WA-notering velge
 
 `wa-scoring.js` og `wa-scoring-tables.js` bruker nøyaktige terskler fra [World Athletics Scoring Tables, 2025 revised edition](https://worldathletics.org/about-iaaf/documents/technical-information), kontrollert 11.11.2026. Dette er resultatpoeng basert på tid, kjønn og øvelse, uten aldersjustering eller plasseringstillegg. Både gate på 5 km, 10 km, halvmaraton og maraton og utendørs bane på 800, 1500, 2000, 3000, 5000 og 10000 meter støttes. Terreng, innendørs og andre øvelser får ikke poeng fra en annen øvelses tabell. Uttrekksscript og kildeinformasjon følger med. Beregnet `waScore` finnes bare i minnet, og WA-poeng fungerer uten registrert fødselsår. Mellom tabelltersklene brukes den lavere poengsummen. Beregningen bruker løpets valgte tidsgrunnlag, inkludert nettotid der dette er definert. Visningens avkuttede sekunder endrer ikke beregningsgrunnlaget.
 
-WA-tabellen gir poeng for 329 resultater og 145 utøvere. De resterende 20 resultatene gjelder 15 terrengprestasjoner og fem tider utenfor tabellens publiserte område. Aldersjustering finnes for 244 av arkivets resultater; 75 mangler gyldig alder og 30 har øvelser som ikke støttes av Kjapp-tabellen. Manglende alder hindrer ikke WA-rangering. Fødselsår kan legges inn lokalt på Poengnoteringer og påvirker bare alderspoengene.
+WA-tabellen gir poeng for 340 resultater og 146 utøvere. De resterende 20 resultatene gjelder 15 terrengprestasjoner og fem tider utenfor tabellens publiserte område. Aldersjustering finnes for 252 av arkivets resultater; 78 mangler gyldig alder og 30 har øvelser som ikke støttes av Kjapp-tabellen. Manglende alder hindrer ikke WA-rangering. Fødselsår kan legges inn lokalt på Poengnoteringer og påvirker bare alderspoengene.
 
 Under klubbtabellen vises norske WA-referanser for 2026 på 5 km, 10 km, halvmaraton og maraton, både løp i Norge og i utlandet. Kjønnsfilteret gjelder også plakaten. Utvalget følger beste WA-notering per kjønn og distanse i åtte kontrollerte Kondis-seniorlister, kontrollert 12.11.2026, supplert med Sofie Karoline Haugens nyere maratonresultat i Málaga fra det allerede verifiserte klubbarkivet. Dette er **ikke en offisiell eller garantert uttømmende poengrekordliste**. Kildenes oppdateringsdatoer og begrensninger er dokumentert. Utenlandske statsborgere merket med stjerne, bane/innendørs/passeringer og separate ugyldige maratonlister er utelatt.
 
@@ -200,7 +204,7 @@ Legg løpsfilens sti i `races` i `index.json`, oppdater `updatedAt`, og bygg den
 
 ## Profiler og bilder
 
-Registeret har 167 profiler for faktiske utøvere, hvorav 34 har bilder. Det er ikke et bekreftet medlemsregister; nye profiler følger resultatkildens klubbtilhørighet. Samme `athleteId` brukes i alle løp og stafetter.
+Registeret har 169 profiler for faktiske utøvere, hvorav 34 har bilder. Det er ikke et bekreftet medlemsregister; nye profiler følger resultatkildens klubbtilhørighet. Samme `athleteId` brukes i alle løp og stafetter.
 
 Navnekoblingen bruker kjent ID først, deretter fullt normalisert navn eller eksplisitt alias. Den bruker ikke ansiktsgjenkjenning eller omtrentlig navnelikhet. `identityReview` beskriver uavklarte navnevarianter: Jonas Olaf Onshuus og Anders Resell er foreløpig separate profiler med mulig kobling til eksisterende profiler. Rolf Solheimsdal Johansen / Rolf Solheimdal Johansen / Rolf Johansen og Julie Selboe / Julie Maaø Selboe er også holdt separate inntil navnevariantene er bekreftet. Nye mulige varianter fra de siste importene er Stig Almåsbakk / Stig Erlend Almåsbakk, Kristian Selnes / Kristian Stokke Selnes og Knut Bjørtomt Ødegaard / Knut Ødegaard. Disse har `identityReview` og er ikke slått sammen automatisk. Importene i versjon 23 legger også inn separate profiler for mulige navnevarianter Øystein Ingebrigtsen Haugen, Eline Bjørgvik, Brede Brostrup Muller, Julian Grøttr og Michael Brian Watts. Eksisterende bilder og aliaser er bevart.
 
@@ -255,5 +259,7 @@ node scripts/check-athletes.mjs
 node scripts/check-personal-bests.mjs
 python3 build_demo.py
 ```
+
+Versjon 34: Alle 155 tester består, inkludert kontroll av de nye nettotidene, kjønnsplasseringene, WA-poengene, utøverkoblingene og utelatelsen av DNS/oppføringer uten sluttid.
 
 Testene dekker profilkobling, bildereserver, tider, beregnet personlig historikk, filtrering av ikke-fullførte, rekordlogikk, medaljer, plasseringstype, ti karusellplasser, arkivpaginering, direktelenker, nedtelling, vinnertider, klubboppslag, alders- og kjønnsjustering, poengsortering og lokal alderslagring. Isolerte testdata er ikke en del av nettstedets datagrunnlag. Poengtabellen har i tillegg tester for beste resultat per utøver, filtrering før utvalg, sortering og kildebelagte Norgesreferanser. Versjon 33 viser WA-poeng på resultatkortene, beholder tidssortering i løpsarkivet og rangerer Poengnoteringer etter beste WA-poeng. Aldersjustering og lokal aldersregistrering finnes bare på poengsiden. Norgesreferansene følger nå WA-poeng. Alle 153 tester består. WebKit-kontroll på 320, 390 og 1280 px bekreftet tidssortering, kjønnfiltre, fast WA-rangering, aldersregistrering bare på poengsiden og ingen JavaScript-feil eller horisontal sideoverflyt. Simulert nettleserdato i 2031 endret ikke alderen ved løpet; lokal aldersendring lot WA-poeng, valgt prestasjon og rangering være uendret. Versjon 32 gjør alle hovedfaner synlige i to kolonner på mobil. Poengnoteringer vises som utøverkort, og lange forklaringer og ekstra filtre er sammenleggbare slik at poengene kommer tidligere på siden. WebKit-kontroll på 320, 390 og 1280 px bekreftet alle fem faner, synlige kortopplysninger uten horisontal rulling, filter- og metrikkskifte samt navnelinker. Første poengsum kom 638 px tidligere ved 390 px bredde. Versjon 31 fjerner «Til klubbrekorder» fra stafettsiden og gjør hovedfanene tydeligere med lyse knapper, rød aktiv fane, 16 px tekst og minst 48 px høyde. Den tidligere sideveis mobilmenyen er erstattet av det synlige rutenettet i versjon 32. Versjon 30 gjør portal-knappen tydeligere, fjerner statistikkrekken og gjentatte sideoverskrifter, gjør poengforklaringen sammenleggbar og øker navnene i poengtabellen til 18 px. WebKit på 390/1280 px bekreftet at første utøverkort kommer 620/362 px tidligere, at portal-knappen åpner arkivet og at forklaring, filtre og sidebytte fungerer uten JavaScript-feil eller sideoverflyt. Versjon 29 legger til WA-poeng fra de offisielle 2025-tabellene og valg av poengtype for rangering, med tester for tabellgrenser, tidspunkt og felles prestasjonsgrunnlag. WebKit-kontroll på 390 og 1280 px bekreftet begge rangeringer, kjønnfilter, samme prestasjon i begge kolonner og ingen sideoverflyt eller JavaScript-feil. Endring og nullstilling av lokalt fødselsår endrer bare alderspoengene. Versjon 19 av fanen ble også kontrollert i nettleser: filtre, sortering, løpslenker, lokal fødselsårregistrering, samlet HTML og mobilbredde 390 px. Versjon 23 legger inn ni nye arrangementer med 107 fullførte resultater, kontrollerte nettotider og plasseringer, og 54 nye kildebelagte fødselsår. Baneresultater har øvelsesdato og tydelig heat-/klasseomfang. Automatisk integrasjonskontroll dekker også ti nyeste løp, arkivets andre side og oppdatert PB-historikk; ny nettleserkontroll var ikke tilgjengelig. Versjon 22 fremhever tiden over distansen. Versjon 21 flytter den kompakte Norge-plakaten under klubbtabellen, legger forklaringsboksen øverst og viser høyeste poeng først; nettleserkontroll var ikke tilgjengelig for denne justeringen. Versjon 24 er også sammenlignet direkte med versjon 23: alle 336 resultatkort, bilder, beregnede PB-er og poeng, vinnerfelt, nyhetslenker og karusellutvalg gir samme resultat. Publisering gjøres separat fra den lokale forhåndsvisningen.

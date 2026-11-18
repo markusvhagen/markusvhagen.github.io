@@ -1,0 +1,223 @@
+{
+  "id": "amsterdam-maraton-2026",
+  "name": "Amsterdam halv- og maraton",
+  "date": "2026-10-18",
+  "location": "Amsterdam, Nederland",
+  "type": "road",
+  "distances": [
+    "Halvmaraton",
+    "Maraton"
+  ],
+  "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d",
+  "source": {
+    "type": "official-results",
+    "provider": "MYLAPS Sporthive",
+    "timeBasis": "net",
+    "checkedAt": "2026-11-18",
+    "displayNote": "Nettotid vises. Plasseringene følger arrangørens endelige kjønnsrangering etter bruttotid. Business Run er en separat konkurranse."
+  },
+  "results": [
+    {
+      "athleteId": "rannei-saether",
+      "gender": "K",
+      "distance": "Halvmaraton",
+      "category": "K60-64",
+      "time": "1:35:43",
+      "netTime": "1:35:43",
+      "gunTime": "1:37:04",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 154,
+      "positionScope": "gender",
+      "positionGender": 154,
+      "positionGenderVerified": true,
+      "positionClass": 2,
+      "sourceBib": "41102",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/41102"
+    },
+    {
+      "athleteId": "trond-sliper",
+      "gender": "M",
+      "distance": "Halvmaraton",
+      "category": "M40-44",
+      "time": "1:18:32",
+      "netTime": "1:18:32",
+      "gunTime": "1:19:11",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 107,
+      "positionScope": "gender",
+      "positionGender": 107,
+      "positionGenderVerified": true,
+      "positionClass": 7,
+      "sourceBib": "41364",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/41364"
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "sourceName": "Ingvild Saksvik-Lehouillier",
+      "gender": "K",
+      "distance": "Halvmaraton",
+      "category": "K40-44",
+      "time": "1:30:17",
+      "netTime": "1:30:17",
+      "gunTime": "1:30:58",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 92,
+      "positionScope": "gender",
+      "positionGender": 92,
+      "positionGenderVerified": true,
+      "positionClass": 8,
+      "sourceBib": "40697",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/40697"
+    },
+    {
+      "athleteId": "eline-bjorgvik",
+      "sourceName": "Eline Bjoergvik",
+      "gender": "K",
+      "distance": "Maraton",
+      "category": "K40-44",
+      "time": "2:54:41",
+      "netTime": "2:54:41",
+      "gunTime": "2:57:16",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 56,
+      "positionScope": "gender",
+      "positionGender": 56,
+      "positionGenderVerified": true,
+      "positionClass": 5,
+      "sourceBib": "1640",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/aa3b4ab7-ecb8-4cc1-852c-f96a02832530/bib/1640"
+    },
+    {
+      "athleteId": "heidi-stokka-skullerud",
+      "sourceName": "Heidi Skullerud",
+      "gender": "K",
+      "distance": "Maraton",
+      "category": "K40-44",
+      "time": "3:19:26",
+      "netTime": "3:19:26",
+      "gunTime": "3:27:48",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 356,
+      "positionScope": "gender",
+      "positionGender": 356,
+      "positionGenderVerified": true,
+      "positionClass": 51,
+      "sourceBib": "5389",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/aa3b4ab7-ecb8-4cc1-852c-f96a02832530/bib/5389"
+    },
+    {
+      "athleteId": "alex-mauro",
+      "gender": "M",
+      "distance": "Maraton",
+      "category": "Senior M",
+      "time": "2:30:11",
+      "netTime": "2:30:11",
+      "gunTime": "2:30:45",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 142,
+      "positionScope": "gender",
+      "positionGender": 142,
+      "positionGenderVerified": true,
+      "positionClass": 109,
+      "sourceBib": "20162",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/aa3b4ab7-ecb8-4cc1-852c-f96a02832530/bib/20162"
+    },
+    {
+      "athleteId": "bjarne-austad",
+      "gender": "M",
+      "distance": "Maraton",
+      "category": "M50-54",
+      "time": "3:01:13",
+      "netTime": "3:01:13",
+      "gunTime": "3:02:31",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 1945,
+      "positionScope": "gender",
+      "positionGender": 1945,
+      "positionGenderVerified": true,
+      "positionClass": 83,
+      "sourceBib": "2809",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/aa3b4ab7-ecb8-4cc1-852c-f96a02832530/bib/2809"
+    },
+    {
+      "athleteId": "merete-elvan",
+      "gender": "K",
+      "distance": "Halvmaraton",
+      "category": "K35-39",
+      "time": "1:41:23",
+      "netTime": "1:41:23",
+      "gunTime": "1:56:07",
+      "timeBasis": "net",
+      "status": "finished",
+      "position": 434,
+      "positionScope": "gender",
+      "positionGender": 434,
+      "positionGenderVerified": true,
+      "positionClass": 67,
+      "sourceBib": "48774",
+      "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/48774"
+    },
+    {
+      "athleteId": "agnes-holstad",
+      "distance": "Maraton",
+      "status": "unknown",
+      "sourceBib": "3004",
+      "sourceUrl": "https://live.ultimate.dk/desktop/front/index.php?eventid=8040&pid=3004&ignoreuseragent=true",
+      "sourceNote": "Start og 5 km-passering registrert, men ingen sluttid. DNF/DNS er ikke fastslått."
+    },
+    {
+      "athleteId": "anita-kvam",
+      "status": "DNS",
+      "sourceNote": "DNS bekreftet av brukeren 18.11.2026. Distanse er ikke oppgitt."
+    }
+  ],
+  "winners": [
+    {
+      "distance": "Halvmaraton",
+      "scope": "Offisiell kjønnsrangering i ordinært løp, inkludert elitefeltet; Business Run er separat.",
+      "men": {
+        "name": "Oliver Donkin",
+        "time": "1:05:28",
+        "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/40987",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      },
+      "women": {
+        "name": "Cian Oldknow",
+        "time": "1:11:26",
+        "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/20382",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      }
+    },
+    {
+      "distance": "Maraton",
+      "scope": "Offisiell kjønnsrangering i ordinært løp, inkludert elitefeltet; Business Run er separat.",
+      "men": {
+        "name": "Lemi Berhanu",
+        "time": "2:03:33",
+        "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/aa3b4ab7-ecb8-4cc1-852c-f96a02832530/bib/4",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      },
+      "women": {
+        "name": "Buze Diriba",
+        "time": "2:16:12",
+        "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/aa3b4ab7-ecb8-4cc1-852c-f96a02832530/bib/F5",
+        "verified": true,
+        "timeBasis": "gun",
+        "checkedAt": "2026-11-18"
+      }
+    }
+  ]
+}

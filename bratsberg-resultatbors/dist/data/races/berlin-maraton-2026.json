@@ -1,0 +1,100 @@
+{
+  "id": "berlin-maraton-2026",
+  "name": "Berlin maraton",
+  "date": "2026-09-27",
+  "location": "Berlin, Tyskland",
+  "type": "road",
+  "distances": [
+    "Maraton"
+  ],
+  "sourceUrl": "https://berlin.r.mikatiming.com/2026/?lang=EN_CAP",
+  "source": {
+    "provider": "Mika Timing, gjengitt av FindMyRace; kontrollert mot Sportsidioten og World Athletics der tilgjengelig",
+    "type": "secondary-results",
+    "timeBasis": "net",
+    "checkedAt": "2026-11-18",
+    "urls": [
+      "https://www.findmyrace.de/de/berlin-marathon-2026/",
+      "https://www.findmyrace.de/de/berlin-marathon-2026/page/2/",
+      "https://www.sportsidioten.no/resultater/alle-nordmenn-i-berlin-marathon-2026/",
+      "https://worldathletics.org/competition/calendar-results/results/7235580?eventId=10229534"
+    ],
+    "note": "Offisiell Mika Timing-liste var ikke tilgjengelig ved kontroll. Nettotider og kildeplasseringer er hentet fra FindMyRace. Kjønnsomfanget er kontrollert i den gjengitte listen; plasseringene er ikke norske delplasseringer eller aldersklasseplasseringer. Mats og Camillas nettotider er også kontrollert mot Sportsidioten. Camillas bruttotid er kontrollert mot World Athletics, som viser plass 43 etter bruttotid; den gjengitte tidtakerlisten viser plass 40.",
+    "displayNote": "Nettotid vises. Plasseringene følger den gjengitte tidtakerlisten innen kjønn."
+  },
+  "results": [
+    {
+      "athleteId": "alexander-solnor",
+      "gender": "M",
+      "distance": "Maraton",
+      "category": "M35",
+      "time": "2:30:04",
+      "timeBasis": "net",
+      "netTime": "2:30:04",
+      "gunTime": "2:30:35",
+      "status": "finished",
+      "position": 283,
+      "positionScope": "gender",
+      "positionGender": 283,
+      "positionGenderVerified": true,
+      "sourceBib": "79082",
+      "sourceUrl": "https://www.findmyrace.de/de/berlin-marathon-2026/"
+    },
+    {
+      "athleteId": "mats-flaaten",
+      "gender": "M",
+      "distance": "Maraton",
+      "category": "M35",
+      "time": "2:40:13",
+      "timeBasis": "net",
+      "netTime": "2:40:13",
+      "gunTime": "2:41:02",
+      "status": "finished",
+      "position": 900,
+      "positionScope": "gender",
+      "positionGender": 900,
+      "positionGenderVerified": true,
+      "sourceBib": "58726",
+      "sourceUrl": "https://www.findmyrace.de/de/berlin-marathon-2026/page/2/"
+    },
+    {
+      "athleteId": "camilla-marie-flaaten",
+      "gender": "K",
+      "distance": "Maraton",
+      "category": "W35",
+      "time": "2:40:13",
+      "timeBasis": "net",
+      "netTime": "2:40:13",
+      "gunTime": "2:41:02",
+      "status": "finished",
+      "position": 40,
+      "positionScope": "gender",
+      "positionGender": 40,
+      "positionGenderVerified": true,
+      "sourceBib": "58725",
+      "sourceUrl": "https://www.findmyrace.de/de/berlin-marathon-2026/page/2/"
+    }
+  ],
+  "winners": [
+    {
+      "distance": "Maraton",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Guye Adola",
+        "time": "2:02:50",
+        "timeBasis": "gun",
+        "verified": true,
+        "sourceUrl": "https://www.generali-berlin-marathon.com/",
+        "checkedAt": "2026-11-18"
+      },
+      "women": {
+        "name": "Tigst Assefa",
+        "time": "2:11:04",
+        "timeBasis": "gun",
+        "verified": true,
+        "sourceUrl": "https://www.generali-berlin-marathon.com/",
+        "checkedAt": "2026-11-18"
+      }
+    }
+  ]
+}
