@@ -52,7 +52,7 @@ export function mountWidget(el,data,{embedded=false}={}) {
     if(!race)return renderWidgetPlaceholder();
     const href=`resultater.html#lop/${encodeURIComponent(race.id)}`,tab=clone?' tabindex="-1"':'';
     const highlights=selectWidgetHighlights(race);
-    return `<article class="bf-card" aria-label="${esc(race.name)}"><div class="bf-race-heading"><h3><a href="${href}"${target}${tab}>${esc(race.name)}</a></h3></div><div class="bf-race-metadata">${renderRaceWinners(race,{clone})}<time datetime="${esc(race.date)}">${esc(shortDate(race.date))}</time></div><div class="athlete-grid bf-athlete-grid">${highlights.map(r=>renderAthleteCard(r,data.portraits,{compact:true})).join('')}</div><div class="bf-card-footer">${renderRaceNews(race,{compact:true,clone,embedded})}<a class="bf-card-link" href="${href}"${target}${tab}>Se alle ${race.results.length} klubbresultater <span aria-hidden="true">↗</span></a></div></article>`;
+    return `<article class="bf-card" aria-label="${esc(race.name)}"><div class="bf-race-heading"><h3><a href="${href}"${target}${tab}>${esc(race.name)}</a></h3></div><div class="bf-race-metadata">${renderRaceWinners(race,{clone})}<time datetime="${esc(race.date)}">${esc(shortDate(race.date))}</time></div><div class="athlete-grid bf-athlete-grid">${highlights.map(r=>renderAthleteCard(r,data.portraits,{compact:true,raceType:race.type})).join('')}</div><div class="bf-card-footer">${renderRaceNews(race,{compact:true,clone,embedded})}<a class="bf-card-link" href="${href}"${target}${tab}>Se alle ${race.results.length} klubbresultater <span aria-hidden="true">↗</span></a></div></article>`;
   };
   el.innerHTML=`
     <div class="bf-titlebar">

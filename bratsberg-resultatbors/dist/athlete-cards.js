@@ -69,7 +69,7 @@ function renderWaScore(result){
   return `<div class="athlete-wa-score${available?'':' is-unavailable'}" title="${esc(note)}"><span>WA-poeng</span><strong>${available?grade.score:'—'}</strong></div>`;
 }
 
-export function renderAthleteCard(result,portraits={}, {compact=false,showWaScore=false}={}) {
+export function renderAthleteCard(result,portraits={}, {compact=false,showWaScore=false,raceType}={}) {
   const photo=portraits[result.athleteId],status=resultStatus(result),finished=status==='finished';
   const statusLabel=status==='DNS'?'Ikke startet':status==='DNF'?'Brutt':status==='DSQ'?'Diskvalifisert':'Tid mangler';
   const gender=result.gender||result.category?.[0],position=finished?awardPosition(result):null;
@@ -83,7 +83,7 @@ export function renderAthleteCard(result,portraits={}, {compact=false,showWaScor
   const roundMarkup=athleteResultContext(result);
   const medalLabel={gold:'Gull',silver:'Sølv',bronze:'Bronse'}[medal];
   const rankMarkup=position!==null?`<span class="athlete-card-position${medal?' award-medal medal-'+medal:''}" title="${esc(placementTitle)}">${medal?renderAwardIcon()+`<span class="sr-only">${medalLabel}: </span>`:''}Nr. ${position} ${esc(placementLabel)}</span>`:'';
-  return `<article data-athlete-id="${esc(result.athleteId||'')}" class="athlete-card${compact?' compact':''}${!finished?' is-unfinished':result.clubRecord?' is-record':isPersonalBest?' is-pb':''}${medal?' podium-'+medal:''}"><div class="athlete-card-portrait" aria-hidden="true"><span>${esc(initials(result.name))}</span>${renderPortraitImage(photo,{width:96,height:120})}</div><div class="athlete-card-content"><div class="athlete-card-top"><span class="athlete-card-distance">${esc(result.distance)}</span>${rankMarkup}</div>${roundMarkup}<h4>${esc(result.name)}</h4><p class="athlete-card-time${finished?'':' athlete-card-status'}">${finished?esc(displayTime(result.time,result.measuredTime)):status==='unknown'?'—':status}</p><div class="athlete-card-bottom"><span class="athlete-card-badges">${finished?badges(result):`<span class="athlete-status-label">${statusLabel}</span>`}</span>${category?`<span class="athlete-card-category" title="Aldersklasse">${esc(category)}</span>`:''}</div>${showWaScore&&finished?renderWaScore(result):''}</div></article>`;
+  return `<article data-athlete-id="${esc(result.athleteId||'')}" class="athlete-card${compact?' compact':''}${!finished?' is-unfinished':result.clubRecord?' is-record':isPersonalBest?' is-pb':''}${medal?' podium-'+medal:''}"><div class="athlete-card-portrait" aria-hidden="true"><span>${esc(initials(result.name))}</span>${renderPortraitImage(photo,{width:96,height:120})}</div><div class="athlete-card-content"><div class="athlete-card-top"><span class="athlete-card-distance">${esc(result.distance)}</span>${rankMarkup}</div>${roundMarkup}<h4>${esc(result.name)}</h4><p class="athlete-card-time${finished?'':' athlete-card-status'}">${finished?esc(displayTime(result.time,result.measuredTime,raceType)):status==='unknown'?'—':status}</p><div class="athlete-card-bottom"><span class="athlete-card-badges">${finished?badges(result,raceType):`<span class="athlete-status-label">${statusLabel}</span>`}</span>${category?`<span class="athlete-card-category" title="Aldersklasse">${esc(category)}</span>`:''}</div>${showWaScore&&finished?renderWaScore(result):''}</div></article>`;
 }
 
 export function installPortraitFallback(root=document){

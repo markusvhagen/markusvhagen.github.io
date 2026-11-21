@@ -18,11 +18,11 @@ function raceWinnerDistances(race){
   return [...new Set((listed.length?listed:fallback).filter(distance=>typeof distance==='string'&&distance.trim()))];
 }
 
-function renderRaceWinnerBadge(winner,gender,distance,scope){
+function renderRaceWinnerBadge(winner,gender,distance,scope,raceType){
   if(winner?.applicable===false)return '';
   const label=gender==='men'?'menn':'kvinner',short=gender==='men'?'M':'K';
   const valid=winner?.verified===true&&raceWinnerTimeIsValid(winner.time);
-  const time=valid?displayTime(winner.time,winner.measuredTime):'—',name=valid&&typeof winner.name==='string'?winner.name.trim():'';
+  const time=valid?displayTime(winner.time,winner.measuredTime,raceType):'—',name=valid&&typeof winner.name==='string'?winner.name.trim():'';
   const basis=valid&&winner.timeBasis==='net'?'Nettotid':valid&&winner.timeBasis==='gun'?'Bruttotid':'';
   const explanation=valid?['Vinner '+label,distance,name,time,basis,scope].filter(Boolean).join(' · '):`Vinnertid for ${label} på ${distance} er ikke bekreftet`;
   const visibleName=valid?(name||'Navn ikke oppgitt'):'Ikke bekreftet';
@@ -51,7 +51,7 @@ export function renderRaceWinners(race,{instanceId,selectedDistance,clone=false}
     const entry=entries.find(candidate=>candidate?.distance===distance);
     const scope=typeof entry?.scope==='string'&&entry.scope!=='overall-gender'?entry.scope:'';
     const visibleScope=scope&&(race?.type==='track'||/^(?:[KM]\s*)?U\d{2}$|^[KM]\d{1,3}(?:[-–]\d{1,3}|\+)?$/.test(scope));
-    return `<span class="race-winner-pair" data-winner-panel="${raceExtrasEscape(distance)}"${distance===current?'':' hidden'}>${visibleScope?`<span class="race-winner-scope">${raceExtrasEscape(scope)}</span>`:''}${renderRaceWinnerBadge(entry?.men,'men',distance,scope)}${renderRaceWinnerBadge(entry?.women,'women',distance,scope)}</span>`;
+    return `<span class="race-winner-pair" data-winner-panel="${raceExtrasEscape(distance)}"${distance===current?'':' hidden'}>${visibleScope?`<span class="race-winner-scope">${raceExtrasEscape(scope)}</span>`:''}${renderRaceWinnerBadge(entry?.men,'men',distance,scope,race.type)}${renderRaceWinnerBadge(entry?.women,'women',distance,scope,race.type)}</span>`;
   }).join('');
   return `<div class="race-winners" data-race-winners="${raceExtrasEscape(race?.id??'')}"${instanceId?` data-winner-instance="${raceExtrasEscape(instanceId)}"`:''} role="group" aria-label="Vinnertider i løpet">${selector}<span class="race-winner-panels" aria-live="polite" aria-atomic="true">${panels}</span></div>`;
 }

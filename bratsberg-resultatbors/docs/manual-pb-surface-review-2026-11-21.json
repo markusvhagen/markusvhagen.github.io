@@ -1,0 +1,3317 @@
+{
+  "checkedAt": "2026-11-21",
+  "sourceVersion": 40,
+  "summary": {
+    "newlyClassified": 65,
+    "newRoad": 56,
+    "newTrack": 9,
+    "classificationBasis": {
+      "context-inference": 36,
+      "source-supported": 29
+    },
+    "csvPoints": {
+      "needs-review": 41,
+      "imported": 130,
+      "existing-reference": 5
+    },
+    "registeredReferences": 214
+  },
+  "changes": [
+    {
+      "athleteId": "anders-aamodt-resell",
+      "name": "Anders Aamodt Resell",
+      "sourceRow": 26,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "15:53",
+      "previous": {
+        "time": "15:53",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "15:53",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 26,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "15:53",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "anders-aamodt-resell",
+      "name": "Anders Aamodt Resell",
+      "sourceRow": 26,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "33:07",
+      "previous": {
+        "time": "33:07",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "10000 m",
+        "time": "33:07",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 26,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "33:07",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "33:07 matcher 10 km Pacing Bislett; arrangøren beskriver 25 runder på utendørs 400-meterbane.",
+          "sources": [
+            "https://10kpb.no/om-lopet/",
+            "https://www.kondis.no/resultater/resultater-fra-10-km-pacing-bislett/1597247"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "grete-helgesen",
+      "name": "Grete Helgesen",
+      "sourceRow": 28,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "17:40",
+      "previous": {
+        "time": "17:40",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "17:40",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 28,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "17:40",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 0
+    },
+    {
+      "athleteId": "grete-helgesen",
+      "name": "Grete Helgesen",
+      "sourceRow": 28,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "36:30",
+      "previous": {
+        "time": "36:30",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "36:30",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 28,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "36:30",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19.43",
+      "previous": {
+        "time": "19:43",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:43",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 30,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19.43",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Ingvild Saksvik-Lehouillier 19:43 er registrert på Sommernattsløpet Trondheim i gatestatistikken for 2024.",
+          "sources": [
+            "https://www.kondis.no/statistikk/de-beste-2024-5-km-kvinner/469761"
+          ],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "41.20",
+      "previous": {
+        "time": "41:20",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "41:20",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 30,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "41.20",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "jorgen-skevik",
+      "name": "Jørgen Skevik",
+      "sourceRow": 33,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "32:19",
+      "previous": {
+        "time": "32:19",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "32:19",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 33,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "32:19",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 4
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16:38",
+      "previous": {
+        "time": "16:38",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "16:38",
+        "date": null,
+        "asOf": "2026-11-20",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 44,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16:38",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Trond Sliper 16:38 er registrert på Trønder-Østløpet 5 km i 2022.",
+          "sources": [
+            "https://www.kondis.no/statistikk/de-beste-2022-5-km-menn/469435"
+          ],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "sourceRow": 34,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16:29",
+      "previous": {
+        "time": "16:29",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "5000 m",
+        "time": "16:29",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 34,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16:29",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "WA har 5000 m utendørs 16:29.36. CSV-ens hele sekunder 16:29 bevares; denne oppføringen tolkes som bane.",
+          "sources": [
+            "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 6
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "sourceRow": 34,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "33:15",
+      "previous": {
+        "time": "33:15",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "33:15",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 34,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "33:15",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt 33:15 i eksisterende WA-kilde for 10 km gate.",
+          "sources": [
+            "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646"
+          ],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 7
+    },
+    {
+      "athleteId": "sofie-soraunet-wangberg",
+      "name": "Sofie Søraunet Wangberg",
+      "sourceRow": 22,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "39:42",
+      "previous": {
+        "time": "39:42",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "39:42",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 22,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "39:42",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 0
+    },
+    {
+      "athleteId": "beate-glorstad-laukholm",
+      "name": "Beate Glørstad Laukholm",
+      "sourceRow": 40,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "21:58",
+      "previous": {
+        "time": "21:58",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "21:58",
+        "date": null,
+        "asOf": "2026-11-20",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 40,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "21:58",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 0
+    },
+    {
+      "athleteId": "beate-glorstad-laukholm",
+      "name": "Beate Glørstad Laukholm",
+      "sourceRow": 40,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "46:04 ",
+      "previous": {
+        "time": "46:04",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "46:04",
+        "date": null,
+        "asOf": "2026-11-20",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 40,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "46:04 ",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "rekordmila-2026",
+              "distance": "10 km",
+              "time": "46:04",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://www.racedays.run/event/rekordmila-2026/results/"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "kristin-ronning",
+      "name": "Kristin Rønning",
+      "sourceRow": 29,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19:23",
+      "previous": {
+        "time": "19:23",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:23",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 29,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19:23",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "kristin-ronning",
+      "name": "Kristin Rønning",
+      "sourceRow": 29,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "40:32",
+      "previous": {
+        "time": "40:32",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "40:32",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 29,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "40:32",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "vegard-hoiseth",
+      "name": "Vegard Høiseth",
+      "sourceRow": 17,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16:08",
+      "previous": {
+        "time": "16:08",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "16:08",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 17,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16:08",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 0
+    },
+    {
+      "athleteId": "vegard-hoiseth",
+      "name": "Vegard Høiseth",
+      "sourceRow": 17,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "36:05",
+      "previous": {
+        "time": "36:05",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "36:05",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 17,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "36:05",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "oivind-estensen",
+      "name": "Øivind Estensen",
+      "sourceRow": 31,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "17:01",
+      "previous": {
+        "time": "17:01",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "17:01",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 31,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "17:01",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "tronder-ostlopet-2026",
+              "distance": "5 km",
+              "time": "17:01",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://my.raceresult.com/396951/results"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "oivind-estensen",
+      "name": "Øivind Estensen",
+      "sourceRow": 31,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "35:26",
+      "previous": {
+        "time": "35:26",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "35:26",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 31,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "35:26",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "rekordmila-2026",
+              "distance": "10 km",
+              "time": "35:26",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://www.racedays.run/event/rekordmila-2026/results/"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "stian-granheim-skaland",
+      "name": "Stian Granheim Skåland",
+      "sourceRow": 24,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16.43",
+      "previous": {
+        "time": "16:43",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "16:43",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 24,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16.43",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "stian-granheim-skaland",
+      "name": "Stian Granheim Skåland",
+      "sourceRow": 24,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "34.44",
+      "previous": {
+        "time": "34:44",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "34:44",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 24,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "34.44",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "nidaros-lopefest-2026",
+              "distance": "10 km",
+              "time": "34:44.9",
+              "timeDifferenceSeconds": 0.9,
+              "sourceUrl": "https://live.eqtiming.com/80853"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "tor-magne-volden",
+      "name": "Tor Magne Volden",
+      "sourceRow": 18,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19:10",
+      "previous": {
+        "time": "19:10",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:10",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 18,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19:10",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "tor-magne-volden",
+      "name": "Tor Magne Volden",
+      "sourceRow": 18,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37:34",
+      "previous": {
+        "time": "37:34",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:34",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 18,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37:34",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "tronderenergi-mila-2026",
+              "distance": "10 km",
+              "time": "37:33.6",
+              "timeDifferenceSeconds": -0.4,
+              "sourceUrl": "https://live.eqtiming.com/79516"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "mads-holmefjord-lund",
+      "name": "Mads Holmefjord Lund",
+      "sourceRow": 2,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37:07",
+      "previous": {
+        "time": "37:07",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:07",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 2,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37:07",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "nidaros-lopefest-2026",
+              "distance": "10 km",
+              "time": "37:07.2",
+              "timeDifferenceSeconds": 0.2,
+              "sourceUrl": "https://live.eqtiming.com/80853"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "ane-korsvold",
+      "name": "Ane Korsvold",
+      "sourceRow": 20,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "39:27",
+      "previous": {
+        "time": "39:27",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "39:27",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 20,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "39:27",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "nidaros-lopefest-2026",
+              "distance": "10 km",
+              "time": "39:27.5",
+              "timeDifferenceSeconds": 0.5,
+              "sourceUrl": "https://live.eqtiming.com/80853"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "luca-bessems",
+      "name": "Luca Bessems",
+      "sourceRow": 7,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19:08",
+      "previous": {
+        "time": "19:08",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:08",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 7,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19:08",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "luca-bessems",
+      "name": "Luca Bessems",
+      "sourceRow": 7,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "38:35",
+      "previous": {
+        "time": "38:35",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "38:35",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 7,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "38:35",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "magnus-cato-andersen",
+      "name": "Magnus Cato Andersen",
+      "sourceRow": 14,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09:03.44",
+      "previous": {
+        "time": "9:03.44",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "3000 m",
+        "time": "9:03.44",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 14,
+        "sourceColumn": "3000m/3K gate personlig rekord",
+        "rawValue": "09:03.44",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt navn, øvelse og innsendt tid i NFIFs utendørsstatistikk 2020.",
+          "sources": [
+            "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php?outdoor=Y&showclass=11&showclub=0&showevent=0&showseason=2020"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "magnus-cato-andersen",
+      "name": "Magnus Cato Andersen",
+      "sourceRow": 14,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "15:54.85, 15:49",
+      "previous": {
+        "time": "15:54.85",
+        "type": "combined",
+        "distance": "5000 m",
+        "reason": "multiple-times-without-surface",
+        "status": "needs-review"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "5000 m",
+        "time": "15:54.85",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 14,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "15:54.85, 15:49",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt navn, øvelse og innsendt tid i NFIFs utendørsstatistikk 2020.",
+          "sources": [
+            "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php?outdoor=Y&showclass=11&showclub=0&showevent=0&showseason=2020"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "magnus-cato-andersen",
+      "name": "Magnus Cato Andersen",
+      "sourceRow": 14,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "15:54.85, 15:49",
+      "previous": {
+        "time": "15:49",
+        "type": "combined",
+        "distance": "5000 m",
+        "reason": "multiple-times-without-surface",
+        "status": "needs-review"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "15:49",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 14,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "15:54.85, 15:49",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt tid og navn i Perseløpet 5 km 30.05.2020; adskilt fra 5000 m-banetiden.",
+          "sources": [
+            "https://www.kondis.no/files/2025/08/19/Resultater_5_km_lbsmw7ltzwnbzz.pdf"
+          ],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "magnus-cato-andersen",
+      "name": "Magnus Cato Andersen",
+      "sourceRow": 14,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "32:36.35",
+      "previous": {
+        "time": "32:36.35",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "10000 m",
+        "time": "32:36.35",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 14,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "32:36.35",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt navn, øvelse og innsendt tid i NFIFs utendørsstatistikk 2020.",
+          "sources": [
+            "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php?outdoor=Y&showclass=11&showclub=0&showevent=0&showseason=2020"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 4
+    },
+    {
+      "athleteId": "rune-lysgard-fagerheim",
+      "name": "Rune Lysgård Fagerheim",
+      "sourceRow": 32,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "17:57",
+      "previous": {
+        "time": "17:57",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "17:57",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 32,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "17:57",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "rune-lysgard-fagerheim",
+      "name": "Rune Lysgård Fagerheim",
+      "sourceRow": 32,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37:50",
+      "previous": {
+        "time": "37:50",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:50",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 32,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37:50",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "iris-roe-kalafati",
+      "name": "Iris Røe Kalafati",
+      "sourceRow": 13,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "39:30",
+      "previous": {
+        "time": "39:30",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "39:30",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 13,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "39:30",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "nidaros-lopefest-2026",
+              "distance": "10 km",
+              "time": "39:30.1",
+              "timeDifferenceSeconds": 0.1,
+              "sourceUrl": "https://live.eqtiming.com/80853"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "oyvind-ytterhus-utengen",
+      "name": "Øyvind Ytterhus Utengen",
+      "sourceRow": 10,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "8,33 bane",
+      "previous": {
+        "time": "8:33",
+        "type": "track",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "3000 m",
+        "time": "8:33",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 10,
+        "sourceColumn": "3000m/3K gate personlig rekord",
+        "rawValue": "8,33 bane",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "CSV angir bane eksplisitt; eksisterende WA-kilde støtter utendørs i samme øvelse. Innsendt tid beholdes selv ved avvik.",
+          "sources": [
+            "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 5
+    },
+    {
+      "athleteId": "oyvind-ytterhus-utengen",
+      "name": "Øyvind Ytterhus Utengen",
+      "sourceRow": 10,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "31,17 bane. 31,59 gate",
+      "previous": {
+        "time": "31:17",
+        "type": "track",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "10000 m",
+        "time": "31:17",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 10,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "31,17 bane. 31,59 gate",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "CSV angir bane eksplisitt; eksisterende WA-kilde støtter utendørs i samme øvelse. Innsendt tid beholdes selv ved avvik.",
+          "sources": [
+            "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 6
+    },
+    {
+      "athleteId": "kristian-lian",
+      "name": "Kristian Lian",
+      "sourceRow": 4,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37:55",
+      "previous": {
+        "time": "37:55",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:55",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 4,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37:55",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "hytteplanmila-2026",
+              "distance": "10 km",
+              "time": "37:55",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://live.ultimate.dk/desktop/front/data.php?eventid=7395&mode=participantinfo&pid=3416&language=us"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "800m personlig rekord",
+      "rawValue": "2:15:95",
+      "previous": {
+        "time": "2:15.95",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "800 m",
+        "time": "2:15.95",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 15,
+        "sourceColumn": "800m personlig rekord",
+        "rawValue": "2:15:95",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt øvelse og tid i eksisterende WA-kilde avklarer inne/ute.",
+          "sources": [
+            "https://worldathletics.org/athletes/norway/hanna-eid-14651581"
+          ],
+          "supportingResults": []
+        },
+        "environment": "outdoor"
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19:10",
+      "previous": {
+        "time": "19:10",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:10",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 15,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19:10",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 4
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "Andre personlige rekorder",
+      "rawValue": "400m - 58:41, 1000m - 3:02:99",
+      "previous": {
+        "time": "58.41",
+        "type": "track",
+        "distance": "400 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "reference": {
+        "type": "track",
+        "distance": "400 m",
+        "time": "58.41",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 15,
+        "sourceColumn": "Andre personlige rekorder",
+        "rawValue": "400m - 58:41, 1000m - 3:02:99",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Eksakt øvelse og tid i eksisterende WA-kilde avklarer inne/ute.",
+          "sources": [
+            "https://worldathletics.org/athletes/norway/hanna-eid-14651581"
+          ],
+          "supportingResults": []
+        },
+        "environment": "indoor"
+      },
+      "personalBestIndex": 5
+    },
+    {
+      "athleteId": "kjell-marius-vollan",
+      "name": "Kjell-Marius Vollan",
+      "sourceRow": 25,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19:02",
+      "previous": {
+        "time": "19:02",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:02",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 25,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19:02",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "tronder-ostlopet-2026",
+              "distance": "5 km",
+              "time": "19:02",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://my.raceresult.com/396951/results"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "kjell-marius-vollan",
+      "name": "Kjell-Marius Vollan",
+      "sourceRow": 25,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "39:47",
+      "previous": {
+        "time": "39:47",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "39:47",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 25,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "39:47",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "tronderenergi-mila-2026",
+              "distance": "10 km",
+              "time": "39:47.8",
+              "timeDifferenceSeconds": 0.8,
+              "sourceUrl": "https://live.eqtiming.com/79516"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "simen-haugland",
+      "name": "Simen Haugland",
+      "sourceRow": 3,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "18:29",
+      "previous": {
+        "time": "18:29",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "18:29",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 3,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "18:29",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "tronder-ostlopet-2026",
+              "distance": "5 km",
+              "time": "18:29",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://my.raceresult.com/396951/results"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "simen-haugland",
+      "name": "Simen Haugland",
+      "sourceRow": 3,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "38:07",
+      "previous": {
+        "time": "38:07",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "38:07",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 3,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "38:07",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "valencia-10k-2026",
+              "distance": "10 km",
+              "time": "38:07",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://sportmaniacs.com/es/races/10k-valencia-ibercaja-by-kiprun-2026/69637e54-4f30-43f1-80e9-09c3ac1f0d32/rankings"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "bjarne-austad",
+      "name": "Bjarne Austad",
+      "sourceRow": 37,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "18.28",
+      "previous": {
+        "time": "18:28",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "18:28",
+        "date": null,
+        "asOf": "2026-11-19",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 37,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "18.28",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "tronder-ostlopet-2026",
+              "distance": "5 km",
+              "time": "18:28",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://my.raceresult.com/396951/results"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "bjarne-austad",
+      "name": "Bjarne Austad",
+      "sourceRow": 37,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37.46",
+      "previous": {
+        "time": "37:46",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:46",
+        "date": null,
+        "asOf": "2026-11-19",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 37,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37.46",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Gate støttet av eksisterende løp på samme distanse med samme eller sub-sekundnær tid.",
+          "sources": [],
+          "supportingResults": [
+            {
+              "raceId": "drammen-10k-2026",
+              "distance": "10 km",
+              "time": "37:46",
+              "timeDifferenceSeconds": 0.0,
+              "sourceUrl": "https://live.ultimate.dk/desktop/front/index.php?eventid=7069"
+            }
+          ]
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "kristian-selbekk-liaklev",
+      "name": "Kristian Selbekk Liaklev",
+      "sourceRow": 19,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "17:20",
+      "previous": {
+        "time": "17:20",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "17:20",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 19,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "17:20",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "kristian-selbekk-liaklev",
+      "name": "Kristian Selbekk Liaklev",
+      "sourceRow": 19,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37:09",
+      "previous": {
+        "time": "37:09",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:09",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 19,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37:09",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16:14",
+      "previous": {
+        "time": "16:14",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "16:14",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 6,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16:14",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 0
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "33.50",
+      "previous": {
+        "time": "33:50",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "33:50",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 6,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "33.50",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "19.40",
+      "previous": {
+        "time": "19:40",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "19:40",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 9,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "19.40",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "source-supported",
+          "checkedAt": "2026-11-21",
+          "basis": "Rannei Sæther 19:40 er registrert på Norgestesten 1 i gatestatistikken for 2022.",
+          "sources": [
+            "https://www.kondis.no/statistikk/veteranstatistikk-2022-5-km-kvinner/469121"
+          ],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "39.51",
+      "previous": {
+        "time": "39:51",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "39:51",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 9,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "39.51",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "morten-schei",
+      "name": "Morten Schei",
+      "sourceRow": 11,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16:35",
+      "previous": {
+        "time": "16:35",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "16:35",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 11,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16:35",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "morten-schei",
+      "name": "Morten Schei",
+      "sourceRow": 11,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "33:18",
+      "previous": {
+        "time": "33:18",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "33:18",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 11,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "33:18",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "anita-kvam",
+      "name": "Anita Kvam",
+      "sourceRow": 12,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "20:03",
+      "previous": {
+        "time": "20:03",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "20:03",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 12,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "20:03",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "anita-kvam",
+      "name": "Anita Kvam",
+      "sourceRow": 12,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "41:46",
+      "previous": {
+        "time": "41:46",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "41:46",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 12,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "41:46",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "magnus-langseth",
+      "name": "Magnus Langseth",
+      "sourceRow": 16,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "18.14",
+      "previous": {
+        "time": "18:14",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "18:14",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 16,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "18.14",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "magnus-langseth",
+      "name": "Magnus Langseth",
+      "sourceRow": 16,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "37.59.5",
+      "previous": {
+        "time": "37:59.5",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "37:59.5",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 16,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "37.59.5",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 3
+    },
+    {
+      "athleteId": "marita-ramfjord-saetran",
+      "name": "Marita Ramfjord Sætran",
+      "sourceRow": 21,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "21.18",
+      "previous": {
+        "time": "21:18",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "21:18",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 21,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "21.18",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "marita-ramfjord-saetran",
+      "name": "Marita Ramfjord Sætran",
+      "sourceRow": 21,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "44.59",
+      "previous": {
+        "time": "44:59",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "44:59",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 21,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "44.59",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "kevin-gray",
+      "name": "Kevin Gray",
+      "sourceRow": 23,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "42:52",
+      "previous": {
+        "time": "42:52",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "42:52",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 23,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "42:52",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "martin-uglem",
+      "name": "Martin Uglem",
+      "sourceRow": 27,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "16:48",
+      "previous": {
+        "time": "16:48",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "16:48",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 27,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "16:48",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    },
+    {
+      "athleteId": "martin-uglem",
+      "name": "Martin Uglem",
+      "sourceRow": 27,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "33:59",
+      "previous": {
+        "time": "33:59",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "33:59",
+        "date": null,
+        "asOf": "2026-11-18",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 27,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "33:59",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "erika-skaslien",
+      "name": "Erika Skaslien",
+      "sourceRow": 35,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "39:44",
+      "previous": {
+        "time": "39:44",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "10 km",
+        "time": "39:44",
+        "date": null,
+        "asOf": "2026-11-19",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 35,
+        "sourceColumn": "10000m/10K gate personlig rekord",
+        "rawValue": "39:44",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 2
+    },
+    {
+      "athleteId": "stale-kvam",
+      "name": "Ståle Kvam",
+      "sourceRow": 39,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "20:07",
+      "previous": {
+        "time": "20:07",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "reference": {
+        "type": "road",
+        "distance": "5 km",
+        "time": "20:07",
+        "date": null,
+        "asOf": "2026-11-20",
+        "source": "PB oppgitt av utøveren i CSV-skjemaet; underlaget er gjennomgått separat.",
+        "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+        "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+        "sourceRow": 39,
+        "sourceColumn": "5000m/5K gate personlig rekord",
+        "rawValue": "20:07",
+        "evidenceKind": "athlete-submitted-personal-best",
+        "userApproved": true,
+        "importedAt": "2026-11-21",
+        "classification": {
+          "status": "context-inference",
+          "checkedAt": "2026-11-21",
+          "basis": "Tolket som gate etter brukerens presisering om CSV-en, enkel 5/10-km-oppføring og løpsprofil; ingen motsigende banekilde funnet.",
+          "sources": [],
+          "supportingResults": []
+        }
+      },
+      "personalBestIndex": 1
+    }
+  ],
+  "stillPending": [
+    {
+      "athleteId": "anders-aamodt-resell",
+      "name": "Anders Aamodt Resell",
+      "sourceRow": 26,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "9:13",
+      "point": {
+        "time": "9:13",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "800m personlig rekord",
+      "rawValue": "2.17.04",
+      "point": {
+        "time": "2:17.04",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "1500m personlig rekord",
+      "rawValue": "4.59.49",
+      "point": {
+        "time": "4:59.49",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11.03",
+      "point": {
+        "time": "11:03",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "9:51",
+      "point": {
+        "time": "9:51",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "35:12/35:24",
+      "point": {
+        "time": "35:12",
+        "type": "combined",
+        "distance": "10000 m",
+        "reason": "multiple-times-without-surface",
+        "status": "needs-review"
+      }
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "35:12/35:24",
+      "point": {
+        "time": "35:24",
+        "type": "combined",
+        "distance": "10000 m",
+        "reason": "multiple-times-without-surface",
+        "status": "needs-review"
+      }
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "Andre personlige rekorder",
+      "rawValue": "Miles 4:59",
+      "point": {
+        "time": "4:59",
+        "type": "unspecified",
+        "distance": "1 mile",
+        "status": "needs-review",
+        "reason": "event-and-surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "vemund-gurholt",
+      "name": "Vemund Gurholt",
+      "sourceRow": 5,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "08:48",
+      "point": {
+        "time": "8:48",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "vemund-gurholt",
+      "name": "Vemund Gurholt",
+      "sourceRow": 5,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "15:01",
+      "point": {
+        "time": "15:01",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "vemund-gurholt",
+      "name": "Vemund Gurholt",
+      "sourceRow": 5,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "30:51",
+      "point": {
+        "time": "30:51",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "vegard-hoiseth",
+      "name": "Vegard Høiseth",
+      "sourceRow": 17,
+      "column": "1500m personlig rekord",
+      "rawValue": "4:50",
+      "point": {
+        "time": "4:50",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "vegard-hoiseth",
+      "name": "Vegard Høiseth",
+      "sourceRow": 17,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09:50",
+      "point": {
+        "time": "9:50",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "oivind-estensen",
+      "name": "Øivind Estensen",
+      "sourceRow": 31,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10:00:01",
+      "point": {
+        "time": "10:00.01",
+        "type": "combined",
+        "distance": "3000 m",
+        "normalizationNeedsConfirmation": true,
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "stian-granheim-skaland",
+      "name": "Stian Granheim Skåland",
+      "sourceRow": 24,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09.37",
+      "point": {
+        "time": "9:37",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "tor-magne-volden",
+      "name": "Tor Magne Volden",
+      "sourceRow": 18,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10:48",
+      "point": {
+        "time": "10:48",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "mads-holmefjord-lund",
+      "name": "Mads Holmefjord Lund",
+      "sourceRow": 2,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10:24",
+      "point": {
+        "time": "10:24",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "luca-bessems",
+      "name": "Luca Bessems",
+      "sourceRow": 7,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:46",
+      "point": {
+        "time": "11:46",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "1500m personlig rekord",
+      "rawValue": "4:58:45",
+      "point": {
+        "time": "4:58.45",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "Andre personlige rekorder",
+      "rawValue": "400m - 58:41, 1000m - 3:02:99",
+      "point": {
+        "time": "3:02.99",
+        "type": "track",
+        "distance": "1000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "kjell-marius-vollan",
+      "name": "Kjell-Marius Vollan",
+      "sourceRow": 25,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:09",
+      "point": {
+        "time": "11:09",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "simen-haugland",
+      "name": "Simen Haugland",
+      "sourceRow": 3,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:08",
+      "point": {
+        "time": "11:08",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "bjarne-austad",
+      "name": "Bjarne Austad",
+      "sourceRow": 37,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10.33",
+      "point": {
+        "time": "10:33",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "kristian-selbekk-liaklev",
+      "name": "Kristian Selbekk Liaklev",
+      "sourceRow": 19,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09:52",
+      "point": {
+        "time": "9:52",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "kristian-selbekk-liaklev",
+      "name": "Kristian Selbekk Liaklev",
+      "sourceRow": 19,
+      "column": "Andre personlige rekorder",
+      "rawValue": "Løpebirken \n01:29:35",
+      "point": {
+        "time": "1:29:35",
+        "type": "trail",
+        "distance": "Løpebirken",
+        "status": "needs-review",
+        "reason": "course-not-confirmed"
+      }
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "800m personlig rekord",
+      "rawValue": "2min ",
+      "point": {
+        "time": "2:00",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "9:13",
+      "point": {
+        "time": "9:13",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "Halvmaraton personlig rekord",
+      "rawValue": "1:14 ",
+      "point": {
+        "type": "road",
+        "distance": "Halvmaraton",
+        "rawTime": "1:14",
+        "status": "needs-review",
+        "reason": "missing-seconds"
+      }
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "Maraton personlig rekord",
+      "rawValue": "2:42",
+      "point": {
+        "type": "road",
+        "distance": "Maraton",
+        "rawTime": "2:42",
+        "status": "needs-review",
+        "reason": "missing-seconds"
+      }
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "800m personlig rekord",
+      "rawValue": "2.13.04",
+      "point": {
+        "time": "2:13.04",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "1500m personlig rekord",
+      "rawValue": "4.47",
+      "point": {
+        "time": "4:47",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11.23",
+      "point": {
+        "time": "11:23",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "Andre personlige rekorder",
+      "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+      "point": {
+        "time": "12.7",
+        "type": "track",
+        "distance": "100 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "Andre personlige rekorder",
+      "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+      "point": {
+        "time": "27.5",
+        "type": "track",
+        "distance": "200 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "Andre personlige rekorder",
+      "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+      "point": {
+        "time": "57.5",
+        "type": "track",
+        "distance": "400 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "anita-kvam",
+      "name": "Anita Kvam",
+      "sourceRow": 12,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:28",
+      "point": {
+        "time": "11:28",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "thomas-kjetland",
+      "name": "Thomas Kjetland",
+      "sourceRow": 8,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "3000m 8:59,6",
+      "point": {
+        "time": "8:59.6",
+        "type": "track",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "thomas-kjetland",
+      "name": "Thomas Kjetland",
+      "sourceRow": 8,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "5K 15:37  5000m 15:33",
+      "point": {
+        "time": "15:33",
+        "type": "track",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      }
+    },
+    {
+      "athleteId": "thomas-kjetland",
+      "name": "Thomas Kjetland",
+      "sourceRow": 8,
+      "column": "Andre personlige rekorder",
+      "rawValue": "Birkebeinerløpet 1:15:38",
+      "point": {
+        "time": "1:15:38",
+        "type": "trail",
+        "distance": "Birkebeinerløpet",
+        "status": "needs-review",
+        "reason": "course-not-confirmed"
+      }
+    },
+    {
+      "athleteId": "magnus-langseth",
+      "name": "Magnus Langseth",
+      "sourceRow": 16,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10.19.5",
+      "point": {
+        "time": "10:19.5",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    },
+    {
+      "athleteId": "vidar-bjornas",
+      "name": "Vidar Bjørnås",
+      "sourceRow": 43,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "30:41",
+      "point": {
+        "time": "30:41",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      }
+    }
+  ],
+  "reviewNotes": [
+    {
+      "athleteId": "vemund-gurholt",
+      "sourceUrl": "https://www.friidrett.no/contentassets/e10002c32a654c2a9a67f3426e8ddbf2/telebest---revidert.pdf",
+      "note": "CSV 8:48/15:01/30:51 er mye raskere enn eldre tilgjengelig statistikk. Det kan være nyere tider; de er bevart og trenger avklaring før underlag velges."
+    },
+    {
+      "athleteId": "vidar-bjornas",
+      "note": "Et eksternt 30:41-gatetreff gjelder Vidar Jr Bjørnås. Identiteten er ikke bekreftet; ikke koblet automatisk."
+    },
+    {
+      "athleteId": "trond-sliper",
+      "note": "35:12/35:24 mangler forklaring på hvilken tid som gjelder hvilket underlag/tidsgrunnlag."
+    }
+  ],
+  "verification": {
+    "issues": [],
+    "pbBefore": 34,
+    "pbAfter": 45,
+    "added": [
+      {
+        "athlete": "Kristian Lian",
+        "race": "hytteplanmila-2026",
+        "distance": "10 km",
+        "time": "37:55"
+      },
+      {
+        "athlete": "Tor Magne Volden",
+        "race": "tronderenergi-mila-2026",
+        "distance": "10 km",
+        "time": "37:33.6"
+      },
+      {
+        "athlete": "Simen Haugland",
+        "race": "tronder-ostlopet-2026",
+        "distance": "5 km",
+        "time": "18:29"
+      },
+      {
+        "athlete": "Øivind Estensen",
+        "race": "tronder-ostlopet-2026",
+        "distance": "5 km",
+        "time": "17:01"
+      },
+      {
+        "athlete": "Kjell-Marius Vollan",
+        "race": "tronder-ostlopet-2026",
+        "distance": "5 km",
+        "time": "19:02"
+      },
+      {
+        "athlete": "Bjarne Austad",
+        "race": "tronder-ostlopet-2026",
+        "distance": "5 km",
+        "time": "18:28"
+      },
+      {
+        "athlete": "Rune Lysgård Fagerheim",
+        "race": "tronder-ostlopet-2026",
+        "distance": "10 km",
+        "time": "37:48"
+      },
+      {
+        "athlete": "Øivind Estensen",
+        "race": "rekordmila-2026",
+        "distance": "10 km",
+        "time": "35:26"
+      },
+      {
+        "athlete": "Beate Glørstad Laukholm",
+        "race": "rekordmila-2026",
+        "distance": "10 km",
+        "time": "46:04"
+      },
+      {
+        "athlete": "Bjarne Austad",
+        "race": "drammen-10k-2026",
+        "distance": "10 km",
+        "time": "37:46"
+      },
+      {
+        "athlete": "Simen Haugland",
+        "race": "valencia-10k-2026",
+        "distance": "10 km",
+        "time": "38:07"
+      }
+    ],
+    "removed": []
+  },
+  "supersededBy": "manual-pb-user-clarifications-2026-11-21.json",
+  "reportStatus": "historical-snapshot"
+}

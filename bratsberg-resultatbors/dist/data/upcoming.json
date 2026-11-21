@@ -1,18 +1,5 @@
 [
   {
-    "id": "nidaros-vinterkarusell-2026-11-21",
-    "name": "Nidaros Vinterkarusell – løp 1",
-    "date": "2026-11-21",
-    "location": "Ranheimhallen",
-    "distances": [
-      "600 m",
-      "1 000 m",
-      "3 000 m"
-    ],
-    "participants": [],
-    "sourceUrl": "https://live.eqtiming.com/84879#dashboard"
-  },
-  {
     "id": "valencia-maraton-2026",
     "name": "Valencia Maraton",
     "date": "2026-12-06",

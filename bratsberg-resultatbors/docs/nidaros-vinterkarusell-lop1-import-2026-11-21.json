@@ -1,0 +1,433 @@
+{
+  "race": {
+    "id": "nidaros-vinterkarusell-2026-11-21",
+    "name": "Nidaros Vinterkarusell – løp 1",
+    "date": "2026-11-21",
+    "location": "Ranheimhallen, Trondheim",
+    "type": "track",
+    "environment": "indoor",
+    "distances": [
+      "3 000 m"
+    ],
+    "sourceUrl": "https://live.eqtiming.com/84879#result:343187-0-0-1-1-bratsberg",
+    "timeBasis": "gun",
+    "source": {
+      "provider": "EQ Timing",
+      "type": "official-results",
+      "timeBasis": "gun",
+      "checkedAt": "2026-11-21",
+      "eventMetadataUrl": "https://live.eqtiming.com/api/Event/84879",
+      "displayNote": "Innendørs 3000 m. Tidene følger EQ Timings publiserte resultatliste og puljens felles start. Plasseringene gjelder kjønn på distansen.",
+      "eventDistances": [
+        "600 m",
+        "1 000 m",
+        "3 000 m"
+      ]
+    },
+    "winners": [
+      {
+        "distance": "3 000 m",
+        "scope": "Samlet plassering innen kjønn",
+        "men": {
+          "name": "Magnus Bjørgum",
+          "time": "9:18.7",
+          "timeBasis": "gun",
+          "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+          "verified": true,
+          "checkedAt": "2026-11-21"
+        },
+        "women": {
+          "name": "Anna Zol Nielsen",
+          "time": "10:41.9",
+          "timeBasis": "gun",
+          "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+          "verified": true,
+          "checkedAt": "2026-11-21"
+        }
+      }
+    ],
+    "results": [
+      {
+        "athleteId": "frode-viberg-jermstad",
+        "name": "Frode Viberg Jermstad",
+        "gender": "M",
+        "distance": "3 000 m",
+        "category": "M50-54",
+        "time": "10:12.6",
+        "gunTime": "10:12.6",
+        "netTime": "10:12.6",
+        "timeBasis": "gun",
+        "status": "finished",
+        "sourceBib": "239",
+        "position": 13,
+        "positionScope": "overall",
+        "positionGender": 13,
+        "positionGenderVerified": true,
+        "positionClass": 1,
+        "positionClassVerified": true,
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+        "sourceParticipantId": 14981268,
+        "sourceAthleteIdEq": 111281,
+        "sourceBirthYear": 1974,
+        "sourceClub": "Bratsberg IL / Blanktjern Coaching",
+        "sourceWaveName": "Pulje 3: Tid fra 9:15 til 10:45",
+        "sourceWaveGrossTiming": true,
+        "recordEligible": false
+      },
+      {
+        "athleteId": "emilian-westerberg-flostrand",
+        "name": "Emilian Westerberg Flostrand",
+        "gender": "M",
+        "distance": "3 000 m",
+        "category": "M15",
+        "time": "10:25.8",
+        "gunTime": "10:25.8",
+        "netTime": "10:25.8",
+        "timeBasis": "gun",
+        "status": "finished",
+        "sourceBib": "246",
+        "position": 19,
+        "positionScope": "overall",
+        "positionGender": 19,
+        "positionGenderVerified": true,
+        "positionClass": 2,
+        "positionClassVerified": true,
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+        "sourceParticipantId": 14982793,
+        "sourceAthleteIdEq": 4471966,
+        "sourceBirthYear": 2011,
+        "sourceClub": "Bratsberg IL",
+        "sourceWaveName": "Pulje 3: Tid fra 9:15 til 10:45",
+        "sourceWaveGrossTiming": true,
+        "recordEligible": false
+      },
+      {
+        "athleteId": "ane-korsvold",
+        "name": "Ane Korsvold",
+        "gender": "K",
+        "distance": "3 000 m",
+        "category": "K35-39",
+        "time": "11:18.9",
+        "gunTime": "11:18.9",
+        "netTime": "11:18.9",
+        "timeBasis": "gun",
+        "status": "finished",
+        "sourceBib": "248",
+        "position": 35,
+        "positionScope": "overall",
+        "positionGender": 3,
+        "positionGenderVerified": true,
+        "positionClass": 1,
+        "positionClassVerified": true,
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+        "sourceParticipantId": 14982958,
+        "sourceAthleteIdEq": 3569920,
+        "sourceBirthYear": 1991,
+        "sourceClub": "Bratsberg IL",
+        "sourceWaveName": "Pulje 1: Tid fra 10:45 til 12:00",
+        "sourceWaveGrossTiming": true,
+        "recordEligible": false
+      },
+      {
+        "athleteId": "anette-leistad",
+        "name": "Anette Leistad",
+        "gender": "K",
+        "distance": "3 000 m",
+        "category": "K40-44",
+        "time": "11:22.3",
+        "gunTime": "11:22.3",
+        "netTime": "11:22.3",
+        "timeBasis": "gun",
+        "status": "finished",
+        "sourceBib": "268",
+        "position": 36,
+        "positionScope": "overall",
+        "positionGender": 4,
+        "positionGenderVerified": true,
+        "positionClass": 1,
+        "positionClassVerified": true,
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+        "sourceParticipantId": 14984327,
+        "sourceAthleteIdEq": 111737,
+        "sourceBirthYear": 1984,
+        "sourceClub": "Bratsberg IL",
+        "sourceWaveName": "Pulje 1: Tid fra 10:45 til 12:00",
+        "sourceWaveGrossTiming": true,
+        "recordEligible": false
+      },
+      {
+        "athleteId": "anna-neergaard-rathe",
+        "name": "Anna Neergaard Rathe",
+        "gender": "K",
+        "distance": "3 000 m",
+        "category": "K45-49",
+        "time": "12:41.4",
+        "gunTime": "12:41.4",
+        "netTime": "12:41.4",
+        "timeBasis": "gun",
+        "status": "finished",
+        "sourceBib": "287",
+        "position": 66,
+        "positionScope": "overall",
+        "positionGender": 11,
+        "positionGenderVerified": true,
+        "positionClass": 2,
+        "positionClassVerified": true,
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+        "sourceParticipantId": 14985168,
+        "sourceAthleteIdEq": 3577305,
+        "sourceBirthYear": 1981,
+        "sourceClub": "Bratsberg IL",
+        "sourceWaveName": "Pulje 2: Tid over 12:00",
+        "sourceWaveGrossTiming": true,
+        "recordEligible": false
+      },
+      {
+        "athleteId": "vibeke-stenhaug",
+        "name": "Vibeke Stenhaug",
+        "gender": "K",
+        "distance": "3 000 m",
+        "category": "K50-54",
+        "time": "14:26.7",
+        "gunTime": "14:26.7",
+        "netTime": "14:26.7",
+        "timeBasis": "gun",
+        "status": "finished",
+        "sourceBib": "208",
+        "position": 79,
+        "positionScope": "overall",
+        "positionGender": 15,
+        "positionGenderVerified": true,
+        "positionClass": 2,
+        "positionClassVerified": true,
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+        "sourceParticipantId": 14976420,
+        "sourceAthleteIdEq": 1836781,
+        "sourceBirthYear": 1976,
+        "sourceClub": "Bratsberg IL",
+        "sourceWaveName": "Pulje 2: Tid over 12:00",
+        "sourceWaveGrossTiming": true,
+        "recordEligible": false
+      }
+    ]
+  },
+  "newAthletes": [
+    {
+      "id": "frode-viberg-jermstad",
+      "name": "Frode Viberg Jermstad",
+      "aliases": [],
+      "personalBests": [],
+      "birthYear": 1974,
+      "birthYearSource": {
+        "url": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+        "checkedAt": "2026-11-21",
+        "provider": "EQ Timing"
+      }
+    },
+    {
+      "id": "emilian-westerberg-flostrand",
+      "name": "Emilian Westerberg Flostrand",
+      "aliases": [],
+      "personalBests": [],
+      "birthYear": 2011,
+      "birthYearSource": {
+        "url": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+        "checkedAt": "2026-11-21",
+        "provider": "EQ Timing"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "athleteId": "arnt-kverndal",
+      "name": "Arnt Johan Kverndal",
+      "gender": "M",
+      "distance": "3 000 m",
+      "category": "M45-49",
+      "time": "0:00.0",
+      "gunTime": "0:00.0",
+      "netTime": "0:00.0",
+      "timeBasis": "gun",
+      "status": "DNS",
+      "sourceBib": "230",
+      "position": 86,
+      "positionScope": "overall",
+      "positionGender": 69,
+      "positionGenderVerified": true,
+      "positionClass": 4,
+      "positionClassVerified": true,
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+      "sourceParticipantId": 14980634,
+      "sourceAthleteIdEq": 1671373,
+      "sourceBirthYear": 1977,
+      "sourceClub": "Bratsberg IL",
+      "sourceWaveName": "Pulje 3: Tid fra 9:15 til 10:45",
+      "sourceWaveGrossTiming": true,
+      "recordEligible": false
+    }
+  ],
+  "allDistanceWinners": [
+    {
+      "distance": "600 m",
+      "note": "Ingen kjønnsrangering i EQ. Ingen vinnere utledet."
+    },
+    {
+      "distance": "1000 m",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Ludvig Agdestein Rostad",
+        "time": "3:13.1",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343186/male?count=1000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-21"
+      },
+      "women": {
+        "name": "Emilie Resell Mo",
+        "time": "4:00.1",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343186/female?count=1000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-21"
+      }
+    },
+    {
+      "distance": "3 000 m",
+      "scope": "overall-gender",
+      "men": {
+        "name": "Magnus Bjørgum",
+        "time": "9:18.7",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-21"
+      },
+      "women": {
+        "name": "Anna Zol Nielsen",
+        "time": "10:41.9",
+        "timeBasis": "gun",
+        "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+        "verified": true,
+        "checkedAt": "2026-11-21"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "stageId": 343185,
+      "distance": "600 m",
+      "gender": "M",
+      "items": 15,
+      "statuses": {
+        "TIME": 15
+      },
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343185/male?count=1000&startAt=1",
+      "allPagesFetched": true
+    },
+    {
+      "stageId": 343185,
+      "distance": "600 m",
+      "gender": "K",
+      "items": 9,
+      "statuses": {
+        "TIME": 9
+      },
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343185/female?count=1000&startAt=1",
+      "allPagesFetched": true
+    },
+    {
+      "stageId": 343186,
+      "distance": "1000 m",
+      "gender": "M",
+      "items": 16,
+      "statuses": {
+        "TIME": 14,
+        "DNF": 1,
+        "DNS": 1
+      },
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343186/male?count=1000&startAt=1",
+      "allPagesFetched": true
+    },
+    {
+      "stageId": 343186,
+      "distance": "1000 m",
+      "gender": "K",
+      "items": 15,
+      "statuses": {
+        "TIME": 14,
+        "DNS": 1
+      },
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343186/female?count=1000&startAt=1",
+      "allPagesFetched": true
+    },
+    {
+      "stageId": 343187,
+      "distance": "3000 m",
+      "gender": "M",
+      "items": 69,
+      "statuses": {
+        "TIME": 66,
+        "DNF": 2,
+        "DNS": 1
+      },
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/male?count=1000&startAt=1",
+      "allPagesFetched": true
+    },
+    {
+      "stageId": 343187,
+      "distance": "3000 m",
+      "gender": "K",
+      "items": 18,
+      "statuses": {
+        "TIME": 16,
+        "DNS": 2
+      },
+      "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/84879/343187/female?count=1000&startAt=1",
+      "allPagesFetched": true
+    }
+  ],
+  "eventMetadata": {
+    "eqId": 84879,
+    "name": "Nidaros Vinterkarusell: Løp 1",
+    "date": "2026-11-21T00:00:00",
+    "location": "Ranheimhallen",
+    "organizer": "Strindheim IL",
+    "stages": [
+      {
+        "id": 343185,
+        "name": "600 m",
+        "kilometres": 0.6
+      },
+      {
+        "id": 343186,
+        "name": "1000 m",
+        "kilometres": 1.0
+      },
+      {
+        "id": 343187,
+        "name": "3000 m",
+        "kilometres": 3.0
+      }
+    ]
+  },
+  "notes": [
+    "EQ-lenken i brukerens melding åpner 600 m-etappen. Alle tre distanser og begge kjønn er gjennomgått. Bratsberg har seks fullførte på 3000 m og én DNS. Ingen Bratsberg-treff på 600/1000 m.",
+    "Per-resultat EtappeDeltaker.Pulje.BruttoTid=true; StarttidNetto mangler. Formatert og NettoFormatert er identiske for alle Bratsberg-fullførte. Tidsbasis er derfor puljens felles start (gun).",
+    "CompletedCount=0 og Fullfort=false i API er ikke pålitelig fullføringsindikator her; alle importerbare treff har StatusTekst=TIME og positiv tid, mens DNS er eksplisitt.",
+    "Ingen PB-felt forhåndsatt. Nye resultater skal vurderes mot 3000 m innendørs-referanser, ikke gate/utendørs.",
+    "Anna Neergaard Rathe har manglende birthYear lokalt; EQ oppgir1981. Ny verdi kan legges til med kilde dersom ønsket for aldersgradering.",
+    "Frode Viberg Jermstad og Emilian Westerberg Flostrand mangler i nåværende register og trenger nye profiler."
+  ],
+  "classificationSources": [
+    "https://www.kondis.no/idrett/nidaros-vinterkarusell-blases-i-gang-pa-lordag/1599720",
+    "https://www.strindheimil.no/friidrett/trondersk-vinterkarusell/"
+  ],
+  "importedAt": "2026-11-21",
+  "removedUpcomingId": "nidaros-vinterkarusell-2026-11-21",
+  "birthYearAdded": {
+    "athleteId": "anna-neergaard-rathe",
+    "birthYear": 1981
+  },
+  "notesArePreImportSnapshot": true,
+  "currentPersonalBestPolicy": "Etter brukeravklaringen 21.11.2026 sammenlignes 3000 m bane samlet inne/ute. Gate holdes separat. Ingen av de seks har en gyldig 3000 m bane-PB-referanse."
+}

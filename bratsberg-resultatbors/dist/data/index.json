@@ -1,7 +1,8 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "races": [
+    "data/races/nidaros-vinterkarusell-2026-11-21.json",
     "data/races/jessheim-vintermaraton-2026.json",
     "data/races/malaga-maraton-2026.json",
     "data/races/amsterdam-maraton-2026.json",

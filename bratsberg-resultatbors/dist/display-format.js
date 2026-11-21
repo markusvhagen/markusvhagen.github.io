@@ -1,13 +1,14 @@
 import {parsePerformanceTime} from './record-check.js';
 
-/** Display whole seconds from the selected timing basis, without rounding. */
-export function displayTime(officialTime, measuredTime) {
+/** Preserve track precision; truncate all other displayed times to whole seconds. */
+export function displayTime(officialTime, measuredTime, raceType) {
   const value = parsePerformanceTime(measuredTime) === null ? officialTime : measuredTime;
   if (parsePerformanceTime(value) === null) return '—';
 
-  const fields = value.trim().replace(/[.,]\d+$/, '').split(':');
+  const text = raceType === 'track' ? value.trim() : value.trim().replace(/[.,]\d+$/, '');
+  const fields = text.split(':');
   if (fields.length === 3 && Number(fields[0]) === 0) fields.shift();
-  fields[0] = String(Number(fields[0]));
+  fields[0] = fields[0].replace(/^0+(?=\d)/, '');
   return fields.join(':');
 }
 

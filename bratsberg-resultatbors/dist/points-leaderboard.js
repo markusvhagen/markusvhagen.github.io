@@ -44,7 +44,7 @@ export function selectPointsLeaderboard(races,filters={}){
       if(pointsMissingAgeReasons.has(ageGrade?.reason))missingAgeResults++;
       eligibleResults++;
       const row={athleteId,name,gender,score,waScore,ageScore,age:ageGrade?.age??null,ageBasis:ageGrade?.ageBasis??null,
-        raceId,raceName,date,distance,time:pointsText(result.time),result};
+        raceId,raceName,raceType:race.type,date,distance,time:pointsText(result.time),result};
       const previous=bestByAthlete.get(athleteId);
       if(!previous||row.score>previous.score||row.score===previous.score&&pointsAchievementOrder(row,previous)<0)bestByAthlete.set(athleteId,row);
     }

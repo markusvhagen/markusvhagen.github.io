@@ -1,0 +1,2289 @@
+{
+  "confirmedAt": "2026-11-21",
+  "sourceVersion": 41,
+  "summary": {
+    "resolvedCsvPoints": 41,
+    "addedReferences": 44,
+    "reviewedTimeDiscrepancies": 16,
+    "changedReferenceTimes": 7,
+    "csvPoints": {
+      "imported": 171,
+      "existing-reference": 5
+    },
+    "pendingCsvPoints": 0,
+    "registeredReferences": 258,
+    "athletes": 179,
+    "remainingReviewBlocks": 0
+  },
+  "resolvedPoints": [
+    {
+      "athleteId": "anders-aamodt-resell",
+      "name": "Anders Aamodt Resell",
+      "sourceRow": 26,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "9:13",
+      "previous": {
+        "time": "9:13",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "9:13",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 26,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "9:13",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "800m personlig rekord",
+      "rawValue": "2.17.04",
+      "previous": {
+        "time": "2:17.04",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "800 m",
+          "time": "2:17.04",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 30,
+          "sourceColumn": "800m personlig rekord",
+          "rawValue": "2.17.04",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "1500m personlig rekord",
+      "rawValue": "4.59.49",
+      "previous": {
+        "time": "4:59.49",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "1500 m",
+          "time": "4:59.49",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 30,
+          "sourceColumn": "1500m personlig rekord",
+          "rawValue": "4.59.49",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "sourceRow": 30,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11.03",
+      "previous": {
+        "time": "11:03",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        5
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "11:03",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 30,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "11.03",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "9:51",
+      "previous": {
+        "time": "9:51",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        2
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "9:51",
+          "date": null,
+          "asOf": "2026-11-20",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 44,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "9:51",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "35:12/35:24",
+      "previous": {
+        "time": "35:12",
+        "type": "combined",
+        "distance": "10000 m",
+        "reason": "multiple-times-without-surface",
+        "status": "needs-review"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "35:12",
+          "date": null,
+          "asOf": "2026-11-20",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 44,
+          "sourceColumn": "10000m/10K gate personlig rekord",
+          "rawValue": "35:12/35:24",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren avklarte Tronds 10 km gate til 35:12 og 10000 m bane til 35:24.00."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "35:12/35:24",
+      "previous": {
+        "time": "35:24",
+        "type": "combined",
+        "distance": "10000 m",
+        "reason": "multiple-times-without-surface",
+        "status": "needs-review"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "10000 m",
+          "time": "35:24.00",
+          "date": null,
+          "asOf": "2026-11-20",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 44,
+          "sourceColumn": "10000m/10K gate personlig rekord",
+          "rawValue": "35:12/35:24",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren avklarte Tronds 10 km gate til 35:12 og 10000 m bane til 35:24.00."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "trond-sliper",
+      "name": "Trond Sliper",
+      "sourceRow": 44,
+      "column": "Andre personlige rekorder",
+      "rawValue": "Miles 4:59",
+      "previous": {
+        "time": "4:59",
+        "type": "unspecified",
+        "distance": "1 mile",
+        "status": "needs-review",
+        "reason": "event-and-surface-unspecified"
+      },
+      "personalBestIndexes": [
+        5
+      ],
+      "references": [
+        {
+          "type": "road",
+          "distance": "1 mile",
+          "time": "4:59",
+          "date": null,
+          "asOf": "2026-11-20",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 44,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "Miles 4:59",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet engelsk mil (1609,344 m) gate på 4:59."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "vemund-gurholt",
+      "name": "Vemund Gurholt",
+      "sourceRow": 5,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "08:48",
+      "previous": {
+        "time": "8:48",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        2,
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "8:48",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 5,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "08:48",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet tiden og godkjente uttrykkelig samme referanse for Vemund på både bane og gate."
+          },
+          "crossSurfaceApproval": {
+            "approvedAt": "2026-11-21",
+            "scope": "vemund-gurholt-only",
+            "distances": [
+              "3000 m / 3 km",
+              "5000 m / 5 km",
+              "10000 m / 10 km"
+            ]
+          }
+        },
+        {
+          "type": "road",
+          "distance": "3 km",
+          "time": "8:48",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 5,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "08:48",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet tiden og godkjente uttrykkelig samme referanse for Vemund på både bane og gate."
+          },
+          "crossSurfaceApproval": {
+            "approvedAt": "2026-11-21",
+            "scope": "vemund-gurholt-only",
+            "distances": [
+              "3000 m / 3 km",
+              "5000 m / 5 km",
+              "10000 m / 10 km"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "vemund-gurholt",
+      "name": "Vemund Gurholt",
+      "sourceRow": 5,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "15:01",
+      "previous": {
+        "time": "15:01",
+        "type": "combined",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4,
+        5
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "5000 m",
+          "time": "15:01",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 5,
+          "sourceColumn": "5000m/5K gate personlig rekord",
+          "rawValue": "15:01",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet tiden og godkjente uttrykkelig samme referanse for Vemund på både bane og gate."
+          },
+          "crossSurfaceApproval": {
+            "approvedAt": "2026-11-21",
+            "scope": "vemund-gurholt-only",
+            "distances": [
+              "3000 m / 3 km",
+              "5000 m / 5 km",
+              "10000 m / 10 km"
+            ]
+          }
+        },
+        {
+          "type": "road",
+          "distance": "5 km",
+          "time": "15:01",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 5,
+          "sourceColumn": "5000m/5K gate personlig rekord",
+          "rawValue": "15:01",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet tiden og godkjente uttrykkelig samme referanse for Vemund på både bane og gate."
+          },
+          "crossSurfaceApproval": {
+            "approvedAt": "2026-11-21",
+            "scope": "vemund-gurholt-only",
+            "distances": [
+              "3000 m / 3 km",
+              "5000 m / 5 km",
+              "10000 m / 10 km"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "vemund-gurholt",
+      "name": "Vemund Gurholt",
+      "sourceRow": 5,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "30:51",
+      "previous": {
+        "time": "30:51",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        6,
+        7
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "10000 m",
+          "time": "30:51",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 5,
+          "sourceColumn": "10000m/10K gate personlig rekord",
+          "rawValue": "30:51",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet tiden og godkjente uttrykkelig samme referanse for Vemund på både bane og gate."
+          },
+          "crossSurfaceApproval": {
+            "approvedAt": "2026-11-21",
+            "scope": "vemund-gurholt-only",
+            "distances": [
+              "3000 m / 3 km",
+              "5000 m / 5 km",
+              "10000 m / 10 km"
+            ]
+          }
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "30:51",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 5,
+          "sourceColumn": "10000m/10K gate personlig rekord",
+          "rawValue": "30:51",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet tiden og godkjente uttrykkelig samme referanse for Vemund på både bane og gate."
+          },
+          "crossSurfaceApproval": {
+            "approvedAt": "2026-11-21",
+            "scope": "vemund-gurholt-only",
+            "distances": [
+              "3000 m / 3 km",
+              "5000 m / 5 km",
+              "10000 m / 10 km"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "vegard-hoiseth",
+      "name": "Vegard Høiseth",
+      "sourceRow": 17,
+      "column": "1500m personlig rekord",
+      "rawValue": "4:50",
+      "previous": {
+        "time": "4:50",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        2
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "1500 m",
+          "time": "4:50",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 17,
+          "sourceColumn": "1500m personlig rekord",
+          "rawValue": "4:50",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "vegard-hoiseth",
+      "name": "Vegard Høiseth",
+      "sourceRow": 17,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09:50",
+      "previous": {
+        "time": "9:50",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "9:50",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 17,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "09:50",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "oivind-estensen",
+      "name": "Øivind Estensen",
+      "sourceRow": 31,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10:00:01",
+      "previous": {
+        "time": "10:00.01",
+        "type": "combined",
+        "distance": "3000 m",
+        "normalizationNeedsConfirmation": true,
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "10:00.01",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 31,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "10:00:01",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "stian-granheim-skaland",
+      "name": "Stian Granheim Skåland",
+      "sourceRow": 24,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09.37",
+      "previous": {
+        "time": "9:37",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "9:37",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 24,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "09.37",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "tor-magne-volden",
+      "name": "Tor Magne Volden",
+      "sourceRow": 18,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10:48",
+      "previous": {
+        "time": "10:48",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "10:48",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 18,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "10:48",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "mads-holmefjord-lund",
+      "name": "Mads Holmefjord Lund",
+      "sourceRow": 2,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10:24",
+      "previous": {
+        "time": "10:24",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "10:24",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 2,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "10:24",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "luca-bessems",
+      "name": "Luca Bessems",
+      "sourceRow": 7,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:46",
+      "previous": {
+        "time": "11:46",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "11:46",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 7,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "11:46",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "1500m personlig rekord",
+      "rawValue": "4:58:45",
+      "previous": {
+        "time": "4:58.45",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        6
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "1500 m",
+          "time": "4:58.45",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 15,
+          "sourceColumn": "1500m personlig rekord",
+          "rawValue": "4:58:45",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "sourceRow": 15,
+      "column": "Andre personlige rekorder",
+      "rawValue": "400m - 58:41, 1000m - 3:02:99",
+      "previous": {
+        "time": "3:02.99",
+        "type": "track",
+        "distance": "1000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        7
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "1000 m",
+          "time": "3:02.99",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 15,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "400m - 58:41, 1000m - 3:02:99",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "kjell-marius-vollan",
+      "name": "Kjell-Marius Vollan",
+      "sourceRow": 25,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:09",
+      "previous": {
+        "time": "11:09",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "11:09",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 25,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "11:09",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "simen-haugland",
+      "name": "Simen Haugland",
+      "sourceRow": 3,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:08",
+      "previous": {
+        "time": "11:08",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "11:08",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 3,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "11:08",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "bjarne-austad",
+      "name": "Bjarne Austad",
+      "sourceRow": 37,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10.33",
+      "previous": {
+        "time": "10:33",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "10:33",
+          "date": null,
+          "asOf": "2026-11-19",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 37,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "10.33",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "kristian-selbekk-liaklev",
+      "name": "Kristian Selbekk Liaklev",
+      "sourceRow": 19,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "09:52",
+      "previous": {
+        "time": "9:52",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "9:52",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 19,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "09:52",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "kristian-selbekk-liaklev",
+      "name": "Kristian Selbekk Liaklev",
+      "sourceRow": 19,
+      "column": "Andre personlige rekorder",
+      "rawValue": "Løpebirken \n01:29:35",
+      "previous": {
+        "time": "1:29:35",
+        "type": "trail",
+        "distance": "Løpebirken",
+        "status": "needs-review",
+        "reason": "course-not-confirmed"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "trail",
+          "distance": "Birkebeinerløpet",
+          "time": "1:29:35",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 19,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "Løpebirken \n01:29:35",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren godkjente Birkebeinerløpet/Løpebirken som egen PB-klasse på tvers av år."
+          },
+          "courseId": "birkebeinerlopet"
+        }
+      ]
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "800m personlig rekord",
+      "rawValue": "2min ",
+      "previous": {
+        "time": "2:00",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        2
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "800 m",
+          "time": "2:00",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 6,
+          "sourceColumn": "800m personlig rekord",
+          "rawValue": "2min ",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "9:13",
+      "previous": {
+        "time": "9:13",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "9:13",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 6,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "9:13",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "Halvmaraton personlig rekord",
+      "rawValue": "1:14 ",
+      "previous": {
+        "type": "road",
+        "distance": "Halvmaraton",
+        "rawTime": "1:14",
+        "status": "needs-review",
+        "reason": "missing-seconds"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:14:46",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 6,
+          "sourceColumn": "Halvmaraton personlig rekord",
+          "rawValue": "1:14 ",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren supplerte Michael Brian Watts sine manglende sekunder."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "michael-brian-watts",
+      "name": "Michael Brian Watts",
+      "sourceRow": 6,
+      "column": "Maraton personlig rekord",
+      "rawValue": "2:42",
+      "previous": {
+        "type": "road",
+        "distance": "Maraton",
+        "rawTime": "2:42",
+        "status": "needs-review",
+        "reason": "missing-seconds"
+      },
+      "personalBestIndexes": [
+        5
+      ],
+      "references": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:42:15",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 6,
+          "sourceColumn": "Maraton personlig rekord",
+          "rawValue": "2:42",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren supplerte Michael Brian Watts sine manglende sekunder."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "800m personlig rekord",
+      "rawValue": "2.13.04",
+      "previous": {
+        "time": "2:13.04",
+        "type": "track",
+        "distance": "800 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "800 m",
+          "time": "2:13.04",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 9,
+          "sourceColumn": "800m personlig rekord",
+          "rawValue": "2.13.04",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "1500m personlig rekord",
+      "rawValue": "4.47",
+      "previous": {
+        "time": "4:47",
+        "type": "track",
+        "distance": "1500 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        5
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "1500 m",
+          "time": "4:47",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 9,
+          "sourceColumn": "1500m personlig rekord",
+          "rawValue": "4.47",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11.23",
+      "previous": {
+        "time": "11:23",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        6
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "11:23",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 9,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "11.23",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "Andre personlige rekorder",
+      "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+      "previous": {
+        "time": "12.7",
+        "type": "track",
+        "distance": "100 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        7
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "100 m",
+          "time": "12.7",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 9,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "Andre personlige rekorder",
+      "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+      "previous": {
+        "time": "27.5",
+        "type": "track",
+        "distance": "200 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        8
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "200 m",
+          "time": "27.5",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 9,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "rannei-saether",
+      "name": "Rannei Sæther",
+      "sourceRow": 9,
+      "column": "Andre personlige rekorder",
+      "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+      "previous": {
+        "time": "57.5",
+        "type": "track",
+        "distance": "400 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        9
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "400 m",
+          "time": "57.5",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 9,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "anita-kvam",
+      "name": "Anita Kvam",
+      "sourceRow": 12,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "11:28",
+      "previous": {
+        "time": "11:28",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        3
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "11:28",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 12,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "11:28",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "thomas-kjetland",
+      "name": "Thomas Kjetland",
+      "sourceRow": 8,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "3000m 8:59,6",
+      "previous": {
+        "time": "8:59.6",
+        "type": "track",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "8:59.6",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 8,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "3000m 8:59,6",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "thomas-kjetland",
+      "name": "Thomas Kjetland",
+      "sourceRow": 8,
+      "column": "5000m/5K gate personlig rekord",
+      "rawValue": "5K 15:37  5000m 15:33",
+      "previous": {
+        "time": "15:33",
+        "type": "track",
+        "distance": "5000 m",
+        "status": "needs-review",
+        "reason": "environment-unspecified"
+      },
+      "personalBestIndexes": [
+        5
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "5000 m",
+          "time": "15:33",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 8,
+          "sourceColumn": "5000m/5K gate personlig rekord",
+          "rawValue": "5K 15:37  5000m 15:33",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "thomas-kjetland",
+      "name": "Thomas Kjetland",
+      "sourceRow": 8,
+      "column": "Andre personlige rekorder",
+      "rawValue": "Birkebeinerløpet 1:15:38",
+      "previous": {
+        "time": "1:15:38",
+        "type": "trail",
+        "distance": "Birkebeinerløpet",
+        "status": "needs-review",
+        "reason": "course-not-confirmed"
+      },
+      "personalBestIndexes": [
+        6
+      ],
+      "references": [
+        {
+          "type": "trail",
+          "distance": "Birkebeinerløpet",
+          "time": "1:15:38",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 8,
+          "sourceColumn": "Andre personlige rekorder",
+          "rawValue": "Birkebeinerløpet 1:15:38",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren godkjente Birkebeinerløpet/Løpebirken som egen PB-klasse på tvers av år."
+          },
+          "courseId": "birkebeinerlopet"
+        }
+      ]
+    },
+    {
+      "athleteId": "magnus-langseth",
+      "name": "Magnus Langseth",
+      "sourceRow": 16,
+      "column": "3000m/3K gate personlig rekord",
+      "rawValue": "10.19.5",
+      "previous": {
+        "time": "10:19.5",
+        "type": "combined",
+        "distance": "3000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        4
+      ],
+      "references": [
+        {
+          "type": "track",
+          "distance": "3000 m",
+          "time": "10:19.5",
+          "date": null,
+          "asOf": "2026-11-18",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 16,
+          "sourceColumn": "3000m/3K gate personlig rekord",
+          "rawValue": "10.19.5",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet bane; innendørs og utendørs har felles PB-klasse."
+          }
+        }
+      ]
+    },
+    {
+      "athleteId": "vidar-bjornas",
+      "name": "Vidar Bjørnås",
+      "sourceRow": 43,
+      "column": "10000m/10K gate personlig rekord",
+      "rawValue": "30:41",
+      "previous": {
+        "time": "30:41",
+        "type": "combined",
+        "distance": "10000 m",
+        "status": "needs-review",
+        "reason": "surface-unspecified"
+      },
+      "personalBestIndexes": [
+        0
+      ],
+      "references": [
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "30:41",
+          "date": null,
+          "asOf": "2026-11-20",
+          "source": "PB fra CSV-skjemaet, avklart og bekreftet av brukeren 21.11.2026.",
+          "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+          "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+          "sourceRow": 43,
+          "sourceColumn": "10000m/10K gate personlig rekord",
+          "rawValue": "30:41",
+          "evidenceKind": "athlete-submitted-personal-best",
+          "userApproved": true,
+          "approvedAt": "2026-11-21",
+          "importedAt": "2026-11-21",
+          "classification": {
+            "status": "user-confirmed",
+            "checkedAt": "2026-11-21",
+            "basis": "Brukeren bekreftet 30:41 som Vidar Bjørnås sin 10 km gate; ingen ny WA-identitet er koblet."
+          }
+        }
+      ]
+    }
+  ],
+  "timeDiscrepancies": [
+    {
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "name": "Ingvild Saksvik Lehouillier",
+      "type": "road",
+      "distance": "Halvmaraton",
+      "personalBestIndex": 0,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "1:30:18",
+      "sourceTime": "1:30:17",
+      "approvedTime": "1:30:17",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "amsterdam-maraton-2026",
+          "date": "2026-10-18",
+          "time": "1:30:17",
+          "sourceUrl": "https://sporthive.com/events/s/e5066f0f-f66c-405f-9983-15fbf286ec7d/race/eae72e0c-a29d-4010-a07f-49532f6f41a1/bib/40697"
+        }
+      ]
+    },
+    {
+      "athleteId": "jorgen-skevik",
+      "name": "Jørgen Skevik",
+      "type": "road",
+      "distance": "Maraton",
+      "personalBestIndex": 3,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "2:33:34",
+      "sourceTime": "2:33:23",
+      "approvedTime": "2:33:23",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "hamburg-maraton-2026",
+          "date": "2026-04-26",
+          "time": "2:33:23",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229634"
+        },
+        {
+          "sourceProvider": "world-athletics",
+          "time": "2:33:23",
+          "date": "2026-04-26",
+          "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/outdoor/men/senior/2026?page=46"
+        }
+      ]
+    },
+    {
+      "athleteId": "rune-lysgard-fagerheim",
+      "name": "Rune Lysgård Fagerheim",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 3,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "37:50",
+      "sourceTime": "37:48",
+      "approvedTime": "37:48",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "tronder-ostlopet-2026",
+          "date": "2026-06-16",
+          "time": "37:48",
+          "sourceUrl": "https://my.raceresult.com/396951/results"
+        }
+      ]
+    },
+    {
+      "athleteId": "tor-magne-volden",
+      "name": "Tor Magne Volden",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 3,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "37:34",
+      "sourceTime": "37:33.6",
+      "approvedTime": "37:33",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "tronderenergi-mila-2026",
+          "date": "2026-08-12",
+          "time": "37:33.6",
+          "sourceUrl": "https://live.eqtiming.com/79516"
+        }
+      ]
+    },
+    {
+      "athleteId": "mads-holmefjord-lund",
+      "name": "Mads Holmefjord Lund",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 2,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "37:07",
+      "sourceTime": "37:07.2",
+      "approvedTime": "37:07",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "date": "2026-05-23",
+          "time": "37:07.2",
+          "sourceUrl": "https://live.eqtiming.com/80853"
+        }
+      ]
+    },
+    {
+      "athleteId": "iris-roe-kalafati",
+      "name": "Iris Røe Kalafati",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 1,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "39:30",
+      "sourceTime": "39:30.1",
+      "approvedTime": "39:30",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "date": "2026-05-23",
+          "time": "39:30.1",
+          "sourceUrl": "https://live.eqtiming.com/80853"
+        }
+      ]
+    },
+    {
+      "athleteId": "ane-korsvold",
+      "name": "Ane Korsvold",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 1,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "39:27",
+      "sourceTime": "39:27.5",
+      "approvedTime": "39:27",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "date": "2026-05-23",
+          "time": "39:27.5",
+          "sourceUrl": "https://live.eqtiming.com/80853"
+        }
+      ]
+    },
+    {
+      "athleteId": "stian-granheim-skaland",
+      "name": "Stian Granheim Skåland",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 3,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "34:44",
+      "sourceTime": "34:44.9",
+      "approvedTime": "34:44",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "date": "2026-05-23",
+          "time": "34:44.9",
+          "sourceUrl": "https://live.eqtiming.com/80853"
+        }
+      ]
+    },
+    {
+      "athleteId": "kjell-marius-vollan",
+      "name": "Kjell-Marius Vollan",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 2,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "39:47",
+      "sourceTime": "39:47.8",
+      "approvedTime": "39:47",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "tronderenergi-mila-2026",
+          "date": "2026-08-12",
+          "time": "39:47.8",
+          "sourceUrl": "https://live.eqtiming.com/79516"
+        }
+      ]
+    },
+    {
+      "athleteId": "henrik-nordahl",
+      "name": "Henrik Nordahl",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 2,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "33:00",
+      "sourceTime": "33:00.9",
+      "approvedTime": "33:00",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "date": "2026-05-23",
+          "time": "33:00.9",
+          "sourceUrl": "https://live.eqtiming.com/80853"
+        }
+      ]
+    },
+    {
+      "athleteId": "signe-by-eide",
+      "name": "Signe By Eide",
+      "type": "road",
+      "distance": "10 km",
+      "personalBestIndex": 0,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "35:46",
+      "sourceTime": "35:46.2",
+      "approvedTime": "35:46",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "date": "2026-05-23",
+          "time": "35:46.2",
+          "sourceUrl": "https://live.eqtiming.com/80853"
+        }
+      ]
+    },
+    {
+      "athleteId": "signe-by-eide",
+      "name": "Signe By Eide",
+      "type": "road",
+      "distance": "Halvmaraton",
+      "personalBestIndex": 1,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "1:19:17",
+      "sourceTime": "1:19:17.1",
+      "approvedTime": "1:19:17",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "jessheim-vintermaraton-2026",
+          "date": "2026-11-08",
+          "time": "1:19:17.1",
+          "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/female?count=3000&startAt=1"
+        }
+      ]
+    },
+    {
+      "athleteId": "oivind-estensen",
+      "name": "Øivind Estensen",
+      "type": "road",
+      "distance": "Maraton",
+      "personalBestIndex": 1,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "2:49:40",
+      "sourceTime": "2:49:40.2",
+      "approvedTime": "2:49:40",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "raceId": "jessheim-vintermaraton-2026",
+          "date": "2026-11-08",
+          "time": "2:49:40.2",
+          "sourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325493/male?count=3000&startAt=1"
+        }
+      ]
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "type": "track",
+      "distance": "5000 m",
+      "personalBestIndex": 6,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "16:29",
+      "sourceTime": "16:29.36",
+      "approvedTime": "16:29.36",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "sourceProvider": "world-athletics",
+          "time": "16:29.36",
+          "date": "2025-05-12",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646"
+        }
+      ]
+    },
+    {
+      "athleteId": "oyvind-ytterhus-utengen",
+      "name": "Øyvind Ytterhus Utengen",
+      "type": "track",
+      "distance": "3000 m",
+      "personalBestIndex": 5,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "8:33",
+      "sourceTime": "8:33.61",
+      "approvedTime": "8:33.61",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "sourceProvider": "world-athletics",
+          "time": "8:33.61",
+          "date": "2021-09-28",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767"
+        }
+      ]
+    },
+    {
+      "athleteId": "oyvind-ytterhus-utengen",
+      "name": "Øyvind Ytterhus Utengen",
+      "type": "track",
+      "distance": "10000 m",
+      "personalBestIndex": 6,
+      "confirmedAt": "2026-11-21",
+      "previousTime": "31:17",
+      "sourceTime": "31:18.16",
+      "approvedTime": "31:18.16",
+      "basis": "Brukeren godkjente kildetiden i avvikslisten som PB, med nedrunding til hele sekunder utenfor bane.",
+      "evidence": [
+        {
+          "sourceProvider": "world-athletics",
+          "time": "31:18.16",
+          "date": "2021-05-17",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767"
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "trackIndoorOutdoor": "shared",
+    "roadTrack": "separate",
+    "nonTrackPrecision": "floor-whole-seconds",
+    "trackPrecision": "source-decimals",
+    "birkenCourseId": "birkebeinerlopet",
+    "vemundException": "3/5/10 km references explicitly registered for both road and track",
+    "manualReferencesOverrideWa": true,
+    "pbRequiresApprovedReference": true
+  },
+  "validation": {
+    "testsPassed": 39,
+    "testsFailed": 0,
+    "personalBestDelta": {
+      "beforeCount": 45,
+      "afterCount": 54,
+      "added": [
+        {
+          "raceId": "jessheim-vintermaraton-2026",
+          "raceName": "Jessheim Vintermaraton",
+          "type": "road",
+          "athleteId": "signe-by-eide",
+          "name": "Signe By Eide",
+          "distance": "Halvmaraton",
+          "time": "1:19:17.1",
+          "comparisonTime": "1:19:17",
+          "baseline": "1:19:17",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "jessheim-vintermaraton-2026",
+          "raceName": "Jessheim Vintermaraton",
+          "type": "road",
+          "athleteId": "oivind-estensen",
+          "name": "Øivind Estensen",
+          "distance": "Maraton",
+          "time": "2:49:40.2",
+          "comparisonTime": "2:49:40",
+          "baseline": "2:49:40",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "tronderenergi-mila-2026",
+          "raceName": "Trønderenergi-mila",
+          "type": "road",
+          "athleteId": "kjell-marius-vollan",
+          "name": "Kjell-Marius Vollan",
+          "distance": "10 km",
+          "time": "39:47.8",
+          "comparisonTime": "39:47",
+          "baseline": "39:47",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "raceName": "Nidaros Løpefest",
+          "type": "road",
+          "athleteId": "henrik-nordahl",
+          "name": "Henrik Nordahl",
+          "distance": "10 km",
+          "time": "33:00.9",
+          "comparisonTime": "33:00",
+          "baseline": "33:00",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "raceName": "Nidaros Løpefest",
+          "type": "road",
+          "athleteId": "stian-granheim-skaland",
+          "name": "Stian Granheim Skåland",
+          "distance": "10 km",
+          "time": "34:44.9",
+          "comparisonTime": "34:44",
+          "baseline": "34:44",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "raceName": "Nidaros Løpefest",
+          "type": "road",
+          "athleteId": "mads-holmefjord-lund",
+          "name": "Mads Holmefjord Lund",
+          "distance": "10 km",
+          "time": "37:07.2",
+          "comparisonTime": "37:07",
+          "baseline": "37:07",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "raceName": "Nidaros Løpefest",
+          "type": "road",
+          "athleteId": "signe-by-eide",
+          "name": "Signe By Eide",
+          "distance": "10 km",
+          "time": "35:46.2",
+          "comparisonTime": "35:46",
+          "baseline": "35:46",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "raceName": "Nidaros Løpefest",
+          "type": "road",
+          "athleteId": "ane-korsvold",
+          "name": "Ane Korsvold",
+          "distance": "10 km",
+          "time": "39:27.5",
+          "comparisonTime": "39:27",
+          "baseline": "39:27",
+          "reason": "matches-manual-personal-best"
+        },
+        {
+          "raceId": "nidaros-lopefest-2026",
+          "raceName": "Nidaros Løpefest",
+          "type": "road",
+          "athleteId": "iris-roe-kalafati",
+          "name": "Iris Røe Kalafati",
+          "distance": "10 km",
+          "time": "39:30.1",
+          "comparisonTime": "39:30",
+          "baseline": "39:30",
+          "reason": "matches-manual-personal-best"
+        }
+      ],
+      "removed": [],
+      "afterPersonalBestIssues": []
+    },
+    "rawCsvPreserved": true,
+    "rawRaceFilesPreserved": true,
+    "waSourceDataPreserved": true,
+    "upcomingPreserved": true
+  }
+}

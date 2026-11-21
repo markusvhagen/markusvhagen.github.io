@@ -1,0 +1,3048 @@
+{
+  "sourceFile": "Bratsberg Friidrett - Dine PBs.csv",
+  "sourceLibraryFileId": "libfile_fde3_f-7fcdec51f9208191a969d675df0ee5e0_6216c7925b388191ae76510d1395fadc",
+  "sourceVersion": "0",
+  "importedAt": "2026-11-21",
+  "summary": {
+    "responses": 44,
+    "athletesBefore": 169,
+    "athletesAfter": 177,
+    "nameMatches": {
+      "exact-name-or-alias": 33,
+      "reviewed-name-variant": 3,
+      "new-athlete": 8
+    },
+    "performances": {
+      "existing-reference": 5,
+      "imported": 65,
+      "needs-review": 106
+    },
+    "nonemptyFields": 170,
+    "reviewBlockCount": 163,
+    "registeredReferencesAfter": 149,
+    "registeredReferencesBefore": 84
+  },
+  "athletes": [
+    {
+      "sourceRow": 1,
+      "name": "Markus Valås Hagen",
+      "athleteId": "markus-valas-hagen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "10:10",
+          "performances": [
+            {
+              "time": "10:10",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "existing-reference",
+              "personalBestIndex": 0,
+              "resolvedType": "track",
+              "resolvedDistance": "3000 m",
+              "resolution": "Eksisterende manuelt bekreftet PB i samme tid."
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "18:11",
+          "performances": [
+            {
+              "time": "18:11",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "existing-reference",
+              "personalBestIndex": 1,
+              "resolvedType": "road",
+              "resolvedDistance": "5 km",
+              "resolution": "Eksisterende manuelt bekreftet PB i samme tid."
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "36:56",
+          "performances": [
+            {
+              "time": "36:56",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "existing-reference",
+              "personalBestIndex": 2,
+              "resolvedType": "road",
+              "resolvedDistance": "10 km",
+              "resolution": "Eksisterende manuelt bekreftet PB i samme tid."
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:21:03",
+          "performances": [
+            {
+              "time": "1:21:03",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "existing-reference",
+              "personalBestIndex": 3
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3:58:06",
+          "performances": [
+            {
+              "time": "3:58:06",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 4
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "name": "Mads Holmefjord Lund",
+      "athleteId": "mads-holmefjord-lund",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "10:24",
+          "performances": [
+            {
+              "time": "10:24",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37:07",
+          "performances": [
+            {
+              "time": "37:07",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:23:18",
+          "performances": [
+            {
+              "time": "1:23:18",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3:00:27",
+          "performances": [
+            {
+              "time": "3:00:27",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "name": "Simen Sørlie Haugland",
+      "athleteId": "simen-haugland",
+      "match": "reviewed-name-variant",
+      "matchEvidence": "Unikt for-/etternavn; både 5 km 18:29 og 10 km 38:07 matcher eksisterende resultater.",
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "11:08",
+          "performances": [
+            {
+              "time": "11:08",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "18:29",
+          "performances": [
+            {
+              "time": "18:29",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "38:07",
+          "performances": [
+            {
+              "time": "38:07",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:24:23",
+          "performances": [
+            {
+              "time": "1:24:23",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3:04:53",
+          "performances": [
+            {
+              "time": "3:04:53",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "name": "Kristian Mølbach Lian",
+      "athleteId": "kristian-lian",
+      "match": "reviewed-name-variant",
+      "matchEvidence": "Unikt for-/etternavn; 10 km 37:55 matcher eksisterende nettotid på Hytteplanmila.",
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37:55",
+          "performances": [
+            {
+              "time": "37:55",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "01:26:36",
+          "performances": [
+            {
+              "time": "1:26:36",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "name": "Vemund Gurholt",
+      "athleteId": "vemund-gurholt",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "08:48",
+          "performances": [
+            {
+              "time": "8:48",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "15:01",
+          "performances": [
+            {
+              "time": "15:01",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "30:51",
+          "performances": [
+            {
+              "time": "30:51",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "01:18:32",
+          "performances": [
+            {
+              "time": "1:18:32",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "02:59:38",
+          "performances": [
+            {
+              "time": "2:59:38",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "name": "Michael Brian Watts",
+      "athleteId": "michael-brian-watts",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "800m personlig rekord",
+          "rawValue": "2min ",
+          "performances": [
+            {
+              "time": "2:00",
+              "type": "track",
+              "distance": "800 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "1500m personlig rekord",
+          "rawValue": "Har ikke tid",
+          "performances": [],
+          "status": "no-time-provided"
+        },
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "9:13",
+          "performances": [
+            {
+              "time": "9:13",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:14",
+          "performances": [
+            {
+              "time": "16:14",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33.50",
+          "performances": [
+            {
+              "time": "33:50",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:14 ",
+          "performances": [
+            {
+              "type": "road",
+              "distance": "Halvmaraton",
+              "rawTime": "1:14",
+              "status": "needs-review",
+              "reason": "missing-seconds"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:42",
+          "performances": [
+            {
+              "type": "road",
+              "distance": "Maraton",
+              "rawTime": "2:42",
+              "status": "needs-review",
+              "reason": "missing-seconds"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "name": "Luca Bessems",
+      "athleteId": "luca-bessems",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "11:46",
+          "performances": [
+            {
+              "time": "11:46",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19:08",
+          "performances": [
+            {
+              "time": "19:08",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "38:35",
+          "performances": [
+            {
+              "time": "38:35",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:22:30",
+          "performances": [
+            {
+              "time": "1:22:30",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3:04:29",
+          "performances": [
+            {
+              "time": "3:04:29",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "name": "Thomas Kjetland",
+      "athleteId": "thomas-kjetland",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "3000m 8:59,6",
+          "performances": [
+            {
+              "time": "8:59.6",
+              "type": "track",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "5K 15:37  5000m 15:33",
+          "performances": [
+            {
+              "time": "15:37",
+              "type": "road",
+              "distance": "5 km",
+              "status": "imported",
+              "personalBestIndex": 0
+            },
+            {
+              "time": "15:33",
+              "type": "track",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "partial"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "10k 32:38",
+          "performances": [
+            {
+              "time": "32:38",
+              "type": "road",
+              "distance": "10 km",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:10:55",
+          "performances": [
+            {
+              "time": "1:10:55",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 2
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:32:54",
+          "performances": [
+            {
+              "time": "2:32:54",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 3
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Andre personlige rekorder",
+          "rawValue": "Birkebeinerløpet 1:15:38",
+          "performances": [
+            {
+              "time": "1:15:38",
+              "type": "trail",
+              "distance": "Birkebeinerløpet",
+              "status": "needs-review",
+              "reason": "course-not-confirmed"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "name": "Rannei Sæther",
+      "athleteId": "rannei-saether",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "800m personlig rekord",
+          "rawValue": "2.13.04",
+          "performances": [
+            {
+              "time": "2:13.04",
+              "type": "track",
+              "distance": "800 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "1500m personlig rekord",
+          "rawValue": "4.47",
+          "performances": [
+            {
+              "time": "4:47",
+              "type": "track",
+              "distance": "1500 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "11.23",
+          "performances": [
+            {
+              "time": "11:23",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19.40",
+          "performances": [
+            {
+              "time": "19:40",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "39.51",
+          "performances": [
+            {
+              "time": "39:51",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.29.39",
+          "performances": [
+            {
+              "time": "1:29:39",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3.11.14",
+          "performances": [
+            {
+              "time": "3:11:14",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Andre personlige rekorder",
+          "rawValue": "100m: 12.7,200:27.5, 400m: 57.5",
+          "performances": [
+            {
+              "time": "12.7",
+              "type": "track",
+              "distance": "100 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            },
+            {
+              "time": "27.5",
+              "type": "track",
+              "distance": "200 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            },
+            {
+              "time": "57.5",
+              "type": "track",
+              "distance": "400 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "name": "Øyvind Ytterhus Utengen",
+      "athleteId": "oyvind-ytterhus-utengen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "8,33 bane",
+          "performances": [
+            {
+              "time": "8:33",
+              "type": "track",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "15.00 gate",
+          "performances": [
+            {
+              "time": "15:00",
+              "type": "road",
+              "distance": "5 km",
+              "status": "imported",
+              "personalBestIndex": 2
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "31,17 bane. 31,59 gate",
+          "performances": [
+            {
+              "time": "31:17",
+              "type": "track",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            },
+            {
+              "time": "31:59",
+              "type": "road",
+              "distance": "10 km",
+              "status": "imported",
+              "personalBestIndex": 3
+            }
+          ],
+          "status": "partial"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1,09,13",
+          "performances": [
+            {
+              "time": "1:09:13",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 4
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "name": "Morten Schei",
+      "athleteId": "morten-schei",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:35",
+          "performances": [
+            {
+              "time": "16:35",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33:18",
+          "performances": [
+            {
+              "time": "33:18",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:12:59",
+          "performances": [
+            {
+              "time": "1:12:59",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:34:27",
+          "performances": [
+            {
+              "time": "2:34:27",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "name": "Anita Kvam",
+      "athleteId": "anita-kvam",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "11:28",
+          "performances": [
+            {
+              "time": "11:28",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "20:03",
+          "performances": [
+            {
+              "time": "20:03",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "41:46",
+          "performances": [
+            {
+              "time": "41:46",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:30:12",
+          "performances": [
+            {
+              "time": "1:30:12",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "name": "Iris Røe Kalafati",
+      "athleteId": "iris-roe-kalafati",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "39:30",
+          "performances": [
+            {
+              "time": "39:30",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:29:46",
+          "performances": [
+            {
+              "time": "1:29:46",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "name": "Magnus Cato Andersen",
+      "athleteId": "magnus-cato-andersen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "09:03.44",
+          "performances": [
+            {
+              "time": "9:03.44",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "15:54.85, 15:49",
+          "performances": [
+            {
+              "time": "15:54.85",
+              "type": "combined",
+              "distance": "5000 m",
+              "reason": "multiple-times-without-surface",
+              "status": "needs-review"
+            },
+            {
+              "time": "15:49",
+              "type": "combined",
+              "distance": "5000 m",
+              "reason": "multiple-times-without-surface",
+              "status": "needs-review"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "32:36.35",
+          "performances": [
+            {
+              "time": "32:36.35",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:12:03",
+          "performances": [
+            {
+              "time": "1:12:03",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "name": "Hanna Eid",
+      "athleteId": "hanna-eid",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "800m personlig rekord",
+          "rawValue": "2:15:95",
+          "performances": [
+            {
+              "time": "2:15.95",
+              "type": "track",
+              "distance": "800 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "1500m personlig rekord",
+          "rawValue": "4:58:45",
+          "performances": [
+            {
+              "time": "4:58.45",
+              "type": "track",
+              "distance": "1500 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19:10",
+          "performances": [
+            {
+              "time": "19:10",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Andre personlige rekorder",
+          "rawValue": "400m - 58:41, 1000m - 3:02:99",
+          "performances": [
+            {
+              "time": "58.41",
+              "type": "track",
+              "distance": "400 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            },
+            {
+              "time": "3:02.99",
+              "type": "track",
+              "distance": "1000 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "name": "Magnus Langseth",
+      "athleteId": "magnus-langseth",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "10.19.5",
+          "performances": [
+            {
+              "time": "10:19.5",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "18.14",
+          "performances": [
+            {
+              "time": "18:14",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37.59.5",
+          "performances": [
+            {
+              "time": "37:59.5",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.29.24",
+          "performances": [
+            {
+              "time": "1:29:24",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3.21.40",
+          "performances": [
+            {
+              "time": "3:21:40",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "name": "Vegard høiseth",
+      "athleteId": "vegard-hoiseth",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "1500m personlig rekord",
+          "rawValue": "4:50",
+          "performances": [
+            {
+              "time": "4:50",
+              "type": "track",
+              "distance": "1500 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "09:50",
+          "performances": [
+            {
+              "time": "9:50",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:08",
+          "performances": [
+            {
+              "time": "16:08",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "36:05",
+          "performances": [
+            {
+              "time": "36:05",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "name": "Tor Magne Volden",
+      "athleteId": "tor-magne-volden",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "10:48",
+          "performances": [
+            {
+              "time": "10:48",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19:10",
+          "performances": [
+            {
+              "time": "19:10",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37:34",
+          "performances": [
+            {
+              "time": "37:34",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:22:53",
+          "performances": [
+            {
+              "time": "1:22:53",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:59:55",
+          "performances": [
+            {
+              "time": "2:59:55",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "name": "Kristian Selbekk Liaklev",
+      "athleteId": "kristian-selbekk-liaklev",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "09:52",
+          "performances": [
+            {
+              "time": "9:52",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "17:20",
+          "performances": [
+            {
+              "time": "17:20",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37:09",
+          "performances": [
+            {
+              "time": "37:09",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "01:22:26",
+          "performances": [
+            {
+              "time": "1:22:26",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Andre personlige rekorder",
+          "rawValue": "Løpebirken \n01:29:35",
+          "performances": [
+            {
+              "time": "1:29:35",
+              "type": "trail",
+              "distance": "Løpebirken",
+              "status": "needs-review",
+              "reason": "course-not-confirmed"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "name": "Ane Korsvold",
+      "athleteId": "ane-korsvold",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "39:27",
+          "performances": [
+            {
+              "time": "39:27",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:27:27",
+          "performances": [
+            {
+              "time": "1:27:27",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "name": "Marita Ramfjord Sætran",
+      "athleteId": "marita-ramfjord-saetran",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "21.18",
+          "performances": [
+            {
+              "time": "21:18",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "44.59",
+          "performances": [
+            {
+              "time": "44:59",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.44.17",
+          "performances": [
+            {
+              "time": "1:44:17",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "name": "Sofie Søraunet Wangberg",
+      "athleteId": "sofie-soraunet-wangberg",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "39:42",
+          "performances": [
+            {
+              "time": "39:42",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "name": "Kevin Gray",
+      "athleteId": "kevin-gray",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "42:52",
+          "performances": [
+            {
+              "time": "42:52",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:37:57",
+          "performances": [
+            {
+              "time": "1:37:57",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "name": "Stian Granheim Skåland",
+      "athleteId": "stian-granheim-skaland",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "09.37",
+          "performances": [
+            {
+              "time": "9:37",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16.43",
+          "performances": [
+            {
+              "time": "16:43",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "34.44",
+          "performances": [
+            {
+              "time": "34:44",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.19.27",
+          "performances": [
+            {
+              "time": "1:19:27",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2.58.32",
+          "performances": [
+            {
+              "time": "2:58:32",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "name": "Kjell Marius Vollan",
+      "athleteId": "kjell-marius-vollan",
+      "match": "reviewed-name-variant",
+      "matchEvidence": "Bindestrekvariant; kildenavn Kjell Marius VOLLAN og 5 km 19:02 matcher.",
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "11:09",
+          "performances": [
+            {
+              "time": "11:09",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19:02",
+          "performances": [
+            {
+              "time": "19:02",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "39:47",
+          "performances": [
+            {
+              "time": "39:47",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:29:19",
+          "performances": [
+            {
+              "time": "1:29:19",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "name": "Anders Aamodt Resell",
+      "athleteId": "anders-aamodt-resell",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "9:13",
+          "performances": [
+            {
+              "time": "9:13",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "15:53",
+          "performances": [
+            {
+              "time": "15:53",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33:07",
+          "performances": [
+            {
+              "time": "33:07",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:14:43",
+          "performances": [
+            {
+              "time": "1:14:43",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "name": "Martin Uglem",
+      "athleteId": "martin-uglem",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:48",
+          "performances": [
+            {
+              "time": "16:48",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33:59",
+          "performances": [
+            {
+              "time": "33:59",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:14:03",
+          "performances": [
+            {
+              "time": "1:14:03",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "name": "Grete Helgesen",
+      "athleteId": "grete-helgesen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "17:40",
+          "performances": [
+            {
+              "time": "17:40",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "36:30",
+          "performances": [
+            {
+              "time": "36:30",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "name": "Kristin Rønning",
+      "athleteId": "kristin-ronning",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19:23",
+          "performances": [
+            {
+              "time": "19:23",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "40:32",
+          "performances": [
+            {
+              "time": "40:32",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:33:14",
+          "performances": [
+            {
+              "time": "1:33:14",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "name": "Ingvild Saksvik-Lehouillier",
+      "athleteId": "ingvild-saksvik-lehouillier",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "800m personlig rekord",
+          "rawValue": "2.17.04",
+          "performances": [
+            {
+              "time": "2:17.04",
+              "type": "track",
+              "distance": "800 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "1500m personlig rekord",
+          "rawValue": "4.59.49",
+          "performances": [
+            {
+              "time": "4:59.49",
+              "type": "track",
+              "distance": "1500 m",
+              "status": "needs-review",
+              "reason": "environment-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "11.03",
+          "performances": [
+            {
+              "time": "11:03",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "19.43",
+          "performances": [
+            {
+              "time": "19:43",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "41.20",
+          "performances": [
+            {
+              "time": "41:20",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.30.18",
+          "performances": [
+            {
+              "time": "1:30:18",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "name": "Øivind Estensen",
+      "athleteId": "oivind-estensen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "10:00:01",
+          "performances": [
+            {
+              "time": "10:00.01",
+              "type": "combined",
+              "distance": "3000 m",
+              "normalizationNeedsConfirmation": true,
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "17:01",
+          "performances": [
+            {
+              "time": "17:01",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "35:26",
+          "performances": [
+            {
+              "time": "35:26",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "01:19:08",
+          "performances": [
+            {
+              "time": "1:19:08",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:49:40",
+          "performances": [
+            {
+              "time": "2:49:40",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "name": "Rune Lysgård Fagerheim",
+      "athleteId": "rune-lysgard-fagerheim",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "17:57",
+          "performances": [
+            {
+              "time": "17:57",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37:50",
+          "performances": [
+            {
+              "time": "37:50",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:26:48",
+          "performances": [
+            {
+              "time": "1:26:48",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3:46:22",
+          "performances": [
+            {
+              "time": "3:46:22",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "name": "Jørgen Skevik",
+      "athleteId": "jorgen-skevik",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "32:19",
+          "performances": [
+            {
+              "time": "32:19",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "71:00",
+          "performances": [
+            {
+              "time": "1:11:00",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 2
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:33:34",
+          "performances": [
+            {
+              "time": "2:33:34",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 3
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "name": "Vibeke Jensen",
+      "athleteId": "vibeke-jensen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:29",
+          "performances": [
+            {
+              "time": "16:29",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33:15",
+          "performances": [
+            {
+              "time": "33:15",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:13:20",
+          "performances": [
+            {
+              "time": "1:13:20",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 5
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:33:11",
+          "performances": [
+            {
+              "time": "2:33:11",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "existing-reference",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "name": "Erika Skaslien",
+      "athleteId": "erika-skaslien",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "39:44",
+          "performances": [
+            {
+              "time": "39:44",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:29:38",
+          "performances": [
+            {
+              "time": "1:29:38",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "03:19:41",
+          "performances": [
+            {
+              "time": "3:19:41",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "name": "Henrik Nordahl",
+      "athleteId": "henrik-nordahl",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "15:50 gate",
+          "performances": [
+            {
+              "time": "15:50",
+              "type": "road",
+              "distance": "5 km",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33:00 gate",
+          "performances": [
+            {
+              "time": "33:00",
+              "type": "road",
+              "distance": "10 km",
+              "status": "imported",
+              "personalBestIndex": 2
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:12:47",
+          "performances": [
+            {
+              "time": "1:12:47",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 3
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:31:25",
+          "performances": [
+            {
+              "time": "2:31:25",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 4
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "name": "Bjarne Austad",
+      "athleteId": "bjarne-austad",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "10.33",
+          "performances": [
+            {
+              "time": "10:33",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "18.28",
+          "performances": [
+            {
+              "time": "18:28",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "37.46",
+          "performances": [
+            {
+              "time": "37:46",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.26.54",
+          "performances": [
+            {
+              "time": "1:26:54",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3.01.13",
+          "performances": [
+            {
+              "time": "3:01:13",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "name": "Stine Helena Bang Svendsen",
+      "athleteId": "stine-helena-bang-svendsen",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1.30.14",
+          "performances": [
+            {
+              "time": "1:30:14",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "3.19.43",
+          "performances": [
+            {
+              "time": "3:19:43",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "name": "Ståle Kvam",
+      "athleteId": "stale-kvam",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "20:07",
+          "performances": [
+            {
+              "time": "20:07",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:40:01",
+          "performances": [
+            {
+              "time": "1:40:01",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "name": "Beate Glørstad Laukholm",
+      "athleteId": "beate-glorstad-laukholm",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "21:58",
+          "performances": [
+            {
+              "time": "21:58",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "46:04 ",
+          "performances": [
+            {
+              "time": "46:04",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "name": "Jonatan Olander",
+      "athleteId": "jonatan-olander",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:16 (gate)",
+          "performances": [
+            {
+              "time": "16:16",
+              "type": "road",
+              "distance": "5 km",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "33:18 (gate)",
+          "performances": [
+            {
+              "time": "33:18",
+              "type": "road",
+              "distance": "10 km",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "01:16:42",
+          "performances": [
+            {
+              "time": "1:16:42",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 2
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "02:43:48",
+          "performances": [
+            {
+              "time": "2:43:48",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 3
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "name": "Signe By Eide",
+      "athleteId": "signe-by-eide",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "35:46 gate",
+          "performances": [
+            {
+              "time": "35:46",
+              "type": "road",
+              "distance": "10 km",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:19:17",
+          "performances": [
+            {
+              "time": "1:19:17",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 1
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Maraton personlig rekord",
+          "rawValue": "2:48:32",
+          "performances": [
+            {
+              "time": "2:48:32",
+              "type": "road",
+              "distance": "Maraton",
+              "status": "imported",
+              "personalBestIndex": 2
+            }
+          ],
+          "status": "imported-or-confirmed"
+        }
+      ]
+    },
+    {
+      "sourceRow": 43,
+      "name": "Vidar Bjørnås",
+      "athleteId": "vidar-bjornas",
+      "match": "new-athlete",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "30:41",
+          "performances": [
+            {
+              "time": "30:41",
+              "type": "combined",
+              "distance": "10000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "sourceRow": 44,
+      "name": "Trond Sliper",
+      "athleteId": "trond-sliper",
+      "match": "exact-name-or-alias",
+      "matchEvidence": null,
+      "fields": [
+        {
+          "column": "3000m/3K gate personlig rekord",
+          "rawValue": "9:51",
+          "performances": [
+            {
+              "time": "9:51",
+              "type": "combined",
+              "distance": "3000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "5000m/5K gate personlig rekord",
+          "rawValue": "16:38",
+          "performances": [
+            {
+              "time": "16:38",
+              "type": "combined",
+              "distance": "5000 m",
+              "status": "needs-review",
+              "reason": "surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "10000m/10K gate personlig rekord",
+          "rawValue": "35:12/35:24",
+          "performances": [
+            {
+              "time": "35:12",
+              "type": "combined",
+              "distance": "10000 m",
+              "reason": "multiple-times-without-surface",
+              "status": "needs-review"
+            },
+            {
+              "time": "35:24",
+              "type": "combined",
+              "distance": "10000 m",
+              "reason": "multiple-times-without-surface",
+              "status": "needs-review"
+            }
+          ],
+          "status": "needs-review"
+        },
+        {
+          "column": "Halvmaraton personlig rekord",
+          "rawValue": "1:18:32",
+          "performances": [
+            {
+              "time": "1:18:32",
+              "type": "road",
+              "distance": "Halvmaraton",
+              "status": "imported",
+              "personalBestIndex": 0
+            }
+          ],
+          "status": "imported-or-confirmed"
+        },
+        {
+          "column": "Andre personlige rekorder",
+          "rawValue": "Miles 4:59",
+          "performances": [
+            {
+              "time": "4:59",
+              "type": "unspecified",
+              "distance": "1 mile",
+              "status": "needs-review",
+              "reason": "event-and-surface-unspecified"
+            }
+          ],
+          "status": "needs-review"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "issues": [],
+    "registered": 177,
+    "references": 149,
+    "waBlockedByUnresolvedManual": 7,
+    "pbBefore": 22,
+    "pbAfter": 34,
+    "pbAdded": [
+      {
+        "athlete": "Morten Schei",
+        "race": "jessheim-vintermaraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:12:59.0",
+        "baseline": "1:12:59"
+      },
+      {
+        "athlete": "Trond Sliper",
+        "race": "amsterdam-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:18:32",
+        "baseline": "1:18:32"
+      },
+      {
+        "athlete": "Ingvild Saksvik Lehouillier",
+        "race": "amsterdam-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:30:17",
+        "baseline": "1:30:18"
+      },
+      {
+        "athlete": "Bjarne Austad",
+        "race": "amsterdam-maraton-2026",
+        "distance": "Maraton",
+        "time": "3:01:13",
+        "baseline": "3:01:13"
+      },
+      {
+        "athlete": "Stine Helena Bang Svendsen",
+        "race": "heim-halvmaraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:30:14",
+        "baseline": "1:30:14"
+      },
+      {
+        "athlete": "Jonatan Olander",
+        "race": "trondheim-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:16:42",
+        "baseline": "1:16:42"
+      },
+      {
+        "athlete": "Øivind Estensen",
+        "race": "trondheim-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:19:08",
+        "baseline": "1:19:08"
+      },
+      {
+        "athlete": "Stian Granheim Skåland",
+        "race": "trondheim-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:19:27",
+        "baseline": "1:19:27"
+      },
+      {
+        "athlete": "Tor Magne Volden",
+        "race": "trondheim-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:22:53",
+        "baseline": "1:22:53"
+      },
+      {
+        "athlete": "Ane Korsvold",
+        "race": "trondheim-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:27:27",
+        "baseline": "1:27:27"
+      },
+      {
+        "athlete": "Iris Røe Kalafati",
+        "race": "trondheim-maraton-2026",
+        "distance": "Halvmaraton",
+        "time": "1:29:46",
+        "baseline": "1:29:46"
+      },
+      {
+        "athlete": "Signe By Eide",
+        "race": "praha-maraton-2026",
+        "distance": "Maraton",
+        "time": "2:48:32",
+        "baseline": "2:48:32"
+      }
+    ],
+    "pbRemoved": [],
+    "waInactive": [
+      {
+        "athleteId": "jorgen-skevik",
+        "distance": "Maraton",
+        "time": "2:33:23",
+        "reason": "manual-priority"
+      },
+      {
+        "athleteId": "jorgen-skevik",
+        "distance": "Halvmaraton",
+        "time": "1:11:15",
+        "reason": "manual-priority"
+      },
+      {
+        "athleteId": "vibeke-jensen",
+        "distance": "10 km",
+        "time": "33:15",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "vibeke-jensen",
+        "distance": "Halvmaraton",
+        "time": "1:13:29",
+        "reason": "manual-priority"
+      },
+      {
+        "athleteId": "vibeke-jensen",
+        "distance": "5000 m",
+        "time": "16:29.36",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "oyvind-ytterhus-utengen",
+        "distance": "3000 m",
+        "time": "8:33.61",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "oyvind-ytterhus-utengen",
+        "distance": "10 000 m",
+        "time": "31:18.16",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "hanna-eid",
+        "distance": "800 m",
+        "time": "2:16.66",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "hanna-eid",
+        "distance": "400 m",
+        "time": "58.41",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "hanna-eid",
+        "distance": "800 m",
+        "time": "2:15.95",
+        "reason": "manual-review"
+      },
+      {
+        "athleteId": "henrik-nordahl",
+        "distance": "Maraton",
+        "time": "2:32:00",
+        "reason": "manual-priority"
+      }
+    ],
+    "differences": [
+      {
+        "athlete": "Ingvild Saksvik Lehouillier",
+        "distance": "Halvmaraton",
+        "csvTime": "1:30:18",
+        "fasterArchive": [
+          {
+            "time": "1:30:17",
+            "race": "amsterdam-maraton-2026"
+          }
+        ],
+        "fasterWa": []
+      },
+      {
+        "athlete": "Jørgen Skevik",
+        "distance": "Maraton",
+        "csvTime": "2:33:34",
+        "fasterArchive": [
+          {
+            "time": "2:33:23",
+            "race": "hamburg-maraton-2026"
+          }
+        ],
+        "fasterWa": [
+          "2:33:23"
+        ]
+      }
+    ]
+  },
+  "snapshotVersion": 40,
+  "supersededBy": "manual-pb-user-clarifications-2026-11-21.json",
+  "reportStatus": "historical-snapshot"
+}

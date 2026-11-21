@@ -9,14 +9,14 @@ export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','
 export const dateParts = s => {const date = new Date(s+'T12:00:00');return {day:date.getDate(),month:new Intl.DateTimeFormat('nb-NO',{month:'short'}).format(date).replace('.',''),full:new Intl.DateTimeFormat('nb-NO',{day:'numeric',month:'long',year:'numeric'}).format(date)};};
 export const shortDate = s => new Intl.DateTimeFormat('nb-NO',{day:'numeric',month:'short'}).format(new Date(s+'T12:00:00'));
 export const initials = s => s.split(' ').map(x=>x[0]).slice(0,2).join('');
-export function badges(result) {
+export function badges(result,raceType) {
   let recordBadge = '';
   if (result.clubRecord) {
     let title = 'Bekreftet klubbrekord';
     if (result.clubRecordTime) {
       const sameBasis = result.clubRecordTimeBasis === result.timeBasis &&
         result.clubRecordTime === result.time;
-      const time = displayTime(result.clubRecordTime, sameBasis ? result.measuredTime : undefined);
+      const time = displayTime(result.clubRecordTime, sameBasis ? result.measuredTime : undefined, raceType);
       const basis = result.clubRecordTimeBasis === 'gun' ? ' (bruttotid)' : '';
       title += ': ' + time + basis + '. Kortet viser ' + (result.timeBasis === 'net' ? 'nettotid.' : 'løpstiden.');
     }
