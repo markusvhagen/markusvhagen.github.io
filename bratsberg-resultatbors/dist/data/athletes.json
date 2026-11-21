@@ -6,7 +6,147 @@
       "name": "Alex Mauro",
       "aliases": [],
       "photo": null,
-      "personalBests": []
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:07:09",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2019-11-10",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:26:32",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2025-10-12",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "31:25.07",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2014-04-04",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "5000 m",
+          "time": "15:11.30",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2022-04-16",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Alex MAURO",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:07:09",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2019-11-10",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:26:32",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2025-10-12",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "31:25.07",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2014-04-04",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "15:11.30",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2022-04-16",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/united-states/alex-mauro-14637056",
+        "profileExcerptMayBeIncomplete": true
+      }
     },
     {
       "id": "anders-aamodt-resell",
@@ -47,12 +187,105 @@
           "zoom": 1
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:15:43",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/camilla-marie-flaaten-15157808",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-02-15",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1990,
       "birthYearSource": {
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Camilla-Marie FLAATEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:41:02",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/camilla-marie-flaaten-15157808",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-09-27",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "2:40:13",
+              "raceId": "berlin-maraton-2026",
+              "timeBasis": "net",
+              "date": "2026-09-27",
+              "athleteId": "camilla-marie-flaaten"
+            }
+          },
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:15:43",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/camilla-marie-flaaten-15157808",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-02-15",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "5 km",
+            "time": "17:49",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/camilla-marie-flaaten-15157808",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-05-25",
+            "notes": [
+              "WA-profilens oppgitte PB; mulig utdatert i forhold til nyere lokale resultater, må kontrolleres før bruk.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "17:08.8",
+              "raceId": "nidaros-lopefest-2026",
+              "timeBasis": "unspecified",
+              "date": "2026-05-23",
+              "athleteId": "camilla-marie-flaaten"
+            }
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/camilla-marie-flaaten-15157808",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -82,6 +315,53 @@
           "eventName": "Hamburg maraton",
           "source": "PB og nettotid bekreftet i Kondis sin løpsomtale og resultatliste.",
           "sourceUrl": "https://www.kondis.no/idrett/loyperekord-og-mange-sterke-norske-prestasjoner-i-hamburg-maraton/1562379"
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "5000 m",
+          "time": "16:38.81",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7233455",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-23",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "35:19.71",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/records/toplists/middlelong/10000-metres/outdoor/women/senior/2026?page=8",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-25",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "34:31",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/records/toplists/road-running/10-kilometres/all/women/senior/2026?page=8",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-09-26",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
         }
       ],
       "birthYear": 2000,
@@ -90,6 +370,98 @@
         "checkedAt": "2026-11-03",
         "note": "Utøverens fødselsår oppgitt i klubbens presentasjon av NM-laget.",
         "url": "https://www.bratsbergfriidrett.no/2026/07/21/her-er-vart-nm-lag/"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Eira RAPP",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:42:52",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7241782?eventId=10229534",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-04-26",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "existing-personal-best-preserved",
+            "existingReferenceTimes": [
+              "2:41:27"
+            ],
+            "fasterExistingResult": {
+              "time": "2:41:27",
+              "raceId": "hamburg-maraton-2026",
+              "timeBasis": "net",
+              "date": "2026-04-26",
+              "athleteId": "eira-rapp"
+            }
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "16:38.81",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7233455",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-23",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "35:19.71",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/middlelong/10000-metres/outdoor/women/senior/2026?page=8",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-25",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "34:31",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/10-kilometres/all/women/senior/2026?page=8",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-09-26",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -122,12 +494,152 @@
           "zoom": 1
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "400 m",
+          "time": "50.27",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-02-02",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "200 m",
+          "time": "22.67",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-02-09",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "400 m",
+          "time": "49.53",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-06-16",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "200 m",
+          "time": "22.30",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-06-21",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
       "birthYear": 1991,
       "birthYearSource": {
         "provider": "Racedays",
         "checkedAt": "2026-11-03",
         "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Espen TVEIT",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "400 m",
+            "time": "50.27",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-02-02",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "200 m",
+            "time": "22.67",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-02-09",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "400 m",
+            "time": "49.53",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-06-16",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "200 m",
+            "time": "22.30",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/_/14876794",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-06-21",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/_/14876794",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -144,7 +656,179 @@
           "zoom": 1.25
         }
       },
-      "personalBests": []
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "2000 m hinder",
+          "time": "7:11.33",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2021-09-04",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "road",
+          "distance": "5 km",
+          "time": "17:30",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2021-04-27",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "10:13.51",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2021-09-03",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "2000 m",
+          "time": "6:32.36",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-09-08",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "1500 m",
+          "time": "4:55.12",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2020-05-26",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Eva INGEBRIGTSEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "2000 m hinder",
+            "time": "7:11.33",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2021-09-04",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "5 km",
+            "time": "17:30",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2021-04-27",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "10:13.51",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2021-09-03",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "2000 m",
+            "time": "6:32.36",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-09-08",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "1500 m",
+            "time": "4:55.12",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2020-05-26",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/eva-ingebrigtsen-14917095",
+        "profileExcerptMayBeIncomplete": true
+      }
     },
     {
       "id": "grete-helgesen",
@@ -182,12 +866,120 @@
           "zoom": 1.6
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "9:50.38",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2022-05-21",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "1500 m",
+          "time": "4:35.53",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2022-06-24",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "1000 m",
+          "time": "2:58.90",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2022-02-19",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
       "birthYear": 2002,
       "birthYearSource": {
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Hedda LEIRVIK",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "9:50.38",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2022-05-21",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "1500 m",
+            "time": "4:35.53",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2022-06-24",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "1000 m",
+            "time": "2:58.90",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2022-02-19",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/hedda-leirvik-14943637",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -253,6 +1045,36 @@
           "source": "PB bekreftet i klubboppslaget. Eksakt sluttid fra EQ Timing.",
           "sourceUrl": "https://www.bratsbergfriidrett.no/2026/11/08/sofie-pa-maraton-toppen/",
           "corroboratingSourceUrl": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1"
+        },
+        {
+          "type": "road",
+          "distance": "5 km",
+          "time": "15:10",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7240188",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-04-25",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "30:43",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/records/toplists/road-running/10-kilometres/all/men/senior/2026?page=21",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-10-17",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
         }
       ],
       "birthYear": 2001,
@@ -260,6 +1082,52 @@
         "provider": "EQ Timing",
         "url": "https://live.eqtiming.com/api/Result/Gender/79399/325492/male?count=3000&startAt=1",
         "checkedAt": "2026-11-09"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Henrik KRISTENSEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "5 km",
+            "time": "15:10",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7240188",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-04-25",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "30:43",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/10-kilometres/all/men/senior/2026?page=21",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-10-17",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -276,7 +1144,83 @@
           "zoom": 1.2
         }
       },
-      "personalBests": []
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "1500 m",
+          "time": "4:42.87",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/-/14943635",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2021-06-20",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "10:28.99",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/-/14943635",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2023-05-04",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Ida WALDAL",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "1500 m",
+            "time": "4:42.87",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/-/14943635",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2021-06-20",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "10:28.99",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/-/14943635",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2023-05-04",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/-/14943635",
+        "profileExcerptMayBeIncomplete": true
+      }
     },
     {
       "id": "ingrid-lunde-steen",
@@ -292,12 +1236,144 @@
           "zoom": 1
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:55:26",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2022-10-16",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "36:58",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2024-05-25",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "10:38.40",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2025-04-01",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
       "birthYear": 1985,
       "birthYearSource": {
         "provider": "World Athletics",
         "checkedAt": "2026-11-03",
         "url": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Ingrid LUNDE-STEEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:20:27",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-02-15",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "1:20:00",
+              "raceId": "barcelona-halvmaraton-2026",
+              "timeBasis": "net",
+              "date": "2026-02-15",
+              "athleteId": "ingrid-lunde-steen"
+            }
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:55:26",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2022-10-16",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "36:58",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-05-25",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "10:38.40",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2025-04-01",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/ingrid-lunde-steen-15049448",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -381,13 +1457,58 @@
         },
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Jonas-Frorud-360x640.jpg"
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "31:52.79",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7233455?eventId=10229610",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-25",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+        }
+      ],
       "birthYear": 1992,
       "birthYearSource": {
         "provider": "Bratsberg Friidrett",
         "checkedAt": "2026-11-03",
         "note": "Utøverens fødselsår oppgitt i klubbens presentasjon av NM-laget.",
         "url": "https://www.bratsbergfriidrett.no/2026/07/21/her-er-vart-nm-lag/"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Jonas UDJUS",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "31:52.79",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7233455?eventId=10229610",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-25",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -413,12 +1534,89 @@
           "zoom": 1
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:33:23",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/outdoor/men/senior/2026?page=46",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-04-26",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:11:15",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/records/toplists/road-running/half-marathon/outdoor/men/senior/2026?page=55",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-02-15",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1994,
       "birthYearSource": {
         "provider": "Racedays",
         "checkedAt": "2026-11-03",
         "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Jørgen SKEVIK",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:33:23",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/outdoor/men/senior/2026?page=46",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-04-26",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:11:15",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/half-marathon/outdoor/men/senior/2026?page=55",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-02-15",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -480,13 +1678,147 @@
         },
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Kristin-Opland-360x640.jpg"
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "5000 m",
+          "time": "16:19.96",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7193283?eventId=10229514",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": null,
+          "asOf": "2026-11-20",
+          "dateRange": {
+            "start": "2023-07-06",
+            "end": "2023-07-08"
+          },
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Eksakt løpsdag er ukjent; dateRange er stevneperioden, asOf er kontrolltidspunktet."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "34:22.59",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7193283?eventId=10229521",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": null,
+          "asOf": "2026-11-20",
+          "dateRange": {
+            "start": "2023-07-06",
+            "end": "2023-07-08"
+          },
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Eksakt løpsdag er ukjent; dateRange er stevneperioden, asOf er kontrolltidspunktet."
+        },
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:44:23",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7193288?eventId=10229534",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2023-09-16",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1982,
       "birthYearSource": {
         "provider": "Bratsberg Friidrett",
         "checkedAt": "2026-11-03",
         "note": "Utøverens fødselsår oppgitt i klubbens presentasjon av NM-laget.",
         "url": "https://www.bratsbergfriidrett.no/2026/07/21/her-er-vart-nm-lag/"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Kristin Waaktaar OPLAND",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "16:19.96",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7193283?eventId=10229514",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": null,
+            "asOf": "2026-11-20",
+            "dateRange": {
+              "start": "2023-07-06",
+              "end": "2023-07-08"
+            },
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Eksakt løpsdag er ukjent; dateRange er stevneperioden, asOf er kontrolltidspunktet."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "34:22.59",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7193283?eventId=10229521",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": null,
+            "asOf": "2026-11-20",
+            "dateRange": {
+              "start": "2023-07-06",
+              "end": "2023-07-08"
+            },
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Eksakt løpsdag er ukjent; dateRange er stevneperioden, asOf er kontrolltidspunktet."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:44:23",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7193288?eventId=10229534",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2023-09-16",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -505,12 +1837,144 @@
           "zoom": 1.4
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:56:59",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2025-12-07",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "1500 m",
+          "time": "4:53.26",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2010-02-20",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "800 m",
+          "time": "2:24.07",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2010-02-21",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
       "birthYear": 1992,
       "birthYearSource": {
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Mari ØYEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "5 km",
+            "time": "17:31",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-04-25",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "17:17",
+              "raceId": "tronder-ostlopet-2026",
+              "timeBasis": "unspecified",
+              "date": "2026-06-16",
+              "athleteId": "mari-steinkjer-oyen"
+            }
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:56:59",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2025-12-07",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "1500 m",
+            "time": "4:53.26",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2010-02-20",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "800 m",
+            "time": "2:24.07",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2010-02-21",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/mari-oyen-14408037",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -666,12 +2130,81 @@
           "zoom": 1.5
         }
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:30:34",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/all/men/u20/2025?bestResultsOnly=true&page=41&regionType=world&windReading=regular",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2025-12-07",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1983,
       "birthYearSource": {
         "provider": "Racedays",
         "checkedAt": "2026-11-03",
         "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Ola ROSSVOLL",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:11:57",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7232626",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2025-09-20",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "1:11:24",
+              "raceId": "kobenhavn-halvmaraton-2026",
+              "timeBasis": "unspecified",
+              "date": "2026-09-20",
+              "athleteId": "ola-rossvoll"
+            }
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:30:34",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/all/men/u20/2025?bestResultsOnly=true&page=41&regionType=world&windReading=regular",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2025-12-07",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -703,6 +2236,22 @@
           "corroboratingSourceUrl": "https://www.bratsbergfriidrett.no/2026/09/05/de-lop-langt-bratt-og-fort/",
           "eventName": "Junior-NM 2026",
           "source": "PB bekreftet av arrangørens resultatliste og klubbens oppslag"
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "1500 m",
+          "time": "3:53.40",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/petter-vea-monseth-15254673",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-09-23",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
         }
       ],
       "birthYear": 2010,
@@ -711,6 +2260,52 @@
         "checkedAt": "2026-11-03",
         "note": "Fødselsår fra NFIFs landsoversikt 2026, kontrollert mot Petter Vea Monseth / Bratsberg IL på 1500 m, 3000 m og 5000 m.",
         "url": "https://www.minfriidrettsstatistikk.info/php/LandsStatistikk.php"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Petter Vea MONSETH",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "1500 m",
+            "time": "3:53.40",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/petter-vea-monseth-15254673",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-09-23",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "14:38.08",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/petter-vea-monseth-15254673",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-08-30",
+            "notes": [],
+            "referenceStatus": "existing-personal-best-preserved",
+            "existingReferenceTimes": [
+              "14:38,08"
+            ]
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/petter-vea-monseth-15254673",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -728,12 +2323,122 @@
         },
         "fallbackSrc": "https://usercontent.one/wp/www.bratsbergfriidrett.no/wp-content/uploads/2026/07/Sebastian-Reinertsen-360x640.jpg"
       },
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "3000 m",
+          "time": "8:26.32",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-01-31",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "1500 m",
+          "time": "3:54.12",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-24",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "5000 m",
+          "time": "14:33.17",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-23",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "WA og eksisterende NM-resultat har 14:33.17; klubbomtalen oppgir 14:33.29. Eksisterende resultat er bevart."
+        }
+      ],
       "birthYear": 2003,
       "birthYearSource": {
         "provider": "EQ Timing",
         "checkedAt": "2026-11-03",
         "url": "https://live.eqtiming.com/api/Contestants/80522"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Sebastian REINERTSEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "3000 m",
+            "time": "8:26.32",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-01-31",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "1500 m",
+            "time": "3:54.12",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-24",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "14:33.17",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-23",
+            "notes": [
+              "WA og eksisterende NM-resultat har 14:33.17; klubbomtalen oppgir 14:33.29. Eksisterende resultat er bevart; avviket i klubbomtalen er ikke rettet her."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/sebastian-reinertsen-15284625",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -786,6 +2491,69 @@
           "source": "Klubben bekrefter maratondebut. Tiden følger arrangørens offisielle resultat.",
           "sourceUrl": "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026/6af079db-f158-44ef-9b21-4a27ac1f0a9c/rankings",
           "corroboratingSourceUrl": "https://www.bratsbergfriidrett.no/2026/11/08/sofie-pa-maraton-toppen/"
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "31:31",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-10-17",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "32:28.89",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-25",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "5000 m",
+          "time": "15:35.36",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-07-23",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "9:20.20",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-06-27",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
         }
       ],
       "birthYear": 1995,
@@ -793,6 +2561,102 @@
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Karoline HAUGEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "31:31",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-10-17",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:27:13",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-11-08",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "existing-personal-best-preserved",
+            "existingReferenceTimes": [
+              "2:27:13"
+            ]
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "32:28.89",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-25",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "15:35.36",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-07-23",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "9:20.20",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-06-27",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/sofie-karoline-15261374",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -809,7 +2673,52 @@
           "zoom": 1.5
         }
       },
-      "personalBests": []
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "8:51.28",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7239745",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2026-05-05",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+        }
+      ],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Sturla GRANHEIM",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "8:51.28",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7239745",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-05-05",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
+      }
     },
     {
       "id": "tommy-bangjord-hove",
@@ -832,6 +2741,89 @@
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Tommy HOVE",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:03:06",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/tommy-hove-15050354",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-02-15",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "1:03:01",
+              "raceId": "barcelona-halvmaraton-2026",
+              "timeBasis": "net",
+              "date": "2026-02-15",
+              "athleteId": "tommy-bangjord-hove"
+            }
+          },
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "28:49",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/tommy-hove-15050354",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-01-11",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "28:44",
+              "raceId": "valencia-10k-2026",
+              "timeBasis": "net",
+              "date": "2026-01-11",
+              "athleteId": "tommy-bangjord-hove"
+            }
+          },
+          {
+            "type": "road",
+            "distance": "5 km",
+            "time": "14:24",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/tommy-hove-15050354",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-09-28",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "14:22",
+              "raceId": "tronder-ostlopet-2026",
+              "timeBasis": "unspecified",
+              "date": "2026-06-16",
+              "athleteId": "tommy-bangjord-hove"
+            }
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/tommy-hove-15050354",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -899,6 +2891,85 @@
           "source": "Klubben bekrefter maratondebut. Tiden følger arrangørens offisielle resultat.",
           "sourceUrl": "https://sportmaniacs.com/es/races/generali-maraton-malaga-2026/6af079db-f158-44ef-9b21-4a27ac1f0a9c/rankings",
           "corroboratingSourceUrl": "https://www.bratsbergfriidrett.no/2026/11/08/sofie-pa-maraton-toppen/"
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "30:21",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-10-17",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "8:24.71",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2021-09-28",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "1500 m",
+          "time": "3:54.94",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2020-09-19",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "800 m",
+          "time": "1:57.02",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-08-28",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "1500 m",
+          "time": "4:07.76",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2016-03-05",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
         }
       ],
       "birthYear": 1990,
@@ -906,6 +2977,119 @@
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Ulrik HOVIG",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "30:21",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-10-17",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "8:24.71",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2021-09-28",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "1500 m",
+            "time": "3:54.94",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2020-09-19",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "800 m",
+            "time": "1:57.02",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-08-28",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "1500 m",
+            "time": "4:07.76",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2016-03-05",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:27:13",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/all/men/senior/2026?ageCategory=senior&bestResultsOnly=true&eventId=10229634&maxResultsByCountry=all&page=29&regionType=world",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-11-08",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "existing-personal-best-preserved",
+            "existingReferenceTimes": [
+              "2:27:13"
+            ]
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/ulrik-hovig-14704736",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -932,6 +3116,68 @@
           "eventName": "Hamburg maraton",
           "source": "PB bekreftet i klubbens oppslag; tid kontrollert mot resultatlisten.",
           "sourceUrl": "https://www.bratsbergfriidrett.no/2026/06/30/vibeke-skal-til-em/"
+        },
+        {
+          "type": "road",
+          "distance": "10 km",
+          "time": "33:15",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2025-10-18",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:13:29",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2025-09-14",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "5000 m",
+          "time": "16:29.36",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2025-05-12",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "9:42.53",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2025-04-01",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
         }
       ],
       "birthYear": 1995,
@@ -939,6 +3185,103 @@
         "provider": "Racedays",
         "checkedAt": "2026-11-03",
         "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=2"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Vibeke JENSEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:33:11",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-04-26",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "existing-personal-best-preserved",
+            "existingReferenceTimes": [
+              "2:33:11"
+            ]
+          },
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "33:15",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2025-10-18",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:13:29",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2025-09-14",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "5000 m",
+            "time": "16:29.36",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2025-05-12",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "9:42.53",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2025-04-01",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/vibeke-jensen-14808646",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -1089,7 +3432,69 @@
       "name": "Elisabeth Stubberud",
       "aliases": [],
       "photo": null,
-      "personalBests": []
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:21:00",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7214048",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2024-06-08",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Elisabeth STUBBERUD",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:21:00",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7214048",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-06-08",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:24:06",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7205730",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-05-25",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "slower-wa-evidence"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
+      }
     },
     {
       "id": "nikolai-aarre-maehlum",
@@ -1257,12 +3662,107 @@
       "name": "Anette Leistad",
       "aliases": [],
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:24:33",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/anette-leistad-15111028",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2024-09-15",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:58:50",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7244012",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2026-09-12",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1984,
       "birthYearSource": {
         "provider": "EQ Timing",
         "checkedAt": "2026-11-03",
         "url": "https://live.eqtiming.com/api/Contestants/80522"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Anette LEISTAD",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:24:33",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/anette-leistad-15111028",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-09-15",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "3:01:03",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/anette-leistad-15111028",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-06-08",
+            "notes": [
+              "UTDATERT: WA-resultat fra Oslo2026 viser2:58:50; ikke bruk3:01:03 som gjeldende PB.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "slower-wa-evidence"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:58:50",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competition/calendar-results/results/7244012",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2026-09-12",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/anette-leistad-15111028",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -1358,12 +3858,88 @@
       "name": "Øyvind Ytterhus Utengen",
       "aliases": [],
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "8:33.61",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2021-09-28",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "31:18.16",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2021-05-17",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
       "birthYear": 1989,
       "birthYearSource": {
         "provider": "Racedays",
         "checkedAt": "2026-11-03",
         "url": "https://www.racedays.run/event/rekordmila-2026/results/?tab=results&pageNumber=1"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Øyvind YTTERHUS UTENGEN",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "8:33.61",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2021-09-28",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "31:18.16",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2021-05-17",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/oyvind-ytterhus-utengen-14952767",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -1503,7 +4079,179 @@
       "name": "Ola Sakshaug",
       "aliases": [],
       "photo": null,
-      "personalBests": []
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "10 000 m",
+          "time": "30:26.07",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2016-07-31",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "road",
+          "distance": "Halvmaraton",
+          "time": "1:07:31",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2018-03-11",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "3000 m",
+          "time": "8:29.38",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2011-06-17",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "3000 m",
+          "time": "8:33.96",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2012-03-04",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:24:26",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2016-09-25",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Ola SAKSHAUG",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "10 000 m",
+            "time": "30:26.07",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2016-07-31",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Halvmaraton",
+            "time": "1:07:31",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2018-03-11",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "3000 m",
+            "time": "8:29.38",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2011-06-17",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "3000 m",
+            "time": "8:33.96",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2012-03-04",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:24:26",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2016-09-25",
+            "notes": [
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/ola-sakshaug-14422887",
+        "profileExcerptMayBeIncomplete": true
+      }
     },
     {
       "id": "natalie-st-john",
@@ -1557,12 +4305,120 @@
       "name": "Hanna Eid",
       "aliases": [],
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "800 m",
+          "time": "2:16.66",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2015-02-08",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "indoor",
+          "distance": "400 m",
+          "time": "58.41",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2020-02-01",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        },
+        {
+          "type": "track",
+          "environment": "outdoor",
+          "distance": "800 m",
+          "time": "2:15.95",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "profile-personal-best",
+          "sourceUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "gun",
+          "date": "2019-06-15",
+          "source": "Brukergodkjent PB-referanse fra World Athletics-profil",
+          "note": ""
+        }
+      ],
       "birthYear": 1997,
       "birthYearSource": {
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Hanna EID",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "800 m",
+            "time": "2:16.66",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2015-02-08",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "indoor",
+            "distance": "400 m",
+            "time": "58.41",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2020-02-01",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "track",
+            "environment": "outdoor",
+            "distance": "800 m",
+            "time": "2:15.95",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2019-06-15",
+            "notes": [],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/hanna-eid-14651581",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -1643,12 +4499,56 @@
       "name": "Bendik Støa-Aanensen",
       "aliases": [],
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:29:36",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7209041/result",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2024-10-27",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1987,
       "birthYearSource": {
         "provider": "EQ Timing",
         "checkedAt": "2026-11-03",
         "url": "https://live.eqtiming.com/api/Contestants/80522"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Støa-Aanensen BENDIK",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:29:36",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7209041/result",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-10-27",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -1676,19 +4576,114 @@
       "name": "Stig Erlend Almåsbakk",
       "aliases": [],
       "photo": null,
-      "personalBests": []
+      "personalBests": [],
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Stig ALMÅSBAKK",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "32:29",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/stig-almasbakk-15288982",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-01-11",
+            "notes": [],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "32:24",
+              "raceId": "valencia-10k-2026",
+              "timeBasis": "net",
+              "date": "2026-01-11",
+              "athleteId": "stig-almasbakk"
+            }
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/stig-almasbakk-15288982",
+        "profileExcerptMayBeIncomplete": true
+      }
     },
     {
       "id": "henrik-nordahl",
       "name": "Henrik Nordahl",
       "aliases": [],
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:32:00",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7207732/result",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2024-09-29",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1987,
       "birthYearSource": {
         "fileName": "02ResultListsSluttresultater.pdf",
         "checkedAt": "2026-10-30",
         "url": "https://my.raceresult.com/396951/results"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Henrik NORDAHL",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:32:00",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7207732/result",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-09-29",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          },
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:32:19",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/records/toplists/road-running/marathon/outdoor/male/senior/2023?page=42",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2023-12-03",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "slower-wa-evidence"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {
@@ -1947,6 +4942,39 @@
         "possibleDuplicateOf": "stig-erlend-almasbakk",
         "status": "unconfirmed",
         "note": "Navnevariant fra resultatlisten; holdes separat inntil identiteten er bekreftet."
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Stig ALMÅSBAKK",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "10 km",
+            "time": "32:29",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "profile-personal-best",
+            "sourceUrl": "https://worldathletics.org/athletes/norway/stig-almasbakk-15288982",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "gun",
+            "date": "2026-01-11",
+            "notes": [],
+            "referenceStatus": "faster-existing-result-preserved",
+            "fasterExistingResult": {
+              "time": "32:24",
+              "raceId": "valencia-10k-2026",
+              "timeBasis": "net",
+              "date": "2026-01-11",
+              "athleteId": "stig-almasbakk"
+            }
+          }
+        ],
+        "profileUrl": "https://worldathletics.org/athletes/norway/stig-almasbakk-15288982",
+        "profileExcerptMayBeIncomplete": true
       }
     },
     {
@@ -1966,12 +4994,56 @@
       "name": "Martin Nesse",
       "aliases": [],
       "photo": null,
-      "personalBests": [],
+      "personalBests": [
+        {
+          "type": "road",
+          "distance": "Maraton",
+          "time": "2:35:50",
+          "sourceProvider": "world-athletics",
+          "evidenceKind": "competition-result",
+          "sourceUrl": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7207332/result",
+          "checkedAt": "2026-11-20",
+          "userApproved": true,
+          "approvedAt": "2026-11-20",
+          "timeBasis": "unknown",
+          "date": "2024-12-01",
+          "source": "Brukergodkjent referansetid fra World Athletics-resultat; ikke en eksplisitt WA-PB",
+          "note": "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026. Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+        }
+      ],
       "birthYear": 1991,
       "birthYearSource": {
         "provider": "EQ Timing",
         "url": "https://live.eqtiming.com/api/Result/Gender/79399/325491/male?count=3000&startAt=1",
         "checkedAt": "2026-11-09"
+      },
+      "worldAthletics": {
+        "checkedAt": "2026-11-20",
+        "approvedAt": "2026-11-20",
+        "userApproved": true,
+        "matchedName": "Martin NESSE",
+        "identityStatus": "user-approved-report-match",
+        "performances": [
+          {
+            "type": "road",
+            "distance": "Maraton",
+            "time": "2:35:50",
+            "sourceProvider": "world-athletics",
+            "evidenceKind": "competition-result",
+            "sourceUrl": "https://worldathletics.org/competitions/world-athletics-label-road-races/calendar-results/7207332/result",
+            "checkedAt": "2026-11-20",
+            "userApproved": true,
+            "approvedAt": "2026-11-20",
+            "timeBasis": "unknown",
+            "date": "2024-12-01",
+            "notes": [
+              "Dokumentert WA-resultat, ikke en eksplisitt PB-erklæring fra WA. Bruk som referanse er godkjent av brukeren 20.11.2026.",
+              "Tidsgrunnlaget er ikke dokumentert som netto eller brutto i det tilgjengelige WA-utdraget."
+            ],
+            "referenceStatus": "added-reference"
+          }
+        ],
+        "profileExcerptMayBeIncomplete": false
       }
     },
     {

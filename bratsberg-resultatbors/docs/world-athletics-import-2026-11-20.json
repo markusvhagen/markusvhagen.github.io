@@ -1,0 +1,1394 @@
+{
+  "checkedAt": "2026-11-20",
+  "approvedBy": "user",
+  "excludedAthleteIds": [
+    "henning-offigstad"
+  ],
+  "counts": {
+    "athletesBefore": 169,
+    "athletesAfter": 169,
+    "athletesWithWA": 31,
+    "importedSourceRows": 89,
+    "uniqueSourceRows": 88,
+    "priorPersonalBests": 13,
+    "newReferences": 71,
+    "decisions": {
+      "added-reference": 71,
+      "faster-existing-result-preserved": 10,
+      "existing-personal-best-preserved": 5
+    },
+    "activeWAReferenceAthletes": 28,
+    "profileReferencesAdded": 53,
+    "resultReferencesAdded": 18,
+    "pbBadgesBefore": 11,
+    "pbBadgesAfter": 22
+  },
+  "decisions": [
+    {
+      "athleteId": "alex-mauro",
+      "name": "Alex Mauro",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:07:09",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "alex-mauro",
+      "name": "Alex Mauro",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:26:32",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "2:30:11",
+        "seconds": 9011.0,
+        "raceId": "amsterdam-maraton-2026",
+        "timeBasis": "net",
+        "date": "2026-10-18",
+        "athleteId": "alex-mauro"
+      }
+    },
+    {
+      "athleteId": "alex-mauro",
+      "name": "Alex Mauro",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "31:25.07",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "alex-mauro",
+      "name": "Alex Mauro",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "15:11.30",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "camilla-marie-flaaten",
+      "name": "Camilla-Marie Flaaten",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:41:02",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "2:40:13",
+        "seconds": 9613.0,
+        "raceId": "berlin-maraton-2026",
+        "timeBasis": "net",
+        "date": "2026-09-27",
+        "athleteId": "camilla-marie-flaaten"
+      }
+    },
+    {
+      "athleteId": "camilla-marie-flaaten",
+      "name": "Camilla-Marie Flaaten",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:15:43",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "1:17:26",
+        "seconds": 4646.0,
+        "raceId": "trondheim-maraton-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-09-06",
+        "athleteId": "camilla-marie-flaaten"
+      }
+    },
+    {
+      "athleteId": "camilla-marie-flaaten",
+      "name": "Camilla-Marie Flaaten",
+      "event": [
+        "road",
+        null,
+        "5km"
+      ],
+      "waTime": "17:49",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "17:08.8",
+        "seconds": 1028.8,
+        "raceId": "nidaros-lopefest-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-05-23",
+        "athleteId": "camilla-marie-flaaten"
+      }
+    },
+    {
+      "athleteId": "eira-rapp",
+      "name": "Eira Rapp",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:42:52",
+      "decision": "existing-personal-best-preserved",
+      "priorPBs": [
+        "2:41:27"
+      ],
+      "fastestExistingResult": {
+        "time": "2:41:27",
+        "seconds": 9687.0,
+        "raceId": "hamburg-maraton-2026",
+        "timeBasis": "net",
+        "date": "2026-04-26",
+        "athleteId": "eira-rapp"
+      }
+    },
+    {
+      "athleteId": "eira-rapp",
+      "name": "Eira Rapp",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "16:38.81",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "16:38.81",
+        "seconds": 998.81,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-23",
+        "athleteId": "eira-rapp"
+      }
+    },
+    {
+      "athleteId": "eira-rapp",
+      "name": "Eira Rapp",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "35:19.71",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "35:19.71",
+        "seconds": 2119.71,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-25",
+        "athleteId": "eira-rapp"
+      }
+    },
+    {
+      "athleteId": "eira-rapp",
+      "name": "Eira Rapp",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "34:31",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "34:34.2",
+        "seconds": 2074.2,
+        "raceId": "nidaros-lopefest-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-05-23",
+        "athleteId": "eira-rapp"
+      }
+    },
+    {
+      "athleteId": "espen-tveit",
+      "name": "Espen Tveit",
+      "event": [
+        "track",
+        "indoor",
+        "400m"
+      ],
+      "waTime": "50.27",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "espen-tveit",
+      "name": "Espen Tveit",
+      "event": [
+        "track",
+        "indoor",
+        "200m"
+      ],
+      "waTime": "22.67",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "espen-tveit",
+      "name": "Espen Tveit",
+      "event": [
+        "track",
+        "outdoor",
+        "400m"
+      ],
+      "waTime": "49.53",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "espen-tveit",
+      "name": "Espen Tveit",
+      "event": [
+        "track",
+        "outdoor",
+        "200m"
+      ],
+      "waTime": "22.30",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "eva-ingebrigtsen",
+      "name": "Eva Ingebrigtsen",
+      "event": [
+        "track",
+        "outdoor",
+        "2000mhinder"
+      ],
+      "waTime": "7:11.33",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "eva-ingebrigtsen",
+      "name": "Eva Ingebrigtsen",
+      "event": [
+        "road",
+        null,
+        "5km"
+      ],
+      "waTime": "17:30",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "eva-ingebrigtsen",
+      "name": "Eva Ingebrigtsen",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "10:13.51",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "eva-ingebrigtsen",
+      "name": "Eva Ingebrigtsen",
+      "event": [
+        "track",
+        "outdoor",
+        "2000m"
+      ],
+      "waTime": "6:32.36",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "eva-ingebrigtsen",
+      "name": "Eva Ingebrigtsen",
+      "event": [
+        "track",
+        "outdoor",
+        "1500m"
+      ],
+      "waTime": "4:55.12",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "hedda-leirvik",
+      "name": "Hedda Leirvik",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "9:50.38",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "hedda-leirvik",
+      "name": "Hedda Leirvik",
+      "event": [
+        "track",
+        "outdoor",
+        "1500m"
+      ],
+      "waTime": "4:35.53",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "hedda-leirvik",
+      "name": "Hedda Leirvik",
+      "event": [
+        "track",
+        "indoor",
+        "1000m"
+      ],
+      "waTime": "2:58.90",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "henrik-kristensen",
+      "name": "Henrik Berg Kristensen",
+      "event": [
+        "road",
+        null,
+        "5km"
+      ],
+      "waTime": "15:10",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "henrik-kristensen",
+      "name": "Henrik Berg Kristensen",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "30:43",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "30:43",
+        "seconds": 1843.0,
+        "raceId": "hytteplanmila-2026",
+        "timeBasis": "net",
+        "date": "2026-10-17",
+        "athleteId": "henrik-kristensen"
+      }
+    },
+    {
+      "athleteId": "ida-waldal",
+      "name": "Ida Waldal",
+      "event": [
+        "track",
+        "outdoor",
+        "1500m"
+      ],
+      "waTime": "4:42.87",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ida-waldal",
+      "name": "Ida Waldal",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "10:28.99",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ingrid-lunde-steen",
+      "name": "Ingrid Lunde Steen",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:20:27",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "1:20:00",
+        "seconds": 4800.0,
+        "raceId": "barcelona-halvmaraton-2026",
+        "timeBasis": "net",
+        "date": "2026-02-15",
+        "athleteId": "ingrid-lunde-steen"
+      }
+    },
+    {
+      "athleteId": "ingrid-lunde-steen",
+      "name": "Ingrid Lunde Steen",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:55:26",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ingrid-lunde-steen",
+      "name": "Ingrid Lunde Steen",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "36:58",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ingrid-lunde-steen",
+      "name": "Ingrid Lunde Steen",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "10:38.40",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "jonas-udjus-frorud",
+      "name": "Jonas Udjus Frorud",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "31:52.79",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "31:52.79",
+        "seconds": 1912.79,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-25",
+        "athleteId": "jonas-udjus-frorud"
+      }
+    },
+    {
+      "athleteId": "jorgen-skevik",
+      "name": "Jørgen Skevik",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:33:23",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "2:33:23",
+        "seconds": 9203.0,
+        "raceId": "hamburg-maraton-2026",
+        "timeBasis": "net",
+        "date": "2026-04-26",
+        "athleteId": "jorgen-skevik"
+      }
+    },
+    {
+      "athleteId": "jorgen-skevik",
+      "name": "Jørgen Skevik",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:11:15",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "kristin-waaktaar-opland",
+      "name": "Kristin Waaktaar Opland",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "16:19.96",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "18:31.56",
+        "seconds": 1111.56,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-23",
+        "athleteId": "kristin-waaktaar-opland"
+      }
+    },
+    {
+      "athleteId": "kristin-waaktaar-opland",
+      "name": "Kristin Waaktaar Opland",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "34:22.59",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "39:42.21",
+        "seconds": 2382.21,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-25",
+        "athleteId": "kristin-waaktaar-opland"
+      }
+    },
+    {
+      "athleteId": "kristin-waaktaar-opland",
+      "name": "Kristin Waaktaar Opland",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:44:23",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "mari-steinkjer-oyen",
+      "name": "Mari Steinkjer Øyen",
+      "event": [
+        "road",
+        null,
+        "5km"
+      ],
+      "waTime": "17:31",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "17:17",
+        "seconds": 1037.0,
+        "raceId": "tronder-ostlopet-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-06-16",
+        "athleteId": "mari-steinkjer-oyen"
+      }
+    },
+    {
+      "athleteId": "mari-steinkjer-oyen",
+      "name": "Mari Steinkjer Øyen",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:56:59",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "mari-steinkjer-oyen",
+      "name": "Mari Steinkjer Øyen",
+      "event": [
+        "track",
+        "indoor",
+        "1500m"
+      ],
+      "waTime": "4:53.26",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "mari-steinkjer-oyen",
+      "name": "Mari Steinkjer Øyen",
+      "event": [
+        "track",
+        "indoor",
+        "800m"
+      ],
+      "waTime": "2:24.07",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ola-rossvoll",
+      "name": "Ola Rossvoll",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:11:57",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "1:11:24",
+        "seconds": 4284.0,
+        "raceId": "kobenhavn-halvmaraton-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-09-20",
+        "athleteId": "ola-rossvoll"
+      }
+    },
+    {
+      "athleteId": "ola-rossvoll",
+      "name": "Ola Rossvoll",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:30:34",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "petter-vea-monseth",
+      "name": "Petter Vea Monseth",
+      "event": [
+        "track",
+        "outdoor",
+        "1500m"
+      ],
+      "waTime": "3:53.40",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "petter-vea-monseth",
+      "name": "Petter Vea Monseth",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "14:38.08",
+      "decision": "existing-personal-best-preserved",
+      "priorPBs": [
+        "14:38,08"
+      ],
+      "fastestExistingResult": {
+        "time": "14:38,08",
+        "seconds": 878.08,
+        "raceId": "junior-nm-2026",
+        "timeBasis": "gun",
+        "date": "2026-08-30",
+        "athleteId": "petter-vea-monseth"
+      }
+    },
+    {
+      "athleteId": "sebastian-reinertsen",
+      "name": "Sebastian Reinertsen",
+      "event": [
+        "track",
+        "indoor",
+        "3000m"
+      ],
+      "waTime": "8:26.32",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "sebastian-reinertsen",
+      "name": "Sebastian Reinertsen",
+      "event": [
+        "track",
+        "outdoor",
+        "1500m"
+      ],
+      "waTime": "3:54.12",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "3:54.12",
+        "seconds": 234.12,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-24",
+        "athleteId": "sebastian-reinertsen"
+      }
+    },
+    {
+      "athleteId": "sebastian-reinertsen",
+      "name": "Sebastian Reinertsen",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "14:33.17",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "14:33.17",
+        "seconds": 873.17,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-23",
+        "athleteId": "sebastian-reinertsen"
+      }
+    },
+    {
+      "athleteId": "sofie-karoline-haugen",
+      "name": "Sofie Karoline Haugen",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "31:31",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "31:31",
+        "seconds": 1891.0,
+        "raceId": "hytteplanmila-2026",
+        "timeBasis": "net",
+        "date": "2026-10-17",
+        "athleteId": "sofie-karoline-haugen"
+      }
+    },
+    {
+      "athleteId": "sofie-karoline-haugen",
+      "name": "Sofie Karoline Haugen",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:27:13",
+      "decision": "existing-personal-best-preserved",
+      "priorPBs": [
+        "2:27:13"
+      ],
+      "fastestExistingResult": {
+        "time": "2:27:13",
+        "seconds": 8833.0,
+        "raceId": "malaga-maraton-2026",
+        "timeBasis": "gun",
+        "date": "2026-11-08",
+        "athleteId": "sofie-karoline-haugen"
+      }
+    },
+    {
+      "athleteId": "sofie-karoline-haugen",
+      "name": "Sofie Karoline Haugen",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "32:28.89",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "32:28.89",
+        "seconds": 1948.89,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-25",
+        "athleteId": "sofie-karoline-haugen"
+      }
+    },
+    {
+      "athleteId": "sofie-karoline-haugen",
+      "name": "Sofie Karoline Haugen",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "15:35.36",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "15:35.36",
+        "seconds": 935.36,
+        "raceId": "nm-bane-2026",
+        "timeBasis": "gun",
+        "date": "2026-07-23",
+        "athleteId": "sofie-karoline-haugen"
+      }
+    },
+    {
+      "athleteId": "sofie-karoline-haugen",
+      "name": "Sofie Karoline Haugen",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "9:20.20",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "sturla-granheim",
+      "name": "Sturla Granheim",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "8:51.28",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "tommy-bangjord-hove",
+      "name": "Tommy Bangjord Hove",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:03:06",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "1:03:01",
+        "seconds": 3781.0,
+        "raceId": "barcelona-halvmaraton-2026",
+        "timeBasis": "net",
+        "date": "2026-02-15",
+        "athleteId": "tommy-bangjord-hove"
+      }
+    },
+    {
+      "athleteId": "tommy-bangjord-hove",
+      "name": "Tommy Bangjord Hove",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "28:49",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "28:44",
+        "seconds": 1724.0,
+        "raceId": "valencia-10k-2026",
+        "timeBasis": "net",
+        "date": "2026-01-11",
+        "athleteId": "tommy-bangjord-hove"
+      }
+    },
+    {
+      "athleteId": "tommy-bangjord-hove",
+      "name": "Tommy Bangjord Hove",
+      "event": [
+        "road",
+        null,
+        "5km"
+      ],
+      "waTime": "14:24",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "14:22",
+        "seconds": 862.0,
+        "raceId": "tronder-ostlopet-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-06-16",
+        "athleteId": "tommy-bangjord-hove"
+      }
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "name": "Ulrik Hovig",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "30:21",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "30:21",
+        "seconds": 1821.0,
+        "raceId": "hytteplanmila-2026",
+        "timeBasis": "net",
+        "date": "2026-10-17",
+        "athleteId": "ulrik-hovig"
+      }
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "name": "Ulrik Hovig",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "8:24.71",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "name": "Ulrik Hovig",
+      "event": [
+        "track",
+        "outdoor",
+        "1500m"
+      ],
+      "waTime": "3:54.94",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "name": "Ulrik Hovig",
+      "event": [
+        "track",
+        "outdoor",
+        "800m"
+      ],
+      "waTime": "1:57.02",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "name": "Ulrik Hovig",
+      "event": [
+        "track",
+        "indoor",
+        "1500m"
+      ],
+      "waTime": "4:07.76",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ulrik-hovig",
+      "name": "Ulrik Hovig",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:27:13",
+      "decision": "existing-personal-best-preserved",
+      "priorPBs": [
+        "2:27:13"
+      ],
+      "fastestExistingResult": {
+        "time": "2:27:13",
+        "seconds": 8833.0,
+        "raceId": "malaga-maraton-2026",
+        "timeBasis": "gun",
+        "date": "2026-11-08",
+        "athleteId": "ulrik-hovig"
+      }
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:33:11",
+      "decision": "existing-personal-best-preserved",
+      "priorPBs": [
+        "2:33:11"
+      ],
+      "fastestExistingResult": {
+        "time": "2:33:11",
+        "seconds": 9191.0,
+        "raceId": "hamburg-maraton-2026",
+        "timeBasis": "net",
+        "date": "2026-04-26",
+        "athleteId": "vibeke-jensen"
+      }
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "33:15",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "33:17",
+        "seconds": 1997.0,
+        "raceId": "drammen-10k-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-04-11",
+        "athleteId": "vibeke-jensen"
+      }
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:13:29",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "event": [
+        "track",
+        "outdoor",
+        "5000m"
+      ],
+      "waTime": "16:29.36",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "vibeke-jensen",
+      "name": "Vibeke Jensen",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "9:42.53",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "elisabeth-stubberud",
+      "name": "Elisabeth Stubberud",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:21:00",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "anette-leistad",
+      "name": "Anette Leistad",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:24:33",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "1:25:31",
+        "seconds": 5131.0,
+        "raceId": "trondheim-maraton-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-09-06",
+        "athleteId": "anette-leistad"
+      }
+    },
+    {
+      "athleteId": "anette-leistad",
+      "name": "Anette Leistad",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:58:50",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "oyvind-ytterhus-utengen",
+      "name": "Øyvind Ytterhus Utengen",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "8:33.61",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "oyvind-ytterhus-utengen",
+      "name": "Øyvind Ytterhus Utengen",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "31:18.16",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ola-sakshaug",
+      "name": "Ola Sakshaug",
+      "event": [
+        "track",
+        "outdoor",
+        "10000m"
+      ],
+      "waTime": "30:26.07",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ola-sakshaug",
+      "name": "Ola Sakshaug",
+      "event": [
+        "road",
+        null,
+        "halvmaraton"
+      ],
+      "waTime": "1:07:31",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ola-sakshaug",
+      "name": "Ola Sakshaug",
+      "event": [
+        "track",
+        "outdoor",
+        "3000m"
+      ],
+      "waTime": "8:29.38",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ola-sakshaug",
+      "name": "Ola Sakshaug",
+      "event": [
+        "track",
+        "indoor",
+        "3000m"
+      ],
+      "waTime": "8:33.96",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "ola-sakshaug",
+      "name": "Ola Sakshaug",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:24:26",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "2:42:30",
+        "seconds": 9750.0,
+        "raceId": "trondheim-maraton-2026",
+        "timeBasis": "unspecified",
+        "date": "2026-09-06",
+        "athleteId": "ola-sakshaug"
+      }
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "event": [
+        "track",
+        "indoor",
+        "800m"
+      ],
+      "waTime": "2:16.66",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "event": [
+        "track",
+        "indoor",
+        "400m"
+      ],
+      "waTime": "58.41",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "hanna-eid",
+      "name": "Hanna Eid",
+      "event": [
+        "track",
+        "outdoor",
+        "800m"
+      ],
+      "waTime": "2:15.95",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "bendik-stoa-aanensen",
+      "name": "Bendik Støa-Aanensen",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:29:36",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "stig-erlend-almasbakk",
+      "name": "Stig Erlend Almåsbakk",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "32:29",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "32:24",
+        "seconds": 1944.0,
+        "raceId": "valencia-10k-2026",
+        "timeBasis": "net",
+        "date": "2026-01-11",
+        "athleteId": "stig-almasbakk"
+      }
+    },
+    {
+      "athleteId": "henrik-nordahl",
+      "name": "Henrik Nordahl",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:32:00",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    },
+    {
+      "athleteId": "stig-almasbakk",
+      "name": "Stig Almåsbakk",
+      "event": [
+        "road",
+        null,
+        "10km"
+      ],
+      "waTime": "32:29",
+      "decision": "faster-existing-result-preserved",
+      "priorPBs": [],
+      "fastestExistingResult": {
+        "time": "32:24",
+        "seconds": 1944.0,
+        "raceId": "valencia-10k-2026",
+        "timeBasis": "net",
+        "date": "2026-01-11",
+        "athleteId": "stig-almasbakk"
+      }
+    },
+    {
+      "athleteId": "martin-nesse",
+      "name": "Martin Nesse",
+      "event": [
+        "road",
+        null,
+        "maraton"
+      ],
+      "waTime": "2:35:50",
+      "decision": "added-reference",
+      "priorPBs": [],
+      "fastestExistingResult": null
+    }
+  ]
+}

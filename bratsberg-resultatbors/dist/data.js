@@ -24,9 +24,8 @@ export function badges(result) {
   }
   const history = result.performanceHistory;
   if (!history?.isPersonalBest) return recordBadge;
-  const title = history.isManualPersonalBest ? 'Personlig rekord bekreftet i utøverregisteret for dette løpet'
-    : history.hasManualBaseline ? 'Forbedring mot beste kjente tid, inkludert manuelt registrerte perser'
-    : 'Forbedring mot tidligere registrerte løp; eldre perser kan mangle';
+  const title = history.isManualPersonalBest ? 'Tiden matcher registrert PB-referanse'
+    : 'Tiden er bedre enn registrert PB-referanse';
   return recordBadge + `<span class="badge pb" title="${esc(title)}">PB</span>`;
 }
 export const dateTile = s => {const d=dateParts(s);return `<span class="date-tile"><strong>${d.day}</strong><span>${esc(d.month)}</span></span>`;};
